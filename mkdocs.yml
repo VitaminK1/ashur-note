@@ -1,0 +1,50 @@
+site_name: My Docs
+
+theme: 
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.instant
+    - navigation.expand
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - content.code.annotate
+    - content.code.copy
+    - content.code.fold
+    - content.tabs.link
+    - header.autohide
+    - footer.social
+    - footer.icons
+    - footer.navigation
+    - footer.copy
+  language: kr
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+nav:
+ - Home: index.md
+ - Overview: overview.md
+ - Story:
+   - 'Season 1': lore.md
+   - 'Season 2': media.md
+ - Battle:
+   - 'Skill': battle.md
+  
+copyright:
+  This is fan content. All trademarks belong to their respective owners.
