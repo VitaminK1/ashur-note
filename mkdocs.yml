@@ -21,7 +21,7 @@ theme:
     - footer.icons
     - footer.navigation
     - footer.copy
-  language: kr
+  language: ko
   palette:
     - scheme: default
       toggle:
