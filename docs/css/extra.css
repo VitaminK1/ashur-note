@@ -1,0 +1,50 @@
+:root  > * {
+  --md-primary-fg-color--light: #4051B5;
+  --md-primary-fg-color--dark:  #12161b;
+}
+
+:root {
+  --md-text-font: "ONEMobilePOP";
+  --md-code-font: "Noto Mono";
+}
+
+/* 특정 이모지 크기 키우기 및 정렬 개선 */
+.big-emoji {
+  display: inline-block !important; /* Ensure inline alignment */
+  vertical-align: middle !important; /* Align with text */
+  margin: 0 !important; /* Remove any extra margins */
+  padding: 0 !important; /* Remove any extra padding */
+  font-size: 2.5em !important;
+  line-height: 1 !important; /* Prevent extra vertical space */
+  border-radius: 999px;
+}
+
+/* MkDocs가 생성하는 이모지 이미지(<img>)나 SVG 자체의 정렬도 명시 */
+span.big-emoji img,
+span.big-emoji svg {
+  display: inline-block !important;    /* keep image inline and allow vertical-align */
+  vertical-align: middle !important; /* 이미지/SVG 자체의 수직 정렬 */
+  line-height: 1 !important;
+  border-radius: 999px; /* Make the image itself rounded */
+  overflow: hidden; /* Ensure content stays within the rounded border */
+}
+
+@font-face {
+  font-family: "ONEMobilePOP"; 
+  font-weight: normal; 
+  font-style: normal;
+  src: url("../assets/font/ONEMobilePOP.ttf");
+}
+
+@keyframes heart {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+.heart {
+  animation: heart 1000ms infinite;
+}
+

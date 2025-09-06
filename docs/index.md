@@ -1,3 +1,11 @@
+---
+title: Main
+description: Setting up Publisher for MkDocs meta plugin for metadata retrival and automatic navigation building
+tags:
+  - HTML
+  - JavaScript
+---
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).

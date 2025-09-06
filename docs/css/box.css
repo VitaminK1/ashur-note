@@ -1,0 +1,78 @@
+/* 기본(라이트) 모드 스타일 */
+.custom-box-title {
+  background-color: #f7b4b4;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.tag-box {
+  display: inline-block;      /* flex로 세로 중앙 정렬 */
+  vertical-align: middle;
+  align-items: center;        /* 텍스트 세로 중앙 맞춤 */
+  padding: 6px 16px;          /* 좌우 여백 조금 더 */
+  border-radius: 9999px;      /* pill 형태 강제 */
+  font-size: 14px;
+  line-height: 1.4;           /* 줄 간격 지정 */
+}
+
+/* 라이트 모드 전용 */
+[data-md-color-scheme="default"] .tag-box {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* 다크 모드 전용 */
+[data-md-color-scheme="slate"] .tag-box {
+  background-color: #2f3338;
+  color: #d3d6da;
+}
+
+/* 라이트 모드일 때 */
+[data-md-color-scheme="default"] .tag-box[data-sado="ashur"] {
+  background-color: #f7b4b4;
+  color: #333;
+}
+
+/* 다크 모드일 때 */
+[data-md-color-scheme="slate"] .tag-box[data-sado="ashur"] {
+background-color: #803d3d;
+color: #f8dada;   
+}
+
+.speech-bubble {
+    position: relative;
+    border-radius: .4em;
+    padding: 10px;
+    margin: 10px 0;
+}
+.speech-bubble:before {
+    content: '';
+    position: absolute;
+    top: -20px; 
+    left: 20px;
+    border: 10px solid transparent;
+    margin-left: -10px;
+}
+/* 라이트 모드일 때 */
+[data-md-color-scheme="default"] .speech-bubble {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+[data-md-color-scheme="default"] .speech-bubble:before {
+    border-bottom-color: #f0f0f0;
+}
+
+/* 다크 모드일 때 */
+[data-md-color-scheme="slate"] .speech-bubble {
+  background-color: #2f3338;
+  color: #d3d6da;
+}
+
+/* 다크 모드일 때 */
+[data-md-color-scheme="slate"] .speech-bubble:before {
+  border-bottom-color: #2f3338;
+}

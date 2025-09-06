@@ -2,49 +2,148 @@ site_name: My Docs
 
 theme: 
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   features:
     - navigation.tabs
     - navigation.top
     - navigation.sections
     - navigation.instant
+    - navigation.instant.progress
     - navigation.expand
     - navigation.tracking
+    - navigation.footer
+    - navigation.indexes
     - search.highlight
     - search.suggest
     - toc.integrate
     - content.code.annotate
     - content.code.copy
     - content.code.fold
+    - content.tooltips
+    - content.tabs.sticky
     - content.tabs.link
+    - content.tooltips
     - header.autohide
     - footer.social
     - footer.icons
     - footer.navigation
     - footer.copy
+    - search.suggest
+    - search.highlight
+    
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3 
   language: ko
   palette:
-    - scheme: default
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
-
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-auto
         name: Switch to light mode
-      primary: teal
-      accent: lime
 
-nav:
- - Home: index.md
- - Overview: overview.md
- - Story:
-   - 'Season 1': lore.md
-   - 'Season 2': media.md
- - Battle:
-   - 'Skill': battle.md
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+
+extra:
+  homepage: https://vitamink1.github.io/mkdocs-test/
+
+extra_css:
+  - css/box.css
+  - css/extra.css
+  - css/badges.css
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+plugins:
+  - search
+  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enable_git_follow: false
+      type: datetime
+  - offline
+  - glightbox
+  - pub-minifier
+  - mkdocs-video
+  - section-index
+  - literate-nav:
+      nav_file: navigation.md
+  - mkdocs-audio
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.critic
+  - pymdownx.blocks.caption
+  - pymdownx.snippets
   
 copyright:
   This is fan content. All trademarks belong to their respective owners.
