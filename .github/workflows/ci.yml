@@ -22,6 +22,7 @@ jobs:
       - run: pip3 install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-section-index
+      - run: pip install mkdocs-publisher
       - run: pip install mkdocs-audio
       - run: pip install mkdocs-video
       - run: mkdocs gh-deploy --force
