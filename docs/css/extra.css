@@ -8,11 +8,93 @@
   --md-code-font: "Noto Mono";
 }
 
+:root {
+  /* corrected path: use the existing logo.svg under docs/assets */
+  --md-admonition-icon--card: url("../assets/logo.svg");
+}
+.md-typeset .admonition.card,
+.md-typeset details.card {
+  border-color: rgb(43, 155, 70);
+}
+.md-typeset .card > .admonition-title,
+.md-typeset .card > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .card > .admonition-title::before,
+.md-typeset .card > summary::before {
+  background-color: rgb(43, 155, 70, 0);
+  -webkit-mask-image: var(--md-admonition-icon--card);
+          mask-image: var(--md-admonition-icon--card);
+}
+
+/* Card admonition: layout and sizing to match screenshot while preserving colors above */
+.md-typeset .admonition.card,
+.md-typeset details.card {
+  border-radius: 8px;
+  border: 2px solid rgba(255, 165, 0, 0.95); /* orange accent similar to screenshot */
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.md-typeset .admonition.card > .admonition-title,
+.md-typeset details.card > summary {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 239, 219, 0.6); /* pale title background, keep color family */
+}
+
+.md-typeset .admonition.card > .admonition-title .admonition-icon,
+.md-typeset details.card > summary .admonition-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 1.25rem;
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+
+/* Title text styling */
+.md-typeset .admonition.card > .admonition-title .admonition-title-text,
+.md-typeset details.card > summary .admonition-title-text {
+  color: #6b2ca8; /* preserve purple heading tint seen in screenshot */
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Make all admonition titles use normal font weight */
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary,
+.md-typeset .admonition .admonition-title .admonition-title-text,
+.md-typeset details .admonition-title-text {
+  font-weight: 400;
+}
+
+/* Content area */
+.md-typeset .admonition.card > .admonition-content,
+.md-typeset details.card > .admonition-content {
+  padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+  background-color: rgba(255, 250, 245, 0.95); /* pale body background */
+  color: inherit;
+  font-size: 1.15rem;
+}
+
+html .md-typeset .admonition>:last-child, html .md-typeset details>:last-child {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+
 /* 특정 이모지 크기 키우기 및 정렬 개선 */
 .big-emoji {
   display: inline-block !important; /* Ensure inline alignment */
   vertical-align: middle !important; /* Align with text */
-  margin: 0 !important; /* Remove any extra margins */
+  margin: 2px !important; /* Remove any extra margins */
   padding: 0 !important; /* Remove any extra padding */
   font-size: 2.5em !important;
   line-height: 1 !important; /* Prevent extra vertical space */
@@ -48,3 +130,42 @@ span.big-emoji svg {
   animation: heart 1000ms infinite;
 }
 
+.video-wrapper {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.video-wrapper > iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Simplified responsive video helper: use directly on an iframe
+   Example: <iframe class="video" src="..." allowfullscreen></iframe> */
+.video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+/* Ensure pymdownx.tabbed labels are normal weight (override Material theme's bold rule)
+   Use a highly-specific selector and !important as last-resort to beat theme CSS. */
+.md-typeset .tabbed-set .tabbed-labels > label,
+.md-typeset .tabbed-set .tabbed-labels > label span {
+  font-weight: normal;
+}
+
+/* Also handle the alternate style (when labels are buttons/anchors) */
+.md-typeset .tabbed-set .tabbed-labels > input + label,
+.md-typeset .tabbed-set .tabbed-labels > input + label span {
+  font-weight: normal;
+}

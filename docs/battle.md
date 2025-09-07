@@ -19,9 +19,11 @@ tags:
 
 :octicons-heart-fill-24:{ .heart }
 
+<span class="custom-box-title">에슈르</span>
+<span class="custom-box-title" style="background-color: #aacccc;">에슈르</span><br>
+
+
 !!! quote ""
-    <span class="custom-box-title">에슈르</span>
-    <span class="custom-box-title" style="background-color: #aacccc;">에슈르</span><br>
     :sadoicon-ashur:{:.big-emoji}&nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
     <div class="speech-bubble">
         세계수님께서 제 꿈을 이해해주시고 이런 선물을 내려주시다니!<br>
@@ -31,9 +33,16 @@ tags:
 
 
 # 1. 개요
-이곳은 개요 섹션의 내용입니다.
+<div class="video-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/T-3EMIGXXW0?si=R95EKKhwbXt53ZhP" title="YouTube video player" frameborder="3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 ## 2. 설치 방법
+![Image title](https://dummyimage.com/600x400/){ width="300" }
+/// caption
+Image caption
+///
 설치 방법에 대한 설명입니다.
+![Image title](assets/CharacterInfo/1star.png){ align=left width="100" }
 ### 3. 사용 방법 <!--fold=collapsed-->
 여기는 사용 방법 섹션입니다.
 
@@ -52,6 +61,13 @@ tags:
 [^1]: 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
+
 ## 운용 팁
 - 후열에 배치하여 안전하게 마법 피해 누적
 - 음식/호감도 시스템으로 성능 강화 가능
+
+=== "Open me in a new tab ..."
+
+=== "... or me ..."
+
+=== "... or even me"
