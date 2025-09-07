@@ -26,6 +26,20 @@
     !!! card 
         AY<br>
         AY
+<script src="/javascripts/spine-player.min.js"></script>
+<link rel="stylesheet" href="/css/spine-player.css" />
+<div id="player-container" style="width: 240px; height: 300px;"></div>
+<script>
+// Load Spine data from the assets folder (docs/assets/spine/standing)
+new spine.SpinePlayer("player-container", {
+    skelUrl: "/assets/spine/standing/Ashur.skel",
+    atlasUrl: "/assets/spine/standing/Ashur.atlas",
+    backgroundColor: "2f353a",
+    alpha: false,
+    preserveDrawingBuffer:true,
+    skin: "Normal",
+});
+</script>
 
 === "스킨"
 

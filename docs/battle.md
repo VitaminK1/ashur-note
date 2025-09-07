@@ -27,15 +27,14 @@ tags:
     :sadoicon-ashur:{:.big-emoji}&nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
     <div class="speech-bubble">
         세계수님께서 제 꿈을 이해해주시고 이런 선물을 내려주시다니!<br>
-        교수님! 저 이 마법서를 열심히 연구할게요!<br>
-        엘리아스 최고의 마법사가 돼서… 세계수와 교수님에게 자랑스러운 사도가 되겠어요!
+        교주님! 저 이 마법서를 열심히 연구할게요!<br>
+      엘리아스 최고의 마법사가 돼서… 세계수와 교수님에게 자랑스러운 사도가 되겠어요!
     </div>
-
-
+    
 # 1. 개요
 <div class="video-wrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/T-3EMIGXXW0?si=R95EKKhwbXt53ZhP" title="YouTube video player" frameborder="3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+</div> 
 ## 2. 설치 방법
 ![Image title](https://dummyimage.com/600x400/){ width="300" }
 /// caption

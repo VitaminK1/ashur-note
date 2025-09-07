@@ -48,13 +48,13 @@ color: #f8dada;
 .speech-bubble {
     position: relative;
     border-radius: .4em;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 4px 0;
 }
 .speech-bubble:before {
     content: '';
     position: absolute;
-    top: -20px; 
+    top: -18px; 
     left: 20px;
     border: 10px solid transparent;
     margin-left: -10px;

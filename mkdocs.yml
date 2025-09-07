@@ -83,10 +83,13 @@ extra_css:
   - css/extra.css
   - css/badges.css
   - css/collapsible.css
+  - css/spine-player.css
+  
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
   - javascripts/collapsible.js
+  - javascripts/spine-player.js
 
 plugins:
   - search
