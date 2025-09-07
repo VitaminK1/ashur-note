@@ -33,8 +33,8 @@
 <script>
 // Load Spine data from the assets folder (docs/assets/spine/standing)
 new spine.SpinePlayer("player-container", {
-    skelUrl: "/assets/spine/standing/Ashur.skel",
-    atlasUrl: "/assets/spine/standing/Ashur.atlas",
+    skelUrl: "https://vitamink1.github.io/mkdocs-test/assets/spine/standing/Ashur.skel",
+    atlasUrl: "https://vitamink1.github.io/mkdocs-test/assets/spine/standing/Ashur.atlas",
     backgroundColor: "2f353a",
     alpha: false,
     preserveDrawingBuffer:true,
