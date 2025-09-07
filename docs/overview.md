@@ -26,8 +26,9 @@
     !!! card 
         AY<br>
         AY
-<script src="/javascripts/spine-player.min.js"></script>
-<link rel="stylesheet" href="/css/spine-player.css" />
+
+<script src="https://vitamink1.github.io/mkdocs-test/javascripts/spine-player.min.js"></script>
+<link rel="stylesheet" href="https://vitamink1.github.io/mkdocs-test/css/spine-player.css" />
 <div id="player-container" style="width: 240px; height: 300px;"></div>
 <script>
 // Load Spine data from the assets folder (docs/assets/spine/standing)
