@@ -7,7 +7,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    - navigation.sections
     - navigation.instant
     - navigation.instant.progress
     - navigation.expand
@@ -96,6 +95,7 @@ plugins:
   - tags
   - git-revision-date-localized:
       enable_creation_date: true
+      enable_git_follow: false
       type: datetime
   - offline
   - glightbox

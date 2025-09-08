@@ -89,6 +89,11 @@ html .md-typeset .admonition>:last-child, html .md-typeset details>:last-child {
   margin-right: 0.4rem;
 }
 
+.md-nav__item--section>.md-nav__link,
+.md-nav__title {
+  font-weight: normal;
+}
+
 
 /* 특정 이모지 크기 키우기 및 정렬 개선 */
 .big-emoji {
@@ -168,4 +173,11 @@ span.big-emoji svg {
 .md-typeset .tabbed-set .tabbed-labels > input + label,
 .md-typeset .tabbed-set .tabbed-labels > input + label span {
   font-weight: normal;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
 }
