@@ -19,6 +19,7 @@
   border-radius: 9999px;      /* pill 형태 강제 */
   font-size: 14px;
   line-height: 1.4;           /* 줄 간격 지정 */
+  margin: 4px 4px;          /* 태그 간격 */
 }
 
 /* 라이트 모드 전용 */

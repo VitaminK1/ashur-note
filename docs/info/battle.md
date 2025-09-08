@@ -1,7 +1,6 @@
 ---
 title: Battle
 publish: true
-icon: material/file-tree
 description: Setting up Publisher for MkDocs meta plugin for metadata retrival and automatic navigation building
 tags:
   - HTML
@@ -38,12 +37,8 @@ tags:
   <iframe width="560" height="315" src="https://www.youtube.com/embed/T-3EMIGXXW0?si=R95EKKhwbXt53ZhP" title="YouTube video player" frameborder="3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div> 
 ## 2. 설치 방법
-![Image title](https://dummyimage.com/600x400/){ width="300" }
-/// caption
-Image caption
-///
+
 설치 방법에 대한 설명입니다.
-![Image title](assets/CharacterInfo/1star.png){ align=left width="100" }
 ### 3. 사용 방법 <!--fold=collapsed-->
 여기는 사용 방법 섹션입니다.
 

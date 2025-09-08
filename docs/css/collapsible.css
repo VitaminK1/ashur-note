@@ -99,6 +99,9 @@ h6.collapsible-header {
     padding-bottom: 0.12rem;
 }
 
+[data-md-color-scheme="default"] .collapsible-header {
+  border-bottom-color: var(--md-default-fg-color--darkest);
+}
 /* 다크 모드 지원 */
 [data-md-color-scheme="slate"] .collapsible-header {
     border-bottom-color: var(--md-default-fg-color--lightest);
@@ -128,7 +131,6 @@ h6.collapsible-header {
     /* preserved */
 }
 
-.md-typeset p,
 .md-typeset ul,
 .md-typeset ol,
 .md-typeset table,

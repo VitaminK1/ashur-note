@@ -6,7 +6,7 @@
     * [관계도](./info/relationship.md)
     * [연회장](./info/restaurant.md)
 * 시즌 1
-    * 메인 스토리
+    * [메인 스토리](./story/s1_main.md)
         * [챕터 1](./story/s1_main/c1.md)
         * [챕터 4](./story/s1_main/c4.md)
         * [챕터 5](./story/s1_main/c5.md)
@@ -14,25 +14,25 @@
         * [챕터 7](./story/s1_main/c7.md)
         * [챕터 8](./story/s1_main/c8.md)
         * [챕터 9](./story/s1_main/c9.md)
-    * 이벤트 스토리
+    * [이벤트 스토리](./story/s1_event.md)
         * [멜트다운 버터](./story/s1_event/butter.md)
         * [피코라의 멘토 콤플렉스](./story/s1_event/picora.md)
         * [강철의 지옥 단련](./story/s1_event/leets.md)
         * [미드나잇 마리오네트](./story/s1_event/barong.md)
         * [누구를 위하여 기도를 올리나](./story/s1_event/joanne.md)
-    * 사도 스토리
+    * [사도 스토리](./story/s1_sado.md)
         * [에슈르](./story/s1_sado/ashur.md)
 * 시즌 2
-    * 메인 스토리
+    * [메인 스토리](./story/s2_main.md)
         * [챕터 3](./story/s2_main/c3.md)
         * [챕터 4](./story/s2_main/c4.md)
-    * 이벤트 스토리
+    * [이벤트 스토리](./story/s2_event.md)
         * [슬기로운 메이드 생활](./story/s2_event/speaki.md)
         * [파티에는 축복과 위로를](./story/s2_event/opal.md)
         * [불 붙은 불행 속 쓰나미](./story/s2_event/shasha.md)
         * [수상한 요리사의 쿠킹비망록](./story/s2_event/ricota.md)
         * [댄스 쇼다운! 꿈꾸는 포도!](./story/s2_event/arco.md)
-    * 사도 스토리
+    * [사도 스토리](./story/s2_sado.md)
         * [에슈르](./story/s2_sado/ashur.md)
 * 기타
     * [밈](./media.md)
