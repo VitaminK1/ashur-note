@@ -197,31 +197,39 @@ span.big-emoji svg {
 }
 
 /* Image + caption styling similar to the provided screenshot */
+
 .md-typeset figure {
   display: block;
+  justify-content: center;
+  align-items: center;
   border-radius: 6px;
   overflow: hidden;
   border: 4px solid rgba(189, 252, 120, 0.25); /* subtle green outline */
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-  width: 500px;
+  line-height: 0; /* remove inline whitespace gap between image and caption without changing display */
 }
 
 .md-typeset figure img {
-  display: block;
+  display: inline-block;
   height: auto;
   margin: 0;
+  max-width: 100%;
+  vertical-align: bottom; /* align image edge to remove descender gap */
 }
 
 .md-typeset figcaption {
+  display: block;
   background-color: #493b3b; /* dark caption bar */
   color: #bfdc7f; /* light green caption text */
   text-align: center;
+  align-content: center;
   padding: 0.3rem 0.6rem;
   font-weight: 100;
   font-size: 0.75rem;
   font-style: normal;
   margin: 0;
   max-width: none;
+  height: 2rem;
 }
 
 [data-md-color-scheme="slate"] .md-typeset figcaption {
@@ -230,6 +238,7 @@ span.big-emoji svg {
 
 .md-typeset p {
   margin: 0;
+  font-weight: 100;
 }
 
 .md-annotation__index:after {
@@ -239,4 +248,16 @@ span.big-emoji svg {
 .md-typeset mark, .md-typeset ins.critic {
   padding: 0.1em 0.2em;
   background-color: #00ff8063;
+}
+
+.md-typeset__table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.md-typeset table:not([class]) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

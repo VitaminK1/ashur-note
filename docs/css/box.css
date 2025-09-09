@@ -25,13 +25,13 @@
 /* 라이트 모드 전용 */
 [data-md-color-scheme="default"] .tag-box {
   background-color: #f0f0f0;
-  color: #333;
+  color: #000000;
 }
 
 /* 다크 모드 전용 */
 [data-md-color-scheme="slate"] .tag-box {
   background-color: #2f3338;
-  color: #333;
+  color: #000000;
 }
 
 /* 라이트 모드일 때 */
@@ -41,7 +41,7 @@
 
 /* 다크 모드일 때 */
 [data-md-color-scheme="slate"] .tag-box[data-sado="ashur"] {
-  background-color: #803d3d;
+  background-color: #f7b4b4;
 }
 
 .tag-box[data-sado="erpin"] {
@@ -51,6 +51,11 @@
 .tag-box[data-sado="empty"] {
   background-color: #fbad25;
 }
+
+.tag-box[data-sado="marie"] {
+  background-color: #E7BBBB;
+}
+
 
 .speech-bubble {
     display: block;          /* 한 줄 전체 차지 */
@@ -73,7 +78,6 @@
 /* 라이트 모드일 때 */
 [data-md-color-scheme="default"] .speech-bubble {
   background-color: #f0f0f0;
-  color: #333;
 }
 
 [data-md-color-scheme="default"] .speech-bubble:before {
@@ -89,6 +93,26 @@
 /* 다크 모드일 때 */
 [data-md-color-scheme="slate"] .speech-bubble:before {
   border-bottom-color: #2f3338;
+}
+
+.mind-bubble {
+    display: block;          /* 한 줄 전체 차지 */
+    width: fit-content; 
+    word-wrap: break-word;
+    white-space: normal;
+    position: relative;
+    border-radius: .4em;
+    padding: 10px 15px;
+    margin: 4px 0;
+    color: #000000DE
+}
+
+[data-md-color-scheme="default"] .mind-bubble {
+  background-color: #e983ff70;
+}
+
+[data-md-color-scheme="slate"] .mind-bubble {
+  background-color: #e983ff70;
 }
 
 /* Custom admonition colors */
@@ -119,5 +143,26 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* center-table 클래스를 가진 표만 가운데 정렬 */
+.center-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* center-table 안의 표는 내용 크기에 맞게 */
+.center-table table {
+    margin: 0 auto;
+    width: auto;  /* 표 너비 자동 조절 */
+    border-collapse: collapse;
+}
+
+/* 표 안의 텍스트 가운데 정렬 */
+.center-table td,
+.center-table th {
+    text-align: center;
 }
 
