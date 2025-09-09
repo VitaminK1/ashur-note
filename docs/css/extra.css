@@ -216,9 +216,9 @@ span.big-emoji svg {
   background-color: #493b3b; /* dark caption bar */
   color: #bfdc7f; /* light green caption text */
   text-align: center;
-  padding: 0.5rem 0.75rem;
+  padding: 0.3rem 0.6rem;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-style: normal;
   margin: 0;
   max-width: none;
@@ -230,4 +230,13 @@ span.big-emoji svg {
 
 .md-typeset p {
   margin: 0;
+}
+
+.md-annotation__index:after {
+  height: 2ch;
+}
+
+.md-typeset mark, .md-typeset ins.critic {
+  padding: 0.1em 0.2em;
+  background-color: #00ff8063;
 }

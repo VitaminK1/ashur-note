@@ -31,22 +31,32 @@
 /* 다크 모드 전용 */
 [data-md-color-scheme="slate"] .tag-box {
   background-color: #2f3338;
-  color: #d3d6da;
+  color: #333;
 }
 
 /* 라이트 모드일 때 */
 [data-md-color-scheme="default"] .tag-box[data-sado="ashur"] {
   background-color: #f7b4b4;
-  color: #333;
 }
 
 /* 다크 모드일 때 */
 [data-md-color-scheme="slate"] .tag-box[data-sado="ashur"] {
-background-color: #803d3d;
-color: #f8dada;   
+  background-color: #803d3d;
+}
+
+.tag-box[data-sado="erpin"] {
+  background-color: #ee9e7d;
+}
+
+.tag-box[data-sado="empty"] {
+  background-color: #fbad25;
 }
 
 .speech-bubble {
+    display: block;          /* 한 줄 전체 차지 */
+    width: fit-content; 
+    word-wrap: break-word;
+    white-space: normal;
     position: relative;
     border-radius: .4em;
     padding: 10px 15px;
@@ -110,3 +120,4 @@ color: #f8dada;
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
