@@ -16,12 +16,14 @@
         * [챕터 9](./story/s1_main/c9.md)
     * [이벤트 스토리](./story/s1_event.md)
         * [멜트다운 버터](./story/s1_event/butter.md)
-        * [피코라의 멘토 콤플렉스](./story/s1_event/picora.md)
         * [강철의 지옥 단련](./story/s1_event/leets.md)
+        * [피코라의 멘토 콤플렉스](./story/s1_event/picora.md)
         * [미드나잇 마리오네트](./story/s1_event/barong.md)
         * [누구를 위하여 기도를 올리나](./story/s1_event/joanne.md)
     * [사도 스토리](./story/s1_sado.md)
-        * [에슈르](./story/s1_sado/ashur.md)
+        * [네르](./story/s1_sado/ner.md)
+        * [에르핀](./story/s1_sado/erpin.md)
+        * [기타](./story/s1_sado/etc.md)
 * 시즌 2
     * [메인 스토리](./story/s2_main.md)
         * [챕터 3](./story/s2_main/c3.md)
@@ -37,3 +39,4 @@
 * 기타
     * [밈](./media.md)
 * [태그](./tags.md)
+* [Notice](./blog/index.md)

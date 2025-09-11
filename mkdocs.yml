@@ -94,7 +94,7 @@ plugins:
   - search
   - tags
   - git-revision-date-localized:
-      enable_creation_date: true
+      enable_creation_date: false
       enable_git_follow: false
       type: datetime
   - offline
@@ -105,6 +105,12 @@ plugins:
   - literate-nav:
       nav_file: navigation.md
   - mkdocs-audio
+  - blog:
+      blog_toc: true
+      post_date_format: full
+      draft: true
+      pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+      post_readtime: false
 
 markdown_extensions:
   # Python Markdown
@@ -147,6 +153,10 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.blocks.caption
   - pymdownx.snippets
-  
+
+nav:
+  - Notice:
+    - blog/index.md
+
 copyright:
   This is fan content. All trademarks belong to their respective owners.

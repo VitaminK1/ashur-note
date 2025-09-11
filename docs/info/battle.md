@@ -9,9 +9,8 @@ tags:
 
 ### <!-- md:sponsors --> – Sponsors only { data-toc-label="Sponsors only" }
 
-<span class="badge badge-version">
-  <span class="badge-icon">:material-tag:</span>     1.0.0
-</span><span class="badge badge-ext">
+<span class="badge badge-version"><span class="badge-icon">:material-tag:</span>     1.0.0</span>
+<span class="badge badge-ext">
   <span class="badge-icon">:material-language-markdown:</span> abbr
 </span>
 

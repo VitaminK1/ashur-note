@@ -58,6 +58,7 @@
     transition: max-height 0.3s ease, opacity 0.3s ease;
     max-height: 9999px;
     opacity: 1;
+    margin-top: 0.5rem;
 }
 
 .collapsible-content.collapsed {

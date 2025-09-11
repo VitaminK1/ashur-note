@@ -56,6 +56,31 @@
   background-color: #E7BBBB;
 }
 
+.tag-box[data-sado="sylla"] {
+  background-color: #c9dbba;
+}
+
+.tag-box[data-sado="elena"] {
+  background-color: #da9798;
+}
+
+.tag-box[data-sado="ner"] {
+  background-color: #827591;
+}
+
+.tag-box[data-sado="velvet"] {
+  background-color: #5c4f60;
+}
+
+.tag-box[data-sado="sist"] {
+  background-color: #BD8CB7;
+}
+
+.tag-box[data-sado="rohne"] {
+  background-color: #C1B4B7;
+}
+
+
 
 .speech-bubble {
     display: block;          /* 한 줄 전체 차지 */

@@ -77,9 +77,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // 클릭 이벤트 리스너
         const toggleSection = (e) => {
+                // If the click was on the toggle control itself, perform toggle.
+                if (e.target && e.target.closest && e.target.closest('.header-toggle')) {
+                    // proceed to toggle below
+                } else {
+                    // If the click landed on any interactive element inside the header,
+                    // allow its default behavior (navigation, form control, etc.) and
+                    // do NOT treat it as a collapse toggle.
+                    try {
+                        const interactive = e.target && e.target.closest && e.target.closest(
+                            'a, button, input, select, textarea, label, summary, details, [role="button"], [role="link"], [contenteditable], [tabindex]'
+                        );
+                        if (interactive) {
+                            return; // let the interactive element handle the click
+                        }
+                    } catch (err) {
+                        // defensive: fall through to toggle behavior if something fails
+                    }
+                }
+
                 e.preventDefault();
                 e.stopPropagation();
-                
+
                 const isCurrentlyCollapsed = header.classList.contains('collapsed');
                 
                 if (isCurrentlyCollapsed) {

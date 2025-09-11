@@ -83,8 +83,8 @@
 }
 
 html .md-typeset .admonition>:last-child, html .md-typeset details>:last-child {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
   margin-left: 0.4rem;
   margin-right: 0.4rem;
 }
@@ -94,6 +94,9 @@ html .md-typeset .admonition>:last-child, html .md-typeset details>:last-child {
   margin-bottom: 0.2rem;
 }
 
+.md-typeset .admonition, .md-typeset details {
+  margin: 0.6rem 0;
+}
 
 html .md-typeset details>:first-child {
   margin-top: 0.2rem;
@@ -230,6 +233,8 @@ span.big-emoji svg {
   margin: 0;
   max-width: none;
   height: 2rem;
+  width: auto;
+  text-overflow : ellipsis;
 }
 
 [data-md-color-scheme="slate"] .md-typeset figcaption {
@@ -239,6 +244,42 @@ span.big-emoji svg {
 .md-typeset p {
   margin: 0;
   font-weight: 100;
+}
+
+/* Global typography: apply to readable text nodes with higher specificity so
+   we don't need !important. We scope via the presence of a theme data attribute
+   on body and specifically target common content containers while excluding
+   inline code and preformatted blocks. */
+body[data-md-color-scheme] .md-typeset:not(.md-typeset--nospacing),
+body[data-md-color-scheme] .md-content__inner .md-typeset,
+body[data-md-color-scheme] .md-content__inner > * {
+  /* Apply to normal text containers */
+  --user-line-height: 1.8;
+  --user-letter-spacing: 0.6px;
+}
+
+/* Concrete rules using the variables above for typical inline text elements */
+body[data-md-color-scheme] .md-typeset p,
+body[data-md-color-scheme] .md-typeset li,
+body[data-md-color-scheme] .md-typeset blockquote,
+body[data-md-color-scheme] .md-typeset td,
+body[data-md-color-scheme] .md-typeset th,
+body[data-md-color-scheme] .md-typeset figcaption,
+body[data-md-color-scheme] .md-typeset .admonition-content {
+  line-height: var(--user-line-height);
+  letter-spacing: var(--user-letter-spacing);
+}
+
+/* Explicit exclusions for code/pre and other UI labels to preserve monospace and
+   compact UI spacing. Use equal-specificity selectors so they override the
+   above where necessary without !important. */
+body[data-md-color-scheme] .md-typeset code,
+body[data-md-color-scheme] .md-typeset pre,
+body[data-md-color-scheme] .md-typeset kbd,
+body[data-md-color-scheme] .md-typeset .admonition .admonition-title,
+body[data-md-color-scheme] .md-typeset .tabbed-labels > label {
+  line-height: initial;
+  letter-spacing: normal;
 }
 
 .md-annotation__index:after {
@@ -260,4 +301,9 @@ span.big-emoji svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.md-nav__list {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
 }
