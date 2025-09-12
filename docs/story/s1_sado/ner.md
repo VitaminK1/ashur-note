@@ -1,5 +1,5 @@
 ---
-title: 네르
+title: 사도 스토리 - 네르
 publish: true
 icon: material/battery-medium
 description:

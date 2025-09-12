@@ -1,14 +1,14 @@
 ---
-title: 강철의 지옥 단련
+title: 이벤트 스토리 - 강철의 지옥 단련
 publish: true
 icon: material/battery-low
 description:
-subtitle: 시스트, 리츠
+subtitle: <리츠>, 시스트 
 tags:
   - 이벤트스토리
 ---
 
-# 강철의 지옥 단련
+# 이벤트 스토리 - 강철의 지옥 단련
 <span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
 <br>
 리츠의 단련을 위해 큰 자극이 필요하다 판단한 시스트가 리츠를 에슈르의 빵집으로 데려온다. 시스트는 안그래도 기분이 좋지 않았던 에슈르에게 긁는 말을 계속해 도발했고, 에슈르가 바게트를 휘둘러 실수로 리츠를 때리도록 유도한다. 한번 맞더니 싸움에 환장하던 과거의 모습으로 갑자기 돌변한 리츠에게 에슈르의 빵집은 박살이 나버린다.
@@ -36,7 +36,7 @@ tags:
 /// caption
 기억 조각 - 빵집 초토화
 ///
-???+ quote
+!!! quote ""
     :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
     <div class="speech-bubble">
         내 빵집⋯ 아니, 마법학교는 이상한 손님들 때문에 멀쩡할 날이 없다니까.
@@ -52,6 +52,6 @@ tags:
 ## 에피소드 8 - 강철의 지옥 단련, 후일담
 <span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
 <br>
-리츠는 용족의 서열 경쟁은 이제 자신에게 의미가 없다며 강자들에게 배우고 싶어 사도로써 받아달라고 교단을 찾아왔다고 한다. 빵집을 부쉈던 건 천천히 50% 배상하기로 했다는데, 에슈르가 먼저 무기로 때려서 요정 법에 따라 쌍방책임이 적용된다고. 영춘은 갑옷 입은 용족을 먼저 때렸다는 말에 에슈르가 보기보다 한 성질한다며 놀란다.
+리츠는 {==용족의 서열 경쟁은 이제 자신에게 의미가 없다며 강자들에게 배우고 싶어 사도로써 받아달라==}고 교단을 찾아왔다고 한다. 빵집을 부쉈던 건 천천히 50% 배상하기로 했다는데, 에슈르가 먼저 무기로 때려서 요정 법에 따라 쌍방책임이 적용된다고. 영춘은 갑옷 입은 용족을 먼저 때렸다는 말에 에슈르가 보기보다 한 성질한다며 놀란다.
 <br>
 <br>

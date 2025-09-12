@@ -52,6 +52,10 @@
   background-color: #fbad25;
 }
 
+.tag-box[data-sado="unnamed"] {
+  background-color: #fbad25;
+}
+
 .tag-box[data-sado="marie"] {
   background-color: #E7BBBB;
 }
@@ -80,6 +84,17 @@
   background-color: #C1B4B7;
 }
 
+.tag-box[data-sado="butter"] {
+  background-color: #edc474;
+}
+
+.tag-box[data-sado="speaki"] {
+  background-color: #71566C;
+}
+
+.tag-box[data-sado="opal"] {
+  background-color: #CFEAFF;
+}
 
 
 .speech-bubble {

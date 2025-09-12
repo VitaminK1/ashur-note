@@ -1,14 +1,14 @@
 ---
-title: 미드나잇 마리오네트
+title: 이벤트 스토리 - 미드나잇 마리오네트
 publish: true
 icon: material/battery-medium
 description:
-subtitle: 바롱, 에르핀, 클로에
+subtitle: <바롱>, 에르핀, 클로에
 tags:
   - 이벤트스토리
 ---
 
-# 미드나잇 마리오네트
+# 이벤트 스토리 - 미드나잇 마리오네트
 <span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
 <br>
 에르핀이 에슈르 인형을 발견하고 바롱을 만난 뒤, 인형의 저주를 풀기 위해 재단소를 찾는다. 첫번째 문제를 풀기 위한 네르의 회상에서 에슈르가 등장해 정답이 될만한 단서를 대화를 통해 알려준다. 사건이 끝난 다음 날, 사라졌던 요정들은 사실 인형이 된 것이 아니라 바롱 덕에 모나티엄에 있는 최상급 호텔에 휴가를 보내고 온 것이었고 에슈르는 정말 좋았다며 에르핀에게 자랑한다.

@@ -1,14 +1,14 @@
 ---
-title: 피코라의 멘토 콤플렉스
+title: 이벤트 스토리 - 피코라의 멘토 콤플렉스
 publish: true
 icon: material/battery-high
 description:
-subtitle: 피코라, 프리클
+subtitle: <피코라>, 프리클
 tags:
   - 이벤트스토리
 ---
 
-# 피코라의 멘토 콤플렉스
+# 이벤트 스토리 - 피코라의 멘토 콤플렉스
 <span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
 <br>
 프리클에 이은 피코라의 두번째 스승. 마녀왕국에서 도망친 피코라를 데려와서 먹여주는 것까지는 좋았지만, 마법학교 제자가 되겠다고하자 선불 수업료를 빌미로 피코라를 부려먹기 시작한다. 결국 이를 견디지 못한 피코라가 또 다시 도주해버리고 만다.
