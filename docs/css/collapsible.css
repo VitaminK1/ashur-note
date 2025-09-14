@@ -91,6 +91,7 @@ h4.collapsible-header {
     margin-bottom: 0.48rem;
     padding-top: 0.14rem;
     padding-bottom: 0.14rem;
+    font-weight: 100;
 }
 
 h5.collapsible-header,

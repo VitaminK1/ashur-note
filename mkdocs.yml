@@ -41,7 +41,7 @@ theme:
       success: fontawesome/solid/check
       question: fontawesome/solid/circle-question
       warning: fontawesome/solid/triangle-exclamation
-      failure: fontawesome/solid/bomb
+      failure: octicons/x-16
       danger: fontawesome/solid/skull
       bug: fontawesome/solid/robot
       example: fontawesome/solid/flask
@@ -123,7 +123,6 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
-  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:

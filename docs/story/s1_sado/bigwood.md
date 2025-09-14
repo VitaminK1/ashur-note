@@ -1,7 +1,7 @@
 ---
 title: 사도 스토리 - 빅우드
 publish: true
-icon: material/battery-high
+icon: material/battery-medium
 description:
 subtitle: 
 tags:

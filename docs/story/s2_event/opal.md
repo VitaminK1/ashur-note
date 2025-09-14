@@ -209,13 +209,13 @@ tags:
     ///
 
 === "2번째 화면"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_6.gif){width="500"}
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_6.png){width="500"}
     /// caption
     오팔 테마극장 로비 - 2번째 화면
     ///
 
 === "3번째 화면"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_7.gif){width="500"}
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_7.png){width="500"}
     /// caption
     오팔 테마극장 로비 - 3번째 화면
     ///
@@ -226,7 +226,7 @@ tags:
         </div>
 
 === "4번쨰 화면"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_8.gif){width="500"}
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_8.png){width="500"}
     /// caption
     오팔 테마극장 로비 - 4번째 화면
     ///

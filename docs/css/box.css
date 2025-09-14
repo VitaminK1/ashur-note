@@ -96,6 +96,26 @@
   background-color: #CFEAFF;
 }
 
+.tag-box[data-sado="canna"] {
+  background-color: #b67147;
+}
+
+.tag-box[data-sado="kathy"] {
+  background-color: #5b5b5b;
+}
+
+.tag-box[data-sado="festa"] {
+  background-color: #ec7a84;
+}
+
+.tag-box[data-sado="jade"] {
+  background-color: #85A491;
+}
+
+.tag-box[data-sado="eisia"] {
+  background-color: #4D98DF;
+}
+
 
 .speech-bubble {
     display: block;          /* 한 줄 전체 차지 */

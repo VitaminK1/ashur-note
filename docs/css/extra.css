@@ -123,6 +123,16 @@ html .md-typeset details>:first-child {
   border-radius: 999px;
 }
 
+.small-emoji {
+  display: inline-block !important; /* Ensure inline alignment */
+  vertical-align: middle !important; /* Align with text */
+  margin: 2px !important; /* Remove any extra margins */
+  padding: 0 !important; /* Remove any extra padding */
+  font-size: 1.8em !important;
+  line-height: 1 !important; /* Prevent extra vertical space */
+  border-radius: 999px;
+}
+
 /* MkDocs가 생성하는 이모지 이미지(<img>)나 SVG 자체의 정렬도 명시 */
 span.big-emoji img,
 span.big-emoji svg {
@@ -131,6 +141,20 @@ span.big-emoji svg {
   line-height: 1 !important;
   border-radius: 999px; /* Make the image itself rounded */
   overflow: hidden; /* Ensure content stays within the rounded border */
+}
+
+/* Mirror the same rules for small-emoji so images/SVG scale and align the same way */
+span.small-emoji img,
+span.small-emoji svg {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+  border-radius: 999px;
+  overflow: hidden;
+  /* Make images respect the surrounding font-size for consistent scaling */
+  max-width: 1em !important;
+  max-height: 1em !important;
+  height: auto !important;
 }
 
 @font-face {
