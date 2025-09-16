@@ -1,68 +1,151 @@
 ---
-title: Battle
+title: 캐릭터 정보 - 전투
 publish: true
-description: Setting up Publisher for MkDocs meta plugin for metadata retrival and automatic navigation building
+icon: material/battery-medium
+description:
+subtitle: 스탯, 스킬, 어사이드
 tags:
-  - HTML
-  - JavaScript
+  - 캐릭터 정보
 ---
 
-### <!-- md:sponsors --> – Sponsors only { data-toc-label="Sponsors only" }
+# 캐릭터 정보 - 전투
 
-<span class="badge badge-version"><span class="badge-icon">:material-tag:</span>     1.0.0</span>
-<span class="badge badge-ext">
-  <span class="badge-icon">:material-language-markdown:</span> abbr
-</span>
+## 기본 스탯
 
-
-:octicons-heart-fill-24:{ .heart }
-
-<span class="custom-box-title">에슈르</span>
-<span class="custom-box-title" style="background-color: #aacccc;">에슈르</span><br>
-
-:sadoicon-alice:
-:sadoicon-allet:
-:sadoicon-crepe:
-!!! quote ""
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        세계수님께서 제 꿈을 이해해주시고 이런 선물을 내려주시다니!<br>
-        교주님! 저 이 마법서를 열심히 연구할게요!<br>
-      엘리아스 최고의 마법사가 돼서… 세계수와 교수님에게 자랑스러운 사도가 되겠어요!
+## 스킬
+<div class="lore-grid">
+  <!-- Column 1 -->
+  <article class="lore-card">
+    <div class="lore-header">
+  <img src="../assets/characterinfo/skill/Icon_AdmissionSkill_Ashur.png" alt="빵템피드" class="lore-avatar">
+      <div>
+        <div class="lore-subtitle">저학년 스킬</div>
+        <div class="lore-title">빵템피드</div>
+      </div>
     </div>
-    
-# 1. 개요
-<div class="video-wrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/T-3EMIGXXW0?si=R95EKKhwbXt53ZhP" title="YouTube video player" frameborder="3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div> 
-## 2. 설치 방법
+    <div class="lore-slider-wrapper">
+      <div id="left-level" class="lore-level-box lore-lvl">Lv.1</div>
+  <input id="left-slider" type="range" min="1" max="13" value="1" data-level-values='[421,443,471,504,544,589,634,684,746,807,844,881,918]'>
+    </div>
+    <div class="lore-stat-row">SP :<span class="lore-number-highlight">  200</span></span> / <span class="lore-number-highlight">  350</span> (<span class="lore-number-highlight"> +14/sec, +1/hit </span>)</div>
+    <p class="lore-desc">빵 6개를 보내 폭발시켜 적들에게 범위 마법 피해를 입힌다.</p>
+  <div class="lore-stat-row">총 마법 피해: <span id="left-damage" class="lore-number-highlight">421</span>%</div>
+  </article>
 
-설치 방법에 대한 설명입니다.
-### 3. 사용 방법 <!--fold=collapsed-->
-여기는 사용 방법 섹션입니다.
+  <!-- Column 2 -->
+  <article class="lore-card">
+    <div class="lore-header">
+      <img src="../assets/characterinfo/skill/Icon_GraduateSkill_Ashur.png" 
+      alt="빵테오" class="lore-avatar">
+      <div>
+        <div class="lore-subtitle">고학년 스킬</div>
+        <div class="lore-title">빵테오</div>
+      </div>
+    </div>
+    <div class="lore-slider-wrapper">
+      <div id="mid-level" class="lore-level-box lore-lvl">Lv.1</div>
+      <input id="mid-slider" type="range" min="1" max="13" value="1"
+        data-level-values='[670,710,760,810,870,940,1020,1100,1190,1290,1340,1390,1440]'
+        data-level-cooldowns='[503,533,570,608,653,705,765,825,893,968,1005,1043,1080]'>
+    </div>
+    <div class="lore-stat-row">재사용 대기시간 <span class="lore-number-highlight">42초</span></div>
+    <p class="lore-desc">거대한 빵을 낙하시켜 적들에게 범위 마법 피해를 입히고 <span style="color:#ff6b6b">기절</span>을 건다.<br><span style="color:#ff6b6b">기절: 행동불가 상태가 된다.</span></p>
+  <div class="lore-stat-row">마법 피해: <span class="lore-number-highlight" id="mid-damage">670</span>% (PvP:<span class="lore-number-highlight" id="mid-cooldown-sec">503</span>%)<br>기절 지속시간: <span class="lore-number-highlight">4</span>초</div>
+  </article>
 
-<button data-md-color-accent="deep-orange"><code>deep orange</code></button>
+  <!-- Column 3 -->
+  <article class="lore-card">
+    <div class="lore-header">
+      <img src="../assets/characterinfo/skill/Magic_NormalAttack.png" alt="일반 공격" class="lore-avatar">
+      <div>
+        <div class="lore-title" style="margin-top:0">일반 공격</div>
+      </div>
+    </div>
+    <div style="margin-top:12px;margin-bottom:6px">
+      <div style="display:inline-block;background:#b8ff5d;color:#052006;padding:2px 12px;border-radius:18px">기본</div>
+    </div>
+    <p class="lore-desc">화염 주문을 발사해 적에게 마법 피해를 입힌다.</p>
+    <div class="lore-stat-row">마법 피해: <span class="lore-number-highlight">55</span>%</div>
+    <div style="margin-top:12px;margin-bottom:6px">
+      <div style="display:inline-block;background:#b8ff5d;color:#052006;padding:2px 12px;border-radius:18px">강화</div>
+    </div>
+      <p class="lore-desc">일정 확률로 강화된 화염 주문을 발사해 적에게 마법 피해를 입히고 <span style="color:#ff6b6b;">화상</span>을 건다.<br><span style="color:#ff6b6b">화상: 매 초 피해를 입는다.</span></p>
+      <div class="lore-stat-row">마법 피해: <span class="lore-number-highlight">70</span>%<br>화상 지속시간: <span class="lore-number-highlight">2</span>초</div>
+    </div>
+  </article>
+</div>
+<br>
+<br>
 
-| Method      | Description                          |
-| ----------- | ------------------------------------ |
-| `GET`       | :material-check:     Fetch resource  |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
+## 어사이드
 
-# 전투 역할
+<div class="battle-panel">
+  <div class="battle-header">
+    <img class="battle-header-img" style="margin-left: auto; margin-right: auto; display: block;" src="https://vitamink1.github.io/mkdocs-test/assets/characterinfo/AsideIcon_Ashur.png" alt="portrait"/>
+    <div style="margin-left: 10px; width: 100%">
+      <h2 class="battle-title">궁극의 그리모어</h2>
+      <p style="margin:0 0 10px 0;">궁극의 마법을 정리한 마법서. 풀리지 않는 마법 난제들의 해석들이 담겨있다.</p>
+    </div>
+  </div>
 
-후열 마법 딜러로, Depressed 시너지나 Sprites 시너지[^1] 활용 가능.
+  <div class="skill-list" style="margin-top:12px;">
+    <div class="skill-card">
+      <img class="icon" src="../assets/characterinfo/skill/Aside_Skill_Ashur_1.png" alt="아이콘"/>
+      <div class="meta">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <img class="badge-stars" src="../assets/characterinfo/1star.png" alt="아이콘"/>
+          <div class="skill-name">마법책빵</div>
+        </div>
+        <div class="skill-desc">
+        착용한 사도의 최대 HP, 마법 공격력, 치명타, 치명 피해가 증가한다.
+        </div>
+        <div class="skill-stats">
+        최대 HP 증가 : <span class="skill-percent">6</span>%<br/>
+        마법 공격력 증가 : <span class="skill-percent">6</span>%<br/>
+        치명타 증가 : <span class="skill-percent">6</span>%<br/>
+        치명 피해 증가 : <span class="skill-percent">6</span>%</div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <img class="icon" src="../assets/characterinfo/skill/Aside_Skill_Ashur_2.png" alt="아이콘"/>
+      <div class="meta">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <img class="badge-stars" src="../assets/characterinfo/2star.png" alt="아이콘"/>
+          <div class="skill-name">빵센디오</div>
+        </div>
+        <div class="skill-desc">
+        기본 공격 적중 시 HP를 회복한다.<br/>
+        <span class="red-text">직접 피해</span>를 받으면 고학년 스킬의 재사용 대기 시간이 줄어든다.<br/>
+        <span class="red-text">직접 피해: 상태이상 피해, 반사 피해, 저주 피해를 제외한 직접 공격에 의한 피해</span><br/>
+        </div>
+        <div class="skill-stats">
+        HP 회복 : <span class="skill-percent">3</span>%<br/>
+        재사용 대기 시간 감소 : <span class="skill-percent">1</span>초
+        </div>
+      </div>
+    </div>
+    <div class="skill-card">
+      <img class="icon" src="../assets/characterinfo/skill/Aside_Skill_Ashur_3.png" alt="아이콘"/>
+      <div class="meta">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <img class="badge-stars" src="../assets/characterinfo/3star.png" alt="아이콘"/>
+          <div class="skill-name">빵빵한 브레드</div>
+        </div>
+        <div class="skill-desc">
+        모든 아군이 적에게 주는 피해량이 증가한다. 또한, 전체 사도의 마법 공격력과 치명타가 증가한다.</div>
+        <div class="skill-stats">
+        피해량 증가: <span class="skill-percent">10</span>%<br/>
+        마법 공격력 증가: <span class="skill-percent">3</span>%<br/>
+        치명타 증가: <span class="skill-percent">3</span>%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-[^1]: 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 
-## 운용 팁
-- 후열에 배치하여 안전하게 마법 피해 누적
-- 음식/호감도 시스템으로 성능 강화 가능
 
-=== "Open me in a new tab ..."
+<br>
+<br>
 
-=== "... or me ..."
-
-=== "... or even me"

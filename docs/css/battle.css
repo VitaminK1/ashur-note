@@ -1,0 +1,36 @@
+/* Battle / Aside visual styles inspired by the attachment */
+.battle-panel{background:#1c1f21;border:3px solid #6aa04a;border-radius:10px;padding:9px 18px 18px 18px;color:#e6f7db}
+.battle-title{font-size:1.4rem;color:#e6f7db;margin:0 0 8px 0}
+.battle-sub{background:#3a6a48;color:#eaf7e8;padding:8px;border-radius:24px;display:inline-block;margin-bottom:12px}
+.battle-header{display:flex;gap:12px;align-items:center}
+.battle-header-img{width:84px;height:84px;border-radius:8px;flex:0 0 84px;margin:6px;}
+.battle-panel, .battle-panel *{font-weight:normal;}
+.skill-list{display:grid;grid-template-columns:1fr;gap:12px}
+.skill-card{background:#222427;border:2px solid #4e8f5a;padding:12px;border-radius:8px;display:flex;gap:12px}
+.skill-card .icon{width:72px;height:72px;border-radius:8px}
+.skill-card .meta{flex:1}
+.skill-name{font-size:1.1rem;color:#ffe79a}
+.skill-desc{color:#cfe7c8;margin:8px 0}
+.skill-stats{color:#cfe7c88f;margin-top:2px;font-size:0.7rem;}
+.skill-percent{color:#6ff0c8}
+.red-text{color:#ff6b6b;}
+.badge-stars{display:inline-flex;gap:6px;vertical-align:middle;align-items:center;font-size:1.1rem;line-height:1}
+img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:middle}
+
+/* Light mode overrides using material theme data attribute (do not modify dark mode) */
+[data-md-color-scheme="default"] .battle-panel{
+	background: #f6ffed; /* light cream/green */
+	border-color: #c7e9b8;
+	color: var(--md-default-fg-color, #123212);
+}
+[data-md-color-scheme="default"] .battle-title{color: #0b3b17}
+[data-md-color-scheme="default"] .battle-sub{background:#d9f3d1;color:#0b3b17}
+[data-md-color-scheme="default"] .battle-header-img{box-shadow: none}
+[data-md-color-scheme="default"] .skill-card{background:#ffffff;border-color:#d8efcd;color:var(--md-default-fg-color, #162912)}
+[data-md-color-scheme="default"] .skill-name{color:#2b7b3a}
+[data-md-color-scheme="default"] .skill-desc{color:#254d2a}
+[data-md-color-scheme="default"] .skill-stats{color:#2f5f38}
+[data-md-color-scheme="default"] .skill-percent{color:#0b8a3d}
+[data-md-color-scheme="default"] .red-text{color:#c21b1b}
+[data-md-color-scheme="default"] .badge-stars{color:#f5b400}
+[data-md-color-scheme="default"] img.badge-stars{filter:none}

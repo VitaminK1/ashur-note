@@ -83,12 +83,16 @@ extra_css:
   - css/badges.css
   - css/collapsible.css
   - css/spine-player.css
+  - css/lore.css
+  - css/battle.css
+  - css/light-mode-bg.css
   
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   #- javascripts/tablesort.js
   - javascripts/collapsible.js
   - javascripts/spine-player.js
+  - javascripts/lore.js
 
 plugins:
   - search
