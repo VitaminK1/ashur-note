@@ -8,4 +8,4 @@ tags:
   - JavaScript
 ---
 
-# 연회장
+# 아이템

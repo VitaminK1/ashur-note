@@ -133,6 +133,15 @@ html .md-typeset details>:first-child {
   border-radius: 999px;
 }
 
+.medium-emoji {
+  display: inline-block !important; /* Ensure inline alignment */
+  vertical-align: middle !important; /* Align with text */
+  margin: 2px !important; /* Remove any extra margins */
+  padding: 0 !important; /* Remove any extra padding */
+  font-size: 2.0em !important;
+  line-height: 1 !important; /* Prevent extra vertical space */
+}
+
 /* MkDocs가 생성하는 이모지 이미지(<img>)나 SVG 자체의 정렬도 명시 */
 span.big-emoji img,
 span.big-emoji svg {
@@ -292,18 +301,6 @@ body[data-md-color-scheme] .md-typeset figcaption,
 body[data-md-color-scheme] .md-typeset .admonition-content {
   line-height: var(--user-line-height);
   letter-spacing: var(--user-letter-spacing);
-}
-
-/* Explicit exclusions for code/pre and other UI labels to preserve monospace and
-   compact UI spacing. Use equal-specificity selectors so they override the
-   above where necessary without !important. */
-body[data-md-color-scheme] .md-typeset code,
-body[data-md-color-scheme] .md-typeset pre,
-body[data-md-color-scheme] .md-typeset kbd,
-body[data-md-color-scheme] .md-typeset .admonition .admonition-title,
-body[data-md-color-scheme] .md-typeset .tabbed-labels > label {
-  line-height: initial;
-  letter-spacing: normal;
 }
 
 .md-annotation__index:after {

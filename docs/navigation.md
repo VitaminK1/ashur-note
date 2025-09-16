@@ -1,10 +1,11 @@
 * [🏡](./index.md)
-* [캐릭터 정보](./info/overview.md)
+* 캐릭터 정보
     * [전투](./info/battle.md)
-    * [옷장](./info/viewer.md)
-    * [대사](./info/lore.md)
+    * [육성](./info/growth.md)
+    * [기록](./info/lore.md)
     * [관계도](./info/relationship.md)
-    * [연회장](./info/restaurant.md)
+    * [아이템](./info/items.md)
+    * [옷장](./info/viewer.md)
 * 시즌 1
     * [메인 스토리](./story/chapter/s1_main.md)
         * [챕터 1](./story/s1_main/c1.md)
