@@ -48,7 +48,6 @@ tags:
         <div class="pref-desc">에슈르는 당근튀김을 먹더니 팝콘이 질릴때 번갈아 먹을 수 있는 메뉴라면서 즐겨먹었다.</div>
       </div>
     </div>
-
     <div class="pref-card">
       <div class="pref-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/badge-stars.png" alt="icon"></div>
       <div class="pref-body">
@@ -57,7 +56,6 @@ tags:
       </div>
     </div>
   </div>
-
   <div class="prefs-col">
     <div class="pref-card">
       <div class="pref-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/badge-stars.png" alt="icon"></div>
@@ -66,7 +64,6 @@ tags:
         <div class="pref-desc">에슈르는 바쁠때 한 주먹씩 입에 털어넣던 음식이라며 좋아했다.</div>
       </div>
     </div>
-
     <div class="pref-card">
       <div class="pref-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/badge-stars.png" alt="icon"></div>
       <div class="pref-body">
@@ -216,24 +213,50 @@ tags:
 <br>
 <br>
 
-## 선호도 테이블
-아래 테이블은 선호도(행)와 등급(열)에 따른 값을 보여줍니다. 아이콘은 예시이며 필요하면 교체하세요.
+## 친밀도
+음식의 등급과 캐릭터의 선호도에 따라 친밀도 증가량이 달라집니다.<br>
+이후 대화 선택지에 따라 선호도가 추가로 ```+1~+3``` 증가합니다.
 
 <div class="prefs-table-wrap">
   <table class="prefs-table">
     <thead>
       <tr>
         <th>선호도</th>
-        <th>일반</th>
-        <th>고급</th>
-        <th>희귀</th>
-        <th>전설</th>
-        <th>개쩜</th>
+        <th>
+          <div class="th-cell">
+            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="badge">
+            <span>일반</span>
+          </div>
+        </th>
+        <th>
+          <div class="th-cell">
+            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_CardPet_2.png" alt="badge">
+            <span>고급</span>
+          </div>
+        </th>
+        <th>
+          <div class="th-cell">
+            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_CardPet_3.png" alt="badge">
+            <span>희귀</span>
+          </div>
+        </th>
+        <th>
+          <div class="th-cell">
+            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_CardPet_4.png" alt="badge">
+            <span>전설</span>
+          </div>
+        </th>
+        <th>
+          <div class="th-cell">
+            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gold.png" alt="badge">
+            <span>개쩜</span>
+          </div>
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_1.png" alt="icon"></div></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/hate.png" alt="icon"></div><span>싫어함</span></td>
         <td>15</td>
         <td>20</td>
         <td>25</td>
@@ -241,7 +264,7 @@ tags:
         <td>35</td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_2.png" alt="icon"></div></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/good.png" alt="icon"></div><span>그럭저럭</span></td>
         <td>20</td>
         <td>30</td>
         <td>40</td>
@@ -249,7 +272,7 @@ tags:
         <td>60</td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_3.png" alt="icon"></div></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="icon"></div><span>좋아함</span></td>
         <td>25</td>
         <td>40</td>
         <td>55</td>
@@ -257,7 +280,7 @@ tags:
         <td>80</td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_4.png" alt="icon"></div></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/love.png" alt="icon"></div><span>특히 좋아함</span></td>
         <td>-</td>
         <td>46</td>
         <td>64</td>
