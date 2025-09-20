@@ -3,7 +3,7 @@
     * [전투](./info/battle.md)
     * [육성](./info/growth.md)
     * [기록](./info/lore.md)
-    * [관계도](./info/relationship.md)
+    * [관계](./info/relationship.md)
     * [아이템](./info/items.md)
     * [옷장](./info/viewer.md)
     * [테스트](./info/overview.md)

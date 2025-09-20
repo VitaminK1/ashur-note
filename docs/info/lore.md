@@ -17,10 +17,6 @@ tags:
         <div class="rk-left-sub">엘리아스 제빵왕</div>
         <div class="rk-left-name">에슈르</div>
       </div>
-      <div class="rk-badges">
-        <div class="rk-badge yellow" title="요정">요정</div>
-        <div class="rk-badge purple" title="우울">우울</div>
-      </div>
       <div class="rk-portrait-wrap">
     <script src="https://vitamink1.github.io/mkdocs-test/javascripts/spine-player.min.js"></script>
     <link rel="stylesheet" href="https://vitamink1.github.io/mkdocs-test/css/spine-player.css" />
