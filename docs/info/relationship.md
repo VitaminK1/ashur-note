@@ -59,7 +59,7 @@ tags:
         </td>
       </tr>
       <tr>
-        <td class="pref-icon-cell">><span>엄청 멀다</span></td>
+        <td class="pref-icon-cell"><span>엄청 멀다</span></td>
         <td>
         <div class="pref-icon">
         <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
