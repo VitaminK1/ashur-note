@@ -1,11 +1,20 @@
 ---
-title: Battle
+title: 캐릭터 정보 - 관계도
 publish: true
-icon: material/file-tree
-description: Setting up Publisher for MkDocs meta plugin for metadata retrival and automatic navigation building
+icon: octicons/people-16
+subtitle: 관계도
 tags:
-  - HTML
-  - JavaScript
+  - 캐릭터정보
 ---
 
-# 관계도
+## 캐릭터 정보 - 관계도
+
+
+
+
+
+
+
+
+
+

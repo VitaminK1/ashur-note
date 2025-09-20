@@ -6,6 +6,7 @@
     * [관계도](./info/relationship.md)
     * [아이템](./info/items.md)
     * [옷장](./info/viewer.md)
+    * [테스트](./info/overview.md)
 * 시즌 1
     * [메인 스토리](./story/chapter/s1_main.md)
         * [챕터 1](./story/s1_main/c1.md)

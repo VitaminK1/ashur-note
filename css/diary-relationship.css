@@ -1,0 +1,75 @@
+/* vk-diary styles for relationship diary layout
+	 Unique class prefix: vk-diary-
+*/
+
+.vk-diary-wrap {
+	display: flex;
+	justify-content: center;
+	padding: 24px 12px;
+}
+
+.vk-diary-card {
+	width: 100%;
+	max-width: 1100px;
+	background: #fff8ef;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+	display: flex;
+	overflow: hidden;
+	border: 6px solid rgba(30,150,130,0.06);
+}
+
+.vk-diary-left {
+	width: 46%;
+	padding: 28px;
+	background: linear-gradient(180deg, #f7fff9 0%, #f2fff6 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.vk-diary-image-frame {
+	width: 85%;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.vk-diary-image { max-width: 100%; height: auto; display:block; }
+
+.vk-diary-name { text-align: center; margin-top: 12px; }
+.vk-diary-title { font-size: 28px; margin: 0; color: #b84b6b; }
+.vk-diary-sub { color: #8b6b5a; font-size: 14px; margin-top: 4px }
+
+.vk-diary-attrs { margin-top: 14px; }
+.vk-diary-attr { display:inline-block; background:#fff2f6; color:#b84b6b; padding:6px 10px; border-radius:999px; margin:0 6px; font-size:13px }
+
+.vk-diary-right {
+	width: 54%;
+	padding: 28px 30px;
+}
+
+.vk-diary-header { font-size:20px; font-weight:700; color:#8b5a2e; margin-bottom:8px }
+.vk-diary-desc { color:#6b5e4f; line-height:1.6; margin-bottom:18px }
+
+.vk-diary-tmi { background:#fff; border-radius:8px; padding:12px; border:2px solid #f0decb; margin-bottom:18px }
+.vk-diary-tmi-title { font-weight:700; display:inline-block; background:#f7e6d7; padding:6px 10px; border-radius:6px; margin-bottom:8px }
+.vk-diary-tmi-row { display:flex; justify-content:space-between; align-items:center }
+.vk-diary-tmi-left { color:#8b5a2e }
+.vk-diary-tmi-right img { height:34px }
+
+.vk-diary-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px }
+.vk-diary-box { background:#fffaf6; border-radius:8px; padding:12px; border:1px solid #f0e6df }
+.vk-diary-box-title { font-weight:700; color:#8b5a2e; margin-bottom:6px }
+.vk-diary-box-body { color:#6b5e4f }
+
+@media (max-width: 900px) {
+	.vk-diary-card { flex-direction: column }
+	.vk-diary-left, .vk-diary-right { width: 100% }
+	.vk-diary-image-frame { width: 60% }
+}
+

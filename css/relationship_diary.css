@@ -1,0 +1,109 @@
+/* relationship_diary.css
+   Unique classes prefixed with rk- to avoid reusing existing CSS
+   Styles a two-column diary-like character profile inspired by the attachment.
+*/
+
+:root{
+  --rk-bg:#fbf6ef;
+  --rk-accent:#8ad7b9;
+  --rk-border:#d6c8b6;
+  --rk-card:#fffaf5;
+  --rk-text:#5b4637;
+}
+
+.rk-diary-wrap{
+  display:flex;
+  gap:28px;
+  align-items:flex-start;
+  background:linear-gradient(180deg,var(--rk-bg),#fff);
+  padding:22px;
+  border-radius:10px;
+}
+
+.rk-left{
+  width:520px;
+  min-width:320px;
+  background:var(--rk-card);
+  border:4px solid var(--rk-border);
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+  position:relative;
+}
+
+.rk-left .rk-frame{
+  background:linear-gradient(180deg,#f6fff8,#fff);
+  padding:10px;
+  border-radius:8px;
+}
+
+.rk-portrait{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:8px;
+  object-fit:contain;
+}
+
+.rk-title{
+  font-weight:700;
+  color:var(--rk-text);
+  font-size:20px;
+  margin:8px 0 0 4px;
+}
+
+.rk-left .rk-nav-arrow{
+  position:absolute;
+  left:-14px;
+  top:50%;
+  transform:translateY(-50%);
+  background:var(--rk-accent);
+  width:32px;height:48px;border-radius:6px;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;
+}
+
+.rk-right{
+  flex:1;
+  min-width:360px;
+  background:var(--rk-card);
+  border:4px solid var(--rk-border);
+  border-radius:14px;
+  padding:18px 22px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.06);
+}
+
+.rk-heading{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.rk-heading h2{margin:0;color:var(--rk-text);font-size:18px}
+.rk-heading .rk-sub{color:#8b7766;font-size:13px}
+
+.rk-tmi{
+  display:flex;gap:12px;align-items:flex-start;margin:10px 0 18px;
+}
+
+.rk-tmi .rk-chip{
+  background:linear-gradient(180deg,#fff,#fffaf0);
+  border:2px solid var(--rk-border);
+  padding:8px 12px;border-radius:10px;color:var(--rk-text);font-weight:700;
+}
+
+.rk-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.rk-card-box{
+  background:#fff;
+  border-radius:10px;
+  padding:12px;
+  border:2px solid #efe1cc;
+  color:var(--rk-text);
+  min-height:52px;
+}
+
+.rk-label{font-size:12px;color:#a07f60;font-weight:700;margin-bottom:6px}
+.rk-value{font-size:14px;color:var(--rk-text)}
+
+@media (max-width:900px){
+  .rk-diary-wrap{flex-direction:column}
+  .rk-left{width:100%}
+}
