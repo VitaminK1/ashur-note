@@ -4,9 +4,7 @@
     * [육성](./info/growth.md)
     * [기록](./info/lore.md)
     * [관계](./info/relationship.md)
-    * [아이템](./info/items.md)
     * [옷장](./info/viewer.md)
-    * [테스트](./info/overview.md)
 * 시즌 1
     * [메인 스토리](./story/chapter/s1_main.md)
         * [챕터 1](./story/s1_main/c1.md)
@@ -59,6 +57,9 @@
     * [연회장 대화](./story/chapter/s2_etc.md)
     * [미니게임](./story/chapter/s2_minigame.md)
 * 기타
-    * [여담](./media.md)
-    * [공식 웹툰](./webtoon.md)
+    * [여담](./others.md)
+        * [매체](./others/media.md)
+        * [아이템](./others/item.md) 
+    * [공식 웹툰](./others/webtoon.md)
+    * [테스트](./others/overview.md)
 * [Notice](./blog/index.md)
