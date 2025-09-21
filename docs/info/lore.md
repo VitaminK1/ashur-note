@@ -30,7 +30,8 @@ tags:
         preserveDrawingBuffer: true,
         skin: "Normal",
         showControls: false,
-        animation: "Idle_1"
+        animation: "Idle_1",
+        showLoading: false
     });
     </script>
       </div>

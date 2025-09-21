@@ -69,6 +69,14 @@
     .rk-badges{ right:12px; top:12px }
     /* reduce internal paddings that caused overflow */
     .rk-box-body{ padding:10px }
+
+    /* Ensure the left header stays visible above portrait artwork on narrow viewports. */
+    .rk-left-head{ position:relative; z-index:10; }
+
+    /* Reduce portrait stacking and hide the large ghost art which was overlapping the header */
+    .rk-portrait-img{ z-index:2 !important; }
+
+    .rk-bg-ghost-img{ display:none !important; }
 }
 
 /* Duplicate of prefs-table styles so a second table can use different class names
