@@ -153,6 +153,27 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 	.prefs-table .pref-icon-cell span{ white-space:nowrap; font-size: clamp(0.55rem, 0.9vw, 0.8rem); overflow:visible; text-overflow:clip }
 }
 
+/* Prevent table cells from completely collapsing at narrow widths.
+	 Use a flexible layout inside non-first cells so icons + labels can wrap
+	 while keeping a minimum height matching the icon size. */
+.prefs-table tbody td:not(:first-child){
+	align-items:center;
+	justify-content:flex-start;
+	gap:8px;
+	flex-wrap:wrap;
+	row-gap:8px;
+	/* ensure cells are at least as tall as the icon + padding */
+	min-height: calc(64px + 12px);
+}
+
+/* allow pref labels to wrap on very small screens to avoid overflow/collapse */
+@media (max-width:480px){
+	.prefs-table .pref-icon-cell span{ white-space:normal; }
+	.prefs-table .pref-icon-cell{ padding:6px 8px }
+	.prefs-table td > .pref-icon{ margin-right:6px }
+	.prefs-table tbody td{ padding-top:8px; padding-bottom:8px }
+}
+
 /* Slate overrides for the table */
 [data-md-color-scheme="slate"] .prefs-table thead th{ background:#21302a; color:#e6f7db }
 [data-md-color-scheme="slate"] .prefs-table thead th .th-badge{ stroke: rgba(78,143,90,0.12) }

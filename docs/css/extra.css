@@ -346,6 +346,34 @@ body[data-md-color-scheme] .md-typeset .admonition-content {
 .kj-card::after { content:""; position:absolute; left:12px; top:12px; bottom:12px; width:4px; background:linear-gradient(#78b33b,#9fd85a); border-radius:3px; opacity:0.98; }
 .kj-card .kj-level, .kj-card .kj-text { margin-left:26px; }
 
+/* Higher specificity for Material's markdown container so rules reliably apply
+   even if the theme has strong selectors targeting content area. */
+.md-typeset .kj-cards { display:flex; flex-direction:column; gap:12px; margin-top:6px; }
+.md-typeset .kj-card {
+  background:#fbf5ea;
+  border-radius:8px;
+  padding:14px;
+  border:2px solid rgba(0,0,0,0.06);
+  box-shadow:0 2px 0 rgba(0,0,0,0.04);
+  position:relative;
+}
+.md-typeset .kj-card .kj-level { color:#5a4b2a; margin-bottom:8px; font-size:0.98rem; }
+.md-typeset .kj-card .kj-text { color:#3b3b3b; line-height:1.6; white-space:pre-wrap; font-size:0.98rem; }
+.md-typeset .kj-card-inner { border:1px solid rgba(0,0,0,0.04); padding:10px; border-radius:6px; }
+.md-typeset .kj-card::after { content:""; position:absolute; left:12px; top:12px; bottom:12px; width:4px; background:linear-gradient(#78b33b,#9fd85a); border-radius:3px; opacity:0.98; }
+.md-typeset .kj-card .kj-level, .md-typeset .kj-card .kj-text { margin-left:26px; }
+
+/* Slate/dark mode variant with higher specificity */
+[data-md-color-scheme="slate"] .md-typeset .kj-card {
+  background: #1d241b; /* darker panel in slate to match theme */
+  border-color: rgba(78,143,90,0.06);
+  box-shadow: none;
+}
+[data-md-color-scheme="slate"] .md-typeset .kj-card .kj-level,
+[data-md-color-scheme="slate"] .md-typeset .kj-card .kj-text {
+  color: #e6f7db;
+}
+
 /* Responsive tweaks */
 @media (max-width:680px) {
   .kj-record { margin:12px; padding:12px; }
@@ -441,4 +469,84 @@ body[data-md-color-scheme] .md-typeset .admonition-content {
   [data-md-color-scheme="slate"] .kj-card { padding:12px; }
   [data-md-color-scheme="slate"] .kj-card::after { left:10px; }
   [data-md-color-scheme="slate"] .kj-card .kj-level, [data-md-color-scheme="slate"] .kj-card .kj-text { margin-left:22px; }
+}
+
+/* vk- card styles moved from docs/others/item.md to central extra.css for easier maintenance */
+.md-typeset .vk-card-outer {
+  max-width: 760px;
+  margin: 20px auto;
+  padding: 8px;
+}
+.md-typeset .vk-card {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* allow full-width children like .vk-letter */
+  padding: 20px;
+}
+
+/* Modernize vk-card: subtle shadow, rounded corners, and left accent bar */
+.md-typeset .vk-card {
+  background: linear-gradient(180deg, #fffaf0, #fbf3df);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  position: relative;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+/* Ensure content doesn't overlap the accent bar */
+.md-typeset .vk-card__right, .md-typeset .vk-card__left { padding-left: 14px; }
+
+/* Left image column and placeholder sizing */
+.md-typeset .vk-card__left {
+  flex: 0 0 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-typeset .vk-card__right {
+  flex: 1 1 auto;
+}
+.md-typeset .vk-title {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: #213652;
+  letter-spacing: -0.2px;
+}
+.md-typeset .vk-sub {
+  margin: 0 0 12px 0;
+  color: #2f2f2f;
+  font-size: 14px;
+}
+
+.md-typeset .vk-small { color: #7b5b3b; font-size: 13px; }
+
+@media (max-width:680px){
+  .md-typeset .vk-card{flex-direction:row;gap:14px}
+}
+
+@media (max-width:420px){
+  .md-typeset .vk-card{flex-direction:column;align-items:stretch}
+}
+
+[data-md-color-scheme="slate"] .md-typeset .vk-card{ background: #26282b; border-color: #4b3a2a; }
+[data-md-color-scheme="slate"] .md-typeset .vk-title{ color: #f3e9db; }
+[data-md-color-scheme="slate"] .md-typeset .vk-note{ background: #3b3430; border-color: #8a6a3a; color: #ffd7c8; }
+
+/* Make the vk-letter a full-width row inside the flex container vk-card */
+.md-typeset .vk-letter {
+  flex: 0 0 100%;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  /* make the letter visually lighter: transparent background, slightly shifted right */
+  background: transparent;
+  border: 0;
+  padding: 16px 18px 16px 36px; /* extra left padding to visually shift right */
+  color: #7a2b2b;
+  font-size: 15px;
+  line-height: 1.78;
+  align-self: stretch;
 }

@@ -71,7 +71,13 @@
     .rk-box-body{ padding:10px }
 
     /* Ensure the left header stays visible above portrait artwork on narrow viewports. */
-    .rk-left-head{ position:relative; z-index:10; }
+     /* Keep the left header positioned normally but ensure it does NOT overlap the site nav.
+         Material's navigation uses a high z-index; lower this element so nav remains on top. */
+     .rk-left-head{ position:relative; z-index:auto; }
+
+     /* Ensure site navigation (md-nav) visually sits above page content on mobile. If theme
+         doesn't already set it, give it a sufficiently high z-index here. */
+     .md-nav{ position:relative; z-index:9999; }
 
     /* Reduce portrait stacking and hide the large ghost art which was overlapping the header */
     .rk-portrait-img{ z-index:2 !important; }
@@ -135,7 +141,6 @@
 @media (max-width:520px){
     .prefs-table tbody td:not(:first-child),
     table.prefs-table td:not(:first-child){
-        display:flex;
         align-items:center;
         justify-content:flex-start;
         gap:8px;
