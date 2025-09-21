@@ -328,3 +328,117 @@ body[data-md-color-scheme] .md-typeset .admonition-content {
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
 }
+
+.kj-record-wrap { color:#333; }
+.kj-record { max-width:920px; margin:18px auto; background:#dff0b8; border-radius:8px; padding:18px; box-shadow:0 0 0 1px rgba(0,0,0,0.03) inset; border:1px solid rgba(0,0,0,0.06); }
+.kj-record .kj-title { display:inline-block; background:#9fcf55; color:#0b2611; padding:8px 14px; border-radius:8px; box-shadow:0 2px 0 rgba(0,0,0,0.06); margin-bottom:14px; font-size:1.05rem; }
+
+.kj-cards { display:flex; flex-direction:column; gap:12px; margin-top:6px; }
+.kj-card { background:#fbf5ea; border-radius:8px; padding:14px; border:2px solid rgba(0,0,0,0.06); box-shadow:0 2px 0 rgba(0,0,0,0.04); }
+.kj-card .kj-level { color:#5a4b2a; margin-bottom:8px; font-size:0.98rem; }
+.kj-card .kj-text { color:#3b3b3b; line-height:1.6; white-space:pre-wrap; font-size:0.98rem; }
+
+/* Decorative inner border like the sample */
+.kj-card-inner { border:1px solid rgba(0,0,0,0.04); padding:10px; border-radius:6px; }
+
+/* Accent left bar on each card */
+.kj-card { position:relative; }
+.kj-card::after { content:""; position:absolute; left:12px; top:12px; bottom:12px; width:4px; background:linear-gradient(#78b33b,#9fd85a); border-radius:3px; opacity:0.98; }
+.kj-card .kj-level, .kj-card .kj-text { margin-left:26px; }
+
+/* Responsive tweaks */
+@media (max-width:680px) {
+  .kj-record { margin:12px; padding:12px; }
+  .kj-card { padding:12px; }
+  .kj-card::after { left:10px; }
+  .kj-card .kj-level, .kj-card .kj-text { margin-left:22px; }
+}
+
+/* Light-mode (explicit) overrides so styles remain correct when theme sets the default scheme
+   Material uses the [data-md-color-scheme="default"] attribute on body for light mode.
+   These rules strictly scope the kj- styles to the default color-scheme to avoid colliding
+   with other theme modes while preserving the default font (inherit). */
+[data-md-color-scheme="default"] .kj-record-wrap { color: #333 !important; }
+[data-md-color-scheme="default"] .kj-record {
+  max-width:920px;
+  margin:18px auto;
+  background:#dff0b8;
+  border-radius:8px;
+  padding:18px;
+  box-shadow:0 0 0 1px rgba(0,0,0,0.03) inset;
+  border:1px solid rgba(0,0,0,0.06);
+}
+[data-md-color-scheme="default"] .kj-record .kj-title {
+  display:inline-block;
+  background:#9fcf55;
+  color:#0b2611;
+  padding:8px 14px;
+  border-radius:8px;
+  box-shadow:0 2px 0 rgba(0,0,0,0.06);
+  margin-bottom:14px;
+  font-size:1.05rem;
+}
+[data-md-color-scheme="default"] .kj-cards { display:flex; flex-direction:column; gap:12px; margin-top:6px; }
+[data-md-color-scheme="default"] .kj-card {
+  background:#fbf5ea;
+  border-radius:8px;
+  padding:14px;
+  border:2px solid rgba(0,0,0,0.06);
+  box-shadow:0 2px 0 rgba(0,0,0,0.04);
+}
+[data-md-color-scheme="default"] .kj-card .kj-level { color:#5a4b2a; margin-bottom:8px; font-size:0.98rem; }
+[data-md-color-scheme="default"] .kj-card .kj-text { color:#3b3b3b; line-height:1.6; white-space:pre-wrap; font-size:0.98rem; }
+[data-md-color-scheme="default"] .kj-card-inner { border:1px solid rgba(0,0,0,0.04); padding:10px; border-radius:6px; }
+[data-md-color-scheme="default"] .kj-card { position:relative; }
+[data-md-color-scheme="default"] .kj-card::after { content:""; position:absolute; left:12px; top:12px; bottom:12px; width:4px; background:linear-gradient(#78b33b,#9fd85a); border-radius:3px; opacity:0.98; }
+[data-md-color-scheme="default"] .kj-card .kj-level, [data-md-color-scheme="default"] .kj-card .kj-text { margin-left:26px; }
+
+@media (max-width:680px) {
+  [data-md-color-scheme="default"] .kj-record { margin:12px; padding:12px; }
+  [data-md-color-scheme="default"] .kj-card { padding:12px; }
+  [data-md-color-scheme="default"] .kj-card::after { left:10px; }
+  [data-md-color-scheme="default"] .kj-card .kj-level, [data-md-color-scheme="default"] .kj-card .kj-text { margin-left:22px; }
+}
+
+/* Slate (dark) mode overrides to make the kj-record cards comfortable to read */
+[data-md-color-scheme="slate"] .kj-record-wrap { color: #e8efe2; }
+[data-md-color-scheme="slate"] .kj-record {
+  max-width:920px;
+  margin:18px auto;
+  background: linear-gradient(180deg, rgba(30,38,33,0.65), rgba(24,30,26,0.7));
+  border-radius:8px;
+  padding:18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6) inset;
+  border:1px solid rgba(255,255,255,0.04);
+}
+[data-md-color-scheme="slate"] .kj-record .kj-title {
+  display:inline-block;
+  background:#2e5a31;
+  color:#e8f6e7;
+  padding:8px 14px;
+  border-radius:8px;
+  box-shadow:0 2px 0 rgba(0,0,0,0.4);
+  margin-bottom:14px;
+  font-size:1.05rem;
+}
+[data-md-color-scheme="slate"] .kj-cards { display:flex; flex-direction:column; gap:12px; margin-top:6px; }
+[data-md-color-scheme="slate"] .kj-card {
+  background: linear-gradient(180deg, #2a2f2a, #232722);
+  border-radius:8px;
+  padding:14px;
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+[data-md-color-scheme="slate"] .kj-card .kj-level { color:#bfcfaf; margin-bottom:8px; font-size:0.98rem; }
+[data-md-color-scheme="slate"] .kj-card .kj-text { color:#dfe7d9; line-height:1.6; white-space:pre-wrap; font-size:0.98rem; }
+[data-md-color-scheme="slate"] .kj-card-inner { border:1px solid rgba(255,255,255,0.02); padding:10px; border-radius:6px; }
+[data-md-color-scheme="slate"] .kj-card { position:relative; }
+[data-md-color-scheme="slate"] .kj-card::after { content:""; position:absolute; left:12px; top:12px; bottom:12px; width:4px; background:linear-gradient(#4c8b46,#7fb56a); border-radius:3px; opacity:0.95; }
+[data-md-color-scheme="slate"] .kj-card .kj-level, [data-md-color-scheme="slate"] .kj-card .kj-text { margin-left:26px; }
+
+@media (max-width:680px) {
+  [data-md-color-scheme="slate"] .kj-record { margin:12px; padding:12px; }
+  [data-md-color-scheme="slate"] .kj-card { padding:12px; }
+  [data-md-color-scheme="slate"] .kj-card::after { left:10px; }
+  [data-md-color-scheme="slate"] .kj-card .kj-level, [data-md-color-scheme="slate"] .kj-card .kj-text { margin-left:22px; }
+}

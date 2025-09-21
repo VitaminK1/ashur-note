@@ -58,8 +58,8 @@
     * [미니게임](./story/chapter/s2_minigame.md)
 * 기타
     * [여담](./others.md)
-        * [매체](./others/media.md)
-        * [아이템](./others/item.md)
+    * [매체](./others/media.md)
+    * [아이템](./others/item.md)
     * [공식 웹툰](./others/webtoon.md)
     * [테스트](./others/overview.md)
 * [Notice](./blog/index.md)
