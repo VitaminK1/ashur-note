@@ -1,25 +1,19 @@
 ---
-title: Main
+title: 메인페이지
 description: Setting up Publisher for MkDocs meta plugin for metadata retrival and automatic navigation building
 tags:
   - HTML
   - JavaScript
 ---
 
-# Welcome to MkDocs
+# About Ashur
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+본 문서는 에피드게임즈에서 개발한 트릭컬 리바이브에 등장하는 캐릭터 에슈르(Ashur)에 관한 것을 기록하는 목적으로 생성되었습니다.
 
-## Commands
+![type: video]()
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
+## 목차
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+

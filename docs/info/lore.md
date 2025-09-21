@@ -233,6 +233,11 @@ tags:
 <br>
 <br>
 
+## 교주의 기록
+
+
+
+
 ## 대사
 
 <div class="intimacy-wrap">
