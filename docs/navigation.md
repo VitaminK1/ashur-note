@@ -59,7 +59,7 @@
 * 기타
     * [여담](./others.md)
         * [매체](./others/media.md)
-        * [아이템](./others/item.md) 
+        * [아이템](./others/item.md)
     * [공식 웹툰](./others/webtoon.md)
     * [테스트](./others/overview.md)
 * [Notice](./blog/index.md)
