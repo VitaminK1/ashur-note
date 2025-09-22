@@ -81,7 +81,7 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 .prefs-panel{ display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:1100px; margin:18px auto }
 .prefs-col{ display:flex; flex-direction:column; gap:10px }
 .pref-card{ display:flex; gap:12px; align-items:center; justify-content:center; background:#fbfff9; border:1px solid #d7efd2; padding:10px; border-radius:10px }
-.pref-icon{ position: relative; width:64px; height:64px; flex:0 0 64px; border-radius:12px; overflow:visible; display:flex; align-items:center; justify-content:center; background:linear-gradient(180deg,#ffffff,#f3f9f4); border:1px solid rgba(43,182,115,0.06) }
+.pref-icon{ position: relative; width:64px; height:64px; flex:0 0 64px; border-radius:12px; overflow:visible; display:flex; align-items:center; justify-content:center;  }
 .pref-icon img{ display:block }
 .pref-icon img.frame{ position:absolute; left:0; top:0; width:100%; height:100%; display:block; z-index:1 }
 .pref-icon img.overlay{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:44px; height:44px; object-fit:contain; z-index:2 }
@@ -102,8 +102,16 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 /* Slate overrides for preferences panel: align with stat-card/battle palette */
 [data-md-color-scheme="slate"] .pref-card{ background: #181a1b; border: 1px solid rgba(78,143,90,0.06); color: #e6f7db }
 [data-md-color-scheme="slate"] .pref-title{ color: #e6f7db }
+
+/* Responsive: make the first header column compact on small screens so it doesn't enforce
+   the desktop 180px width. This allows the icon cell to be ~60px wide at <=520px. */
+@media (max-width:520px){
+  .prefs-table thead th:first-child { width: 80px; min-width: 60px; }
+  /* Slightly reduce pref-icon sizing to match the header width */
+  .prefs-table td > .pref-icon{ width:56px; height:56px; flex:0 0 56px }
+  .pref-icon-mini{ width:28px; flex:0 0 28px }
+}
 [data-md-color-scheme="slate"] .pref-desc{ color: #cfe7c8 }
-[data-md-color-scheme="slate"] .pref-icon{ background: #222427; border: 1px solid rgba(78,143,90,0.06) }
 
 /* Preferences small icon used in table (size consolidated later) */
 .pref-icon-mini{ border-radius:8px; background:linear-gradient(180deg,#fff,#f3f9f4); display:flex; align-items:center; justify-content:center; border:1px solid rgba(43,182,115,0.06) }
@@ -116,9 +124,14 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 .prefs-table tbody td{ border:1px solid #e6efe2; padding:12px; background:#ffffff; vertical-align:middle; text-align:center }
 .prefs-table tbody tr td:first-child{ background:transparent; border: none; }
 /* make the first column compact and icon-only like the screenshot */
-.prefs-table .pref-icon-cell{ /* allow the cell to shrink when space is tight; keep a reasonable max */ width:auto; margin: auto 0; min-width:0; max-width:130px; padding:8px 10px; text-align:center; display:table-cell; vertical-align:middle }
-.prefs-table thead th:first-child{ /* keep header sizing but allow body to control layout */ width:180px; min-width:120px }
-.prefs-table tbody td:first-child{ /* allow the first column to expand as needed and keep label left-aligned */ width:auto; min-width:0; text-align:left }
+.prefs-table .pref-icon-cell{ /* allow the cell to shrink when space is tight; keep a reasonable max */ margin: auto 0; min-width:0; max-width:130px; padding:8px 10px; text-align:center; display:table-cell; vertical-align:middle }
+.prefs-table thead th:first-child{ text-align:center }
+
+/* Desktop: keep a wide header on larger viewports */
+@media (min-width:721px){
+	.prefs-table thead th:first-child{ /* keep header sizing but allow body to control layout */ width:180px; min-width:120px }
+}
+.prefs-table tbody td:first-child{ /* allow the first column to expand as needed and keep label left-aligned */ min-width:0; text-align:left }
 /* show the label next to the icon and truncate if too long */
 .prefs-table .pref-icon-cell span{ display:inline-flex; align-items:center; justify-content:center; vertical-align:middle; /* force single-line label */ white-space:nowrap; overflow:visible; text-overflow:clip; flex:0 1 auto; min-width:0; font-size: clamp(0.55rem, 1.0vw, 0.95rem); }
 
@@ -129,7 +142,7 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 .pref-icon-mini img{ width:28px; display:block; flex:0 0 28px }
 
 /* Force pref icons inside table cells to stay inline and fixed-size */
-.prefs-table td > .pref-icon{ display:inline-flex; width:64px; height:64px; flex:0 0 64px; margin-right:8px; border-radius:12px; align-items:center; justify-content:center; position:relative; background:linear-gradient(180deg,#fff,#f3f9f4); border:1px solid rgba(43,182,115,0.06) }
+.prefs-table td > .pref-icon{ display:inline-flex; width:64px; height:64px; flex:0 0 64px; margin-right:8px; border-radius:12px; align-items:center; justify-content:center; position:relative; border:1px solid rgba(43,182,115,0.06) }
 .prefs-table td > .pref-icon img.frame{ width:100%; height:100%; display:block; object-fit:contain }
 .prefs-table td > .pref-icon img.overlay{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:44px; height:44px; }
 
@@ -147,7 +160,7 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 /* Small screens: allow pref labels to wrap and use a smaller font */
 @media (max-width:520px){
 	/* reduce icon and label sizes so the label fits on one line */
-	.prefs-table .pref-icon-cell{ gap:6px; padding:6px; min-width:0 }
+	.prefs-table .pref-icon-cell{ gap:6px; padding:6px; min-width:0; width: 60px;}
 	.pref-icon-mini{ width:32px; flex:0 0 32px; min-width:32px; min-height:32px; max-width:32px; max-height:32px }
 	.pref-icon-mini img{ width:18px; flex:0 0 18px }
 	.prefs-table .pref-icon-cell span{ white-space:nowrap; font-size: clamp(0.55rem, 0.9vw, 0.8rem); overflow:visible; text-overflow:clip }

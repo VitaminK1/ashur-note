@@ -39,14 +39,55 @@ tags:
 <br>
 
 ## 에피소드 5 - 상처받은 믿음
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2.png){width="500"}
-/// caption
-당시 테마극장 전투 수행 후 대사 일부(1)
-{ .annotate }
 
-1. 상업적인 이득을 목적으로 하기 보다는 진심으로 교주의 마음과 안위를 걱정해주고 있다는 것을 알 수 있다.
+=== "장면 1"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_1.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(1)
+    ///
 
-///
+=== "장면 2"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_2.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(2)
+    ///
+
+=== "장면 3"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_3.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(3)
+    ///
+
+=== "장면 4"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_4.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(4)
+    ///
+
+=== "장면 5"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_5.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(5)
+    ///
+
+=== "장면 6"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_6.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(6)
+    ///
+
+=== "장면 7"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_7.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(7)
+    ///
+
+=== "장면 8"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_8.png){width="500"}
+    /// caption
+    당시 테마극장 전투 수행 후 대사 일부(8)
+    ///
+
 
 <span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
 <br>

@@ -74,3 +74,12 @@ tags:
 이 이후에 에슈르의 행적이 더 이상 나오지 않은 걸로 보아 프리클이 화내다 말고 곧바로 피코라를 찾으러 간 듯하다.
 <br>
 <br>
+
+## 여담
+<figure>
+  <iframe src="https://www.youtube.com/embed/28ladiddtZQ?si=SQYfAapbKdIIjwVk" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
+  <figcaption>피코라의 멘토 콤플렉스 PV</figcaption>
+</figure>
++ PV에서는 수업료를 벌어야 한다는 명목으로 피코라와 '베이커리 마스터' 방송을 한다. 그러다 프리클이 난입해서 엉망진창이 된다.
+<br>
+<br>

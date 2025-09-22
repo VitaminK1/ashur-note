@@ -10,8 +10,12 @@ tags:
 # 캐릭터 정보 - 옷장
 
 ## 기본 사복
+![Image title](https://vitamink1.github.io/mkdocs-test/assets/ashurdesc_1.png){width="500" height="300"}
+/// caption
+에슈르 기본 사복 설명
+///
 
-=== "스탠딩1"
+=== "스탠딩"
     <script src="https://vitamink1.github.io/mkdocs-test/javascripts/spine-player.min.js"></script>
     <link rel="stylesheet" href="https://vitamink1.github.io/mkdocs-test/css/spine-player.css" />
     <div id="player-container1" style="width: 360px; height: 450px; margin:0 auto;"></div>
@@ -28,7 +32,7 @@ tags:
     });
     </script>
 
-=== "전투1"
+=== "전투"
     <script src="https://vitamink1.github.io/mkdocs-test/javascripts/spine-player.min.js"></script>
     <link rel="stylesheet" href="https://vitamink1.github.io/mkdocs-test/css/spine-player.css" />
     <div id="player-container2" style="width: 360px; height: 450px; margin:0 auto;"></div>
@@ -49,8 +53,12 @@ tags:
 <br>
 
 ## 아이스크림 메이커
+![Image title](https://vitamink1.github.io/mkdocs-test/assets/ashurdesc_2.png){width="500" height="300"}
+/// caption
+에슈르 아이스크림 메이커 사복 설명
+///
 
-=== "스탠딩2"
+=== "스탠딩"
     <script src="https://vitamink1.github.io/mkdocs-test/javascripts/spine-player.min.js"></script>
     <link rel="stylesheet" href="https://vitamink1.github.io/mkdocs-test/css/spine-player.css" />
     <div id="player-container3" style="width: 360px; height: 450px; margin:0 auto;"></div>
@@ -67,7 +75,7 @@ tags:
     });
     </script>
 
-=== "전투2"
+=== "전투"
     <script src="https://vitamink1.github.io/mkdocs-test/javascripts/spine-player.min.js"></script>
     <link rel="stylesheet" href="https://vitamink1.github.io/mkdocs-test/css/spine-player.css" />
     <div id="player-container4" style="width: 360px; height: 450px; margin:0 auto;"></div>

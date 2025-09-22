@@ -28,10 +28,9 @@ tags:
 
 ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_sado_dianayester_1.png){width="500"}
 /// caption
-오팔 테마극장 로비 - 4번째 화면
+'웃고 있는' 에슈르
 ///
 
-<br>
 요정 왕국 거리를 조심히 다니는 디아나는 평화롭고 따스한 분위기를 느끼고, 거리를 지나는 요정들도 걱정거리 하나 없이 행복해 보인다며 만족한다. 
 
 <br>

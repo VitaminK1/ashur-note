@@ -105,7 +105,12 @@ plugins:
   - offline
   - glightbox
   - pub-minifier
-  - mkdocs-video
+  - mkdocs-video:
+      css_style:
+        display: "block"
+        width: "560px"
+        height: "315px"
+        margin: "0 auto"
   - section-index
   - literate-nav:
       nav_file: navigation.md

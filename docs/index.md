@@ -15,10 +15,6 @@ tags:
 
 본 문서는 에피드게임즈에서 개발한 트릭컬 리바이브에 등장하는 캐릭터, 에슈르(Ashur)에 관한 것을 기록하는 목적으로 생성되었습니다.
 
-
-![type:video](https://vitamink1.github.io/mkdocs-test/assets/others/gacha1.mp4)
-
-
 ## 목차
 
 

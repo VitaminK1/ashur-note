@@ -62,18 +62,17 @@
 @media (max-width:480px){
     .rk-left{ width:100% !important; max-width:100%; padding:12px !important; box-sizing:border-box; border-width:4px !important; margin:0 auto; }
     .rk-frame{ padding:12px !important; border-width:6px !important }
-    .rk-portrait-wrap{ height:260px; }
     .rk-portrait-img{ width:220px; height:260px }
     .rk-left-sub{ font-size:18px }
     .rk-left-name{ font-size:28px }
     .rk-badges{ right:12px; top:12px }
     /* reduce internal paddings that caused overflow */
     .rk-box-body{ padding:10px }
-
+    .rk-portrait-wrap{ position:relative; width:100%; height:200px; }
     /* Ensure the left header stays visible above portrait artwork on narrow viewports. */
      /* Keep the left header positioned normally but ensure it does NOT overlap the site nav.
          Material's navigation uses a high z-index; lower this element so nav remains on top. */
-     .rk-left-head{ position:relative; z-index:auto; }
+     .rk-left-head{ position:relative; z-index:5; }
 
      /* Ensure site navigation (md-nav) visually sits above page content on mobile. If theme
          doesn't already set it, give it a sufficiently high z-index here. */
@@ -137,6 +136,16 @@
     .prefs-table-alt .pref-icon-cell span{ white-space:nowrap; font-size: clamp(0.55rem, 0.9vw, 0.8rem); overflow:visible; text-overflow:clip }
 }
 
+/* Compact prefs-table-alt on small screens: make the header/label column ~60px and
+   slightly reduce the icon sizes so rows fit without horizontal scroll. */
+@media (max-width:520px){
+    .prefs-table-alt thead th:first-child{ width:60px; min-width:60px }
+    .prefs-table-alt .pref-icon-cell{ width:60px; padding:6px; gap:6px }
+    .prefs-table-alt td > .pref-icon{ width:56px; height:56px; flex:0 0 56px }
+    .prefs-table-alt .pref-icon-cell .pref-icon-mini{ width:28px; flex:0 0 28px }
+    .prefs-table-alt .pref-icon-cell span{ white-space:normal; font-size: clamp(0.5rem, 0.9vw, 0.78rem) }
+}
+
 /* Ensure the original prefs-table gets the same wrapping & vertical spacing on small screens */
 @media (max-width:520px){
     .prefs-table tbody td:not(:first-child),
@@ -147,7 +156,7 @@
         flex-wrap:wrap;
         row-gap:12px; /* bigger vertical gap for mobile */
     }
-    .prefs-table td > .pref-icon, table.prefs-table td > .pref-icon{ margin:0 }
+    .prefs-table td > .pref-icon, table.prefs-table td > .pref-icon{ margin:5px; }
     .prefs-table .pref-icon-cell span, table.prefs-table .pref-icon-cell span{ white-space:normal; gap:8px; flex-wrap:wrap; row-gap:12px }
     /* give label cell a matching min-height so rows align */
     .prefs-table .pref-icon-cell, table.prefs-table .pref-icon-cell{ min-height: calc(var(--pref-icon-size-sm) + 12px) }

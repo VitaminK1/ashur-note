@@ -57,9 +57,9 @@
     * [연회장 대화](./story/chapter/s2_etc.md)
     * [미니게임](./story/chapter/s2_minigame.md)
 * 기타
-    * [여담](./others.md)
-    * [매체](./others/media.md)
+    * [뽑기연출](./others/gacha.md)
     * [아이템](./others/item.md)
+    * [구릭컬](./others/old.md)
     * [공식 웹툰](./others/webtoon.md)
     * [테스트](./others/overview.md)
 * [Notice](./blog/index.md)
