@@ -62,3 +62,4 @@
     * [연관아이템](./others/item.md)
     * [구릭컬](./others/old.md)
     * [여담](./others/etc.md)
+    * [외부링크](./others/webtoon.md)

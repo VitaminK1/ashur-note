@@ -29,5 +29,5 @@ tags:
     * [외전](./story/chapter/s2_extra.md) / [연회장 대화](./story/chapter/s2_etc.md) / [미니게임](./story/chapter/s2_minigame.md)
 
 * 기타 : 시즌과 관계없이 에슈르와 관련된 잡다한 내용을 기록한 곳입니다.
-    * [뽑기연출](./others/gacha.md) / [연관아이템](./others/item.md) / [구릭컬](./others/old.md) / [여담](./others/etc.md)
+    * [뽑기연출](./others/gacha.md) / [연관아이템](./others/item.md) / [구릭컬](./others/old.md) / [여담](./others/etc.md) / [외부링크](./others/webtoon.md)
 
