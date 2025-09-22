@@ -1,4 +1,5 @@
 * [🏡](./index.md)
+* [소개](./others/overview.md)
 * 캐릭터 정보
     * [전투](./info/battle.md)
     * [육성](./info/growth.md)
@@ -60,6 +61,5 @@
     * [뽑기연출](./others/gacha.md)
     * [연관아이템](./others/item.md)
     * [구릭컬](./others/old.md)
-    * [공식 웹툰](./others/webtoon.md)
-    * [테스트](./others/overview.md)
+    * [여담](./others/etc.md)
 * [Notice](./blog/index.md)
