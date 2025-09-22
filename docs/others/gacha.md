@@ -27,13 +27,17 @@ tags:
 ## 영상
 
 === "오픈 당시"
-    ![type:video](https://vitamink1.github.io/mkdocs-test/assets/others/gacha1.mp4)
+    <video controls preload="metadata" width="500" height="300">
+      <source src="https://vitamink1.github.io/mkdocs-test/assets/others/gacha1.mp4" type="video/mp4">
+    </video>
     /// caption
     에슈르 뽑기 연출 (오픈 당시)
     ///
 
 === "개편 후"
-    ![type:video](https://vitamink1.github.io/mkdocs-test/assets/others/gacha2.mp4)
+    <video controls preload="metadata" width="500" height="300">
+      <source src="https://vitamink1.github.io/mkdocs-test/assets/others/gacha2.mp4" type="video/mp4">
+    </video>
     /// caption
     에슈르 뽑기 연출 (개편 후)
     ///

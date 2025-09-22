@@ -106,7 +106,6 @@ plugins:
   - glightbox
   - pub-minifier
   - mkdocs-video:
-      video_autoplay: false
       css_style:
         display: "block"
         width: "560px"
