@@ -1,7 +1,7 @@
 ---
 title: 기타 - 뽑기 연출
 publish: true
-icon: material/id-card
+icon: fontawesome/solid/vcard
 description: 
 subtitle: 
 tags:

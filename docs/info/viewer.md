@@ -10,7 +10,7 @@ tags:
 # 캐릭터 정보 - 옷장
 
 ## 기본 사복
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/ashurdesc_1.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/mkdocs-test/assets/ashurdesc_2.png){width="500" height="300"}
 /// caption
 에슈르 기본 사복 설명
 ///
@@ -53,7 +53,7 @@ tags:
 <br>
 
 ## 아이스크림 메이커
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/ashurdesc_2.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/mkdocs-test/assets/ashurdesc_1.png){width="500" height="300"}
 /// caption
 에슈르 아이스크림 메이커 사복 설명
 ///
