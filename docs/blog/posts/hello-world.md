@@ -10,7 +10,7 @@ categories:
   - Notice
 ---
 
-# Hello world!
+# 테스트 페이지
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
 nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
@@ -20,8 +20,6 @@ massa, nec semper lorem quam in massa.
 ...
 
 asdfasdfasdf
-
-### <!-- md:sponsors --> – Sponsors only { data-toc-label="Sponsors only" }
 
 <span class="badge badge-version"><span class="badge-icon">:material-tag:</span>     1.0.0</span>
 <span class="badge badge-ext">
@@ -46,9 +44,7 @@ asdfasdfasdf
     </div>
     
 # 1. 개요
-<div class="video-wrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/T-3EMIGXXW0?si=R95EKKhwbXt53ZhP" title="YouTube video player" frameborder="3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div> 
+
 ## 2. 설치 방법
 
 설치 방법에 대한 설명입니다.
@@ -65,7 +61,7 @@ asdfasdfasdf
 
 # 전투 역할
 
-후열 마법 딜러로, Depressed 시너지나 Sprites 시너지[^1] 활용 가능.
+후열 마법 딜러 시너지[^1] 활용 가능.
 
 [^1]: 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -73,7 +69,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ## 운용 팁
 - 후열에 배치하여 안전하게 마법 피해 누적
-- 음식/호감도 시스템으로 성능 강화 가능
 
 === "Open me in a new tab ..."
 

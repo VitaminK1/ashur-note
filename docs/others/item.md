@@ -10,7 +10,7 @@ tags:
 
 # 기타 - 연관 아이템
 
-## 에심당 뽈사탕
+## 에심당 뽈사탕 
 ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item3.png){width="500" height="300"}
 /// caption
 에심당 뽈사탕 에슈르 반응
