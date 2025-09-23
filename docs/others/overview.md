@@ -5,7 +5,7 @@ icon: fontawesome/solid/book-open
 description: 
 subtitle: 
 tags:
-  - 기타
+  - 소개
 ---
 
 # 소개
