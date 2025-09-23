@@ -135,3 +135,18 @@ tags:
 
 <br>
 <br>
+
+## 에심당
+![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet2.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet3.png){width="400"}
+/// caption
+펫 심부름 - 요정왕국
+///
+
+![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet4.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet5.png){width="400"}
+/// caption
+펫 심부름 - 빵 냄새 맡기
+///
+
+에슈르의 가게인 에심당은 요정왕국 중심 길가에 위치하고 있으며, 대략적인 모습은 펫 심부름 창에서 확인 할 수 있다.
+<br>
+<br>

@@ -85,5 +85,16 @@ tags:
     사전예약 20만 달성 그림
     ///
 
+=== "카톡 이모티콘"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/con1.gif){width="150"}    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/con2.gif){width="150"}
+    /// caption
+    카카오톡 이모티콘
+    ///
+
+=== "빵 마법진"
+    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/FX_Unit_Ashur_MagicCircle.png){width="200"}
+    /// caption
+    에슈르 스킬 시전 이펙트
+    ///
 
 
