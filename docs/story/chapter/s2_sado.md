@@ -1,7 +1,7 @@
 ---
 title: 사도 스토리 시즌 2
 publish: true
-icon: fontawesome/solid/book-tanakh
+icon: fontawesome/solid/address-book
 tags:
   - 목차
 ---

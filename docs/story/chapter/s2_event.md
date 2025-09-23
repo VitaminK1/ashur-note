@@ -1,7 +1,7 @@
 ---
 title: 이벤트 스토리 시즌 2
 publish: true
-icon: fontawesome/solid/book-tanakh
+icon: fontawesome/solid/book-medical
 tags:
   - 목차
 ---
