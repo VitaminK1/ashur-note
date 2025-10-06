@@ -16,7 +16,7 @@ tags:
 <br>
 
 ## 에피소드 2~3 - 요리사가 돌아왔다~요리사와 미식가
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_ricota_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_ricota_1.png){width="500"}
 /// caption
 기억 조각 - 먹는 거 맞아?
 ///
@@ -55,7 +55,7 @@ tags:
 <br>
 
 ## 여담
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_ricota_2.png){width="350"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_ricota_2.png){width="350"}
 /// caption
 아이템 도감 - 마법도서 대백과
 ///

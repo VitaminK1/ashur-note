@@ -17,16 +17,16 @@ tags:
 <div class="stat-card">
   <header class="stat-header">
     <div class="stat-avatar-wrap">
-      <img class="stat-avatar" src="https://vitamink1.github.io/mkdocs-test/assets/Ashur_profile.png" alt="avatar">
+  <img class="stat-avatar" src="https://vitamink1.github.io/ashur-note/assets/Ashur_profile.png" alt="avatar">
     </div>
     <div class="stat-meta">
       <div class="stat-icons">
-        <div class="icon-pill"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/3star.png" alt="icon"></div>
-        <div class="icon-pill"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/position/Common_UnitRace_Fairy.png" alt="icon"></div>
-        <div class="icon-pill"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/position/PickUpPersonality_Gloomy.png" alt="icon"></div>
-        <div class="icon-pill"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/position/Common_UnitClass_0001.png" alt="icon"></div>
-        <div class="icon-pill"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/position/Common_UnitAttackMagic.png" alt="icon"></div>
-        <div class="icon-pill"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/position/Common_PositionBack.png" alt="icon"></div>
+  <div class="icon-pill"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/3star.png" alt="icon"></div>
+  <div class="icon-pill"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/position/Common_UnitRace_Fairy.png" alt="icon"></div>
+  <div class="icon-pill"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/position/PickUpPersonality_Gloomy.png" alt="icon"></div>
+  <div class="icon-pill"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/position/Common_UnitClass_0001.png" alt="icon"></div>
+  <div class="icon-pill"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/position/Common_UnitAttackMagic.png" alt="icon"></div>
+  <div class="icon-pill"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/position/Common_PositionBack.png" alt="icon"></div>
       </div>
       <div class="stat-pills">
         <span class="pill">3성</span>
@@ -41,16 +41,16 @@ tags:
   <section class="stat-body">
     <h4 class="stat-section-title"> 기본정보 (Lv 100 기준)</h4>
     <div class="stat-table">
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_Hp.png" width="25"> HP</div><div class="stat-value">18,010</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_Sp.png" width="25"> SP</div><div class="stat-value">350</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_AttackPhysic.png" width="25"> 물리 공격력</div><div class="stat-value">0</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_AttackMagic.png" width="25"> 마법 공격력</div><div class="stat-value">2,718</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="25"> 물리 방어력</div><div class="stat-value">2,556</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="25"> 마법 방어력</div><div class="stat-value">2,560</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalRate.png" width="25"> 치명타</div><div class="stat-value">3,068</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalMult.png" width="25"> 치명 피해</div><div class="stat-value">3,074</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalResist.png" width="25"> 치명타 저항</div><div class="stat-value">2,593</div></div>
-      <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalMultResist.png" width="25"> 치명 피해 저항</div><div class="stat-value">2,437</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_Hp.png" width="25"> HP</div><div class="stat-value">18,010</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_Sp.png" width="25"> SP</div><div class="stat-value">350</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_AttackPhysic.png" width="25"> 물리 공격력</div><div class="stat-value">0</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_AttackMagic.png" width="25"> 마법 공격력</div><div class="stat-value">2,718</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="25"> 물리 방어력</div><div class="stat-value">2,556</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="25"> 마법 방어력</div><div class="stat-value">2,560</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalRate.png" width="25"> 치명타</div><div class="stat-value">3,068</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalMult.png" width="25"> 치명 피해</div><div class="stat-value">3,074</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalResist.png" width="25"> 치명타 저항</div><div class="stat-value">2,593</div></div>
+  <div class="stat-row"><div class="stat-key"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalMultResist.png" width="25"> 치명 피해 저항</div><div class="stat-value">2,437</div></div>
     </div>
   </section>
 </div>
@@ -62,7 +62,7 @@ tags:
   <!-- Column 1 -->
   <article class="lore-card">
     <div class="lore-header">
-  <img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/skill/Icon_AdmissionSkill_Ashur.png" alt="빵템피드" class="lore-avatar">
+  <img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/skill/Icon_AdmissionSkill_Ashur.png" alt="빵템피드" class="lore-avatar">
       <div>
         <div class="lore-subtitle">저학년 스킬</div>
         <div class="lore-title">빵템피드</div>
@@ -80,7 +80,7 @@ tags:
   <!-- Column 2 -->
   <article class="lore-card">
     <div class="lore-header">
-      <img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/skill/Icon_GraduateSkill_Ashur.png" 
+  <img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/skill/Icon_GraduateSkill_Ashur.png" 
       alt="빵테오" class="lore-avatar">
       <div>
         <div class="lore-subtitle">고학년 스킬</div>
@@ -101,7 +101,7 @@ tags:
   <!-- Column 3 -->
   <article class="lore-card">
     <div class="lore-header">
-      <img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/skill/Magic_NormalAttack.png" alt="일반 공격" class="lore-avatar">
+  <img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/skill/Magic_NormalAttack.png" alt="일반 공격" class="lore-avatar">
       <div>
         <div class="lore-title" style="margin-top:0">일반 공격</div>
       </div>
@@ -125,7 +125,7 @@ tags:
 ## 어사이드
 <div class="battle-panel">
   <div class="battle-header">
-    <img class="battle-header-img" style="margin-left: auto; margin-right: auto; display: block;" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/AsideIcon_Ashur.png" alt="portrait"/>
+  <img class="battle-header-img" style="margin-left: auto; margin-right: auto; display: block;" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/AsideIcon_Ashur.png" alt="portrait"/>
     <div style="margin-left: 10px; width: 100%">
       <h2 class="battle-title">궁극의 그리모어</h2>
       <p style="margin:0 0 10px 0;">궁극의 마법을 정리한 마법서. 풀리지 않는 마법 난제들의 해석들이 담겨있다.</p>
@@ -134,10 +134,10 @@ tags:
 
   <div class="skill-list" style="margin-top:12px;">
     <div class="skill-card">
-      <img class="icon" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/skill/Aside_Skill_Ashur_1.png" alt="아이콘"/>
+      <img class="icon" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/skill/Aside_Skill_Ashur_1.png" alt="아이콘"/>
       <div class="meta">
         <div style="display:flex;align-items:center;gap:8px;">
-          <img class="badge-stars" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/1star.png" alt="아이콘"/>
+          <img class="badge-stars" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/1star.png" alt="아이콘"/>
           <div class="skill-name">마법책빵</div>
         </div>
         <div class="skill-desc">
@@ -151,10 +151,10 @@ tags:
       </div>
     </div>
     <div class="skill-card">
-      <img class="icon" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/skill/Aside_Skill_Ashur_2.png" alt="아이콘"/>
+      <img class="icon" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/skill/Aside_Skill_Ashur_2.png" alt="아이콘"/>
       <div class="meta">
         <div style="display:flex;align-items:center;gap:8px;">
-          <img class="badge-stars" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/2star.png" alt="아이콘"/>
+          <img class="badge-stars" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/2star.png" alt="아이콘"/>
           <div class="skill-name">빵센디오</div>
         </div>
         <div class="skill-desc">
@@ -169,10 +169,10 @@ tags:
       </div>
     </div>
     <div class="skill-card">
-      <img class="icon" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/skill/Aside_Skill_Ashur_3.png" alt="아이콘"/>
+      <img class="icon" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/skill/Aside_Skill_Ashur_3.png" alt="아이콘"/>
       <div class="meta">
         <div style="display:flex;align-items:center;gap:8px;">
-          <img class="badge-stars" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/3star.png" alt="아이콘"/>
+          <img class="badge-stars" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/3star.png" alt="아이콘"/>
           <div class="skill-name">빵빵한 브레드</div>
         </div>
         <div class="skill-desc">

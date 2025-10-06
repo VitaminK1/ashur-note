@@ -64,7 +64,7 @@ tags:
 
 ## 미니게임 : 열 세번째 사도 죠안의 유혹
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_minigame_1.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_minigame_2.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_minigame_1.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_minigame_2.png){width="400"}
 /// caption
 죠안 미니게임 엔딩 - 알차지 못한 속강정 / 네 교단 다 내 것
 ///

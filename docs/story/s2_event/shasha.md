@@ -26,7 +26,7 @@ tags:
 <br>
 
 ## 에피소드 3 - 불행한 난동
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_shasha_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_shasha_1.png){width="500"}
 /// caption
 기억 조각 - 부수적인 피해
 ///
@@ -48,7 +48,7 @@ tags:
 <br>
 마지막으로 에심당만 남았을 때 샤샤가 빵집 부숴버려도 괜찮냐고 물어보자, {=='이젠 불끈다고도 안 한다며 안에 기자 몇개라도 축축한 채로 건지는 게 낫다'==}고 반포기 상태로 허락한다. 다른 집들의 불을 끄며 물을 많이 쓴 영향인지 호수의 물이 많이 줄어들어 수압이 약해진 덕에 에심당은 그나마 덜 부셔졌다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_shasha_2.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_shasha_2.png){width="500"}
 /// caption
 기억 조각 - 분노의 패대기
 ///

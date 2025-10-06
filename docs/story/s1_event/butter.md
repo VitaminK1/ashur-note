@@ -19,7 +19,7 @@ tags:
 ???+ Abstract
     버터에게 열정페이를 강요하는 에슈르와 거절하지 못하는 버터. 이를 놀리는 에르핀에게 상처받은 버터는 바보가 아님을 증명하려고 한다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_1.png){width="500"}
 /// caption
 기억조각 - 버터는 바보야~
 ///
@@ -40,7 +40,7 @@ tags:
 ???+ Abstract
     혼자 공부를 하며 헤매던 버터는 코미의 말에 꼬임 당해 마법학교에 입학한다. 에슈르는 난해한 지식을 버터에게 가르친다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_3.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_3.png){width="500"}
 /// caption
 기억조각 - 오랜만에 학생!
 ///
@@ -63,7 +63,7 @@ tags:
 ???+ Abstract
     에슈르는 수업료가 없으면 일로 대신하라고 버터에게 일을 떠맡긴다. 지친 버터 앞에 에르핀이 다시 나타나 버터를 놀리고 버터를 부르는 어떤 목소리가 들린다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_4.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_4.png){width="500"}
 /// caption
 기억조각 - 여왕님은 너무해!
 ///
@@ -84,7 +84,7 @@ tags:
 ???+ Abstract
     에르핀과 에슈르는 분노에 찬 버터에게서 도망친다. 코미는 버터를 말로 꼬드겨 빠져나가지만 버터는 에르핀과 에슈르에게는 단죄의 폭력을 행사한다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_5.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_5.png){width="500"}
 /// caption
 기억조각 - 진짜 쏠 줄은 몰랐어!
 ///
@@ -114,7 +114,7 @@ tags:
 ???+ Abstract
     에르핀과 에슈르에게 형벌을 내린 버터. 마침 나타난 마요가 버터에게 마취총을 쏜다. 마요는 물건 회수 후 사라지고 에르핀과 에슈르는 버터를 어떻게 해야 할지 고민한다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_6.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_6.png){width="500"}
 /// caption
 기억조각 - 말하는 머리들
 ///
@@ -135,7 +135,7 @@ tags:
 ???+ Abstract
     에르핀과 에슈르는 버터에게 질문하지만 버터는 아무것도 기억하지 못한다. 에르핀은 이걸 빌미로 버터를 더 괴롭히고 에슈르는 버터에게 연구 대상 제의를 한다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_7.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_8.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_7.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_8.png){width="400"}
 /// caption
 기억조각 - 버터는 무서워요 / 여왕님 주먹은 매워요!
 ///
@@ -150,7 +150,7 @@ tags:
 ???+ Abstract
     소동이 끝나고 얼마 후 에슈르는 버터에게 심리 상담을 해준다. 버터의 내면에 잠들어 있는 그것은 대체 무엇일까.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_9.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_butter_10.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_9.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_10.png){width="400"}
 /// caption
 기억 조각 - 나름은 상담사? / 과자~ 와아~!
 ///

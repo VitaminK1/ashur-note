@@ -41,7 +41,3 @@ tags:
 ## 트릭컬 노트 (잠정 업뎃 중단)
 에슈르에 관한 정보를 많이 얻을 수 있었던 유용한 사이트입니다.<br>
 + [트릭컬 노트](https://tr.triple-lab.com/)
-
-## 트릭컬 쿠폰 입력
-쿠폰스탕스가 이 링크를 좋아합니다.<br>
-+ [트릭컬 쿠폰 입력](https://coupon.a.prod.service.trickcal.io/)

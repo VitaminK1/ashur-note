@@ -26,7 +26,7 @@ tags:
 <br>
 심심하던 차에 요정왕국에 대해 알아보기로 하고 그나마 아는 사이인 교주에게로 간다. 겨우 일을 끝나고 잠을 청하는 교주의 방에 들이닥친 디아나는 요정 왕국을 구경하고 싶다는 부탁을 직접적으로 하기 부끄러운지 돌려 얘기하는데, 교주는 디아나의 속마음을 읽고 맞춰주기로 한다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_sado_dianayester_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_sado_dianayester_1.png){width="500"}
 /// caption
 '웃고 있는' 에슈르
 ///

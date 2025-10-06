@@ -10,7 +10,7 @@ tags:
 
 # 소개
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/Fairy_bakery_afternoon.png){width="400" height="200"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/Fairy_bakery_afternoon.png){width="400" height="200"}
 /// caption
 에슈르의 마법학교 (에심당)
 ///
@@ -29,7 +29,7 @@ tags:
 <br>
 
 ## 프로 파티시에
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_ricota_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_ricota_1.png){width="500"}
 /// caption
 기억 조각 - 먹는 거 맞아?
 ///
@@ -53,7 +53,7 @@ tags:
 <br>
 
 ## 자칭 마법학교 교장
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_sado_ashur_1.png){width="500" height="200"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_sado_ashur_1.png){width="500" height="200"}
 /// caption
 에슈르 어사이드 스토리 장면 일부
 ///
@@ -86,7 +86,7 @@ tags:
 <br>
 
 ## 푸대접 속성
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_leets_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_leets_1.png){width="500"}
 /// caption
 기억 조각 - 빵집 초토화
 ///
@@ -113,7 +113,7 @@ tags:
 <br>
 
 ## 악역 (시즌 1)
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_picora_4.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_picora_4.png){width="500"}
 /// caption
 기억 조각 - 버터의 흔적
 ///
@@ -137,12 +137,12 @@ tags:
 <br>
 
 ## 에심당
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet2.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet3.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet2.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet3.png){width="400"}
 /// caption
 펫 심부름 - 요정왕국
 ///
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet4.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/pet5.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet4.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet5.png){width="400"}
 /// caption
 펫 심부름 - 빵 냄새 맡기
 ///

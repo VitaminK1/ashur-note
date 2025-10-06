@@ -18,13 +18,13 @@ tags:
         <div class="rk-left-name">에슈르</div>
       </div>
       <div class="rk-portrait-wrap">
-    <script src="https://vitamink1.github.io/mkdocs-test/javascripts/spine-player.min.js"></script>
-    <link rel="stylesheet" href="https://vitamink1.github.io/mkdocs-test/css/spine-player.css" />
+  <script src="https://vitamink1.github.io/ashur-note/javascripts/spine-player.min.js"></script>
+  <link rel="stylesheet" href="https://vitamink1.github.io/ashur-note/css/spine-player.css" />
     <div id="player-container" style="width: 320px; height: 450px;"></div>
     <script>
     new spine.SpinePlayer("player-container", {
-        skelUrl: "https://vitamink1.github.io/mkdocs-test/assets/spine/standing/Ashur.skel",
-        atlasUrl: "https://vitamink1.github.io/mkdocs-test/assets/spine/standing/Ashur.atlas",
+  skelUrl: "https://vitamink1.github.io/ashur-note/assets/spine/standing/Ashur.skel",
+  atlasUrl: "https://vitamink1.github.io/ashur-note/assets/spine/standing/Ashur.atlas",
         backgroundColor: "#ffffff",
         alpha: false,
         preserveDrawingBuffer: true,
@@ -51,7 +51,7 @@ tags:
       <div class="rk-tmi-sep" aria-hidden="true"></div>
       <div class="rk-tmi-right">
         <div class="rk-mini-avatar" title="에슈르">
-          <img class="rk-mini-avatar-img" src="https://vitamink1.github.io/mkdocs-test/assets/Minimi.png" alt="에슈르">
+          <img class="rk-mini-avatar-img" src="https://vitamink1.github.io/ashur-note/assets/Minimi.png" alt="에슈르">
         </div>
         <span class="rk-tmi-text">소원은 마법 일타 강사</span>
       </div>
@@ -86,76 +86,76 @@ tags:
     <div class="rp-columns">
       <div class="rp-list">
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_28.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_28.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">UFC 당근튀김</div>
             <div class="rp-item-desc">에슈르가 당근튀김을 먹더니 팝콘이 질릴때 번갈아 먹을 수 있는 메뉴라면서 즐거워했다.</div>
             <div class="rp-mini">
               <div class="rp-mini-icon">
                 <div class="pref-mini-icon">
-                  <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Green.png" alt="frame">
-                  <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_42.png" alt="food">
+                  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Green.png" alt="frame">
+                  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_42.png" alt="food">
                 </div>
-                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/love.png" alt="emote"></div>
+                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/love.png" alt="emote"></div>
               </div>
               <div class="rp-mini-label">UFC 야채 튀김</div>
             </div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_4.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_4.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">카라멜 팝콘</div>
             <div class="rp-item-desc">에슈르는 바쁠때 한 주먹씩 입에 털어넣던 음식이라며 좋아했다.</div>
             <div class="rp-mini">
               <div class="rp-mini-icon">
                 <div class="pref-mini-icon">
-                  <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
-                  <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_43.png" alt="food">
+                  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
+                  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_43.png" alt="food">
                 </div>
-                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
               </div>
               <div class="rp-mini-label"> 엘플릭스 캬라멜 팝콘</div>
             </div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_22.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/hate.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_22.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/hate.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">석류석 열매</div>
             <div class="rp-item-desc">에슈르는 이 음식이 사악한 음식이라고 했다. 이빨이 괜찮은지 걱정된다.</div>
             <div class="rp-mini">
               <div class="rp-mini-icon">
                 <div class="pref-mini-icon">
-                  <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-                  <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_59.png" alt="food">
+                  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+                  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_59.png" alt="food">
                 </div>
-                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/hate.png" alt="emote"></div>
+                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/hate.png" alt="emote"></div>
               </div>
               <div class="rp-mini-label">석류석 화채</div>
             </div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_13.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/hate.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_13.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/hate.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">멜론 보코치니</div>
             <div class="rp-item-desc">에슈르는 이 음식이 사악한 음식이라고 했다. 이빨이 괜찮은지 걱정된다.</div>
             <div class="rp-mini">
               <div class="rp-mini-icon">
                 <div class="pref-mini-icon">
-                  <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gold.png" alt="frame">
-                  <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_63.png" alt="food">
+                  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gold.png" alt="frame">
+                  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_63.png" alt="food">
                 </div>
-                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/hate.png" alt="emote"></div>
+                <div class="rp-mini-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/hate.png" alt="emote"></div>
               </div>
               <div class="rp-mini-label">머스크 멜론 보코치니</div>
             </div>
@@ -164,63 +164,63 @@ tags:
       </div>
       <div class="rp-list">
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_32.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_32.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">송편</div>
             <div class="rp-item-desc">새로운 유형의 음식이라면서 나에게 조리법을 물어보면서 레시피를 배우려고 했다.</div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_31.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_31.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">얌얌비타C</div>
             <div class="rp-item-desc">에슈르는 자신이 새로 개발한 빵 위에 토핑으로 얹으면 괜찮은 물건이 나올 것 같다며 대량 구매를 했다.</div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_35.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_35.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">아몬드 로쉐</div>
             <div class="rp-item-desc">한 입 먹더니, 자신이 새롭게 만들 초코 케이크 위에 올리면 좋을 것 같다며 고개를 끄떡거렸다.</div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_37.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_37.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">에심당 뽈사탕</div>
             <div class="rp-item-desc">자신의 역작이라며 자랑하는 에슈르. 랜덤 박스에서 아이디어를 얻었다고 하는데 뭔가 이상하지만 다들 좋아하니까, 뭐.</div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_33.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_33.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">새콤비타F</div>
             <div class="rp-item-desc">에슈르는 빵 크림에 섞으면 어떨 것 같냐고 나에게 자문을 구했다.</div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_34.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_34.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">부쉬 드 노엘</div>
             <div class="rp-item-desc">자신의 빵집에서 만든 것보다 맛있다고 잠시 화를 내다가 다음 조각을 달라고 했다.</div>
           </div>
         </div>
         <div class="rp-row">
-          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_36.png" alt="food"></div>
-          <div class="rp-emote"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="emote"></div>
+          <div class="pref-icon"><img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_36.png" alt="food"></div>
+          <div class="rp-emote"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="emote"></div>
           <div class="rp-body">
             <div class="rp-item-title">떡국</div>
             <div class="rp-item-desc">쫀득한 식감이 괜찮다는 평을 내리고는 열심히 먹었다. 에슈르 나름의 칭찬인 듯 하다.</div>
@@ -293,14 +293,14 @@ tags:
 <div class="vk-card-outer">
   <div class="vk-card">
     <div class="vk-card__left">
-      <img class="vk-card__img-placeholder" src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/PresentList_Ashur.png" alt="item image">
+          <img class="vk-card__img-placeholder" src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/PresentList_Ashur.png" alt="item image">
     </div>
     <div class="vk-card__right">
       <h3 class="vk-title">에심당 상시 자유이용권</h3>
       <p class="vk-sub vk-small">배고프면 항상 찾아오라며 나에게 슬쩍 건네준 쿠폰이다.<br>에르핀에게는 절대 보여주지 말라고도 했다.</p>
     </div>
     <div class="vk-letter">
-      <img src="https://vitamink1.github.io/mkdocs-test/assets/letter.png">
+  <img src="https://vitamink1.github.io/ashur-note/assets/letter.png">
     </div>
   </div>
 </div>

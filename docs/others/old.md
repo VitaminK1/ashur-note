@@ -11,7 +11,7 @@ tags:
 # 기타 - 구릭컬
 
 ## 구릭컬에서 에슈르의 설정
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old2.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old2.png){width="500" height="300"}
 /// caption
 구릭컬 에슈르의 설정표
 ///
@@ -24,7 +24,7 @@ tags:
 <br>
 <br>
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/ashurerpin.gif){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/ashurerpin.gif){width="500" height="300"}
 /// caption
 에슈르와 에르핀 모션
 ///
@@ -35,19 +35,19 @@ tags:
 ## 구릭컬에서 에슈르의 모습
 
 === "스탠딩"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old3.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old3.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르의 스탠딩
     ///
 
 === "전투모션"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old3_1.png){width="300" height="180"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old3_1.png){width="300" height="180"}
     /// caption
     구릭컬 에슈르의 전투모션
     ///
 
 === "소개 이미지"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old4.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old4.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르 소개 이미지
     ///
@@ -58,24 +58,24 @@ tags:
 
 ## 구릭컬에서 에슈르의 육성
 === "퍼즐"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old5.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old5.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르 육성 창 - 퍼즐
     ///
 
 === "스킬"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old5_1.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old5_1.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르 육성 창 - 스킬
     ///
 
 === "애장품"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old5_2.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old5_2.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르 육성 창 - 애장품
     ///
 
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old1.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old1.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르 애장품 설명
     ///
@@ -87,38 +87,38 @@ tags:
 
 ## 구릭컬에서 에슈르가 나온 CG 모음
 === "CG 1"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old6.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old6.png){width="500" height="300"}
     /// caption
     로딩 화면 중 하나
     ///
 
 === "CG 2"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old6_0.png){width="400" height="300"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old6_1.png){width="400" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old6_0.png){width="400" height="300"}![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old6_1.png){width="400" height="300"}
     /// caption
     구릭컬 에슈르 CG 중 하나
     ///
 
 === "CG 3"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old6_2.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old6_2.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르 CG 중 하나
     ///
 
 === "CG 4"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old6_3.png){width="400" height="300"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old6_4.png){width="400" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old6_3.png){width="400" height="300"}![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old6_4.png){width="400" height="300"}
     /// caption
     구릭컬 에슈르 CG 중 하나
     ///
     CG 4의 경우에는 트릭컬 리바이브 시즌 1 메인스토리에 등장했지만 마리가 에슈르의 손을 물은 장면은 등장하지 않는다.
 
 === "CG 5"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old6_5.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old6_5.png){width="500" height="300"}
     /// caption
     구릭컬 에슈르 CG 중 하나
     ///
 
 === "CG 6"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old8.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old8.png){width="500" height="300"}
     /// caption
     뽑기 화면
     ///
@@ -129,25 +129,25 @@ tags:
 
 ## 절체절명 마법학교 월세대작전!
 === "소개문"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7.png){width="500" height="300"}
     /// caption
     당시 테마극장 소개문
     ///
 
 === "이벤트 버튼(로비)"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_1.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_1.png){width="500" height="300"}
     /// caption
     당시 테마극장 이벤트 버튼 in 로비
     ///
 
 === "이벤트 버튼(침략)"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_2.png){width="200" height="120"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_2.png){width="200" height="120"}
     /// caption
     당시 테마극장 소개문 in 침략
     ///
 
 === "이벤트 로비"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_3.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_3.png){width="500" height="300"}
     /// caption
     당시 테마극장 로비
     ///
@@ -158,31 +158,31 @@ tags:
 <br>
 
 === "씬 1"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_4.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_4.png){width="500" height="300"}
     /// caption
     테마극장 스토리 일부
     ///
 
 === "씬 2"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_5.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_5.png){width="500" height="300"}
     /// caption
     테마극장 스토리 일부
     ///
 
 === "씬 3"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_6.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_6.png){width="500" height="300"}
     /// caption
     테마극장 스토리 일부
     ///
 
 === "씬 4"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_7.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_7.png){width="500" height="300"}
     /// caption
     테마극장 스토리 일부
     ///
 
 === "씬 5"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/old/old7_8.png){width="500" height="300"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/old/old7_8.png){width="500" height="300"}
     /// caption
     테마극장 스토리 일부
     ///

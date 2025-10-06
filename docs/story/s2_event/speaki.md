@@ -16,7 +16,7 @@ tags:
 <br>
 
 ## 에피소드 1 - 스피키, 도망을 결심하다
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_speaki_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_speaki_1.png){width="500"}
 /// caption
 기억 조각 - 끌려나가는 진상
 ///

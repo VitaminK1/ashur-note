@@ -16,7 +16,7 @@ tags:
 <br>
 
 ## 에피소드 2 - 깨어난 믿음
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_1.png){width="500"}
 /// caption
 기억 조각 - 연속 꿀밤 사건
 ///
@@ -41,49 +41,49 @@ tags:
 ## 에피소드 5 - 상처받은 믿음
 
 === "장면 1"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_1.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_1.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(1)
     ///
 
 === "장면 2"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_2.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_2.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(2)
     ///
 
 === "장면 3"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_3.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_3.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(3)
     ///
 
 === "장면 4"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_4.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_4.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(4)
     ///
 
 === "장면 5"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_5.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_5.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(5)
     ///
 
 === "장면 6"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_6.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_6.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(6)
     ///
 
 === "장면 7"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_7.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_7.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(7)
     ///
 
 === "장면 8"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_2_8.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_8.png){width="500"}
     /// caption
     당시 테마극장 전투 수행 후 대사 일부(8)
     ///
@@ -112,7 +112,7 @@ tags:
 <br>
 
 ## 에피소드 9 - 흔들리는 믿음
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_3.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_3.png){width="500"}
 /// caption
 에피소드 9 장면의 일부(1)
 { .annotate }
@@ -151,7 +151,7 @@ tags:
 <br>
 
 ## 에피소드 11 - 함께하는 믿음
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_joanne_4.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_4.png){width="500"}
 /// caption
 기억 조각 - 빵으로 구원하리라
 ///

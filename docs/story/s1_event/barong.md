@@ -16,7 +16,7 @@ tags:
 <br>
 
 ## 에피소드 1 - 인형의 저주
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_barong_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_barong_1.png){width="500"}
 /// caption
 기억 조각 - 에슈르 인형?!
 ///
@@ -46,7 +46,7 @@ tags:
 <br>
 
 ## 에피소드 7 - 인형의 진짜 주인
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_barong_2.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_barong_2.png){width="500"}
 /// caption
 기억 조각 - 빠아아아앙!!!
 ///

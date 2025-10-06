@@ -11,7 +11,7 @@ tags:
 # 기타 - 연관 아이템
 
 ## 에심당 뽈사탕 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item3.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item3.png){width="500" height="300"}
 /// caption
 에심당 뽈사탕 에슈르 반응
 ///
@@ -22,7 +22,7 @@ tags:
 <br>
 
 ## 딱딱한 바게트
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item1.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item1.png){width="500" height="300"}
 /// caption
 딱딱한 바게트 설명
 ///
@@ -34,7 +34,7 @@ tags:
 <br>
 
 ## 딸기 케이크
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item2.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item2.png){width="500" height="300"}
 /// caption
 딸기 케이크 설명
 ///
@@ -47,7 +47,7 @@ tags:
 <br>
 
 ## 에르핀 더 돌잡러
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item4.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item4.png){width="500" height="300"}
 /// caption
 에르핀 더 돌잡러 설명
 ///
@@ -66,7 +66,7 @@ tags:
 <br>
 
 ## 에르핀 더 치어리더
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item5.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item5.png){width="500" height="300"}
 /// caption
 에르핀 더 치어리더 설명
 ///
@@ -85,7 +85,7 @@ tags:
 <br>
 
 ## 풀꽃 화관
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item7.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item7.png){width="500" height="300"}
 /// caption
 풀꽃 화관 설명
 ///
@@ -98,7 +98,7 @@ tags:
 <br>
 
 ## 완전한 아이스크림 케이크
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item6.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item6.png){width="500" height="300"}
 /// caption
 완전한 아이스크림 케이크 설명
 ///
@@ -111,11 +111,11 @@ tags:
 <br>
 
 ## 에심당 스프링클
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item8.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item8.png){width="500" height="300"}
 /// caption
 달콤상큼 대작전 이벤트 배너
 ///
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/others/item/item8_1.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item8_1.png){width="500" height="300"}
 /// caption
 에심당 스프링클 설명
 ///

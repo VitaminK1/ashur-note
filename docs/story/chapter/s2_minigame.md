@@ -26,7 +26,7 @@ tags:
 <br>
 
 #### 주문
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_5.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_6.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_5.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_6.png){width="400"}
 /// caption
 Tasty Table Time - 에슈르의 주문 일부
 ///
@@ -40,7 +40,7 @@ Tasty Table Time - 에슈르의 주문 일부
 #### 반응
 
 === "이상한데"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_1.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_1.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "이상한데" 반응
     ///
@@ -51,7 +51,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "먹을만해"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_2.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_2.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "먹을만해" 반응
     ///
@@ -62,7 +62,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "맛있어"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_3.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_3.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "맛있어" 반응
     ///
@@ -73,7 +73,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "완벽"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_4.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_4.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "완벽" 반응
     ///
@@ -92,7 +92,7 @@ Tasty Table Time - 에슈르의 주문 일부
 <br>
 
 #### 주문
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_7.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_8.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_7.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_8.png){width="400"}
 /// caption
 Tasty Table Time - 에슈르의 주문 일부
 ///
@@ -105,7 +105,7 @@ Tasty Table Time - 에슈르의 주문 일부
 #### 반응
 
 === "이상한데"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_9.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_9.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "이상한데" 반응
     ///
@@ -116,7 +116,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "먹을만해"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_10.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_10.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "먹을만해" 반응
     ///
@@ -127,7 +127,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "맛있어"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_11.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_11.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "맛있어" 반응
     ///
@@ -138,7 +138,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "완벽"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_12.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_12.png){width="500"}
     /// caption
     Tasty Table Time - 에슈르의 "완벽" 반응
     ///
@@ -153,7 +153,7 @@ Tasty Table Time - 에슈르의 주문 일부
 
 ## 주말 콘텐츠 : 놀이터
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_13.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_13.png){width="500"}
 /// caption
 놀이터 로비 중 하나
 ///
@@ -164,7 +164,7 @@ Tasty Table Time - 에슈르의 주문 일부
 
 ## 미니게임 : 이세계 픽셀
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_14.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_14.png){width="500"}
 /// caption
 이세계 픽셀 - 에심당 이벤트
 ///
@@ -184,7 +184,7 @@ Tasty Table Time - 에슈르의 주문 일부
 
 <br>
 === "몸통"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_15.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_15.png){width="500"}
     /// caption
     이세계 픽셀 - 몸통부터 먹었더니
     ///
@@ -195,7 +195,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "꼬리"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_16.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_16.png){width="500"}
     /// caption
     이세계 픽셀 - 꼬리부터 먹었더니
     ///
@@ -206,7 +206,7 @@ Tasty Table Time - 에슈르의 주문 일부
         </div>
 
 === "머리"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_minigame_17.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_17.png){width="500"}
     /// caption
     이세계 픽셀 - 머리부터 먹었더니
     ///

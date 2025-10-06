@@ -22,7 +22,7 @@ tags:
 <br>
 
 ## 에피소드 2 - 파티, 시작할게요!
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_1.png){width="500"}
 /// caption
 기억 조각 - 차라리 한 대 쳐라
 ///
@@ -70,7 +70,7 @@ tags:
 ???+ Abstract
     마지막으로 도착한 빵집에는 빵은 없고 멍하니 창밖만 보고 잇는 에슈르만 덩그러니 있다. 에슈르의 뜻밖의 푸념에 오팔은 에슈르를 정신 번쩍 나게 응원한다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_2.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_3.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_2.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_3.png){width="400"}
 /// caption
 기억 조각 - 에심당 휴업 선언 / 일생일대의 위기
 ///
@@ -175,7 +175,7 @@ tags:
 
 ## 에피소드 8 - 우리 모두를 위한 파티
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_4.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_4.png){width="500"}
 /// caption
 기억 조각 - 오팔 여기 잠들다
 ///
@@ -203,19 +203,19 @@ tags:
 + 테마극장 당시 로비에 스토리 진행도에 따라 로비 화면이 변하는 기믹이 있었다. 3번째 화면에서 에슈르의 말대로 선물 아이콘들을 정해진 위치에 넣어주면 4번째 화면으로 전환된다.
 
 === "1번째 화면"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_5.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_5.png){width="500"}
     /// caption
     오팔 테마극장 로비 - 1번째 화면
     ///
 
 === "2번째 화면"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_6.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_6.png){width="500"}
     /// caption
     오팔 테마극장 로비 - 2번째 화면
     ///
 
 === "3번째 화면"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_7.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_7.png){width="500"}
     /// caption
     오팔 테마극장 로비 - 3번째 화면
     ///
@@ -226,7 +226,7 @@ tags:
         </div>
 
 === "4번쨰 화면"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_opal_8.png){width="500"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_8.png){width="500"}
     /// caption
     오팔 테마극장 로비 - 4번째 화면
     ///

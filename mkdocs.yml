@@ -75,7 +75,7 @@ theme:
         name: Switch to system preference
 
 extra:
-  homepage: https://vitamink1.github.io/mkdocs-test/
+  homepage: https://vitamink1.github.io/ashur-note/
 
 extra_css:
   - css/box.css

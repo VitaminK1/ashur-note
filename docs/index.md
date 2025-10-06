@@ -7,7 +7,7 @@ tags:
 
 # About Ashur Note
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/title.png){width="500" height="300"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/title.png){width="500" height="300"}
 /// caption
 에슈르 소개
 ///

@@ -32,7 +32,7 @@ tags:
 <br>
 에슈르는 만들어 놓은 빵의 반도 못 팔고 에르핀에게 무상으로 갈취당한 상황인지라 이미 화나 있던 상태였다. 결국 시스트의 도발에 화가 머리 끝까지 오른 에슈르는 {==에르핀에게 갈취 당한 빵 개수만큼 맞을 준비를 하라==}며 시스트의 의도대로 분노의 바게트를 휘두르는데, 시스트가 회피해서 리츠가 대신 에슈르의 공격을 맞는다. 
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_leets_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_leets_1.png){width="500"}
 /// caption
 기억 조각 - 빵집 초토화
 ///

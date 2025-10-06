@@ -16,19 +16,19 @@ tags:
 + 3관에는 :stat-boardattack:{.medium-emoji}:stat-boardattack:{.medium-emoji}:stat-boardhp:{.medium-emoji}:stat-boardcritdmg:{.medium-emoji}:stat-boardmagicdef:{.medium-emoji}:stat-boardphysicdef:{.medium-emoji}가 있습니다.
 
 === "보드 1관"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/board/board1.png){width="250"}
+  ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board1.png){width="250"}
     /// caption
     에슈르 보드 1관
     ///
 
 === "보드 2관"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/board/board2.png){width="250"}
+  ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board2.png){width="250"}
     /// caption
     에슈르 보드 2관
     ///
 
 === "보드 3관"
-    ![Image title](https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/board/board3.png){width="250"}
+  ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board3.png){width="250"}
     /// caption
     에슈르 보드 3관
     ///
@@ -53,87 +53,87 @@ tags:
     </thead>
     <tbody>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/hate.png" alt="icon"></div><span>싫어함</span></td>
+  <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/hate.png" alt="icon"></div><span>싫어함</span></td>
         <td>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_22.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_22.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_13.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_13.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_59.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_59.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gold.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_63.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gold.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_63.png" alt="food">
         </div>
         </td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="icon"></div><span>좋아함</span></td>
+  <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="icon"></div><span>좋아함</span></td>
         <td>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_4.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_4.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_28.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gray.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_28.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Green.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_43.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Green.png" alt="frame">
+  <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_43.png" alt="food">
         </div>
         </td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="icon"></div><span>좋아함(공통)</span></td>
+  <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="icon"></div><span>좋아함(공통)</span></td>
         <td>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_33.png" alt="food">
+  <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_33.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_34.png" alt="food">
+        <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_34.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_35.png" alt="food">
+        <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_35.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_36.png" alt="food">
+        <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_36.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_37.png" alt="food">
+        <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Blue.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_37.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_31.png" alt="food">
+        <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_31.png" alt="food">
         </div>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_32.png" alt="food">
+        <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Purple.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_32.png" alt="food">
         </div>
         </td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/love.png" alt="icon"></div><span>특히 좋아함</span></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/love.png" alt="icon"></div><span>특히 좋아함</span></td>
         <td>
         <div class="pref-icon">
-        <img class="frame" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Green.png" alt="frame">
-        <img class="overlay" src="https://vitamink1.github.io/mkdocs-test/assets/common/food/Icon_Food_42.png" alt="food">
+        <img class="frame" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Green.png" alt="frame">
+        <img class="overlay" src="https://vitamink1.github.io/ashur-note/assets/common/food/Icon_Food_42.png" alt="food">
         </div>
         </td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/good.png" alt="icon"></div><span>그럭저럭</span></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/good.png" alt="icon"></div><span>그럭저럭</span></td>
         <td> 이외의 모든 음식들</td>
       </tr>
     </tbody>
@@ -153,31 +153,31 @@ tags:
         <th>선호도</th>
         <th>
           <div class="th-cell">
-            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gray.png" alt="badge">
+            <img class="th-badge" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gray.png" alt="badge">
             <span>일반</span>
           </div>
         </th>
         <th>
           <div class="th-cell">
-            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_CardPet_2.png" alt="badge">
+            <img class="th-badge" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_CardPet_2.png" alt="badge">
             <span>고급</span>
           </div>
         </th>
         <th>
           <div class="th-cell">
-            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_CardPet_3.png" alt="badge">
+            <img class="th-badge" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_CardPet_3.png" alt="badge">
             <span>희귀</span>
           </div>
         </th>
         <th>
           <div class="th-cell">
-            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_CardPet_4.png" alt="badge">
+            <img class="th-badge" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_CardPet_4.png" alt="badge">
             <span>전설</span>
           </div>
         </th>
         <th>
           <div class="th-cell">
-            <img class="th-badge" src="https://vitamink1.github.io/mkdocs-test/assets/common/itemslot/ItemSlot_Gold.png" alt="badge">
+            <img class="th-badge" src="https://vitamink1.github.io/ashur-note/assets/common/itemslot/ItemSlot_Gold.png" alt="badge">
             <span>개쩜</span>
           </div>
         </th>
@@ -185,7 +185,7 @@ tags:
     </thead>
     <tbody>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/hate.png" alt="icon"></div><span>싫어함</span></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/hate.png" alt="icon"></div><span>싫어함</span></td>
         <td>15</td>
         <td>20</td>
         <td>25</td>
@@ -193,7 +193,7 @@ tags:
         <td>35</td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/good.png" alt="icon"></div><span>그럭저럭</span></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/good.png" alt="icon"></div><span>그럭저럭</span></td>
         <td>20</td>
         <td>30</td>
         <td>40</td>
@@ -201,7 +201,7 @@ tags:
         <td>60</td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/like.png" alt="icon"></div><span>좋아함</span></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/like.png" alt="icon"></div><span>좋아함</span></td>
         <td>25</td>
         <td>40</td>
         <td>55</td>
@@ -209,7 +209,7 @@ tags:
         <td>80</td>
       </tr>
       <tr>
-        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/mkdocs-test/assets/common/food/love.png" alt="icon"></div><span>특히 좋아함</span></td>
+        <td class="pref-icon-cell"><div class="pref-icon-mini"><img src="https://vitamink1.github.io/ashur-note/assets/common/food/love.png" alt="icon"></div><span>특히 좋아함</span></td>
         <td>-</td>
         <td>46</td>
         <td>64</td>
@@ -233,24 +233,24 @@ tags:
     <p class="rel-title">에슈르의 모험회 스킬</p>
     <div class="rel-grid">
       <div class="rel-card rel-main">
-        <div class="rel-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/alba/LifeSkill10.png" alt="icon"></div>
+        <div class="rel-icon"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/alba/LifeSkill10.png" alt="icon"></div>
         <div class="rel-label">손기술</div>
         <div class="rel-badge">메인</div>
       </div>
       <div class="rel-card">
-        <div class="rel-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/alba/LifeSkill8.png" alt="icon"></div>
+        <div class="rel-icon"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/alba/LifeSkill8.png" alt="icon"></div>
         <div class="rel-label">암산</div>
       </div>
       <div class="rel-card">
-        <div class="rel-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/alba/LifeSkill1.png" alt="icon"></div>
+        <div class="rel-icon"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/alba/LifeSkill1.png" alt="icon"></div>
         <div class="rel-label">육체노동</div>
       </div>
       <div class="rel-card">
-        <div class="rel-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/alba/LifeSkill31.png" alt="icon"></div>
+        <div class="rel-icon"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/alba/LifeSkill31.png" alt="icon"></div>
         <div class="rel-label">추진력</div>
       </div>
       <div class="rel-card">
-        <div class="rel-icon"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/alba/LifeSkill32.png" alt="icon"></div>
+        <div class="rel-icon"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/alba/LifeSkill32.png" alt="icon"></div>
         <div class="rel-label">직감</div>
       </div>
     </div>
@@ -266,11 +266,11 @@ tags:
     <div class="rank-label">RANK 2</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="20"></span><span class="pill-text">물리 방어력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="20"></span><span class="pill-text">물리 방어력</span></div>
         <div class="stat-num">57</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="20"></span><span class="pill-text">마법 방어력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="20"></span><span class="pill-text">마법 방어력</span></div>
         <div class="stat-num">57</div>
       </div>
     </div>
@@ -279,11 +279,11 @@ tags:
     <div class="rank-label">RANK 3</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalRate.png" width="20"></span><span class="pill-text">치명타</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalRate.png" width="20"></span><span class="pill-text">치명타</span></div>
         <div class="stat-num">43</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalMult.png" width="20"></span><span class="pill-text">치명 피해</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalMult.png" width="20"></span><span class="pill-text">치명 피해</span></div>
         <div class="stat-num">43</div>
       </div>
     </div>
@@ -292,11 +292,11 @@ tags:
     <div class="rank-label">RANK 4</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalResist.png" width="20"></span><span class="pill-text">치명타 저항</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalResist.png" width="20"></span><span class="pill-text">치명타 저항</span></div>
         <div class="stat-num">43</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_Hp.png" width="20"></span><span class="pill-text">HP</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_Hp.png" width="20"></span><span class="pill-text">HP</span></div>
         <div class="stat-num">567</div>
       </div>
     </div>
@@ -305,11 +305,11 @@ tags:
     <div class="rank-label">RANK 5</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalMultResist.png" width="20"></span><span class="pill-text">치명 피해 저항</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalMultResist.png" width="20"></span><span class="pill-text">치명 피해 저항</span></div>
         <div class="stat-num">43</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_AttackPhysic.png" width="20"></span><span class="pill-text">물리 공격력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_AttackPhysic.png" width="20"></span><span class="pill-text">물리 공격력</span></div>
         <div class="stat-num">28</div>
       </div>
     </div>
@@ -318,11 +318,11 @@ tags:
     <div class="rank-label">RANK 6</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_AttackMagic.png" width="20"></span><span class="pill-text">마법 공격력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_AttackMagic.png" width="20"></span><span class="pill-text">마법 공격력</span></div>
         <div class="stat-num">28</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="20"></span><span class="pill-text">물리 방어력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="20"></span><span class="pill-text">물리 방어력</span></div>
         <div class="stat-num">113</div>
       </div>
     </div>
@@ -331,11 +331,11 @@ tags:
     <div class="rank-label">RANK 7</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="20"></span><span class="pill-text">마법 방어력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="20"></span><span class="pill-text">마법 방어력</span></div>
         <div class="stat-num">113</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalRate.png" width="20"></span><span class="pill-text">치명타</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalRate.png" width="20"></span><span class="pill-text">치명타</span></div>
         <div class="stat-num">85</div>
       </div>
     </div>
@@ -344,11 +344,11 @@ tags:
     <div class="rank-label">RANK 8</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalMult.png" width="20"></span><span class="pill-text">치명 피해</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalMult.png" width="20"></span><span class="pill-text">치명 피해</span></div>
         <div class="stat-num">85</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalResist.png" width="20"></span><span class="pill-text">치명타 저항</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalResist.png" width="20"></span><span class="pill-text">치명타 저항</span></div>
         <div class="stat-num">85</div>
       </div>
     </div>
@@ -357,11 +357,11 @@ tags:
     <div class="rank-label">RANK 9</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_CriticalMultResist.png" width="20"></span><span class="pill-text">치명 피해 저항</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_CriticalMultResist.png" width="20"></span><span class="pill-text">치명 피해 저항</span></div>
         <div class="stat-num">85</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_Hp.png" width="20"></span><span class="pill-text">HP</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_Hp.png" width="20"></span><span class="pill-text">HP</span></div>
         <div class="stat-num">1133</div>
       </div>
     </div>
@@ -370,11 +370,11 @@ tags:
     <div class="rank-label">RANK 10</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_AttackPhysic.png" width="20"></span><span class="pill-text">물리 공격력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_AttackPhysic.png" width="20"></span><span class="pill-text">물리 공격력</span></div>
         <div class="stat-num">57</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_AttackMagic.png" width="20"></span><span class="pill-text">마법 공격력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_AttackMagic.png" width="20"></span><span class="pill-text">마법 공격력</span></div>
         <div class="stat-num">57</div>
       </div>
     </div>
@@ -383,11 +383,11 @@ tags:
     <div class="rank-label">RANK 11</div>
     <div class="rank-content">
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="20"></span><span class="pill-text">물리 방어력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefensePhysic.png" width="20"></span><span class="pill-text">물리 방어력</span></div>
         <div class="stat-num">128</div>
       </div>
       <div class="stat-pill">
-        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/mkdocs-test/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="20"></span><span class="pill-text">마법 방어력</span></div>
+        <div class="pill-left"><span class="icon-circle"><img src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/stats/Icon_DefenseMagic.png" width="20"></span><span class="pill-text">마법 방어력</span></div>
         <div class="stat-num">128</div>
       </div>
     </div>

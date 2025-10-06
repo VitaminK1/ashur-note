@@ -14,7 +14,7 @@ tags:
 테마극장에는 등장하지 않았다.
 
 ## 여담
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s2_event_arco_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_arco_1.png){width="500"}
 /// caption
 테마극장 당시 죠안의 춤 영상과 반응 댓글 일부
 ///

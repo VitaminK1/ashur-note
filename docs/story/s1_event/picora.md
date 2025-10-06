@@ -19,7 +19,7 @@ tags:
 ???+ Abstract
     피코라는 죄책감은 있었지만, 잘못을 외면하며 요정 왕국 근처로 도망쳤다. 우연히 에슈르를 만나게 되고, 배가 고팠던 피코라는 에슈르가 도움을 주자 그녀를 따라간다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_picora_1.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_picora_1.png){width="500"}
 /// caption
 기억 조각 - 구원자인 줄
 ///
@@ -37,7 +37,7 @@ tags:
 ???+ Abstract
     에슈르가 마법에 조예가 깊다는 걸 알아챈 피코라는, 그녀를 스승으로 모시려 한다. 에슈르는 제자가 생겨 기뻐하지만⋯ 에슈르의 빵집에서는 마법이 아닌 지옥의 노동만이 기다릴 뿐이었다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_picora_2.png){width="400"}![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_picora_3.png){width="400"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_picora_2.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_picora_3.png){width="400"}
 /// caption
 기억 조각 - 이제 뭐 하면 되죠? / 학자금 빵출
 ///
@@ -49,7 +49,7 @@ tags:
 <br>
 하지만 에슈르는 피코라에게 무엇이든 줄 수 있다는 듯 말하다가 막상 피코라가 배울려고 하니 세상에 공짜는 없다며 선불 수업료를 요구한다. 피코라가 돈이 없다고 하자 피코라에게 엄격한 기준으로 제빵일을 시키며 가혹하게 부려먹는다. 거기에 수업료를 갚으려면 아직 일주일은 더 일해야 한다는 말과 함께 전단지 일도 시키는데, 왼쪽으로 꺾으면 나오는 전당포에는 절대 가지 말라고 당부한다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_picora_4.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_picora_4.png){width="500"}
 /// caption
 기억 조각 - 버터의 흔적
 ///
@@ -59,7 +59,7 @@ tags:
 <br>
 
 ## 에피소드 6 - 바가지의 피코라
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_event_picora_5.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_picora_5.png){width="500"}
 /// caption
 기억 조각 - 뒤통수에 한 방
 ///

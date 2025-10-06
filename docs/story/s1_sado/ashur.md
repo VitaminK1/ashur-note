@@ -121,7 +121,7 @@ tags:
 ???+ Abstract
     다른 이들에게는 보이지 않는 마법서를 발견한 에슈르. 에슈르의 어사이드는 알 수 없는 지식이 담긴 마도서였다.
 
-![Image title](https://vitamink1.github.io/mkdocs-test/assets/story/s1_sado_ashur_1.png){width="500" height="200"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_sado_ashur_1.png){width="500" height="200"}
 /// caption
 에슈르 어사이드 스토리 장면 일부
 ///
