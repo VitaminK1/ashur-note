@@ -58,6 +58,31 @@ tags:
 <br>
 
 ## 스킬
+
+=== "일반 공격"
+    <video controls preload="metadata" width="500" height="300">
+      <source src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/AshurAttack.mp4" type="video/mp4">
+    </video>
+    /// caption
+    일반공격 모습
+    ///
+
+=== "저학년 스킬 - 빵템피드"
+    <video controls preload="metadata" width="500" height="300">
+      <source src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/AshurSkill1.mp4" type="video/mp4">
+    </video>
+    /// caption
+    빵템피드 시전 모습
+    ///
+
+=== "고학년 스킬 - 빵테오"
+    <video controls preload="metadata" width="500" height="300">
+      <source src="https://vitamink1.github.io/ashur-note/assets/CharacterInfo/AshurSkill2.mp4" type="video/mp4">
+    </video>
+    /// caption
+    빵테오 시전 모습
+    ///
+
 <div class="lore-grid">
   <!-- Column 1 -->
   <article class="lore-card">

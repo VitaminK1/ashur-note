@@ -16,19 +16,19 @@ tags:
 + 3관에는 :stat-boardattack:{.medium-emoji}:stat-boardattack:{.medium-emoji}:stat-boardhp:{.medium-emoji}:stat-boardcritdmg:{.medium-emoji}:stat-boardmagicdef:{.medium-emoji}:stat-boardphysicdef:{.medium-emoji}가 있습니다.
 
 === "보드 1관"
-  ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board1.png){width="250"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board1.png){width="250"}
     /// caption
     에슈르 보드 1관
     ///
 
 === "보드 2관"
-  ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board2.png){width="250"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board2.png){width="250"}
     /// caption
     에슈르 보드 2관
     ///
 
 === "보드 3관"
-  ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board3.png){width="250"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/CharacterInfo/board/board3.png){width="250"}
     /// caption
     에슈르 보드 3관
     ///

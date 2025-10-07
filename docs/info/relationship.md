@@ -455,13 +455,13 @@ tags:
               <img class="frame circle" src="https://vitamink1.github.io/ashur-note/assets/sadoicon/Icon_GraduateSkill_Butter.png" alt="food">
               </div>
               <div class="pref-icon pref-circle-sm" title="시스트">
-                <img class="frame circle" src="https://vitamink1.github.io/ashur-note/assets/sadoicon/Icon_GraduateSkill_Leets.png" alt="food">
+              <img class="frame circle" src="https://vitamink1.github.io/ashur-note/assets/sadoicon/Icon_GraduateSkill_Sist.png" alt="food">
               </div>
             </td>
-                <img class="frame circle" src="https://vitamink1.github.io/ashur-note/assets/sadoicon/Icon_GraduateSkill_Sylla.png" alt="food">
+          </tr>
           <tr>
             <td class="pref-icon-cell"><span>보통이다</span></td>
-                <img class="frame circle" src="https://vitamink1.github.io/ashur-note/assets/sadoicon/Icon_GraduateSkill_Naia.png" alt="food">
+            <td>
               <div class="pref-icon pref-circle-md" title="피코라">
               <img class="frame circle" src="https://vitamink1.github.io/ashur-note/assets/sadoicon/Icon_GraduateSkill_Picora.png" alt="food">
               </div>

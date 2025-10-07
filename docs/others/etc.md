@@ -10,6 +10,18 @@ tags:
 
 # 기타 - 여담
 
+## 비밀의 베이커리
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/dungeon.png){width="500" height="300"}
+/// caption
+비밀의 베이커리 로비
+///
+별사탕을 소모하여 플레이할 수 있는 던전 중 하나인 비밀의 베이커리에 등장한다. 마법에 걸린 빵들이 빵집에서 반란을 일으켜 이를 퇴치한다는 줄거리를 가지고 있다. 에슈르의 특별한 마법으로 해당 컨텐츠에서는 모든 사도가 6학년으로 시작한다.
+
+<br>
+플레이 버튼을 클릭하면 나오는 영춘의 모습이 카드캡터 체리에 등장하는 주인공의 수호수, '케르베로스'인 것으로 보아 카드캡터 체리의 그림체를 패러디한 것으로 추측된다.
+<br>
+<br>
+
 ## 어사이드 개선 관련
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/aside.gif){width="500" height="300"}
 /// caption

@@ -44,6 +44,7 @@
         * [불 붙은 불행 속 쓰나미](./story/s2_event/shasha.md)
         * [수상한 요리사의 쿠킹비망록](./story/s2_event/ricota.md)
         * [댄스 쇼다운! 꿈꾸는 포도!](./story/s2_event/arco.md)
+        * [그을음 끝에 피어나는 빛무리](./story/s2_event/uros.md)
     * [사도 스토리](./story/chapter/s2_sado.md)
         * [그윈](./story/s2_sado/guin.md)
         * [폴랑](./story/s2_sado/polan.md)
@@ -62,4 +63,5 @@
     * [연관아이템](./others/item.md)
     * [구릭컬](./others/old.md)
     * [여담](./others/etc.md)
+    * [밈](./others/meme.md)
     * [외부링크](./others/webtoon.md)
