@@ -360,8 +360,8 @@ tags:
         <table class="intimacy-table">
           <tbody>
             <tr><td class="intimacy-level">볼 당기기</td><td class="intimacy-text">물장구로 복수할거에요⋯!</td></tr>
-            <tr><td class="intimacy-level">간지럽히기 1단계</td><td class="intimacy-text">(파악중)</td></tr>
-            <tr><td class="intimacy-level">간지럽히기 2단계</td><td class="intimacy-text">(파악중)</td></tr>
+            <tr><td class="intimacy-level">간지럽히기 1단계</td><td class="intimacy-text">으히~ 흐흐흐⋯</td></tr>
+            <tr><td class="intimacy-level">간지럽히기 2단계</td><td class="intimacy-text">악 간지럿, 간지러잇! 흐흐흐⋯</td></tr>
             <tr><td class="intimacy-level">꿀밤 때리기</td><td class="intimacy-text">아이스크림 떨어트릴뻔 했잖아요⋯</td></tr>
             <tr><td class="intimacy-level">쓰다듬기 1</td><td class="intimacy-text">음⋯ 선글라스는 건들지 말아주세요⋯ </td></tr>
             <tr><td class="intimacy-level">쓰다듬기 2</td><td class="intimacy-text">이게 바로, 진정한 휴가구나~</td></tr>
@@ -371,6 +371,27 @@ tags:
       </div>
     </div>
   
+=== "평온한 온천 여행"
+    <div class="intimacy-wrap">
+      <h3 class="intimacy-title">상호작용</h3>
+      <span> -  꿀밤 때리기 상호작용 해금 조건 : 친밀레벨 5 이상</span><br>
+      <span> -  쓰다듬기 2 대사 해금 조건 : 친밀레벨 10 이상</span><br>
+      <span> -  쓰다듬기 3 대사 해금 조건 : 친밀레벨 20 이상</span>
+      <div class="intimacy-table-wrap">
+        <table class="intimacy-table">
+          <tbody>
+            <tr><td class="intimacy-level">볼 당기기</td><td class="intimacy-text">잘 쉬고 있는데 갑자기요?!</td></tr>
+            <tr><td class="intimacy-level">간지럽히기 1단계</td><td class="intimacy-text">으히~ 흐흐흐⋯</td></tr>
+            <tr><td class="intimacy-level">간지럽히기 2단계</td><td class="intimacy-text"> 간지럿, 간지러잇! 흐흐흐⋯</td></tr>
+            <tr><td class="intimacy-level">꿀밤 때리기</td><td class="intimacy-text">따뜻한 물벼락 맞아 보실래요?!</td></tr>
+            <tr><td class="intimacy-level">쓰다듬기 1</td><td class="intimacy-text">히히⋯ 나른해져요.</td></tr>
+            <tr><td class="intimacy-level">쓰다듬기 2</td><td class="intimacy-text">조, 조금은 좋을지도⋯ 흥!</td></tr>
+            <tr><td class="intimacy-level">쓰다듬기 3</td><td class="intimacy-text">으음~ 더 하셔도 괜찮을 것 같기도 하고⋯</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
 <br>
 
 === "기본 사복"
@@ -400,12 +421,32 @@ tags:
       <div class="intimacy-table-wrap">
         <table class="intimacy-table">
           <tbody>
-            <tr><td class="intimacy-level">레벨 업</td><td class="intimacy-text">학위나 자격증은 많을수록 좋지.</td></tr>
+            <tr><td class="intimacy-level">레벨 업</td><td class="intimacy-text">학위나 자격증은 많을수록 좋지!</td></tr>
             <tr><td class="intimacy-level">장비 장착</td><td class="intimacy-text">전문가용 수영도구요? 잘쓸게요⋯!</td></tr>
             <tr><td class="intimacy-level">스킬 강화</td><td class="intimacy-text">역시 수영도 이론이 중요하다니까.</td></tr>
             <tr><td class="intimacy-level">보드 색칠</td><td class="intimacy-text">누구보다 빠르게 헤엄칠거에요⋯! </td></tr>
             <tr><td class="intimacy-level">뽑기 등장</td><td class="intimacy-text">빵집 주인이라고 부르지 말라구요!! / 제 이름이요? / 에슈르! / 요정최고 대마법사 에슈르가 간다!</td></tr>
             <tr><td class="intimacy-level">승급</td><td class="intimacy-text">수영학원 차려도 되겠는데?</td></tr>
+            <tr><td class="intimacy-level">어사이드 발현</td><td class="intimacy-text">끝내주는 마법 이론이 마구 떠오르는 것 같아요!<br>내 모든 지식을 담은 궁극의 마법서⋯ 를 만들어볼까?</td></tr>
+            <tr><td class="intimacy-level">어사이드 승급</td><td class="intimacy-text">마법서에 채워 넣을 증명식이 뭐가 있을까⋯ 오! 좀 더 쓰다듬어 주세요! 방금 좋은 방정식이 떠올랐어요!</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+=== "평온한 온천 여행"
+    <div class="intimacy-wrap">
+      <h3 class="intimacy-title">육성</h3>
+      <span> - 어사이드와 승급 대사 확인 필요</span>
+      <div class="intimacy-table-wrap">
+        <table class="intimacy-table">
+          <tbody>
+            <tr><td class="intimacy-level">레벨 업</td><td class="intimacy-text">온천학을 연구하고 있어요.</td></tr>
+            <tr><td class="intimacy-level">장비 장착</td><td class="intimacy-text">온천을 즐기는데 필요한 건가요?</td></tr>
+            <tr><td class="intimacy-level">스킬 강화</td><td class="intimacy-text">쉬니까 연구의 실마리가 잡히는 것 같기도 하구~</td></tr>
+            <tr><td class="intimacy-level">보드 색칠</td><td class="intimacy-text">저 쪽으로 산책 가실래요? </td></tr>
+            <tr><td class="intimacy-level">뽑기 등장</td><td class="intimacy-text">빵집 주인이라고 부르지 말라구요!! / 제 이름이요? / 에슈르! / 요정최고 대마법사 에슈르가 간다!</td></tr>
+            <tr><td class="intimacy-level">승급</td><td class="intimacy-text">푹 쉬었더니 기운이 나요!</td></tr>
             <tr><td class="intimacy-level">어사이드 발현</td><td class="intimacy-text">끝내주는 마법 이론이 마구 떠오르는 것 같아요!<br>내 모든 지식을 담은 궁극의 마법서⋯ 를 만들어볼까?</td></tr>
             <tr><td class="intimacy-level">어사이드 승급</td><td class="intimacy-text">마법서에 채워 넣을 증명식이 뭐가 있을까⋯ 오! 좀 더 쓰다듬어 주세요! 방금 좋은 방정식이 떠올랐어요!</td></tr>
           </tbody>
