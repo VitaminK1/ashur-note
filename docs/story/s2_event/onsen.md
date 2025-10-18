@@ -292,7 +292,7 @@ tags:
 온천을 발견해 기뻐하는 일행 사이에서 두려워하는 뮤트. 일행은 그런 뮤트에게 들어오라며 응원해주는데, 디아나가 {=='믿음을 가지고 하는 척 도약은 항상 힘드니 이럴 땐 주변의 도움이 살짝 필요할 지도 모른다'==}라며 뮤트를 온천으로 떠민다. 
 
 <br>
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_skin_mute_2.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_skin_mute_2.png){width="700"}
 /// caption
 테마극장 CG 1
 ///
