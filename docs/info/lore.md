@@ -513,6 +513,7 @@ tags:
         <tr><td class="intimacy-text">에슈르: 사카린 말고 설탕!<br>에르핀: 둘이 다른 거야?<br>에슈르: 사카린은 빵 못 만들어요.</td></tr>
         <tr><td class="intimacy-text">에르핀: 마법으로 빵 두 배!<br>에슈르: 배는 한 개 어치만 불러요.<br>에르핀: 뭐야~ 에슈르 능력없어!</td></tr>
         <tr><td class="intimacy-text">빅우드: 열매 뜯겼다⋯ 좋다⋯<br>에슈르: 응? 방금 뭐라고 했어?<br>빅우드: 아니다! 말 안 했다!</td></tr>
+        <tr><td class="intimacy-text">미로: 에, 에슈르! 드디어 제대로 인사하네, 안녕⋯!<br>에슈르: 으, 으악! 거울의 정령이다!!!<br>미로: 오해가 풀린 건지, 아닌 건지 모르겠어~!</td></tr>
         <tr><td class="intimacy-level">교주의 방 초대</td><td class="intimacy-text">이것이 교주의 집⋯!</td></tr>
         <tr><td class="intimacy-level">연회장 초대</td><td class="intimacy-text">안녕?</td></tr>
         <tr><td class="intimacy-level">관심 사도 지정</td><td class="intimacy-text">빵 먹고 싶어서 저한테 이러는 거 아니죠?</td></tr>

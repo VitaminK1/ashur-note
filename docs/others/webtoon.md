@@ -37,6 +37,7 @@ tags:
     + [대마법사 에슈르의 올바른 스킬 사용법](https://game.naver.com/lounge/Trickcal/board/detail/3970894)
     + [어서 와, 새로운 사복!](https://game.naver.com/lounge/Trickcal/board/detail/4464016)
     + [메인스토리 풀더빙](https://game.naver.com/lounge/Trickcal/board/detail/4538945)
+    + [온천 탐험 모임 시작 전, 델리아의 이야기](https://game.naver.com/lounge/Trickcal/board/detail/6826035)
 
 ## 트릭컬 노트 (잠정 업뎃 중단)
 에슈르에 관한 정보를 많이 얻을 수 있었던 유용한 사이트입니다.<br>

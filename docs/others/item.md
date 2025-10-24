@@ -84,6 +84,15 @@ tags:
 <br>
 <br>
 
+## 꾸워바라의 펫 쿠션
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/PetCushion_Capybara.png){width="500" height="300"}
+/// caption
+펫 '꾸워바라'의 배경 쿠션 이미지
+///
+'꾸워바라' 펫의 쿠션인 땅콩버터 통의 겉면 인쇄물에 등장한다.
+<br>
+<br>
+
 ## 풀꽃 화관
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item7.png){width="500" height="300"}
 /// caption
