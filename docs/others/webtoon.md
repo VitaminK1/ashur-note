@@ -39,6 +39,10 @@ tags:
     + [메인스토리 풀더빙](https://game.naver.com/lounge/Trickcal/board/detail/4538945)
     + [온천 탐험 모임 시작 전, 델리아의 이야기](https://game.naver.com/lounge/Trickcal/board/detail/6826035)
 
++  {==BOGO==}
+    + [가을나기 - 같이 한잔 할래?](https://game.naver.com/lounge/Trickcal/board/detail/6819047)
+
+
 ## 트릭컬 노트 (잠정 업뎃 중단)
 에슈르에 관한 정보를 많이 얻을 수 있었던 유용한 사이트입니다.<br>
 + [트릭컬 노트](https://tr.triple-lab.com/)

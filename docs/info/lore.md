@@ -508,7 +508,7 @@ tags:
   <div class="intimacy-table-wrap">
     <table class="intimacy-table">
       <tbody>
-        <tr><td class="intimacy-level" rowspan="4">교단</td>
+        <tr><td class="intimacy-level" rowspan="5">교단</td>
         <td class="intimacy-text">에슈르: 휘핑 손으로 쳐 볼래?</td></tr>
         <tr><td class="intimacy-text">에슈르: 사카린 말고 설탕!<br>에르핀: 둘이 다른 거야?<br>에슈르: 사카린은 빵 못 만들어요.</td></tr>
         <tr><td class="intimacy-text">에르핀: 마법으로 빵 두 배!<br>에슈르: 배는 한 개 어치만 불러요.<br>에르핀: 뭐야~ 에슈르 능력없어!</td></tr>

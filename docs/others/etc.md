@@ -97,7 +97,7 @@ tags:
     ///
 
 === "모험회 CG"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/albastorycg.png){width="200"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/albastorycg.png){width="500"}
     /// caption
     모험회 스토리 CG
     ///
