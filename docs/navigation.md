@@ -61,11 +61,9 @@
     * [미니게임](./story/chapter/s2_minigame.md)
 * 시즌 3
     * [메인 스토리](./story/chapter/s3_main.md)
-        * [아직 없음](./story/s2_main/c3.md)
     * [이벤트 스토리](./story/chapter/s3_event.md)
         * [거울에 보이는 것보다 가까이 있음!](./story/s3_event/miro.md)
-    * [사도 스토리](./story/chapter/s2_sado.md)
-        * [아직 없음](./story/s2_sado/etc.md)
+    * [사도 스토리](./story/chapter/s3_sado.md)
 * 기타
     * [공식일러](./others/event.md)
     * [뽑기연출](./others/gacha.md)
