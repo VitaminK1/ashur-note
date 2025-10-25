@@ -11,18 +11,18 @@ tags:
 # 기타 - 밈
 
 ## 대슈르 (숭배 밈)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/daeshur.png){width="500"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/daeshur.png){width="300"}
 /// caption
 기습숭배 패러디 팬아트
 ///
-'멜트다운 버터' 이후 보여준 악덕사장 행보 때문에 부정적으로 보는 다수의 유저들과 그래도 사정이 있었으며 도움도 많이 줬다며 옹호하는 소수의 유저들이 극명하게 커뮤니티에서 대립하던 때가 있었다. 각 세력은 당시 유행하던 '평균' 밈과 '숭배' 밈을 에슈르에 대입해 사용하곤 했었는데, 유저들이 반어적이든 진심이든 그 당시 나왔던 팬아트를 자주 사용하였다. 
-
+'멜트다운 버터' 이후 보여준 악덕사장 행보 때문에 부정적으로 보는 다수의 유저들과 그래도 사정이 있었으며 도움도 많이 줬다며 옹호하는 소수의 유저들이 극명하게 커뮤니티에서 대립하던 때가 있었다. 각 세력은 당시 유행하던 '평균' 밈과 '숭배' 밈을 에슈르에 대입해 사용하곤 했었는데, 유저들이 반어적이든 진심이든 해당 팬아트를 커뮤니티에서 자주 사용하였다. 
+<br>
 
 ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_3.png){width="500"}
 /// caption
 '누구를 위하여 기도를 올리나' 테마극장의 장면 일부
 ///
-이후 '누구를 위하여 기도를 올리나' 테마극장에서 흰색배경에 후광연출을 사용해 '숭배' 밈을 패러디한 듯한 모습을 보여주자, '대슈르' 밈이 확산되었다.
+이후 '누구를 위하여 기도를 올리나' 테마극장에서 흰색배경에 후광연출을 사용해 '숭배' 밈을 패러디한 듯한 모습을 보여주었다. 그 결과 에슈르를 '대슈르'라고 부르는 밈이 확산되었다.
 <br>
 <br>
 
@@ -31,6 +31,69 @@ tags:
 /// caption
 모션 개선 때 쓰인 그림
 ///
-안 그래도 추정되는 나이에 비해 가슴이 거의 없다는 이유로, 빈유 캐릭터에 대한 다양한 음해 밈(남자, 절벽 등) 또한 에슈르가 받고 있었다. 그 와중에 얼굴이 너무 다르다는 의견을 수용해 게임사에서 모션을 개선했는데, 상체 옷의 음영까지 제거해버려 이후 에슈르는 빈유의 대표격 캐릭터가 되었다.
+안 그래도 추정되는 나이에 비해 가슴이 거의 없다는 이유로, 빈유 캐릭터에 대한 다양한 음해 밈(남자, 절벽 등) 또한 에슈르가 받고 있었다. 그 와중에 전투 SD와 스탠딩 모습이 너무 다르다는 의견을 수용해 게임사에서 모션을 개선했는데, 상체 옷의 음영까지 제거한 것이 주목받아 이후 에슈르는 빈유의 대표격 캐릭터가 되었다.
 <br>
 <br>
+
+## 관련 영상
+
+### 학생 교육용 비디오 (2024.3.9)
+<figure>
+  <iframe src="https://www.youtube.com/embed/E3_PTjOSIsA?si=fnAzcBrwBAVA9deF" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
+  <figcaption>학생 교육용 비디오</figcaption>
+</figure>
+
+스폰지밥의 '직원교육용 비디오' 에피소드를 패러디했다. 에슈르는 집게사장 역, 버터가 스폰지밥 역을 맡았다.
+<br>
+<br>
+
+### 에르핀은 딸기케익을 좋아해! (2024.6.26)
+<figure>
+  <iframe src="https://www.youtube.com/embed/ZSul5Yl-Kcc?si=QfUypojaBXw60Pa1" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
+  <figcaption>에르핀은 딸기케익을 좋아해!(노래cov)</figcaption>
+</figure>
+
+'나는 감자튀김을 좋아해' 노래를 패러디했다. 에르핀과 에슈르의 관계를 노래에 적절히 반영했다.
+<br>
+<br>
+
+### EJ 특공대 (2024.8.31)
+<figure>
+  <iframe src="https://www.youtube.com/embed/MWG3A2HH424?si=Vf5Dk0EkatFJqQmT" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
+  <figcaption>EJ 특공대</figcaption>
+</figure>
+
+전체적으로 VJ 특공대의 맛집 소개 클리셰를 패러디했으며, 중간에 스폰지밥의 '직원교육용 비디오' 에피소드 밈도 차용했다.
+<br>
+<br>
+
+### 젠장, 에슈르! 이 공격은 뭐냐..!! (2024.9.22)
+<figure>
+  <iframe src="https://www.youtube.com/embed/k4MZd4_4l9M?si=VR3OvquBuBpqJtKc" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
+  <figcaption>젠장, 에슈르! 이 공격은 뭐냐..!!</figcaption>
+</figure>
+
+원피스 애니메이션에서 티치가 자신의 몸에 박힌 불꽃창을 만지는 장면을 변형하여 '에이스 vs 검은수염' 영상이 유명해졌고, 그 영상을 패러디했다. 이후 영상에서 가장 인상적이었던 '젠장 에슈르! 이 xx은 대체 뭐냐!' 대사가 자주 언급된다.
+<br>
+<br>
+
+### 엘리아스 명화극장 Vol.2 (2025.9.8)
+<figure>
+  <iframe src="https://www.youtube.com/embed/1LiNXPzPD7Y?si=R9eQGVmq6pWJs0XB" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
+  <figcaption>엘리아스 명화극장 Vol.2</figcaption>
+</figure>
+
+1분 53초에 짧게 지나가는 중간 영상에서 등장한다. 포켓몬 실루엣 퀴즈(오늘의 포켓몬은 뭘까요)를 패러디했다. 구릭컬에서 에슈르와 에르핀이 과거에 닮았다는 설정이 있었기에 두 사도간 유사점이 많았다는 사실을 반영한 것으로 보인다. 해당 설정에 대한 구체적인 내용은 '구릭컬' 문서 참고.
+<br>
+<br>
+
+### 내 골반이 멈추지 않는 에슈르 (2025.10.25)
+<figure>
+  <iframe src="https://www.youtube.com/embed/Q2CYvEOk0LM?si=OQdMkGFOakQ0jNMK" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
+  <figcaption>내 골반이 멈추지 않는 에슈르</figcaption>
+</figure>
+
+당시 릴스에서 시작된 '골반' 밈이 유행했었다. 원본밈은 약간 불쾌했던 반면, 해당 영상에서는 그 밈을 귀여우면서도 미로 테마극장 스토리에 맞게 각색했다.
+<br>
+<br>
+
