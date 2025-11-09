@@ -9,7 +9,7 @@ tags:
 ---
 
 # 이벤트 스토리 - 그을음 끝에 피어나는 빛무리
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급되지 않음</span>
+<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
 <br>
 직접 등장하지는 않고 마카샤가 설명하는 내용의 예시 컷씬으로 잠깐 등장한다.
 <br>
@@ -28,7 +28,7 @@ tags:
         필연이 아니라 우연으로 보일 수밖에 없지 않을까요?
     </div>
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급되지 않음</span>
+<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
 <br>
 가까스로 우로스를 피해 도망친 사도들은 교주에게 우로스가 재림했음을 알리는데, 이 사태에 대해 각자 생각을 말하며 고심하던 도중 마카샤가 등장한다. 마카샤는 디아나가 우로스와 싸우게 만들어 이기게 만들면 되는 것이 아니냐고 말하는데, 그렇게 하면 세계수의 선언으로 인해 정해진, 무한히 순환하는 운명을 깰 수 없다며 극구 반대한다.
 

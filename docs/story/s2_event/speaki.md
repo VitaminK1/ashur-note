@@ -22,7 +22,7 @@ tags:
 ///
 
 ???+ quote
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">스피키</span><br>
+    :sadoicon-speaki:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="speaki">스피키</span><br>
     <div class="speech-bubble">
         헤에엑⋯. 빵 요정 가게에 백성들이 너무 많아요⋯.<br>
         하지만 이 네르! 당당하게 앞으로 나가서 모습을 보이면! 모두가 길을 비켜주겠⋯ 으아악!!

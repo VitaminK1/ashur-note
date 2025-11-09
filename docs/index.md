@@ -11,19 +11,28 @@ tags:
 /// caption
 에슈르 소개
 ///
-본 문서는 에피드게임즈에서 개발한 트릭컬 리바이브에 등장하는 캐릭터, 에슈르(Ashur)에 관한 것을 기록하기 위한 목적으로 생성되었습니다.
 
-???+ abstract "업데이트 사항 (2025-10-25)"
-    + '시즌 3 / 이벤트 스토리' 문서에 스킨 테마극장 '거울에 보이는 것보다 가까이 있음!' 추가
-    + '기타 / 공식 일러' 문서 생성 및 내용 보충
-    + '캐릭터 정보 / 기록' 문서에 교단 대사 추가
-    + '기타 / 밈' 문서에 연관 영상 추가
++ 이름 : 에슈르 ( Ashur / エシュール )
++ 성격 : 우울
++ 종족 : 요정
++ 성우 : 장예나
 
 <br>
 
+본 문서는 에피드게임즈에서 개발한 트릭컬 리바이브에 등장하는 캐릭터, 에슈르(Ashur)에 관한 것을 기록하기 위한 목적으로 생성되었습니다.
+트릭컬 글로벌 버전의 내용은 포함되지 않았습니다.
+
+???+ abstract "업데이트 사항 (2025-11-07)"
+    + '시즌 3 / 이벤트 스토리' 문서에 테마극장 '절체절명! 요가 레스큐 프로젝트!' 추가
+    + '기타 / 연관아이템'에 인게임 수집품 항목 추가 및 온천 피규어 추가
+    + '기타 / 미니게임' 탭 신설 및 내용 이전
+    + '기타 / 글로벌 에셋' 탭 추가
+
 ???+ abstract "To-Do"
-    + '캐릭터 정보' 문서에 캐릭터 대사 정보 내용 확인 및 추가 필요
-    + '미로' 연회장 대사 확인 필요
+    + '캐릭터 정보' 문서에 캐릭터 대사 정보 내용 확인 및 추가 
+    + 미로와 아사나 연회장 대사 확인
+    + '아사나/미로' 사도 스토리 내용 추가
+
 
 <br>
 
@@ -35,14 +44,14 @@ tags:
 
 * 시즌 1 : 메인스토리 시즌 1 기간 동안 출시된, 에슈르가 등장하거나 언급된 스토리의 내용을 기록한 곳입니다.
     * [메인 스토리](./story/chapter/s1_main.md) / [이벤트 스토리](./story/chapter/s1_event.md) / [사도 스토리](./story/chapter/s1_sado.md)
-    * [연회장 대화](./story/chapter/s1_etc.md) / [미니게임](./story/chapter/s1_minigame.md)
+    * [연회장 대화](./story/chapter/s1_etc.md)
 
 * 시즌 2 : 메인스토리 시즌 2 기간 동안 출시된, 에슈르가 등장하거나 언급된 스토리의 내용을 기록한 곳입니다.
     * [메인 스토리](./story/chapter/s2_main.md) / [이벤트 스토리](./story/chapter/s2_event.md) / [사도 스토리](./story/chapter/s2_sado.md)
-    * [외전](./story/chapter/s2_extra.md) / [연회장 대화](./story/chapter/s2_etc.md) / [미니게임](./story/chapter/s2_minigame.md)
+    * [외전](./story/chapter/s2_extra.md) / [연회장 대화](./story/chapter/s2_etc.md)
 
 * 시즌 3 : 메인스토리 시즌 3 기간 동안 출시된, 에슈르가 등장하거나 언급된 스토리의 내용을 기록한 곳입니다.
     * [메인 스토리](./story/chapter/s3_main.md) / [이벤트 스토리](./story/chapter/s3_event.md) / [사도 스토리](./story/chapter/s3_sado.md)
 
 * 기타 : 시즌과 관계없이 에슈르와 관련된 잡다한 내용을 기록한 곳입니다.
-    * [공식일러](./others/event.md) / [뽑기연출](./others/gacha.md) / [연관아이템](./others/item.md) / [구릭컬](./others/old.md) / [여담](./others/etc.md) / [외부링크](./others/webtoon.md)
+    * [미니게임](./others/minigame.md) / [공식일러](./others/event.md) / [뽑기연출](./others/gacha.md) / [연관아이템](./others/item.md) / [구릭컬](./others/old.md) / [글로볼](./others/global.md) / [여담](./others/etc.md) / [외부링크](./others/webtoon.md)

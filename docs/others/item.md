@@ -1,16 +1,96 @@
 ---
-title: 기타 - 연관 아이템
+title: 기타 - 연관아이템
 publish: true
 icon: fontawesome/solid/boxes-packing
 description: 
-subtitle: 
+subtitle:
 tags:
   - 기타
 ---
 
-# 기타 - 연관 아이템
+# 기타 - 연관아이템
 
-## 에심당 뽈사탕 
+<br>
+
+## 수집품
+
+<br>
+
+### 에슈르 쿠션 (+120)
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/pillow.png){width="100"}
+/// caption
+에슈르 쿠션
+///
+!!! quote ""
+      사슴뿔 모자를 쓰고 있는 빵집⋯이 아니라 마법학교 교장 에슈르를 닮은 쿠션이다.
+
+'산타찾기 대소동' 이벤트 때 획득 가능했다. 
+<br>
+<br>
+
+### 에슈르 미니 포스터 (+150)
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/pillow.png){width="100"}
+/// caption
+에슈르 쿠션
+///
+!!! quote ""
+      볼이 빵빵한 에슈르의 미니 포스터다.
+
+연구소에서 제작가능하다. '반질반질 종이'가 8개 필요한 다른 포스터들보다 2개 덜 요구하는데 반해 명성치는 동일하게 오른다.
+<br>
+<br>
+
+### 에슈르 피규어 (+?)
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/fig1.png){width="300"}
+/// caption
+에슈르 피규어 (미사용)
+///
+
+클라이언트 파일 내에 존재하지만 인게임에서는 등장하지 않는다.
+<br>
+<br>
+
+### 요정족 출동 피규어 (+1000)
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/fig2.png){width="500" height="300"}
+/// caption
+요정족 출동 피규어
+///
+!!! quote ""
+      장물 수집을 하러 간 마요를 제외한 요정족이 모여 포즈를 취하고 있다.
+
+2023년 11월 트릭컬 패스에서 추가로 판매하는 상품 중 하나이다.
+<br>
+<br>
+
+### 에슈르 바캉스 키링 (+120)
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/keyring.png){width="100"}
+/// caption
+에슈르 바캉스 키링
+///
+!!! quote ""
+      바캉스 중, 얼굴에 태닝 자국이 남아버린 에슈르의 모습이 담긴 키링이다.
+
+캐시 상점 인테리어 샵에서 '퍼리 비이치 키링 패키지'에 포함되어 있다.
+<br>
+<br>
+
+### 다 함께 온천에서 피규어 (+1000)
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/fig3.png){width="500" height="300"}
+/// caption
+요정족 출동 피규어
+///
+!!! quote ""
+      함께 온천 여행을 온 마카샤, 그윈, 에슈르, 디아나, 뮤트의 모습을 본떠 만든 피규어이다.
+
+2025년 11월 트릭컬 패스에서 추가로 판매하는 상품 중 하나이다.
+<br>
+<br>
+
+## 기타 아이템
+
+<br>
+
+### 에심당 뽈사탕 
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item3.png){width="500" height="300"}
 /// caption
 에심당 뽈사탕 에슈르 반응
@@ -21,7 +101,7 @@ tags:
 <br>
 <br>
 
-## 딱딱한 바게트
+### 딱딱한 바게트
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item1.png){width="500" height="300"}
 /// caption
 딱딱한 바게트 설명
@@ -33,7 +113,7 @@ tags:
 <br>
 <br>
 
-## 딸기 케이크
+### 딸기 케이크
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item2.png){width="500" height="300"}
 /// caption
 딸기 케이크 설명
@@ -46,7 +126,7 @@ tags:
 <br>
 <br>
 
-## 에르핀 더 돌잡러
+### 에르핀 더 돌잡러
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item4.png){width="500" height="300"}
 /// caption
 에르핀 더 돌잡러 설명
@@ -65,7 +145,7 @@ tags:
 <br>
 <br>
 
-## 에르핀 더 치어리더
+### 에르핀 더 치어리더
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item5.png){width="500" height="300"}
 /// caption
 에르핀 더 치어리더 설명
@@ -84,7 +164,7 @@ tags:
 <br>
 <br>
 
-## 꾸워바라의 펫 쿠션
+### 꾸워바라의 펫 쿠션
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/PetCushion_Capybara.png){width="200"}
 /// caption
 펫 '꾸워바라'의 배경 쿠션 이미지
@@ -93,7 +173,7 @@ tags:
 <br>
 <br>
 
-## 풀꽃 화관
+### 풀꽃 화관
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item7.png){width="500" height="300"}
 /// caption
 풀꽃 화관 설명
@@ -106,7 +186,7 @@ tags:
 <br>
 <br>
 
-## 완전한 아이스크림 케이크
+### 완전한 아이스크림 케이크
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item6.png){width="500" height="300"}
 /// caption
 완전한 아이스크림 케이크 설명
@@ -119,7 +199,7 @@ tags:
 <br>
 <br>
 
-## 에심당 스프링클
+### 에심당 스프링클
 ![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item8.png){width="500" height="300"}
 /// caption
 달콤상큼 대작전 이벤트 배너

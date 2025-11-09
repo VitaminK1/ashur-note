@@ -132,6 +132,14 @@
   background-color: #ae396d;
 }
 
+.tag-box[data-sado="hilde"] {
+  background-color: #ccea94;
+}
+
+.tag-box[data-sado="asana"] {
+  background-color: #fb874c;
+}
+
 .speech-bubble {
     display: block;          /* 한 줄 전체 차지 */
     width: fit-content; 

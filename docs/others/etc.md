@@ -52,40 +52,10 @@ tags:
 <br>
 <br>
 
-## 인게임 에슈르 기타 에셋 모음 (미사용 포함)
-=== "피규어 1"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/fig1.png){width="300"}
-    /// caption
-    에슈르 피규어 (미사용)
-    ///
-
-=== "피규어 2"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/fig2.png){width="500" height="300"}
-    /// caption
-    요정족 출동 피규어
-    ///
-
-=== "키링"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/keyring.png){width="100"}
-    /// caption
-    에슈르 수영복 스킨 키링
-    ///
-
-=== "카드"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/card1.png){width="200"}
-    /// caption
-    글로벌에서 일반 등급 스펠 카드로 출시되었다.
-    ///
-
-=== "패시브"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/passive.png){width="150"}
-    /// caption
-    에슈르 패시브
-    ///
-    글로벌 CBT 버전에서 출시되었던 에슈르의 패시브 스킬 아이콘이다.
+## 인게임 에슈르 기타 에셋 모음
 
 === "카톡 이모티콘"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/con1.gif){width="150"}    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/con2.gif){width="150"}
+    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/con1.gif){width="150"}![Image title](https://vitamink1.github.io/ashur-note/assets/others/con2.gif){width="150"}
     /// caption
     카카오톡 이모티콘
     ///
@@ -95,12 +65,5 @@ tags:
     /// caption
     에슈르 스킬 시전 이펙트
     ///
-
-=== "모험회 CG"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/others/albastorycg.png){width="500"}
-    /// caption
-    모험회 스토리 CG
-    ///
-    글로벌 서버에서 모험회 레벨 5를 달성하면 해금되는 사도 스토리에서 쓰이는 CG.
 
 
