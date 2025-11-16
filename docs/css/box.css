@@ -140,6 +140,20 @@
   background-color: #fb874c;
 }
 
+.tag-box[data-sado="chopi"] {
+  background-color: #da9796;
+}
+
+.tag-box[data-sado="allet"] {
+  background-color: #c0b4b6;
+}
+
+.tag-box[data-sado="sari"] {
+  background-color: #c0b4b6;
+}
+
+
+
 .speech-bubble {
     display: block;          /* 한 줄 전체 차지 */
     width: fit-content; 
