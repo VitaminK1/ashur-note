@@ -10,9 +10,59 @@ tags:
 
 # 사도 스토리 - 아사나
 
-## 에피소드 4 - 여왕과 메이드와 따라쟁이 1
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+## 에피소드 1 - 그걸 다 먹고도 괜찮다고요?!
+
+![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_sado_asana_1.png){width="500"}
+/// caption
+에피소드 1의 한 장면
+///
+
+<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
 <br>
-(내용)
+아사나는 동생 에르핀의 건강도 관리할 겸 체크해달라는 벨리타의 부탁으로 요정왕궁을 방문하고 네르와 인사를 주고 받는다. 건강 관리사가 된 아사나는 우선 건강 관리에서 제일 중요한 생활 습관과 식습관을 파악하기 위해, 에르핀에겐 비밀로 하고 에르핀을 24시간 밀착감시하겠다는 계획을 실행하기로 한다.
+
+<br>
+때마침 점심을 먹으려는 에르핀을 발견하는데, 죠안에게 계속 요구하며 빵을 거의 마시는 수준으로 탄수화물만 잔뜩 섭취하는 모습을 목격한다. 그 모습에 충격을 받아 몰래 지켜보겠다는 계획도 잊고 몸에 해롭다며 에르핀에게 직접 말하는 아사나. 에르핀은 원래 먹던 양의 절반도 안된다며 괜찮다고 말한다. 죠안 또한 보통 요정 평균보다는 많긴 하지만 최근 들어 식사량이 많이 줄기는 했다고.(1)
+{.annotate}
+
+1. 왕관의 효과가 사라졌기 때문인 것으로 보인다. 인게임에서 등장하는 에르핀의 모습에도 왕관은 쓰고 있지 않다.
+
+<br>
+이후 에르핀은 동행하는 아사나 조차 따라잡기 버거울 만큼 하루종일 재밌어 보이는 것을 찾아 뛰어다녔고, 저녁이 되자 배가 고프다며 에슈르의 빵집에 들른다. 
+
+???+ quote
+    :sadoicon-erpin:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="erpin">에르핀</span><br>
+    <div class="speech-bubble">
+        에슈르! 나 왔어! 오늘 팔고 남은 빵 좀 있어?
+    </div>
+    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
+    <div class="speech-bubble">
+        여, 여왕님⋯!!<br>
+        으흐흑, 여왕님⋯!! 보고 싶었다구요⋯!!<br>
+        흐아앙-! 이제 빵집은 안 찾으시는 줄 알고 걱정하고 있었어요!<br>
+    </div>
+    :sadoicon-erpin:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="erpin">에르핀</span><br>
+    <div class="speech-bubble">
+        으응? 에슈르, 울지 말고 빵이나 좀 줘봐!<br>
+        오늘 하루 종일 뛰어놀아서 배고프단 말이야.
+    </div>
+    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
+    <div class="speech-bubble">
+        빵이요? 당연히 드려야죠!<br>
+        여기 초코 케이크랑 티라미수 마카롱이에요!
+    </div>
+    :sadoicon-erpin:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="erpin">에르핀</span><br>
+    <div class="speech-bubble">
+        와아- 이걸 다 주는 거야?<br>
+        고마워~ 에슈르! 역시 에슈르 밖에 없어!
+    </div>
+    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
+    <div class="mind-bubble">
+        크흡! 여왕님이 나밖에 없다고 하셨어!!
+    </div>
+
+<br>
+에슈르는 에르핀이 오랜만에 왔다는 사실에 기뻐하며 빵을 주는데, 옆에 있던 아사나는 전부 설탕 덩어리라며 건강에 문제가 생긴다고 걱정한다. 아무리 많이 먹어도 멀쩡해 보이는 에르핀이 {=='맛있게 먹으면 괜찮다'==}는 말을 하자, 아사나는 실험해보기 위해 에르핀의 식탐을 따라하며 맛있게 빵을 먹어보기로 한다. 하지만 이내 혈당 쇼크로 인한 현기증에 의해 쓰러져버렸고, 아사나는 녹즙을 일주일이나 먹으며 재활을 해야 했다고 한다.
+
 <br>
 <br>
