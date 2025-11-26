@@ -29,14 +29,14 @@ tags:
 <br>
 
 ### 에슈르 미니 포스터 (+150)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/pillow.png){width="100"}
+![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/PosterS5.png){width="100"}
 /// caption
-에슈르 쿠션
+에슈르 미니 포스터
 ///
 !!! quote ""
       볼이 빵빵한 에슈르의 미니 포스터다.
 
-연구소에서 제작가능하다. '반질반질 종이'가 8개 필요한 다른 포스터들보다 2개 덜 요구하는데 반해 명성치는 동일하게 오른다.
+연구소에서 제작가능하다. 이유는 확실치 않지만 '반질반질 종이'를 다른 포스터들보다 2개 적은 6개 요구한다. 명성치는 다른 포스터들과 동일하게 오른다.
 <br>
 <br>
 

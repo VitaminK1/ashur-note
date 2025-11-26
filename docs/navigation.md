@@ -68,7 +68,7 @@
         * [아사나](./story/s3_sado/asana.md)
 * 기타
     * [미니게임](./others/minigame.md)
-    * [공식일러](./others/event.md)
+    * [공식이벤트](./others/event.md)
     * [뽑기연출](./others/gacha.md)
     * [연관아이템](./others/item.md)
     * [구릭컬](./others/old.md)
