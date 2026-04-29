@@ -154,6 +154,13 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# Local editing tools (not needed for GitHub Pages deployment)
+.vscode/
+/editor/
+/editor_server.py
+/editor.bat
+/에디터 실행.bat
+
 # mypy
 .mypy_cache/
 .dmypy.json

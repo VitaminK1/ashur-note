@@ -9,37 +9,22 @@ tags:
 ---
 
 # 이벤트 스토리 - 절체절명! 요가 레스큐 프로젝트!
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 
 ## 에피소드 3 - 궁지에 몰린 생쥐의 자세
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_event_asana_1.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_event_asana_2.png){width="400"}
-/// caption
-테마극장의 한 장면
-///
+{{ image(['story/s3_event_asana_1.png', 'story/s3_event_asana_2.png'], caption='테마극장의 한 장면', width=400) }}
 
 ???+ quote
-    :sadoicon-asana:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="asana">아사나</span><br>
-    <div class="speech-bubble">
-        저, 이래 봬도 마녀들의 건강을 연구하기 위해 논문까지 썼습니다만⋯<br>
-        제가 어떤 방법을 동원해도 치료할 방법이 떠오르지 않더군요.
-    </div>
-    :sadoicon-hilde:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="hilde">힐데</span><br>
-    <div class="speech-bubble">
-        엘리아스에서 건강 연구라⋯<br>
+    {{ speech('asana', '아사나', """저, 이래 봬도 마녀들의 건강을 연구하기 위해 논문까지 썼습니다만⋯<br>
+        제가 어떤 방법을 동원해도 치료할 방법이 떠오르지 않더군요.""") }}
+    {{ speech('hilde', '힐데', """엘리아스에서 건강 연구라⋯<br>
         그런 걸 하시는 분이 계시긴 했군요?<br>
-        마치⋯ 요정 왕국에서 마법 학교를 차린 분 같은 건가?
-    </div>
-    :sadoicon-asana:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="asana">아사나</span><br>
-    <div class="speech-bubble">
-        그, 그게 무슨 말씀이죠?! 무슨 말인지는 이해가 안 되지만 갑자기 엄청 기분 나빠지는 말인데?
-    </div>
-    :sadoicon-hilde:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="hilde">힐데</span><br>
-    <div class="speech-bubble">
-        애초에 건강 연구는 왜 하시는 건데요?<br>
-        병 같은 건 대충 자고 일어나면 낫는 세상이잖아요.
-    </div>
+        마치⋯ 요정 왕국에서 마법 학교를 차린 분 같은 건가?""") }}
+    {{ speech('asana', '아사나', """그, 그게 무슨 말씀이죠?! 무슨 말인지는 이해가 안 되지만 갑자기 엄청 기분 나빠지는 말인데?""") }}
+    {{ speech('hilde', '힐데', """애초에 건강 연구는 왜 하시는 건데요?<br>
+        병 같은 건 대충 자고 일어나면 낫는 세상이잖아요.""") }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 일주일 동안 벨리타를 치료하는 과제를 맡게 된 아사나는 전단지를 보고 힐데의 병원에 자신의 처지를 상담 받으러 간다. 중간에 프리클에게 들켰지만 도구나 약재를 가지러 출장간다는 핑계를 대서 넘어갔다.
 

@@ -26,6 +26,7 @@
 .skill-card{background:#222427;border:2px solid #4e8f5a;padding:12px;border-radius:8px;display:flex;gap:12px}
 .skill-card .icon{width:72px;height:72px;border-radius:8px}
 .skill-card .meta{flex:1}
+.skill-head{display:flex;gap:8px;align-items:center;margin-bottom:6px}
 .skill-name{font-size:1.1rem;color:#ffe79a}
 .skill-desc{color:#cfe7c8;margin:8px 0}
 .skill-stats{color:#cfe7c88f;margin-top:2px;font-size:0.7rem;}
@@ -33,6 +34,10 @@
 .red-text{color:#ff6b6b;}
 .badge-stars{display:inline-flex;gap:6px;vertical-align:middle;align-items:center;font-size:1.1rem;line-height:1}
 img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:middle}
+.battle-copy{margin:0;color:#cfe7c8;line-height:1.55}
+.battle-pill-group{display:flex;gap:8px;margin:12px 0 6px 0;align-items:center;flex-wrap:wrap}
+.battle-pill{display:inline-flex;align-items:center;justify-content:center;padding:4px 10px;border-radius:999px;font-size:0.78rem;line-height:1;border:1px solid rgba(106,160,74,0.35);background:#263122;color:#e6f7db}
+.battle-pill--basic{background:#2f4f2a;color:#e6f7db}
 
 /* Light mode overrides using material theme data attribute (do not modify dark mode) */
 [data-md-color-scheme="default"] .battle-panel{
@@ -51,6 +56,8 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 [data-md-color-scheme="default"] .red-text{color:#c21b1b}
 [data-md-color-scheme="default"] .badge-stars{color:#f5b400}
 [data-md-color-scheme="default"] img.badge-stars{filter:none}
+[data-md-color-scheme="default"] .battle-copy{color:#254d2a}
+[data-md-color-scheme="default"] .battle-pill{background:#edf8e9;color:#0b3b17;border-color:#c7e9b8}
 
 /* Slate / dark mode: reuse stat-card palette so rank-list matches the dark theme */
 [data-md-color-scheme="slate"] .rank-list,
@@ -103,11 +110,8 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 [data-md-color-scheme="slate"] .pref-card{ background: #181a1b; border: 1px solid rgba(78,143,90,0.06); color: #e6f7db }
 [data-md-color-scheme="slate"] .pref-title{ color: #e6f7db }
 
-/* Responsive: make the first header column compact on small screens so it doesn't enforce
-   the desktop 180px width. This allows the icon cell to be ~60px wide at <=520px. */
 @media (max-width:520px){
   .prefs-table thead th:first-child { width: 80px; min-width: 60px; }
-  /* Slightly reduce pref-icon sizing to match the header width */
   .prefs-table td > .pref-icon{ width:56px; height:56px; flex:0 0 56px }
   .pref-icon-mini{ width:28px; flex:0 0 28px }
 }
@@ -123,30 +127,23 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 .prefs-table thead th:first-child{ text-align:center }
 .prefs-table tbody td{ border:1px solid #e6efe2; padding:12px; background:#ffffff; vertical-align:middle; text-align:center }
 .prefs-table tbody tr td:first-child{ background:transparent; border: none; }
-/* make the first column compact and icon-only like the screenshot */
-.prefs-table .pref-icon-cell{ /* allow the cell to shrink when space is tight; keep a reasonable max */ margin: auto 0; min-width:0; max-width:130px; padding:8px 10px; text-align:center; display:table-cell; vertical-align:middle }
+.prefs-table .pref-icon-cell{ margin: auto 0; min-width:0; max-width:130px; padding:8px 10px; text-align:center; display:table-cell; vertical-align:middle }
 .prefs-table thead th:first-child{ text-align:center }
 
-/* Desktop: keep a wide header on larger viewports */
 @media (min-width:721px){
-	.prefs-table thead th:first-child{ /* keep header sizing but allow body to control layout */ width:180px; min-width:120px }
+	.prefs-table thead th:first-child{ width:180px; min-width:120px }
 }
-.prefs-table tbody td:first-child{ /* allow the first column to expand as needed and keep label left-aligned */ min-width:0; text-align:left }
-/* show the label next to the icon and truncate if too long */
-.prefs-table .pref-icon-cell span{ display:inline-flex; align-items:center; justify-content:center; vertical-align:middle; /* force single-line label */ white-space:nowrap; overflow:visible; text-overflow:clip; flex:0 1 auto; min-width:0; font-size: clamp(0.55rem, 1.0vw, 0.95rem); }
+.prefs-table tbody td:first-child{ min-width:0; text-align:left }
+.prefs-table .pref-icon-cell span{ display:inline-flex; align-items:center; justify-content:center; vertical-align:middle; white-space:nowrap; overflow:visible; text-overflow:clip; flex:0 1 auto; min-width:0; font-size: clamp(0.55rem, 1.0vw, 0.95rem); }
 
-/* center the mini icon plus give a small gap to the label */
 .prefs-table .pref-icon-cell .pref-icon-mini{ display:inline-flex; align-items:center; justify-content:center; vertical-align:middle; margin-right:8px }
-/* ensure the mini icon is centered and sized consistently */
 .pref-icon-mini{ width:44px;border-radius:8px; display:flex; align-items:center; justify-content:center; flex:0 0 44px; min-width:44px; min-height:44px; max-width:44px; max-height:44px }
 .pref-icon-mini img{ width:28px; display:block; flex:0 0 28px }
 
-/* Force pref icons inside table cells to stay inline and fixed-size */
 .prefs-table td > .pref-icon{ display:inline-flex; width:64px; height:64px; flex:0 0 64px; margin-right:8px; border-radius:12px; align-items:center; justify-content:center; position:relative; border:1px solid rgba(43,182,115,0.06) }
 .prefs-table td > .pref-icon img.frame{ width:100%; height:100%; display:block; object-fit:contain }
 .prefs-table td > .pref-icon img.overlay{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:44px; height:44px; }
 
-/* colored row backgrounds for the first column to match screenshot */
 .prefs-table tbody tr:nth-child(1) td:first-child{ background:#f4c6c6 }
 .prefs-table tbody tr:nth-child(2) td:first-child{ background:#fff3bf }
 .prefs-table tbody tr:nth-child(3) td:first-child{ background:#e6f7d9 }
@@ -157,29 +154,29 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 	.prefs-table tbody td{ padding:8px }
 }
 
-/* Small screens: allow pref labels to wrap and use a smaller font */
 @media (max-width:520px){
-	/* reduce icon and label sizes so the label fits on one line */
 	.prefs-table .pref-icon-cell{ gap:6px; padding:6px; min-width:0; width: 60px;}
 	.pref-icon-mini{ width:32px; flex:0 0 32px; min-width:32px; min-height:32px; max-width:32px; max-height:32px }
 	.pref-icon-mini img{ width:18px; flex:0 0 18px }
 	.prefs-table .pref-icon-cell span{ white-space:nowrap; font-size: clamp(0.55rem, 0.9vw, 0.8rem); overflow:visible; text-overflow:clip }
 }
 
-/* Prevent table cells from completely collapsing at narrow widths.
-	 Use a flexible layout inside non-first cells so icons + labels can wrap
-	 while keeping a minimum height matching the icon size. */
 .prefs-table tbody td:not(:first-child){
 	align-items:center;
 	justify-content:flex-start;
 	gap:8px;
 	flex-wrap:wrap;
 	row-gap:8px;
-	/* ensure cells are at least as tall as the icon + padding */
 	min-height: calc(64px + 12px);
 }
 
-/* allow pref labels to wrap on very small screens to avoid overflow/collapse */
+.intimacy-prefs .prefs-table tbody td:not(:first-child){
+	display:table-cell;
+	min-height:unset;
+	vertical-align:middle;
+	text-align:center;
+}
+
 @media (max-width:480px){
 	.prefs-table .pref-icon-cell span{ white-space:normal; }
 	.prefs-table .pref-icon-cell{ padding:6px 8px }
@@ -187,13 +184,10 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 	.prefs-table tbody td{ padding-top:8px; padding-bottom:8px }
 }
 
-/* Slate overrides for the table */
 [data-md-color-scheme="slate"] .prefs-table thead th{ background:#21302a; color:#e6f7db }
 [data-md-color-scheme="slate"] .prefs-table thead th .th-badge{ stroke: rgba(78,143,90,0.12) }
-/* first-column preference labels (icon + text) should use dark-green in slate */
 [data-md-color-scheme="slate"] .prefs-table tbody td:first-child span{ color: #072a17 }
 
-/* header cell: small badge + label stacked */
 .th-cell{ display:flex; gap:8px; align-items:center; justify-content:center; padding:4px 6px }
 .th-cell .th-badge{ width:34px; height:34px; flex:0 0 34px; display:inline-block }
 .th-cell .th-badge[src]{ object-fit:contain }
@@ -202,7 +196,6 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 @media (max-width:720px){
 	.th-cell{ gap:6px; padding:3px }
 	.th-cell .th-badge{ width:28px; height:28px; flex:0 0 28px }
-	/* stack badge above label on small screens to avoid horizontal overflow */
 	.th-cell{ flex-direction:column; gap:4px }
 	.th-cell span{ font-size:0.85rem; max-width:100%; white-space:normal; text-overflow:clip }
 }
@@ -211,10 +204,8 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 
 [data-md-color-scheme="slate"] .pref-icon img.overlay{ filter: none }
 
-/* Intimacy / 친밀도 table styles (closer to screenshot) */
-/* make the intimacy block more compact */
+/* Intimacy table styles */
 .intimacy-wrap{ max-width:100%; width:100%; margin:6px 0; padding:0 12px }
-/* pale green banner behind the section to match screenshot */
 .intimacy-banner{ background:#cfe6a8; border-radius:6px; padding:12px 12px; margin-bottom:12px; position:relative; display:flex; align-items:center; justify-content:flex-start }
 .intimacy-title{ margin:0; display:flex; align-items:center; justify-content:flex-start; padding: 8px 12px; min-height:40px;}
 .intimacy-pill{ display:inline-block; background:#6aa04a; color:#072a17; padding:8px 14px; border-radius:14px; font-size:1rem; line-height:1; box-shadow:none; border:1px solid rgba(0,0,0,0.04); transform:none }
@@ -236,14 +227,11 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 	.intimacy-banner{ padding:6px }
 }
 
-/* Slate (dark) overrides to keep contrast */
 [data-md-color-scheme="slate"] .intimacy-banner{ background:#2a3b2e }
 [data-md-color-scheme="slate"] .intimacy-pill{ background:#496d3f; color:#e6f7db; box-shadow:none; border-color:rgba(255,255,255,0.03) }
 [data-md-color-scheme="slate"] .intimacy-table .intimacy-level{ background:#153025; color:#e6f7db }
 [data-md-color-scheme="slate"] .intimacy-table .intimacy-text{ background:transparent; color:#e6f7db }
 [data-md-color-scheme="slate"] .intimacy-table td{ border-bottom:1px solid rgba(78,143,90,0.06) }
-
-/* Additional slate tweaks for wrapper and alternating rows to improve contrast */
 
 /* Relationship panel (unique classes: rel-*) - visually match provided screenshot */
 .rel-panel{ max-width:1100px; margin:18px auto; padding:12px; border-radius:12px; background:#1b1d1e; border:4px solid #6a4528; box-shadow: inset 0 0 0 2px rgba(255,184,120,0.04) }
@@ -257,7 +245,6 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 .rel-icon img{ width:68px; height:68px; display:block; border-radius:50% }
 .rel-label{ text-align:center; color:#f0e6da; margin-top:4px }
 
-/* Main skill modifier - keep card footprint identical but emphasize visually */
 .rel-card.rel-main{ position:relative; border-color: #ffb878; box-shadow: 0 0 0 4px rgba(255,184,120,0.03) }
 .rel-card.rel-main .rel-icon{ box-shadow: 0 0 0 8px rgba(255,184,120,0.03); }
 .rel-card.rel-main .rel-icon img{ width:72px; height:72px }
@@ -280,14 +267,12 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 	.rel-icon img{ width:52px; height:52px }
 }
 
-/* Slate-aware overrides for rel-* panel */
 [data-md-color-scheme="slate"] .rel-panel{ background:#111213; border-color:#4b2f1e }
 [data-md-color-scheme="slate"] .rel-card{ border-color: rgba(255,184,120,0.06) }
 [data-md-color-scheme="slate"] .rel-title{ color:#f5efe6 }
 [data-md-color-scheme="slate"] .rel-note{ color:#cdbca7 }
 [data-md-color-scheme="slate"] .rel-label{ color:#efe7d8 }
 
-/* Light-mode overrides for rel-* panel */
 [data-md-color-scheme="default"] .rel-panel{ background:#f9f3ee; border-color:#c08a54; box-shadow: inset 0 0 0 2px rgba(0,0,0,0.02) }
 [data-md-color-scheme="default"] .rel-card{ border-color: rgba(43,24,12,0.08); background: #fff8f4 }
 [data-md-color-scheme="default"] .rel-title{ color:#2b2b2b }
@@ -313,20 +298,17 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 .rp-item-title{ color:#ffffff; margin-bottom:2px;font-size:0.95rem; }
 .rp-item-desc{ color:#cfcfcf; }
 
-/* overlay emoticon placed to the right and above the main icon */
 .rp-row{ position:relative }
 .rp-emote{ position:absolute; left:52px; top:-2px; width:28px; height:28px; display:flex; align-items:center; justify-content:center; z-index:2 }
 .rp-emote img{ width:64px; object-fit:contain }
 
 @media (max-width:900px){ .rp-columns{ grid-template-columns:1fr } }
 
-/* light mode for rp-panel */
 [data-md-color-scheme="default"] .rp-panel{ background:#fbf7f5; border-color:#d3cbc8 }
 [data-md-color-scheme="default"] .rp-item-title{ color:#2b2b2b }
 [data-md-color-scheme="default"] .rp-item-desc{ color:#444 }
 [data-md-color-scheme="default"] .rp-iconbox{ background:#fff }
 
-/* slate overrides */
 [data-md-color-scheme="slate"] .rp-panel{ background:#111213; border-color:#2a2a2a }
 [data-md-color-scheme="slate"] .rp-item-title{ color:#f5efe6 }
 [data-md-color-scheme="slate"] .rp-item-desc{ color:#c8c8c8 }
@@ -342,10 +324,8 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 
 @media (max-width:900px){ .rp-mini-label{ padding:8px 10px } }
 [data-md-color-scheme="slate"] .rp-iconbox{ background:#202223 }
-/* slate overrides for mini emote */
 [data-md-color-scheme="slate"] .rp-mini-icon{ background:#26282a; border:1px solid rgba(255,255,255,0.03) }
 [data-md-color-scheme="slate"] .rp-mini-label{ border-color: rgba(255,255,255,0.04); color:#e6e6e6 }
 
-/* light mode tweaks for mini emote */
 [data-md-color-scheme="default"] .rp-mini-icon{ background:#ffffff }
 [data-md-color-scheme="default"] .rp-mini-label{ color:#2b2b2b; border-color: rgba(43,24,12,0.06) }

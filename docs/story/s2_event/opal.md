@@ -9,7 +9,7 @@ tags:
 ---
 
 # 이벤트 스토리 - 파티에는 축복과 위로를
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 파티를 위한 음식들을 가져오며 오팔이 파티에 초대한 인원 중 한명으로 등장한다. 하지만 선물로 준 오팔 빵팔이 왕관을 받고 불같이 화를 낸다. 제이드의 중재 덕분에 어떻게든 넘어갔으나, 파티는 끝내 파토가 나고 만다.
 
@@ -22,11 +22,8 @@ tags:
 <br>
 
 ## 에피소드 2 - 파티, 시작할게요!
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_1.png){width="500"}
-/// caption
-기억 조각 - 차라리 한 대 쳐라
-///
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ image('story/s2_event_opal_1.png', caption='기억 조각 - 차라리 한 대 쳐라') }}
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 제이드의 창고 정리를 도와주러 간 오팔은 그곳에서 예쁜 겉표지를 가진 책에 흥미를 가진다. 오팔은 책 내용(1)이 이상하다고 말했지만 모든 책에는 숨겨진 의미가 있다는 제이드의 답에, 일꾼이가 일하는 걸 좋아해서 평생 일을 할 수 있다는 생각에 행복해 했던 거라고 이해해버린다. 그 책을 참고해서 일꾼이처럼 바빠보이던 교단 선배님들께 선물도 주고 자연스럽게 친해질 겸 파티를 열기로 한다.
 { .annotate }
@@ -50,7 +47,7 @@ tags:
 <br>
 
 ## 에피소드 3 - 파티, 망했어요!
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 제이드의 초청을 받은 교주가 뒤늦게 도착했을 때는 제이드가 오팔에게 사과를 시키며 어떻게든 분위기를 무마하고 있었고, 3명은 제이드를 봐서 봐준다며 짜증을 내고는 나가버린다.(1)
 { .annotate }
@@ -70,101 +67,51 @@ tags:
 ???+ Abstract
     마지막으로 도착한 빵집에는 빵은 없고 멍하니 창밖만 보고 잇는 에슈르만 덩그러니 있다. 에슈르의 뜻밖의 푸념에 오팔은 에슈르를 정신 번쩍 나게 응원한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_2.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_3.png){width="400"}
-/// caption
-기억 조각 - 에심당 휴업 선언 / 일생일대의 위기
-///
+{{ image(['story/s2_event_opal_2.png', 'story/s2_event_opal_3.png'], caption='기억 조각 - 에심당 휴업 선언 / 일생일대의 위기', width=400) }}
 
 !!! quote ""
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        내 마법 학교가 이렇게 빵 한 덩이도 없이 텅 빈 적은 여왕님이 쓸어갔을 때 빼곤 처음이었지 아마?
-    </div>
+    {{ speech('ashur', '에슈르', """내 마법 학교가 이렇게 빵 한 덩이도 없이 텅 빈 적은 여왕님이 쓸어갔을 때 빼곤 처음이었지 아마?""") }}
 
 ???+ quote
-    :sadoicon-empty:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="empty">교주</span><br>
-    <div class="speech-bubble">
-        뭣? 장사를 안 한다고?!<br>
-        재고 떨어질까 봐 정령들 굴려대면서 하루 종일 빵 만들던 네가? 
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        그 정령들 다 휴가 보냈어요.<br>
-        그러니까 오늘뿐만 아니라 당분간 저희 집에 빵은 없을 예정이에요.
-    </div>
-      :sadoicon-empty:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="empty">교주</span><br>
-    <div class="speech-bubble">
-        무, 무슨 일이야, 에슈르? 어디 아픈 거야? 아님 심경의 변화라도⋯.
-    </div>
+    {{ speech('empty', '교주', """뭣? 장사를 안 한다고?!<br>
+        재고 떨어질까 봐 정령들 굴려대면서 하루 종일 빵 만들던 네가?""") }}
+    {{ speech('ashur', '에슈르', """그 정령들 다 휴가 보냈어요.<br>
+        그러니까 오늘뿐만 아니라 당분간 저희 집에 빵은 없을 예정이에요.""") }}
+      {{ speech('empty', '교주', """무, 무슨 일이야, 에슈르? 어디 아픈 거야? 아님 심경의 변화라도⋯.""") }}
 
 ???+ quote
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        너무 이상해요. 빵 만드는 양은 평소랑 똑같은데⋯ 왜 이젠 더 이상 적자가 안 나는 거죠?<br>
+    {{ speech('ashur', '에슈르', """너무 이상해요. 빵 만드는 양은 평소랑 똑같은데⋯ 왜 이젠 더 이상 적자가 안 나는 거죠?<br>
         예전엔 빵을 만들던 마법 학교를 운영하든 뭘 해도 적자였는데⋯ 한 번 흑자가 나기 시작하니까 마법에 대한 의미를 못 찾겠어요⋯!<br>
         도대체 제가 왜 이럴까요, 교주니임?!! 사실 전 마법을 하고 싶었던 게 아니라 돈을 벌고 싶었던 걸까요?<br>
-        그럼 내내 마법 학교장으로 살아왔던 제 삶의 의미는 도대체 무엇이죠?! 제 가슴 한가운데에 메울 수 없는 큰 구멍이 뚫린 것 같은 기분이에요!<br>
-    </div>
-    :sadoicon-empty:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="empty">교주</span><br>
-    <div class="speech-bubble">
-        가, 갑자기 이렇게 진지한 질문 같은 거 하지 말라고! 당황스럽잖아!
-    </div>
-    <div class="mind-bubble">
-        에슈르네 빵집이 흑자가 나기 시작했어⋯? 어째서⋯?<br>
+        그럼 내내 마법 학교장으로 살아왔던 제 삶의 의미는 도대체 무엇이죠?! 제 가슴 한가운데에 메울 수 없는 큰 구멍이 뚫린 것 같은 기분이에요!<br>""") }}
+    {{ speech('empty', '교주', """가, 갑자기 이렇게 진지한 질문 같은 거 하지 말라고! 당황스럽잖아!""") }}
+    {{ mind_speech("""에슈르네 빵집이 흑자가 나기 시작했어⋯? 어째서⋯?<br>
         아⋯! 그⋯ 설마⋯ 에르핀이 더 이상 찾아오지 않아서⋯?<br>
-        ⋯⋯⋯. 설마 그건 아니겠지⋯?
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        머릿속이 엉망진창이 된 기분이라구요, 교주님!<br>
+        ⋯⋯⋯. 설마 그건 아니겠지⋯?""") }}
+    {{ speech('ashur', '에슈르', """머릿속이 엉망진창이 된 기분이라구요, 교주님!<br>
         교단의 어린 양이 길을 잃었어요! 저에게 무슨 말이라도 좀 해주세요⋯!!<br> 
-        교주님껜 분명히 저에 대한 해답이 있겠죠? 그러니까 교주님이신 거겠죠?!
-    </div>
-    :sadoicon-empty:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="empty">교주</span><br>
-    <div class="speech-bubble">
-        에슈르 그건⋯.
-    </div>
-    :sadoicon-opal:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="opal">오팔</span><br>
-    <div class="speech-bubble">
-        ⋯선배님은 바보에욧!!!!<br>
+        교주님껜 분명히 저에 대한 해답이 있겠죠? 그러니까 교주님이신 거겠죠?!""") }}
+    {{ speech('empty', '교주', """에슈르 그건⋯.""") }}
+    {{ speech('opal', '오팔', """⋯선배님은 바보에욧!!!!<br>
         마법은 선배님의 꿈 아니었나요? 자신의 꿈을 포기하는 건 바보 밖에 없다구요!!<br>
         빵은 선배님의 꿈을 이루기 위한 수단일 뿐. 꿈이 빵에 먹혀버리면 안된다구요!<br>
         원래는 빵이 먹히는 게 정상이잖아요? 그쵸?<br>
-        에슈르 선배님! 항상 삶의 목표는 위대하게 잡아야 해요. 고작 '빵'이 선배님 삶의 목표가 될 수는 없다구요!<br>
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        야! 제빵업에 종사하는 요정들을 모욕하지 말라고!
-    </div>
-    :sadoicon-opal:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="opal">오팔</span><br>
-    <div class="speech-bubble">
-        그치만 에슈르 선배님은 제빵사가 아니잖아요?<br>
+        에슈르 선배님! 항상 삶의 목표는 위대하게 잡아야 해요. 고작 '빵'이 선배님 삶의 목표가 될 수는 없다구요!<br>""") }}
+    {{ speech('ashur', '에슈르', """야! 제빵업에 종사하는 요정들을 모욕하지 말라고!""") }}
+    {{ speech('opal', '오팔', """그치만 에슈르 선배님은 제빵사가 아니잖아요?<br>
         선배님은 엘리아스 최고의 마법사가 되는 게 목표잖아요! 그러니까 포기하지 마시라구요!<br>
-        이 오팔의 선배님에 걸맞은, 원대한 꿈을 가져달라구요!
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        오팔⋯!
-    </div>
-    :sadoicon-opal:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="opal">오팔</span><br>
-    <div class="speech-bubble">
-        선배님!
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        너⋯ 내 제자하지 않을래?
-    </div>
-    :sadoicon-opal:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="opal">오팔</span><br>
-    <div class="speech-bubble">
-        그냥⋯ 후배로만 남을게요⋯!
-    </div>
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+        이 오팔의 선배님에 걸맞은, 원대한 꿈을 가져달라구요!""") }}
+    {{ speech('ashur', '에슈르', """오팔⋯!""") }}
+    {{ speech('opal', '오팔', """선배님!""") }}
+    {{ speech('ashur', '에슈르', """너⋯ 내 제자하지 않을래?""") }}
+    {{ speech('opal', '오팔', """그냥⋯ 후배로만 남을게요⋯!""") }}
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 리스티, 레비에 이어 오팔은 에슈르 베이커리에 찾아갔는데, 에슈르가 빵 장사를 쉰다고 한다. 이 말을 들은 교주는 있을 수 없는 일이라는 듯 엄청 놀라며 심지어는 어디 아프거나 다친 곳이 있는지 묻는다. 
 
 <br>
 에슈르는 최근 빵집이 알 수 없는 이유(1)로 흑자가 나기 시작하자 현자타임을 느끼고 휴업을 하고 있는 것이었다. {==마법에 대한 의미를 못 찾겠고 사실 자신은 돈을 벌고 싶었던 것이 아닐까==}라며 삶의 의미에 대한 고민에 방황하고 있는 에슈르. 에슈르가 교주에게 답을 달라며 애원하자, 오팔은 {==선배의 꿈은 어디까지나 마법이고 빵은 꿈을 이루기 위한 수단이라며 원대한 꿈을 포기하지 말라==}고 격려해준다. 오팔의 말에 감동한 에슈르는 오팔에게 제자하지 않겠냐고 기습 제안을 하지만 오팔은 정중히 거절한다. 
-{.annotate}
+{ .annotate }
 
 1. 죠안의 친밀도 기록이나 메인 스토리 챕터 10에서 묘사되지만, 에르핀에게 죄책감을 지닌 죠안이 에르핀의 어리광에 맞춰 빵을 만들어 주다보니 그만큼 빵집을 털어먹는 일이 줄어든 것이다.
 
@@ -175,12 +122,9 @@ tags:
 
 ## 에피소드 8 - 우리 모두를 위한 파티
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_4.png){width="500"}
-/// caption
-기억 조각 - 오팔 여기 잠들다
-///
+{{ image('story/s2_event_opal_4.png', caption='기억 조각 - 오팔 여기 잠들다') }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 비록 정식으로 초대를 받아들인 건 에슈르 뿐이었지만, 선배님들과 약속을 했다며 오지 않는다 해도 오팔은 최선을 다해 선물과 음식 그리고 파티를 준비하기로 다짐한다. 또한 교주와 대화하면서 자신을 챙겨준 제이드를 정작 챙겨주지는 못했다는 것을 깨닫자, 교주의 제안대로 제이드도 도우미가 아닌 정식 손님으로서 파티에 초대하고 선물도 챙겨주기로 한다. 교주는 오팔의 속마음을 읽어 이번엔 제대로 된 선물을 준비할 것을 알고 안심하며 헤어진다.
 
@@ -203,30 +147,16 @@ tags:
 + 테마극장 당시 로비에 스토리 진행도에 따라 로비 화면이 변하는 기믹이 있었다. 3번째 화면에서 에슈르의 말대로 선물 아이콘들을 정해진 위치에 넣어주면 4번째 화면으로 전환된다.
 
 === "1번째 화면"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_5.png){width="500"}
-    /// caption
-    오팔 테마극장 로비 - 1번째 화면
-    ///
+    {{ image('story/s2_event_opal_5.png', caption='오팔 테마극장 로비 - 1번째 화면') }}
 
 === "2번째 화면"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_6.png){width="500"}
-    /// caption
-    오팔 테마극장 로비 - 2번째 화면
-    ///
+    {{ image('story/s2_event_opal_6.png', caption='오팔 테마극장 로비 - 2번째 화면') }}
 
 === "3번째 화면"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_7.png){width="500"}
-    /// caption
-    오팔 테마극장 로비 - 3번째 화면
-    ///
+    {{ image('story/s2_event_opal_7.png', caption='오팔 테마극장 로비 - 3번째 화면') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            교주! 물건 옮기는 거 도와줘!
-        </div>
+        {{ speech('ashur', '에슈르', """교주! 물건 옮기는 거 도와줘!""") }}
 
-=== "4번쨰 화면"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_opal_8.png){width="500"}
-    /// caption
-    오팔 테마극장 로비 - 4번째 화면
-    ///
+=== "4번째 화면"
+    {{ image('story/s2_event_opal_8.png', caption='오팔 테마극장 로비 - 4번째 화면') }}
+

@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 폴랑
 
 ## 에피소드 3 - 반란 실패 기념 케이크
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 요정왕국으로 돌아온 교주는 갑자기 축제가 열린 것을 보고 놀란다. 우연히 만난 에슈르가 '폴랑 케이크'를 대접하고, 얼마 전 있었던 폴랑 경비대장의 반란 실패를 기념하기 위해 열린 행사라며 자초지종을 설명해준다.
 

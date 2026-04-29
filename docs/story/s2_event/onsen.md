@@ -9,13 +9,8 @@ tags:
 ---
 
 # 스킨 스토리 - 즐겁고 힘든 온천기행!
-<video controls preload="metadata" width="500" height="300" autoplay loop>
-  <source src="https://vitamink1.github.io/ashur-note/assets/story/s2_skin_mute_0.mp4" type="video/mp4">
-</video>
-/// caption
-즐겁고 힘든 온천기행! 테마극장 로비
-///
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ video('story/s2_skin_mute_0.mp4', caption='즐겁고 힘든 온천기행! 테마극장 로비', width=500, height=300) }}
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 적자의 원인에 대해 고민하다 뮤트가 등장해서 원인을 분석해낸다. 그 과정에서 에슈르의 자존심이 상해버렸는데, 에슈르는 그윈이 온천 얘기를 하자 거절하는 뮤트를 보며 복수의 기회라고 생각해 다같이 온천 여행을 가도록 만든다.
 
@@ -31,46 +26,23 @@ tags:
 ???+ Abstract
     떨어지는 매출에 대해 고민이 많던 에슈르는 뮤트에게 매출에 대한 분석을 요청하고, 한참 설명을 듣던 중 그윈이 찾아온다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_skin_mute_1.png){width="500"}
-/// caption
-테마극장의 한 장면
-///
+{{ image('story/s2_skin_mute_1.png', caption='테마극장의 한 장면') }}
 
 ???+ quote
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        으음⋯ 지나친 월세도 문제이긴 합니다만.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        역시! 역시 월세가 문제인 거죠? 하아~ 내가 그럴 줄 알았어요!
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        월세만 문제가 아닙니다.<br>
+    {{ speech('mute', '뮤트', """으음⋯ 지나친 월세도 문제이긴 합니다만.""") }}
+    {{ speech('ashur', '에슈르', """역시! 역시 월세가 문제인 거죠? 하아~ 내가 그럴 줄 알았어요!""") }}
+    {{ speech('mute', '뮤트', """월세만 문제가 아닙니다.<br>
         문제가 정말 많네요. 우선 값비싼 재료비와 재룟값과 거의 차이 나지 않는 빵의 유통가도 문제구요.<br>
-        이렇게 되면 순이익이 얼마 되지도 않는데 월세 내고 다시 최고급 재료를 구매하고⋯ 적자가 날 수 밖에 없죠.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        웃⋯ 우웃!
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        이 빵집의 가장 큰 문제는 박리다매를 하려고 했다가 빵의 유통가 책정 실패로 인해 일어나고 있음을 알려 드립니다.<br>
+        이렇게 되면 순이익이 얼마 되지도 않는데 월세 내고 다시 최고급 재료를 구매하고⋯ 적자가 날 수 밖에 없죠.""") }}
+    {{ speech('ashur', '에슈르', """웃⋯ 우웃!""") }}
+    {{ speech('mute', '뮤트', """이 빵집의 가장 큰 문제는 박리다매를 하려고 했다가 빵의 유통가 책정 실패로 인해 일어나고 있음을 알려 드립니다.<br>
         에슈르 님은 마법학에 조예가 깊으신 걸로 알고 있는데⋯<br>
-        이런 간단하고 단순한 사실도 계산하지 못하셨다니 조금 실망이군요.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        우웃! 여, 여긴 빵집이 아니라고요!<br>
-        그러니까 그런 걸 생각 못할 수도 있죠!
-    </div>
-    <div class="mind-bubble">
-        으으⋯ 자존심 상해! 이런 기초적인 실수를 하다니⋯.
-    </div>
+        이런 간단하고 단순한 사실도 계산하지 못하셨다니 조금 실망이군요.""") }}
+    {{ speech('ashur', '에슈르', """우웃! 여, 여긴 빵집이 아니라고요!<br>
+        그러니까 그런 걸 생각 못할 수도 있죠!""") }}
+    {{ mind_speech("""으으⋯ 자존심 상해! 이런 기초적인 실수를 하다니⋯.""") }}
   
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 에슈르는 최근 매출이 비슷한데도 적자가 나는 이유에 대해 고민한다. 에슈르는 에르핀, 월세, 지난번의 세일 등 여러 요소를 고민해보지만 결론이 딱히 서지 않던 도중, 빵에 대해 궁금한 게 생겨서 분석하기 위해 방문한 뮤트가 뒤에서 말을 걸자 화들짝 놀란다. 뮤트는 자신을 정보의 정령이라 소개하고, 에슈르의 고민을 들으니 해결하고 싶어졌다고 한다. 
 
@@ -88,55 +60,21 @@ tags:
 
 <br>
 ???+ quote
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        ⋯저는 괜찮습니다. 그럼, 이야기도 결론이 났겠다, 저는 이만 가보겠습니다.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        으흐, 으흐흐⋯ 설마 여기서 포기하시려는 건 아니죠?
-    </div>
-    <div class="mind-bubble">
-        뭐지? 갑자기 왜 빠지려고 하는 거지? 놀러 가는 거 좋은 거 아닌가?<br>
-        이 뮤트라는 녀석⋯ 뭔가 샌님의 냄새가 나는걸? 혹시 이런 활동적인 놀이를 싫어하는 건가?
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        네? 그건 무슨 뜻이실까요.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        혹시⋯ 온천에서 저와 함께 졔 빵집을 분석해 주시는 걸 꺼려하신다거나~ 그런 게 아닐까나~
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        가계 분석과 온천이 무슨 상관입니까?<br>
-        그리고 적자에 관한 이야기는 이미 결론이 났잖아요?
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        무슨 소리예요! 아직 결론이 안 났잖아요.
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        네? 이유가 너무 명확한데요? 적자는 에슈르 님의 판매가 책정 실패로⋯
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        하지만 저는 이미 빵을 많이 팔고 있다고요! 박리다매 모르세요? 하아~ 정말 더 깊은 논의가 필요하겠어요!
-    </div>
-    <div class="mind-bubble">
-        후후, 길고 긴 토론은 내 전문 분야지. 파고들다 보면 방금 전의 설욕을 되갚을 기회가 있을 거야!
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        네? 여기서 뭘 더⋯ 아니, 자, 잠깐만요!
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        자자~ 그러지 말고, 원인을 좀 더 폭넓고 깊게 생각해 보자고요.<br>
-        으음~ 설마⋯ 온천이 무서운 건 아니겠죠?
-    </div>
+    {{ speech('mute', '뮤트', """⋯저는 괜찮습니다. 그럼, 이야기도 결론이 났겠다, 저는 이만 가보겠습니다.""") }}
+    {{ speech('ashur', '에슈르', """으흐, 으흐흐⋯ 설마 여기서 포기하시려는 건 아니죠?""") }}
+    {{ mind_speech("""뭐지? 갑자기 왜 빠지려고 하는 거지? 놀러 가는 거 좋은 거 아닌가?<br>
+        이 뮤트라는 녀석⋯ 뭔가 샌님의 냄새가 나는걸? 혹시 이런 활동적인 놀이를 싫어하는 건가?""") }}
+    {{ speech('mute', '뮤트', """네? 그건 무슨 뜻이실까요.""") }}
+    {{ speech('ashur', '에슈르', """혹시⋯ 온천에서 저와 함께 졔 빵집을 분석해 주시는 걸 꺼려하신다거나~ 그런 게 아닐까나~""") }}
+    {{ speech('mute', '뮤트', """가계 분석과 온천이 무슨 상관입니까?<br>
+        그리고 적자에 관한 이야기는 이미 결론이 났잖아요?""") }}
+    {{ speech('ashur', '에슈르', """무슨 소리예요! 아직 결론이 안 났잖아요.""") }}
+    {{ speech('mute', '뮤트', """네? 이유가 너무 명확한데요? 적자는 에슈르 님의 판매가 책정 실패로⋯""") }}
+    {{ speech('ashur', '에슈르', """하지만 저는 이미 빵을 많이 팔고 있다고요! 박리다매 모르세요? 하아~ 정말 더 깊은 논의가 필요하겠어요!""") }}
+    {{ mind_speech("""후후, 길고 긴 토론은 내 전문 분야지. 파고들다 보면 방금 전의 설욕을 되갚을 기회가 있을 거야!""") }}
+    {{ speech('mute', '뮤트', """네? 여기서 뭘 더⋯ 아니, 자, 잠깐만요!""") }}
+    {{ speech('ashur', '에슈르', """자자~ 그러지 말고, 원인을 좀 더 폭넓고 깊게 생각해 보자고요.<br>
+        으음~ 설마⋯ 온천이 무서운 건 아니겠죠?""") }}
 
 사정을 잘 모르는 그윈은 {==고민이 많을 때는 휴식만큼 좋은 게 없다==}며 자신이 탐험하면서 찾아놓은 좋은 온천에 가서 머리라도 식힌 후에 생각해보자는 제안을 한다. 그 제안을 뮤트가 정중히 거절하자, 에슈르는 갑자기 빠지려고 하는 뮤트를 '활동적인 놀이를 싫어하는 샌님'이라 짐작해 엉뚱하고 유치한 도발을 날린다.
 
@@ -152,62 +90,29 @@ tags:
 ???+ Abstract
     찾아간 온천은 사라지고 없었다. 아쉬워하던 일행은 뮤트의 정보에 의지해 온천을 찾아 떠나기 시작했다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 뮤트가 지면에 남은 열기와 수분, 그을음 및 여기저기 움직인 불의 움직임을 보고 불 정령과 물 정령이 충돌한 것으로 추측한다. 그러면서 온천의 행방보다 다른 사건으로 눈길을 돌리기 위해, 뮤트는 그을음과 주변 습도를 분석해 따라가면 온천이 증발된 이유를 알 수 있을 것이라 말한다. 
 
 <br>
 ???+ quote
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        아⋯그, 그건 너무 이상하지 않습니까?<br>
-        정령끼리 싸운다고 어떻게 온천이⋯
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        아니요! 맞아요, 그겁니다!<br>
+    {{ speech('mute', '뮤트', """아⋯그, 그건 너무 이상하지 않습니까?<br>
+        정령끼리 싸운다고 어떻게 온천이⋯""") }}
+    {{ speech('ashur', '에슈르', """아니요! 맞아요, 그겁니다!<br>
         두 정령이 싸우면서 온천이 생겨났을지도 몰라요!<br>
         불 정령이 용암을 꿀러렁~! 물 정령이 물을 콸콸콸-!<br>
-        그러면서 멋있는 온천이 생길 수 있다는 건, 정령 행동 분석 논문을 적었던 저도 아는 사실이에요!
-    </div>
-    :sadoicon-guin:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="guin">그윈</span><br>
-    <div class="speech-bubble">
-        그, 그렇구나!
-    </div>
-    :sadoicon-diana:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="diana">디아나</span><br>
-    <div class="speech-bubble">
-        가끔 정령산을 오르면서 지향이 살짝살짝 바뀌던 게 그런 것 때문이었던 건가요?
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        그럼요, 촌장님!<br>
-        땅과 바람, 불과 물이 서로 지속적으로 충돌하면서 엘리아스의 지형에 영향을 주는 거죠.
-    </div>
-    :sadoicon-guin:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="guin">그윈</span><br>
-    <div class="speech-bubble">
-        정령들이 그런 능력도 있었다니⋯
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        그러고 보니 에슈르 님은 생각보다 똑똑하시군요?<br>
-        가계부는 그렇게 허술하게 관리하면서 이런 쪽에는 굉장히 조예가 깊으신⋯
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        지금 그거 놀리는 거야, 칭찬하는 거야?
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        아, 하하-! 치, 칭찬입니다!
-    </div>
-    :sadoicon-diana:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="diana">디아나</span><br>
-    <div class="speech-bubble">
-        그럼, 우리가 지금 해야 할 일은 하나군요.
-    </div>
-    :sadoicon-makasha:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="makasha">마카샤</span><br>
-    <div class="speech-bubble">
-        출바알~ 온천을 찾아서! 정령산으로!
-    </div>
+        그러면서 멋있는 온천이 생길 수 있다는 건, 정령 행동 분석 논문을 적었던 저도 아는 사실이에요!""") }}
+    {{ speech('guin', '그윈', """그, 그렇구나!""") }}
+    {{ speech('diana', '디아나', """가끔 정령산을 오르면서 지향이 살짝살짝 바뀌던 게 그런 것 때문이었던 건가요?""") }}
+    {{ speech('ashur', '에슈르', """그럼요, 촌장님!<br>
+        땅과 바람, 불과 물이 서로 지속적으로 충돌하면서 엘리아스의 지형에 영향을 주는 거죠.""") }}
+    {{ speech('guin', '그윈', """정령들이 그런 능력도 있었다니⋯""") }}
+    {{ speech('mute', '뮤트', """그러고 보니 에슈르 님은 생각보다 똑똑하시군요?<br>
+        가계부는 그렇게 허술하게 관리하면서 이런 쪽에는 굉장히 조예가 깊으신⋯""") }}
+    {{ speech('ashur', '에슈르', """지금 그거 놀리는 거야, 칭찬하는 거야?""") }}
+    {{ speech('mute', '뮤트', """아, 하하-! 치, 칭찬입니다!""") }}
+    {{ speech('diana', '디아나', """그럼, 우리가 지금 해야 할 일은 하나군요.""") }}
+    {{ speech('makasha', '마카샤', """출바알~ 온천을 찾아서! 정령산으로!""") }}
 
 하지만 마카샤가 자신들의 목적은 온천욕을 즐기는 것임을 상기시키면서, 근처에 새로운 온천이 생겼을 수 있다는 주장을 내세운다. 뮤트는 이상하다고 부정하지만, 에슈르가 본인이 정령 행동 분석 논문을 적은 적이 있는데 두 정령이 싸우면서 온천이 생길 가능성은 충분히 있다며 마카샤의 주장에 동조한다.(1) 디아나와 그윈 또한 에슈르의 설명에 수긍하며 결국 다같이 새 온천을 찾아보기로 한다.
 { .annotate }
@@ -226,7 +131,7 @@ tags:
 ???+ Abstract
     새로 발견한 온천에 즐거워하며 일행은 오랜만의 평화로운 시간을 만끽하며 휴식을 즐긴다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 에슈르는 뮤트가 처음부터 온천에 가는 걸 탐탁지 않아 한다는 걸 알고 의심하고 있었으며, 뮤트가 가이드를 해주겠다면서 나섰을 때부터 쎼함을 느끼고 갈림길이 나올때마다 바닥에 민트 아이스크림을 조금씩 떨어뜨렸다고 한다. 그 흔적을 통해 똑똑하고 계산적인 뮤트가 제자리를 빙빙 돌게끔 하고 있었다는 것을 알 수 있었다고.
 
@@ -238,53 +143,23 @@ tags:
 
 <br>
 ???+ quote
-    :sadoicon-guin:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="guin">그윈</span><br>
-    <div class="speech-bubble">
-        음~ 뭐든 처음 하는 일은 무섭게 느껴지기 마련이지.<br>
-        나도 파도를 헤치고 여기까지 올 때, 마음속으론 많이 두려웠거든.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        음~ 정말로⋯<br>
-        겁쟁이 녀석이 따로 없었잖아?! 아하하!
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        뭐, 뭐라고요?! 지금 절 놀리시는 겁니까?
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        이봐, 풋내기 정령! 이 에슈르 님만 믿으라고!<br>
+    {{ speech('guin', '그윈', """음~ 뭐든 처음 하는 일은 무섭게 느껴지기 마련이지.<br>
+        나도 파도를 헤치고 여기까지 올 때, 마음속으론 많이 두려웠거든.""") }}
+    {{ speech('ashur', '에슈르', """음~ 정말로⋯<br>
+        겁쟁이 녀석이 따로 없었잖아?! 아하하!""") }}
+    {{ speech('mute', '뮤트', """뭐, 뭐라고요?! 지금 절 놀리시는 겁니까?""") }}
+    {{ speech('ashur', '에슈르', """이봐, 풋내기 정령! 이 에슈르 님만 믿으라고!<br>
         네가 볼타입 정령이 되기 전에 무슨 존재였던 간에⋯<br>
-        현재 그 몸으로 활동하기 시작했다면, 물에 들어가는 건 전혀 문제가 없을 거야!
-    </div>
-     :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        그렇습니까?
-    </div>   
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        그럼!<br>
+        현재 그 몸으로 활동하기 시작했다면, 물에 들어가는 건 전혀 문제가 없을 거야!""") }}
+     {{ speech('mute', '뮤트', """그렇습니까?""") }}   
+    {{ speech('ashur', '에슈르', """그럼!<br>
         심지어 불의 정령이 물에 빠져도 딱히 큰 문제는 없었다고.<br>
         나, 에슈르⋯! 요정 왕국 마법 학교의 교장으로서! 정령 마법 이론 학회의 권위자로서!<br>
-        100%, 200%⋯ 3000%! 확실하다고 떳떳하게 말할 수 있다!
-    </div>
-     :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        그, 그런 권위자분께서 그렇게 말씀하신다면⋯ 으음⋯
-    </div>
-    :sadoicon-makasha:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="makasha">마카샤</span><br>
-    <div class="speech-bubble">
-        음⋯ 요정 왕국에 그런 학회가 있었나?
-    </div>
-    :sadoicon-diana:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="diana">디아나</span><br>
-    <div class="speech-bubble">
-        그럼 이젠 제대로 온천을 찾아주시는 걸까요?
-    </div>
-     :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        알겠습니다. 금방 찾아드리죠.
-    </div>
+        100%, 200%⋯ 3000%! 확실하다고 떳떳하게 말할 수 있다!""") }}
+     {{ speech('mute', '뮤트', """그, 그런 권위자분께서 그렇게 말씀하신다면⋯ 으음⋯""") }}
+    {{ speech('makasha', '마카샤', """음⋯ 요정 왕국에 그런 학회가 있었나?""") }}
+    {{ speech('diana', '디아나', """그럼 이젠 제대로 온천을 찾아주시는 걸까요?""") }}
+     {{ speech('mute', '뮤트', """알겠습니다. 금방 찾아드리죠.""") }}
 
 그런 뮤트를 에슈르는 '똑똑한 척 하더니 겨우 물이 무서웠냐'는 둥 놀리지만, 아무튼 물에 들어가는 건 전혀 문제가 없을 거라고 과장을 조금 섞은 호언장담을 해주며 격려한다. 감각을 속이기 위해 일부러 온천과 가까운 장소를 맴돌고 있었던 뮤트는 마음을 다잡고 일행을 진짜 온천으로 안내한다.
 
@@ -293,27 +168,15 @@ tags:
 <br>
 
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_skin_mute_2.png){width="700"}
-/// caption
-테마극장 CG 1
-///
+{{ image('story/s2_skin_mute_2.png', width=700, caption='테마극장 CG 1') }}
 
 ???+ quote
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        이봐, 뮤트.<br>
+    {{ speech('ashur', '에슈르', """이봐, 뮤트.<br>
         너 뭔가 정령이 된 지 얼마 안 된 녀석 같은데⋯<br>
-        앞으로 궁금한 게 있으면 날 찾아오라고. 나 그런 쪽으로 공부 많이 했다니까?
-    </div>
-    :sadoicon-mute:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="mute">뮤트</span><br>
-    <div class="speech-bubble">
-        아⋯ 네⋯가끔 리뉴아에게 이것저것 물어보고는 있지만⋯<br>
-        요정 왕국의 마법 권위자에게도 도움을 받는다면⋯ 좋을 것 같네요.
-    </div>
-    :sadoicon-makasha:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="makasha">마카샤</span><br>
-    <div class="speech-bubble">
-        요정⋯ 마법 권위자⋯ 없다니까⋯ 콜콜콜~
-    </div>
+        앞으로 궁금한 게 있으면 날 찾아오라고. 나 그런 쪽으로 공부 많이 했다니까?""") }}
+    {{ speech('mute', '뮤트', """아⋯ 네⋯가끔 리뉴아에게 이것저것 물어보고는 있지만⋯<br>
+        요정 왕국의 마법 권위자에게도 도움을 받는다면⋯ 좋을 것 같네요.""") }}
+    {{ speech('makasha', '마카샤', """요정⋯ 마법 권위자⋯ 없다니까⋯ 콜콜콜~""") }}
 
 온천에 얼떨결에 들어온 뮤트는 몸과 정신이 노곤노곤하니 기분이 좋다고 표현한다. 에슈르가 덩굴에서 따온 달걀을 온천물로 삶아 만든 삶은 달걀을 나눠 먹으며, 뒤이어 들어온 일행도 온천을 마음껏 즐긴다. 뮤트 또한 '새로운 것을 시도하는 건 즐거운 일이라는 걸 알게 되었다'며 온천을 즐기기로 한다. 
 <br>

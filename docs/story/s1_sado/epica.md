@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 에피카
 
 ## 에피소드 1 - 나만의 이야기
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 요정 주민들을 모아 놓고 요정 왕국 반란 때의 일을 재구성해 이야기로 푸는 에피카. 장황한 표현을 써가며 말하는데 이야기가 상당히 많이 왜곡되어 있었다.
 
@@ -23,6 +23,6 @@ tags:
 <br>
 
 ## 에피소드 5 - 네버 엔딩 스토리 2
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 교주가 민원을 처리하러 갔는데 에르핀이 나비를 잡자고 한다. 가짜 민원을 넣어서 몰래 놀려는 속셈이었던 것. 나비를 잡다가 에르핀이 이제 밥을 먹자고 하는데, 아침에 에슈르한테 생떼를 쓰고 부탁해서 '여왕 정식 세트'를 다 포장해왔다고 한다. 당연히 옮기는 거까지 에슈르한테 시켰고 배달비는 교단에 청구했으니 잘 부탁한다고 교주에게 얘기한다. 이후 에피카가 실수로 발을 헛디뎌 그걸 박살내 버리고 에르핀은 삐져서 도망가버린다.

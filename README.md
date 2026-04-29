@@ -5,3 +5,24 @@ This document is for recording information about the character Ashur of Trickcal
 
 This is a fan content.
 Trickcal copyrighted by EPIDGames.
+
+## Build
+
+This project uses ProperDocs as the MkDocs-compatible site builder.
+
+```bash
+pip install -r requirements.txt
+properdocs build --strict -f properdocs.yml
+```
+
+To serve locally:
+
+```bash
+properdocs serve -f properdocs.yml
+```
+
+For output-preserving refactors, see `MAINTENANCE.md` and run:
+
+```powershell
+tools\verify-site.ps1 -BuildBaseline
+```

@@ -7,7 +7,8 @@
     * [관계](./info/relationship.md)
     * [옷장](./info/viewer.md)
 * 시즌 1
-    * [메인 스토리](./story/chapter/s1_main.md)
+    * 메인 스토리
+        * [](./story/chapter/s1_main.md)
         * [챕터 1](./story/s1_main/c1.md)
         * [챕터 4](./story/s1_main/c4.md)
         * [챕터 5](./story/s1_main/c5.md)
@@ -15,13 +16,15 @@
         * [챕터 7](./story/s1_main/c7.md)
         * [챕터 8](./story/s1_main/c8.md)
         * [챕터 9](./story/s1_main/c9.md)
-    * [이벤트 스토리](./story/chapter/s1_event.md)
+    * 이벤트 스토리
+        * [](./story/chapter/s1_event.md)
         * [멜트다운 버터](./story/s1_event/butter.md)
         * [강철의 지옥 단련](./story/s1_event/leets.md)
         * [피코라의 멘토 콤플렉스](./story/s1_event/picora.md)
         * [미드나잇 마리오네트](./story/s1_event/barong.md)
         * [누구를 위하여 기도를 올리나](./story/s1_event/joanne.md)
-    * [사도 스토리](./story/chapter/s1_sado.md)
+    * 사도 스토리
+        * [](./story/chapter/s1_sado.md)
         * [에슈르](./story/s1_sado/ashur.md)
         * [네르](./story/s1_sado/ner.md)
         * [에르핀](./story/s1_sado/erpin.md)
@@ -35,11 +38,13 @@
         * [언급됨](./story/s1_sado/etc2.md)
     * [연회장 대화](./story/chapter/s1_etc.md)
 * 시즌 2
-    * [메인 스토리](./story/chapter/s2_main.md)
+    * 메인 스토리
+        * [](./story/chapter/s2_main.md)
         * [챕터 3](./story/s2_main/c3.md)
         * [챕터 4](./story/s2_main/c4.md)
         * [챕터 10](./story/s2_main/c10.md)
-    * [이벤트 스토리](./story/chapter/s2_event.md)
+    * 이벤트 스토리
+        * [](./story/chapter/s2_event.md)
         * [슬기로운 메이드 생활](./story/s2_event/speaki.md)
         * [파티에는 축복과 위로를](./story/s2_event/opal.md)
         * [불 붙은 불행 속 쓰나미](./story/s2_event/shasha.md)
@@ -47,7 +52,8 @@
         * [댄스 쇼다운! 꿈꾸는 포도!](./story/s2_event/arco.md)
         * [그을음 끝에 피어나는 빛무리](./story/s2_event/uros.md)
         * [즐겁고 힘든 온천기행!](./story/s2_event/onsen.md)
-    * [사도 스토리](./story/chapter/s2_sado.md)
+    * 사도 스토리
+        * [](./story/chapter/s2_sado.md)
         * [그윈](./story/s2_sado/guin.md)
         * [폴랑](./story/s2_sado/polan.md)
         * [슈로](./story/s2_sado/suro.md)
@@ -61,10 +67,12 @@
     * [연회장 대화](./story/chapter/s2_etc.md)
 * 시즌 3
     * [메인 스토리](./story/chapter/s3_main.md)
-    * [이벤트 스토리](./story/chapter/s3_event.md)
+    * 이벤트 스토리
+        * [](./story/chapter/s3_event.md)
         * [거울에 보이는 것보다 가까이 있음!](./story/s3_event/miro.md)
         * [절체절명! 요가 레스큐 프로젝트!](./story/s3_event/asana.md)
-    * [사도 스토리](./story/chapter/s3_sado.md)
+    * 사도 스토리
+        * [](./story/chapter/s3_sado.md)
         * [아사나](./story/s3_sado/asana.md)
 * 기타
     * [미니게임](./others/minigame.md)

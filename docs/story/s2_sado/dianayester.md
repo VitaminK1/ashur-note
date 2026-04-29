@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 디아나(왕년)
 
 ## 에피소드 3 - 각자의 사정 1
-<span class="badge badge-version"><span class="badge-icon">:material-battery-off-outline:</span>언급되지 않음</span>
+{{ story_badge('battery-off-outline', '언급되지 않음') }}
 <br>
 디아나는 이전 세계에서와 달리 아주 평화롭고 여유로운 삶을 누리고 있었는데, 한때 꿈이었었던 요정 왕국에서의 편안한 삶은 어떨까 궁금해졌다.
 
@@ -19,17 +19,14 @@ tags:
 심심하던 차에 요정왕국에 대해 알아보기로 하고 그나마 아는 사이인 교주에게로 간다. 겨우 일을 끝나고 잠을 청하는 교주의 방에 들이닥친 디아나는 요정 왕국을 구경하고 싶다는 부탁을 직접적으로 하기 부끄러운지 돌려 얘기하는데, 교주는 디아나의 속마음을 읽고 맞춰주기로 한다.
 
 ## 에피소드 4 - 각자의 사정 2
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 디아나는 이전 세계에서와 달리 아주 평화롭고 여유로운 삶을 누리고 있었는데, 한때 꿈이었었던 요정 왕국에서의 편안한 삶은 어떨까 궁금해졌다.
 
 <br>
 심심하던 차에 요정왕국에 대해 알아보기로 하고 그나마 아는 사이인 교주에게로 간다. 겨우 일을 끝나고 잠을 청하는 교주의 방에 들이닥친 디아나는 요정 왕국을 구경하고 싶다는 부탁을 직접적으로 하기 부끄러운지 돌려 얘기하는데, 교주는 디아나의 속마음을 읽고 맞춰주기로 한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_sado_dianayester_1.png){width="500"}
-/// caption
-'웃고 있는' 에슈르
-///
+{{ image('story/s2_sado_dianayester_1.png', caption="'웃고 있는' 에슈르") }}
 
 요정 왕국 거리를 조심히 다니는 디아나는 평화롭고 따스한 분위기를 느끼고, 거리를 지나는 요정들도 걱정거리 하나 없이 행복해 보인다며 만족한다. 
 

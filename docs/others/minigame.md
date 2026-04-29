@@ -16,49 +16,49 @@ tags:
 
 <br>
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;요즘 기침하는 손님이 많아요. 생강차도 같이 팔아야 하나?
+* :sadoicon-ashur:{:.small-emoji} 요즘 기침하는 손님이 많아요. 생강차도 같이 팔아야 하나?
 ??? success "돌아가세요"
     생강차에 꿀을 타라구요...? 좋은 방법이네요!
 ??? failure "감기 진단"
     저희 빵집은 위생관리 잘 한다구요! 아, 아니 학교예요, 학교!
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;엣취! 저는 밀가루 때문에 기침을 했는데요?
+* :sadoicon-ashur:{:.small-emoji} 엣취! 저는 밀가루 때문에 기침을 했는데요?
 ??? success "돌아가세요"
     환기를 좀 자주 해야겠어요.
 ??? failure "감기 진단"
     그러니까, 헷취! 밀가루가, 헷취!
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;엣취! 으으... 재채기 때문에 계량이 엉망이에요.
+* :sadoicon-ashur:{:.small-emoji} 엣취! 으으... 재채기 때문에 계량이 엉망이에요.
 ??? success "돌아가세요"
     이것도 모르는 병원이라니!
 ??? failure "감기 진단"
     엣취! 내일은 휴업취!
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;식빵이 많이 남아서 그것만 먹었더니...
+* :sadoicon-ashur:{:.small-emoji} 식빵이 많이 남아서 그것만 먹었더니...
 ??? success "영양 부족 진단"
     남은 빵 골고루 먹어야겠어요.
 ??? failure "돌아가세요, 감기 진단"
     선생님도 빵 드실래요?
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;으으...학교의 운영비가...월세가! 머리 아파!
+* :sadoicon-ashur:{:.small-emoji} 으으...학교의 운영비가...월세가! 머리 아파!
 ??? success "돌아가세요"
     휴...걱정 그만하고 쉬어야겠어요.
 ??? failure "감기, 영양부족, 영양 과다 진단"
     선생님은 월세 어떻게 하고 계세요? 네? 공짜라구요?!
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;머리를 아이스크림 케이크로 맞은 기분이에요.
+* :sadoicon-ashur:{:.small-emoji} 머리를 아이스크림 케이크로 맞은 기분이에요.
 ??? success "영양 과다 진단"
     앞으로 폐기 빵 아깝다고 다 먹지 말고 여왕님 드려야겠네요.
 ??? failure "돌아가세요, 영양 부족, 감기 진단"
     아이스크림 케이크가 갑자기 먹고 싶어졌어요.
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;새로 산 베이킹 도구 탓일까요? 냄새가 많이 나더니 머리가 아프네요.
+* :sadoicon-ashur:{:.small-emoji} 새로 산 베이킹 도구 탓일까요? 냄새가 많이 나더니 머리가 아프네요.
 ??? success "중금속 중독 진단"
     시스트에게 속았어요! 유해물질 없는 고급 도구라고 하더니!
 ??? failure "돌아가세요, 영양 부족, 감기 진단"
     이상한 냄새를 없애기 위해 방향제를 더 뿌려봐야겠어요.
 
-* :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;콜록... 콜록! 어제 만든 빵에 무슨 문제가...
+* :sadoicon-ashur:{:.small-emoji} 콜록... 콜록! 어제 만든 빵에 무슨 문제가...
 ??? success "중금속 중독 진단"
     네에?! 뭐라고요?! 재료를 다 폐기해야겠어요!
 ??? failure "돌아가세요, 영양 부족, 감기 진단"
@@ -69,10 +69,7 @@ tags:
 
 ## 미니게임 : 열 세번째 사도 죠안의 유혹
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_minigame_1.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_minigame_2.png){width="400"}
-/// caption
-죠안 미니게임 엔딩 - 알차지 못한 속강정 / 네 교단 다 내 것
-///
+{{ image(['story/s1_minigame_1.png', 'story/s1_minigame_2.png'], caption='죠안 미니게임 엔딩 - 알차지 못한 속강정 / 네 교단 다 내 것', width=400) }}
 
 미니게임 엔딩 여섯개 중 두개의 컷씬에 등장한다. 
 
@@ -92,10 +89,7 @@ tags:
 <br>
 
 #### 주문
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_5.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_6.png){width="400"}
-/// caption
-Tasty Table Time - 에슈르의 주문 일부
-///
+{{ image(['story/s2_minigame_5.png', 'story/s2_minigame_6.png'], caption='Tasty Table Time - 에슈르의 주문 일부', width=400) }}
 
 + (어려움) 여왕님이 그렇게 여기 요리를 좋아한다면서? 내 아름다운 모습이랑 잘 어울리는 걸 준비해줘! 이 길고 예쁜 내 풍성한 머리카락처럼 말이야.
 + (속마음) 기다란 파스타에 붉은 토마토 소스! 예쁜 꽃잎을 뿌리면 좋겠네~ 양은 전부 많이!
@@ -106,48 +100,24 @@ Tasty Table Time - 에슈르의 주문 일부
 #### 반응
 
 === "이상한데"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_1.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "이상한데" 반응
-    ///
+    {{ image('story/s2_minigame_1.png', caption='Tasty Table Time - 에슈르의 "이상한데" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            아니, 맛이 왜 이래? 차라리 설탕이라도 듬뿍 뿌리지 그랬어!
-        </div>
+        {{ speech('ashur', '에슈르', """아니, 맛이 왜 이래? 차라리 설탕이라도 듬뿍 뿌리지 그랬어!""") }}
 
 === "먹을만해"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_2.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "먹을만해" 반응
-    ///
+    {{ image('story/s2_minigame_2.png', caption='Tasty Table Time - 에슈르의 "먹을만해" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            그럭저럭 먹을 만 했어.
-        </div>
+        {{ speech('ashur', '에슈르', """그럭저럭 먹을 만 했어.""") }}
 
 === "맛있어"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_3.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "맛있어" 반응
-    ///
+    {{ image('story/s2_minigame_3.png', caption='Tasty Table Time - 에슈르의 "맛있어" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            뭐, 맛있었어? 왜 유명한지 알 것 같네!
-        </div>
+        {{ speech('ashur', '에슈르', """뭐, 맛있었어? 왜 유명한지 알 것 같네!""") }}
 
 === "완벽"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_4.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "완벽" 반응
-    ///
+    {{ image('story/s2_minigame_4.png', caption='Tasty Table Time - 에슈르의 "완벽" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            에심당에 뒤를 이을 차세대 음식점이네! 혹시 빵집 일을 좀 도와줄 생각은 없어? 제자로 받아줄게!
-        </div>
+        {{ speech('ashur', '에슈르', """에심당에 뒤를 이을 차세대 음식점이네! 혹시 빵집 일을 좀 도와줄 생각은 없어? 제자로 받아줄게!""") }}
 
 <br>
 <br>
@@ -158,10 +128,7 @@ Tasty Table Time - 에슈르의 주문 일부
 <br>
 
 #### 주문
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_7.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_8.png){width="400"}
-/// caption
-Tasty Table Time - 에슈르의 주문 일부
-///
+{{ image(['story/s2_minigame_7.png', 'story/s2_minigame_8.png'], caption='Tasty Table Time - 에슈르의 주문 일부', width=400) }}
 
 + (어려움) 으으, 몸이 조금 차네요. 커다랗고 따뜻한 꽃무늬 담요 같은 거 없나요? 엥? 그런 건 없고 음식만 있다고요?
 + (속마음) 음~ 따뜻한 토마토 라자냐를 잔뜩, 소스도 많이 넣어서 먹으면 몸이 좀 따뜻해질 것 같기도⋯? 아쉬운 대로 꽃잎 장식도 올려서!
@@ -171,48 +138,24 @@ Tasty Table Time - 에슈르의 주문 일부
 #### 반응
 
 === "이상한데"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_9.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "이상한데" 반응
-    ///
+    {{ image('story/s2_minigame_9.png', caption='Tasty Table Time - 에슈르의 "이상한데" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            으윽! 죄송한데, 이거 먹고 수영하다 속 뒤집어지겠어요⋯
-        </div>
+        {{ speech('ashur', '에슈르', """으윽! 죄송한데, 이거 먹고 수영하다 속 뒤집어지겠어요⋯""") }}
 
 === "먹을만해"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_10.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "먹을만해" 반응
-    ///
+    {{ image('story/s2_minigame_10.png', caption='Tasty Table Time - 에슈르의 "먹을만해" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            음~ 나쁘지 않긴 한데⋯ 다른 걸 시킬 걸 그랬나?
-        </div>
+        {{ speech('ashur', '에슈르', """음~ 나쁘지 않긴 한데⋯ 다른 걸 시킬 걸 그랬나?""") }}
 
 === "맛있어"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_11.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "맛있어" 반응
-    ///
+    {{ image('story/s2_minigame_11.png', caption='Tasty Table Time - 에슈르의 "맛있어" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            맛있게 잘 먹었습니다! 앞으로 수영 끝날 때마다 들를게요!
-        </div>
+        {{ speech('ashur', '에슈르', """맛있게 잘 먹었습니다! 앞으로 수영 끝날 때마다 들를게요!""") }}
 
 === "완벽"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_12.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "완벽" 반응
-    ///
+    {{ image('story/s2_minigame_12.png', caption='Tasty Table Time - 에슈르의 "완벽" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            오오! 진짜 맛있었어요! 절대로 빵은 메뉴에 추가하면 안 돼요! 아시겠죠?
-        </div>
+        {{ speech('ashur', '에슈르', """오오! 진짜 맛있었어요! 절대로 빵은 메뉴에 추가하면 안 돼요! 아시겠죠?""") }}
 
 <br>
 <br>
@@ -223,10 +166,7 @@ Tasty Table Time - 에슈르의 주문 일부
 <br>
 
 #### 주문
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_minigame_1.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_minigame_2.png){width="400"}
-/// caption
-Tasty Table Time - 에슈르의 주문 일부
-///
+{{ image(['story/s3_minigame_1.png', 'story/s3_minigame_2.png'], caption='Tasty Table Time - 에슈르의 주문 일부', width=400) }}
 
 + (어려움) 뭐니 뭐니 해도 온천은 야외에서 즐기는 게 최고죠. 넓게 펼쳐진 하늘! 붉게 드리운 석양! 그 아래로 펼쳐진 나뭇잎까지! 크~! 그 풍경을 요리로 표현해 보실 수 있나요?
 + (속마음) 많은 라자냐에 석양처럼 붉은 토마토 소스를 조금 넣고, 그 위에 나뭇잎 같은 파슬리를 얹어주세요!
@@ -236,58 +176,31 @@ Tasty Table Time - 에슈르의 주문 일부
 #### 반응
 
 === "이상한데"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_minigame_3.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "이상한데" 반응
-    ///
+    {{ image('story/s3_minigame_3.png', caption='Tasty Table Time - 에슈르의 "이상한데" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            우으윽⋯ 음식을 만드는 일에는 좀 더 정성이 필요하다고요!
-        </div>
+        {{ speech('ashur', '에슈르', """우으윽⋯ 음식을 만드는 일에는 좀 더 정성이 필요하다고요!""") }}
 
 === "먹을만해"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_minigame_4.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "먹을만해" 반응
-    ///
+    {{ image('story/s3_minigame_4.png', caption='Tasty Table Time - 에슈르의 "먹을만해" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            음. 뭐, 그럭저럭 괜찮은 맛이네요. 조금만 더 노력하면 훨씬 좋아질 거예요.
-        </div>
+        {{ speech('ashur', '에슈르', """음. 뭐, 그럭저럭 괜찮은 맛이네요. 조금만 더 노력하면 훨씬 좋아질 거예요.""") }}
 
 === "맛있어"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_minigame_5.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "맛있어" 반응
-    ///
+    {{ image('story/s3_minigame_5.png', caption='Tasty Table Time - 에슈르의 "맛있어" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            이 정도면 제 빵에 어느 정도 견줄 수 있을지도⋯? 이거 엄청난 칭찬인 거 아시죠?
-        </div>
+        {{ speech('ashur', '에슈르', """이 정도면 제 빵에 어느 정도 견줄 수 있을지도⋯? 이거 엄청난 칭찬인 거 아시죠?""") }}
 
 === "완벽"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_minigame_6.png){width="500"}
-    /// caption
-    Tasty Table Time - 에슈르의 "완벽" 반응
-    ///
+    {{ image('story/s3_minigame_6.png', caption='Tasty Table Time - 에슈르의 "완벽" 반응') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            와아! 온천도 좋았지만, 지금 먹은 음식이 더 좋은데요? 정말 최고였어요!
-        </div>
+        {{ speech('ashur', '에슈르', """와아! 온천도 좋았지만, 지금 먹은 음식이 더 좋은데요? 정말 최고였어요!""") }}
 
 <br>
 <br>
 
 ## 주말 콘텐츠 : 놀이터
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_13.png){width="500"}
-/// caption
-놀이터 로비 중 하나
-///
+{{ image('story/s2_minigame_13.png', caption='놀이터 로비 중 하나') }}
 
 주말 콘텐츠 로비 중 하나에 등장한다. 미끄럼틀 밑에서 에르핀이 일부러 퍼부은 모래 더미에 깔려 고통받고 있는 모습이다. 현재 시간에 따라 하늘색이 바뀐다.
 <br>
@@ -295,15 +208,9 @@ Tasty Table Time - 에슈르의 주문 일부
 
 ## 미니게임 : 이세계 픽셀
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_14.png){width="500"}
-/// caption
-이세계 픽셀 - 에심당 이벤트
-///
+{{ image('story/s2_minigame_14.png', caption='이세계 픽셀 - 에심당 이벤트') }}
 !!! quote ""
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        민트 초코를 썼지만, 호불호는 없을 정도로 맛있을 거예요!
-    </div>
+    {{ speech('ashur', '에슈르', """민트 초코를 썼지만, 호불호는 없을 정도로 맛있을 거예요!""") }}
 
 '너와 나를 지우는 수수께끼' 테마극장의 이세계 픽셀에서 물음표 이벤트 중 하나로 첫등장한다. (2025.08.21~)
 
@@ -315,47 +222,26 @@ Tasty Table Time - 에슈르의 주문 일부
 
 <br>
 === "몸통"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_15.png){width="500"}
-    /// caption
-    이세계 픽셀 - 몸통부터 먹었더니
-    ///
+    {{ image('story/s2_minigame_15.png', caption='이세계 픽셀 - 몸통부터 먹었더니') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            어때요? 제 역작인 민트 초코 붕어빵 맛있죠?
-        </div>
+        {{ speech('ashur', '에슈르', """어때요? 제 역작인 민트 초코 붕어빵 맛있죠?""") }}
 
 === "꼬리"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_16.png){width="500"}
-    /// caption
-    이세계 픽셀 - 꼬리부터 먹었더니
-    ///
+    {{ image('story/s2_minigame_16.png', caption='이세계 픽셀 - 꼬리부터 먹었더니') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            원래 민트가 정신을 맑게 하는 효능이 있다잖아요! 맛있죠?
-        </div>
+        {{ speech('ashur', '에슈르', """원래 민트가 정신을 맑게 하는 효능이 있다잖아요! 맛있죠?""") }}
 
 === "머리"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_17.png){width="500"}
-    /// caption
-    이세계 픽셀 - 머리부터 먹었더니
-    ///
+    {{ image('story/s2_minigame_17.png', caption='이세계 픽셀 - 머리부터 먹었더니') }}
     !!! quote ""
-        :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-        <div class="speech-bubble">
-            어때요? 날아갈 것 같은 맛이죠?
-        </div>
+        {{ speech('ashur', '에슈르', """어때요? 날아갈 것 같은 맛이죠?""") }}
 
 <br>
 <br>
 
 ## 미니 이벤트 : 입학을 축하합니다!
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_18.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_19.png){width="400"}
-/// caption
-미니 이벤트 화면 일부
-///
+{{ image(['story/s2_minigame_18.png', 'story/s2_minigame_19.png'], caption='미니 이벤트 화면 일부', width=400) }}
 
 2025년 3월 즈음에 열린 1.5주년 사전예약 이벤트에 신입생을 맞이하는 역할로 등장했다.
 

@@ -14,7 +14,7 @@ tags:
 ???+ Abstract
     세계수의 계시를 빙자해 에슈르에게 빵을 얻어내는 네르. 에슈르의 단순한 성격보다 아무렇지 않게 이용하는 네르가 더 무섭다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 교주는 왕궁 쪽에서 에르핀과 에슈르가 싸웠다는 말을 듣고 에르핀이 {=='학생도 없는 마법 학교 같은 건 그만 접고 빵이나 구우라'==}고 했냐며 네르에게 묻는다. 
 
@@ -30,7 +30,7 @@ tags:
 <br>
 
 ## 에피소드 5 - 딸기 크림빵 사건
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 네르는 마요, 마리와 함께 방청소를 안하고 도망간 교주를 찾아보기로 하는데, 책상에 묻어있는 딸기 크림을 발견한다. 마리와 마요는 그 크림이 에슈르가 아침 한정 메뉴로 파는 딸기 크림빵의 것임이 분명하다며 에슈르의 빵집으로 간다. 하지만 오늘 만든 딸기 크림빵은 에르핀이 특별히 주문해서 모두 왕궁으로 납품했다는 말을 듣게 되어 에르핀에게 물어보기 위해 다시 왕궁으로 향한다.
 

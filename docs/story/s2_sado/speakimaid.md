@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 스피키(메이드)
 
 ## 에피소드 4 - 여왕과 메이드와 따라쟁이 1
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 스피키를 크레페로 오인한 요정 전령이 에르핀의 소풍길에 합류하라는 명령을 전하자, 스피키는 에르핀과 엮이기만 골치 아픈 일이 생긴다며 자신을 스피키라고 말해주고 내뺀다.
 

@@ -9,18 +9,15 @@ tags:
 ---
 
 # 이벤트 스토리 - 미드나잇 마리오네트
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 에르핀이 에슈르 인형을 발견하고 바롱을 만난 뒤, 인형의 저주를 풀기 위해 재단소를 찾는다. 첫번째 문제를 풀기 위한 네르의 회상에서 에슈르가 등장해 정답이 될만한 단서를 대화를 통해 알려준다. 사건이 끝난 다음 날, 사라졌던 요정들은 사실 인형이 된 것이 아니라 바롱 덕에 모나티엄에 있는 최상급 호텔에 휴가를 보내고 온 것이었고 에슈르는 정말 좋았다며 에르핀에게 자랑한다.
 <br>
 <br>
 
 ## 에피소드 1 - 인형의 저주
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_barong_1.png){width="500"}
-/// caption
-기억 조각 - 에슈르 인형?!
-///
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ image('story/s1_event_barong_1.png', caption='기억 조각 - 에슈르 인형?!') }}
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 네르는 하루아침에 왕국에 있던 다른 모든 요정들이 사라지고 인형들만 남아있는 것을 보며 당황해한다. 에르핀은 숨바꼭질 놀이라며 대수롭지 않게 생각하는데, 우선 에슈르 빵집에 가서 배부터 채우자며 먼저 빵집으로 달려간다. 하지만 빵집 안에는 빵모양 인형과 에슈르모양 인형만 있었고, 이를 본 에르핀은 요정왕국 전체가 인형으로 변해버렸다며 걱정하기 시작한다.
 
@@ -30,7 +27,7 @@ tags:
 <br>
 
 ## 에피소드 3 - 인형의 첫 번째 시험
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 재단소에서 바롱은 자신의 주인이 몸 안에 들어왔다며, 인형의 저주를 풀 자격이 있는지 시험하기 위해 두 문제를 낸다고 한다.
 
@@ -46,11 +43,8 @@ tags:
 <br>
 
 ## 에피소드 7 - 인형의 진짜 주인
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_barong_2.png){width="500"}
-/// caption
-기억 조각 - 빠아아아앙!!!
-///
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ image('story/s1_event_barong_2.png', caption='기억 조각 - 빠아아아앙!!!') }}
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 사건이 끝나고 다음 날 오전, 요정들 모두가 제자리로 돌아온다. 에르핀은 바롱과 만나 평상시의 모습이 소중하다는 것을 깨달았다며 감사인사를 전하고, 에슈르네 빵집 쇼윈도에 쾅 달라붙어 {==빠아아아앙!!!==}이라 외친다. 
 
@@ -65,7 +59,7 @@ tags:
 ## 여담
 
 + 에슈르 빵집 배경에서 볼 수 있다시피 에슈르의 빵집은 케이크 뿐만 아니라 다른 것도 취급하는 것을 볼 수 있다. 그렇다면 빵집 전체 매출은 케이크 매출보다 높을 것이므로 에슈르는 {==본인의 제빵 실력으로 일주일 안에 월세 정도는 가뿐히 벌고도 남는다==}는 사실을 알 수 있다. 만약 교단에서 에르핀의 무전취식에 대해 원가만큼이라도 배상을 해주었다면 에슈르 입장에서는 에르핀이 먹는 것이 그대로 매출이 되므로 오히려 좋아했을 것이다.
-  <br><span class="badge badge-version"><span class="badge-icon">:material-tag:</span>에피소드 3</span>
+  <br>{{ story_badge('tag', '에피소드 3') }}
 
 + 또한, '찬탈과 일탈 사이' 테마극장에서 국고가 텅텅 빈 것을 확인 할 수 있다. 따라서 에슈르가 수십년간 적자로 고생하며 월세가 체납되는 이유는 {==에르핀의 무전취식과 교단의 재정부족으로 인해 전액배상해주지 않는 요정왕국==}이라는 것을 알 수 있다. 그만큼 월세를 감면하면 되는 것이 아닌가 의문을 가질 수도 있지만, 그렇게 하면 교단의 재정부족이 더 악화될 것이기 때문에 네르가 쉽게 감면해줄 수는 없었을 것이다.
-  <br><span class="badge badge-version"><span class="badge-icon">:material-tag:</span>에피소드 3</span>
+  <br>{{ story_badge('tag', '에피소드 3') }}

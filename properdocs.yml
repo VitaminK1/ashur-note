@@ -9,26 +9,18 @@ theme:
     - navigation.top
     - navigation.instant
     - navigation.instant.progress
-    - navigation.expand
+    # - navigation.expand
     - navigation.tracking
     - navigation.footer
     - navigation.indexes
     - navigation.path
-    - search.highlight
-    - search.suggest
     - toc.integrate
     - content.code.annotate
     - content.code.copy
-    - content.code.fold
     - content.tooltips
     - content.tabs.sticky
     - content.tabs.link
-    - content.tooltips
     - header.autohide
-    - footer.social
-    - footer.icons
-    - footer.navigation
-    - footer.copy
     - search.suggest
     - search.highlight
     
@@ -92,26 +84,26 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   #- javascripts/tablesort.js
   - javascripts/collapsible.js
-  - javascripts/spine-player.js
+  - javascripts/spine-player.min.js
   - javascripts/lore.js
 
 plugins:
   - search
+  - macros
   - tags
-  - git-revision-date-localized:
-      enable_creation_date: false
-      enable_git_follow: false
-      type: datetime
+  # - git-revision-date-localized:
+  #     enable_creation_date: false
+  #     enable_git_follow: false
+  #     type: datetime
   - offline
   - glightbox
-  - pub-minifier
+  #- pub-minifier
   - mkdocs-video:
       css_style:
         display: "block"
         width: "560px"
         height: "315px"
         margin: "0 auto"
-  - section-index
   - literate-nav:
       nav_file: navigation.md
   - mkdocs-audio
@@ -121,6 +113,7 @@ plugins:
       draft: true
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
       post_readtime: false
+  - section-index
 
 markdown_extensions:
   # Python Markdown

@@ -14,12 +14,9 @@ tags:
 ???+ Abstract
     요정 왕국 교단에 놀러 온 사리는 에슈르와 만난다. 신세를 한탄하던 에슈르는 자기 얘기를 잘 들어주고 진심으로 리액션해주는 사리에게 감동한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_sado_sari_1.png){width="500"}
-/// caption
-사리 사도스토리의 한 장면
-///
+{{ image('story/s1_sado_sari_1.png', caption='사리 사도스토리의 한 장면') }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교주의 꼼수에 당한 사리는 교주와 단둘이 밥을 먹기 위해 요정왕국을 방문하는데, 그러던 중 지나가던 에슈르를 만난다. 에슈르는 교주를 만나러 왔다는 사리에게 {=='교주는 방금 네르한테 끌려가고 있었어서 당분간은 돌아오기 힘들 것이다'==}라는 사실을 알려준다.
 
@@ -35,7 +32,7 @@ tags:
 ???+ Abstract
     빵집에 도착해 에르핀과 마주친 에슈르와 사리. 에슈르는 자기를 구박하는 에르핀에게 빵을 주는 것을 거부하고, 에르핀은 충격에 빠진다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 에슈르가 제시한 해결책은 '탄수화물의 마법'으로, 빵을 먹고 기분이 좋아진 상태가 되면 더 편하게 말할 수 있을 테니 그 때 진심으로 자신의 느낌을 말해보는 것이었다. 우선 자극적이지 않은 담백 호밀 식빵부터 먹이고 사리가 어떤 느낌이 드는지 말해보는 방식을 시도한다.
 
@@ -45,23 +42,14 @@ tags:
 <br>
 
 ???+ quote
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        하아⋯. 겨우 도망쳐 나왔다.
+    {{ speech('ashur', '에슈르', """하아⋯. 겨우 도망쳐 나왔다.
         우리 여왕님은 이성을 잃고 멍청해질수록 힘이 세지거든.<br>
         그럴 땐 자극하지 말고 피하는 게 상책이야.<br>
-        응? 근데 그 빵은 대체 언제 챙겨 나왔어?
-    </div>
-    :sadoicon-sari:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="sari">사리</span><br>
-    <div class="speech-bubble">
-        음⋯ 이제 이 빵의 느낌을 말할 수 있을 것 같아.<br>
-        이게 바로 눈물 젖은 빵의 맛이구나⋯.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        맞아⋯. 여왕님께 착취당해 가며 만들어낸 내 눈물 젖은 빵들⋯ 흡.<br>
-        오. 그러고 보니 먼저 물어보지 않아도 자기 생각을 얘기했네?
-    </div>
+        응? 근데 그 빵은 대체 언제 챙겨 나왔어?""") }}
+    {{ speech('sari', '사리', """음⋯ 이제 이 빵의 느낌을 말할 수 있을 것 같아.<br>
+        이게 바로 눈물 젖은 빵의 맛이구나⋯.""") }}
+    {{ speech('ashur', '에슈르', """맞아⋯. 여왕님께 착취당해 가며 만들어낸 내 눈물 젖은 빵들⋯ 흡.<br>
+        오. 그러고 보니 먼저 물어보지 않아도 자기 생각을 얘기했네?""") }}
 
 잠시 뒤 빵집에서 겨우 도망쳐 나온 에슈르와 사리. 사리는 호밀 식빵을 한입 베어먹고는 자기 생각을 얘기하는데 성공한다. 사리는 자연스럽게 먼저 말이 나왔다는 것에 신기해하고, 에슈르는 {=='빵에 담긴 내 마음이 사리에게 닿은 것이며, 앞으로 다른 주민들의 진심을 느끼고 말할 수 있다면 자신의 진심을 얘기하기도 편해질 것이다'==}라는 조언을 해준다. 사리가 고마워하며 스토리가 끝난다.
 <br>

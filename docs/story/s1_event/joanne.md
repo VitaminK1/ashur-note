@@ -9,18 +9,15 @@ tags:
 ---
 
 # 이벤트 스토리 - 누구를 위하여 기도를 올리나
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교단이 개최한 바자회에 참가하며 소금빵을 비싼 가격에 판매한다. 죠안이 교주를 몰아내자 제빵협회장이자 사도로서 교주를 걱정해주고 은신처도 제공해준다. 교주가 돌아와 죠안과 전투하고 있을 때는 묻혀있던 에르핀을 구출하고 고생해서 만든 딸기잼 토스트를 먹여 에르핀이 전장에 복귀하는데 도움을 준다. 이때 대화에서 에르핀과의 애증어린 관계가 잘 드러난다.
 <br>
 <br>
 
 ## 에피소드 2 - 깨어난 믿음
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_1.png){width="500"}
-/// caption
-기억 조각 - 연속 꿀밤 사건
-///
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ image('story/s1_event_joanne_1.png', caption='기억 조각 - 연속 꿀밤 사건') }}
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교단은 각 종족 도시마다 교단 지점을 만들 때 쓸 교단 발전 기금을 모으기 위해서, 판매자들의 이익을 조금 가져가는 대신 자리를 제공해주는 방식으로 바자회를 개최한다. 
 
@@ -41,55 +38,31 @@ tags:
 ## 에피소드 5 - 상처받은 믿음
 
 === "장면 1"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_1.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(1)
-    ///
+    {{ image('story/s1_event_joanne_2_1.png', caption='당시 테마극장 전투 수행 후 대사 일부(1)') }}
 
 === "장면 2"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_2.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(2)
-    ///
+    {{ image('story/s1_event_joanne_2_2.png', caption='당시 테마극장 전투 수행 후 대사 일부(2)') }}
 
 === "장면 3"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_3.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(3)
-    ///
+    {{ image('story/s1_event_joanne_2_3.png', caption='당시 테마극장 전투 수행 후 대사 일부(3)') }}
 
 === "장면 4"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_4.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(4)
-    ///
+    {{ image('story/s1_event_joanne_2_4.png', caption='당시 테마극장 전투 수행 후 대사 일부(4)') }}
 
 === "장면 5"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_5.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(5)
-    ///
+    {{ image('story/s1_event_joanne_2_5.png', caption='당시 테마극장 전투 수행 후 대사 일부(5)') }}
 
 === "장면 6"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_6.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(6)
-    ///
+    {{ image('story/s1_event_joanne_2_6.png', caption='당시 테마극장 전투 수행 후 대사 일부(6)') }}
 
 === "장면 7"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_7.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(7)
-    ///
+    {{ image('story/s1_event_joanne_2_7.png', caption='당시 테마극장 전투 수행 후 대사 일부(7)') }}
 
 === "장면 8"
-    ![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_2_8.png){width="500"}
-    /// caption
-    당시 테마극장 전투 수행 후 대사 일부(8)
-    ///
+    {{ image('story/s1_event_joanne_2_8.png', caption='당시 테마극장 전투 수행 후 대사 일부(8)') }}
 
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 죠안은 아무것도 없이 빵과 주스를 만드는 것을 보여주며 본인은 세계수의 지시를 받았고, 인간이라는 이유만으로 교주 행세를 하고 있는 이방인인 가짜를 벌주어야 한다고 주장한다. 다행히 티그가 재치있게 시간을 벌어준 덕에 교주는 루포, 베니와 함께 에심당으로 몸을 숨긴다.
 
@@ -102,7 +75,7 @@ tags:
 <br>
 
 ## 에피소드 6 - 방황 속의 믿음
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 영춘과 함께 더 얘기한 후, 교주는 본인이 교주라는 것을 증명하기 위해 자신을 믿어주는 사도들을 모아 요정왕국으로 다시 돌아오기로 한다. 에슈르는 죠안이 여기저기 설치고 다녀서 위험하다며 교주를 걱정하는데, 갑자기 에르핀이 등장해 네르가 부탁해서 교주를 도와주러 왔다고 한다.
 
@@ -112,36 +85,20 @@ tags:
 <br>
 
 ## 에피소드 9 - 흔들리는 믿음
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_3.png){width="500"}
-/// caption
-에피소드 9 장면의 일부(1)
+{{ image('story/s1_event_joanne_3.png', caption="""에피소드 9 장면의 일부(1)
 { .annotate }
 
-1. 흰색배경에 후광연출이 있는 것을 보면 숭배밈의 패러디로 볼 수 있다. 이 장면이 커뮤니티에서 유행하던 에슈르 기습 숭배밈을 역수입한 것이라는 추측도 있다.
-
-///
+1. 흰색배경에 후광연출이 있는 것을 보면 숭배밈의 패러디로 볼 수 있다. 이 장면이 커뮤니티에서 유행하던 에슈르 기습 숭배밈을 역수입한 것이라는 추측도 있다.""") }}
 ???+ quote
-    :sadoicon-sist:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="sist">시스트</span><br>
-    <div class="speech-bubble">
-        당연한 말씀! 이 미천한 장사꾼과 소상인 협회 전원이 온갖 연줄을 끌어모아 재료를 공수했다구요?<br>
-        어디, 이 정도면 만족하실까 모르겠네요, 빵집 주인.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        흥, 이 정도면 충분해.<br>
-        내 제빵 실력을 얕보지 말라고.
-    </div>
-    :sadoicon-rohne:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="rohne">로네</span><br>
-    <div class="speech-bubble">
-        ⋯⋯. 에슈르 씨 왜 화를 안 내죠? 빵집 주인이라고 불렀는데?
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        그거야 당연한 거 아닌가요?<br>
-        {==지금부터는⋯ 마법 학교장 에슈르가 아니라, 빵집 주인 에슈르만이 할 수 있는 일을 해야 하니까⋯!==}
-    </div>
+    {{ speech('sist', '시스트', """당연한 말씀! 이 미천한 장사꾼과 소상인 협회 전원이 온갖 연줄을 끌어모아 재료를 공수했다구요?<br>
+        어디, 이 정도면 만족하실까 모르겠네요, 빵집 주인.""") }}
+    {{ speech('ashur', '에슈르', """흥, 이 정도면 충분해.<br>
+        내 제빵 실력을 얕보지 말라고.""") }}
+    {{ speech('rohne', '로네', """⋯⋯. 에슈르 씨 왜 화를 안 내죠? 빵집 주인이라고 불렀는데?""") }}
+    {{ speech('ashur', '에슈르', """그거야 당연한 거 아닌가요?<br>
+        {==지금부터는⋯ 마법 학교장 에슈르가 아니라, 빵집 주인 에슈르만이 할 수 있는 일을 해야 하니까⋯!==}""") }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 교주가 왕국 바깥에서 타종족들에게 도움을 요청하는 한편, 죠안은 교주가 없는 교단에 많은 변화를 준다. 교단 지하에서 찾아낸 이드의 추방식을 계획하고, 요정들에게 새벽 미사 강제 참여 등을 추진하였으며, 정신차리고 진정한 여왕으로 거듭나게 하기 위함이라며 에르핀도 머리만 남기고 땅에 파묻은 채 놔둔다. 
 
@@ -151,12 +108,9 @@ tags:
 <br>
 
 ## 에피소드 11 - 함께하는 믿음
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_joanne_4.png){width="500"}
-/// caption
-기억 조각 - 빵으로 구원하리라
-///
+{{ image('story/s1_event_joanne_4.png', caption='기억 조각 - 빵으로 구원하리라') }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 요정왕국에서 수인과 엘프 연합군이 싸우는 동안 땅에 묻힌 에르핀에게 딸기잼 토스트를 한가득 가져다준다. 죠안이 사치라면서 고급 제빵 재료를 압수해간 바람에 시스트에게 밀수를 부탁해서 겨우 만든 것이 딸기잼 토스트였다고. 처음에는 에르핀을 원망도 하고 맨날 무전취식하는 게 싫었지만 막상 에르핀이 땅에 묻혔을 때도 평소대로 식빵을 만들고 내심 그리워 했다며 마음껏 먹으라고 한다. 
 

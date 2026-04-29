@@ -17,10 +17,7 @@ tags:
 <br>
 
 ### 에슈르 쿠션 (+120)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/pillow.png){width="100"}
-/// caption
-에슈르 쿠션
-///
+{{ image('others/item/pillow.png', width=100, caption='에슈르 쿠션') }}
 !!! quote ""
       사슴뿔 모자를 쓰고 있는 빵집⋯이 아니라 마법학교 교장 에슈르를 닮은 쿠션이다.
 
@@ -29,10 +26,7 @@ tags:
 <br>
 
 ### 에슈르 미니 포스터 (+150)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/PosterS5.png){width="100"}
-/// caption
-에슈르 미니 포스터
-///
+{{ image('others/item/PosterS5.png', width=100, caption='에슈르 미니 포스터') }}
 !!! quote ""
       볼이 빵빵한 에슈르의 미니 포스터다.
 
@@ -41,20 +35,14 @@ tags:
 <br>
 
 ### 에슈르 피규어 (+?)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/fig1.png){width="300"}
-/// caption
-에슈르 피규어 (미사용)
-///
+{{ image('others/item/fig1.png', width=300, caption='에슈르 피규어 (미사용)') }}
 
 클라이언트 파일 내에 존재하지만 인게임에서는 등장하지 않는다.
 <br>
 <br>
 
 ### 요정족 출동 피규어 (+1000)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/fig2.png){width="500" height="300"}
-/// caption
-요정족 출동 피규어
-///
+{{ image('others/item/fig2.png', height=300, caption='요정족 출동 피규어') }}
 !!! quote ""
       장물 수집을 하러 간 마요를 제외한 요정족이 모여 포즈를 취하고 있다.
 
@@ -63,10 +51,7 @@ tags:
 <br>
 
 ### 에슈르 바캉스 키링 (+120)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/keyring.png){width="100"}
-/// caption
-에슈르 바캉스 키링
-///
+{{ image('others/item/keyring.png', width=100, caption='에슈르 바캉스 키링') }}
 !!! quote ""
       바캉스 중, 얼굴에 태닝 자국이 남아버린 에슈르의 모습이 담긴 키링이다.
 
@@ -75,10 +60,7 @@ tags:
 <br>
 
 ### 다 함께 온천에서 피규어 (+1000)
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/fig3.png){width="500" height="300"}
-/// caption
-요정족 출동 피규어
-///
+{{ image('others/item/fig3.png', height=300, caption='요정족 출동 피규어') }}
 !!! quote ""
       함께 온천 여행을 온 마카샤, 그윈, 에슈르, 디아나, 뮤트의 모습을 본떠 만든 피규어이다.
 
@@ -91,10 +73,7 @@ tags:
 <br>
 
 ### 에심당 뽈사탕 
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item3.png){width="500" height="300"}
-/// caption
-에심당 뽈사탕 에슈르 반응
-///
+{{ image('others/item/item3.png', height=300, caption='에심당 뽈사탕 에슈르 반응') }}
 에슈르가 랜덤박스에서 영감을 받아 만든 사탕. 종족 불문하고 모든 사도들이 좋은 반응을 보여준다.
 아멜리아의 반응에 따르면 사탕 중에 엘레나의 모습이 그려진 것도 있다고 하는데, 사탕의 모양이 모두 다 다른 것으로 보인다.
 리코타는 각기 다른 사탕을 한 번에 먹을 때 조화로운 맛이 난다며 좋아했으며, 캬롯이 무조건 단맛만 나는 사탕만 있는 게 아니라며 신선함을 느꼈다는 것을 보아 맛 또한 각기 다른 듯하다.
@@ -102,10 +81,7 @@ tags:
 <br>
 
 ### 딱딱한 바게트
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item1.png){width="500" height="300"}
-/// caption
-딱딱한 바게트 설명
-///
+{{ image('others/item/item1.png', height=300, caption='딱딱한 바게트 설명') }}
 !!! quote ""
       에슈르의 빵집에서 파는 딱딱한 바게트. 겉은 딱딱하지만 속은 촉촉하다. 역시 에슈르야!
 
@@ -114,10 +90,7 @@ tags:
 <br>
 
 ### 딸기 케이크
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item2.png){width="500" height="300"}
-/// caption
-딸기 케이크 설명
-///
+{{ image('others/item/item2.png', height=300, caption='딸기 케이크 설명') }}
 !!! quote ""
       에슈르의 빵집에서 가장 많이 팔리는 스테디셀러.<br>
       여왕의 추천 스탬프가 붙어있다. 어떤 종족의 여왕인지는 알아보기 힘들다.
@@ -127,15 +100,12 @@ tags:
 <br>
 
 ### 에르핀 더 돌잡러
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item4.png){width="500" height="300"}
-/// caption
-에르핀 더 돌잡러 설명
-///
+{{ image('others/item/item4.png', height=300, caption='에르핀 더 돌잡러 설명') }}
 !!! quote ""
       교주 오신 날 1주년 기념으로 만들어진 합작 프로젝트 마법 공학 인형!<br>
       요정 왕국의 초유명 재단사(1),모나티엄의 수석 공학자(2), 이상하게 마법에 조예가 깊은 빵집 주인(3)의 합작품!<br>
       교주를 위해 준비한 기념품이라고 한다. 에르핀의 초상권 따윈 고려하지 않았다.
-      {.annotate}
+      { .annotate }
 
       1. '클로에'로 추정된다.
       2. '엘레나'로 추정된다.
@@ -146,15 +116,12 @@ tags:
 <br>
 
 ### 에르핀 더 치어리더
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item5.png){width="500" height="300"}
-/// caption
-에르핀 더 치어리더 설명
-///
+{{ image('others/item/item5.png', height=300, caption='에르핀 더 치어리더 설명') }}
 !!! quote ""
       교주 오신 날 2주년을 맞아 만들어진 마법 공학 인형.<br>
       요정 왕국의 초유명 재단사(1)가 만든 깜찍한 치어리더 복장, 모나티엄의 수석 공학자(2)가 만든 정교한 동작, 빵집이 잘나가서 고민인 마법학교 교장(3)의 합작품이다.<br>
       교주를 응원하는 마음을 담아 만들었다고 한다.
-      {.annotate}
+      { .annotate }
 
       1. '클로에'로 추정된다.
       2. '엘레나'로 추정된다.
@@ -165,19 +132,13 @@ tags:
 <br>
 
 ### 꾸워바라의 펫 쿠션
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/PetCushion_Capybara.png){width="200"}
-/// caption
-펫 '꾸워바라'의 배경 쿠션 이미지
-///
+{{ image('others/item/PetCushion_Capybara.png', width=200, caption="펫 '꾸워바라'의 배경 쿠션 이미지") }}
 '꾸워바라' 펫의 쿠션인 땅콩버터 통의 겉면 인쇄물에 등장한다.
 <br>
 <br>
 
 ### 풀꽃 화관
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item7.png){width="500" height="300"}
-/// caption
-풀꽃 화관 설명
-///
+{{ image('others/item/item7.png', height=300, caption='풀꽃 화관 설명') }}
 !!! quote ""
       버터가 풀꽃을 이어만든 왕관이다. 마음에 드는 꽃들을 일주일 동안 찾아다녔다고 한다.<br>
       에슈르의 영구보존 마법도 걸려있다.
@@ -187,10 +148,7 @@ tags:
 <br>
 
 ### 완전한 아이스크림 케이크
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item6.png){width="500" height="300"}
-/// caption
-완전한 아이스크림 케이크 설명
-///
+{{ image('others/item/item6.png', height=300, caption='완전한 아이스크림 케이크 설명') }}
 !!! quote ""
       에르핀에게 선물 받은 케이크. 먹어치우기는 좀 그렇다.
 
@@ -200,14 +158,8 @@ tags:
 <br>
 
 ### 에심당 스프링클
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item8.png){width="500" height="300"}
-/// caption
-달콤상큼 대작전 이벤트 배너
-///
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/item/item8_1.png){width="500" height="300"}
-/// caption
-에심당 스프링클 설명
-///
+{{ image('others/item/item8.png', height=300, caption='달콤상큼 대작전 이벤트 배너') }}
+{{ image('others/item/item8_1.png', height=300, caption='에심당 스프링클 설명') }}
 !!! quote ""
       달콤 반짝 빛나는 아주 작은 사탕<br>
       요정들이 직접 제조한 사탕에 뿌려 특별한 사탕을 만들 때 쓰인다.

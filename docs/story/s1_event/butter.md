@@ -9,7 +9,7 @@ tags:
 ---
 
 # 이벤트 스토리 - 멜트다운 버터
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 에슈르는 에르핀, 코미과 함께 본 테마극장의 악역을 맡았다. 결국 극대노한 버터에게 단죄당해 에르핀과 함께 머리만 남기고 파묻어지며, 이후 버터에게 사과하면서 심리상담과 동시에 공짜 빵을 나눠주며 화해한다.
 <br>
@@ -19,12 +19,9 @@ tags:
 ???+ Abstract
     버터에게 열정페이를 강요하는 에슈르와 거절하지 못하는 버터. 이를 놀리는 에르핀에게 상처받은 버터는 바보가 아님을 증명하려고 한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_1.png){width="500"}
-/// caption
-기억조각 - 버터는 바보야~
-///
+{{ image('story/s1_event_butter_1.png', caption='기억조각 - 버터는 바보야~') }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 에슈르는 버터에게 전단지 300장을 수인 마을에 돌려달라는 부탁을 한다. 버터가 {==아침에 다른 친구들의 심부름을 맡아버려서 다음에 하면 안되냐==}고 하자, {==버터밖에 맡길 수인이 없다면서 전단지 한 장당 도토리 한 개씩을 주겠다==}는 핑계로 일을 떠맡겨 버린다. 버터는 이 일이 끝나면 친구인 에슈르가 좋아할 거고 그럼 본인도 좋은 것이라며 긍정적으로 생각하려 애쓴다.(1)
 { .annotate }
@@ -40,17 +37,11 @@ tags:
 ???+ Abstract
     혼자 공부를 하며 헤매던 버터는 코미의 말에 꼬임 당해 마법학교에 입학한다. 에슈르는 난해한 지식을 버터에게 가르친다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_3.png){width="500"}
-/// caption
-기억조각 - 오랜만에 학생!
-///
+{{ image('story/s1_event_butter_3.png', caption='기억조각 - 오랜만에 학생!') }}
 !!! quote ""
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        저 책⋯아직도 학교에 잔뜩 남아 있는데. 교주님도 하나 드릴까요?
-    </div>
+    {{ speech('ashur', '에슈르', """저 책⋯아직도 학교에 잔뜩 남아 있는데. 교주님도 하나 드릴까요?""") }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 버터는 모나티엄에 있는 대학 근처 쓰레기통에서 제일 두꺼워 보이는 '양성자 물리학과 핵융합 이론'을 주워서 외우려고 애쓴다. 그 때 약 먹는 알바를 하고 나온 코미를 만나는데, {=="이과는 증명을 해야 하지만 문과는 일단 맞다고 우기면 되므로 문과의 길로 가라"==} 등 온갖 헛소리와 궤변을 늘어놔 버터의 말문을 막히게 만든다. 
 
@@ -63,12 +54,9 @@ tags:
 ???+ Abstract
     에슈르는 수업료가 없으면 일로 대신하라고 버터에게 일을 떠맡긴다. 지친 버터 앞에 에르핀이 다시 나타나 버터를 놀리고 버터를 부르는 어떤 목소리가 들린다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_4.png){width="500"}
-/// caption
-기억조각 - 여왕님은 너무해!
-///
+{{ image('story/s1_event_butter_4.png', caption='기억조각 - 여왕님은 너무해!') }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 버터는 밤을 새서 500페이지가 넘는 어려운 책으로 수업을 받는다. 수업이 끝난 후에는 에슈르가 {=="수업하기 전부터 얘기하면 보통 수업료에 겁먹고 도망가서 이제 얘기한다"==}는 핑계를 대며 버터가 내일 도망치고 안 올 수도 있으니 한 달치 수업료를 선불로 지불하라고 요구한다. 버터는 낼 돈이 없다고 하는데, 거기에 에슈르는 대신 {=="오전 6시부터 오후 6시까지 전단지 500장을 돌리고 오후 6시부터 오전 6시까지 수업을 해주겠다"==}는 무리한 요구를 하고, 버터는 결국 화를 참지 못해 {==닥쳐!!!!!==}라고 소리친다. 그걸 본 에슈르는 인내심 없이 선생님께 소리쳤다며 벌로 오늘 전단지 200장을 추가로 돌리라고 한다.
 
@@ -84,21 +72,12 @@ tags:
 ???+ Abstract
     에르핀과 에슈르는 분노에 찬 버터에게서 도망친다. 코미는 버터를 말로 꼬드겨 빠져나가지만 버터는 에르핀과 에슈르에게는 단죄의 폭력을 행사한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_5.png){width="500"}
-/// caption
-기억조각 - 진짜 쏠 줄은 몰랐어!
-///
+{{ image('story/s1_event_butter_5.png', caption='기억조각 - 진짜 쏠 줄은 몰랐어!') }}
 ???+ quote
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        흐윽⋯! 더는 못 참아!
-    </div>
-    :sadoicon-butter:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="butter">버터?</span><br>
-    <div class="speech-bubble">
-        못 참으면 뭐?
-    </div>
+    {{ speech('ashur', '에슈르', """흐윽⋯! 더는 못 참아!""") }}
+    {{ speech('butter', '버터?', """못 참으면 뭐?""") }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 빵집에서 얘기 중인 에르핀과 에슈르. 에르핀은 에슈르가 악질이라고 말하는데, 에슈르는 본인도 좀 심한 거 같아서 하루치 수업료만 받으려고 생각 중이었으며 자신을 이렇게까지 돈에 집착하게 만든 장본인이 무전취식하는 에르핀 아니냐고 따지며 투덜댄다.
 
@@ -114,12 +93,9 @@ tags:
 ???+ Abstract
     에르핀과 에슈르에게 형벌을 내린 버터. 마침 나타난 마요가 버터에게 마취총을 쏜다. 마요는 물건 회수 후 사라지고 에르핀과 에슈르는 버터를 어떻게 해야 할지 고민한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_6.png){width="500"}
-/// caption
-기억조각 - 말하는 머리들
-///
+{{ image('story/s1_event_butter_6.png', caption='기억조각 - 말하는 머리들') }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 결국 에르핀과 에슈르는 쉼만 쉴 수 있게 머리만 내놓고 땅에 파묻혀진다. 에르핀이 반성은 안하고 본인은 풀어달라며 {=="난 바보 취급만 했지 부려먹지는 않았으니까 풀어줘!"==}, {=="버터는 그냥 지나가다가 툭툭 바보 취급하면서 놀려먹는 재미로 그쳐야 한다고!"==}, {=="에슈르에게 등쳐먹히고 다니니까 거절하는 법을 조언해주려던 건데 너무 찰져서 나도 모르게 놀린 거야."==} 등 헛소리를 계속 내뱉자 버터는 에르핀에게 추가로 꿀밤을 먹인다.
 
@@ -135,12 +111,9 @@ tags:
 ???+ Abstract
     에르핀과 에슈르는 버터에게 질문하지만 버터는 아무것도 기억하지 못한다. 에르핀은 이걸 빌미로 버터를 더 괴롭히고 에슈르는 버터에게 연구 대상 제의를 한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_7.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_8.png){width="400"}
-/// caption
-기억조각 - 버터는 무서워요 / 여왕님 주먹은 매워요!
-///
+{{ image(['story/s1_event_butter_7.png', 'story/s1_event_butter_8.png'], caption='기억조각 - 버터는 무서워요 / 여왕님 주먹은 매워요!', width=400) }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 이후 깨어난 버터는 권총을 집었던 순간 전후의 기억이 완전히 없어지고 원래의 순둥순둥한 버터의 성격으로 돌아왔다. 그런데 에르핀은 제대로 돌아왔는지 확인해보겠답시고 계속 꿀밤을 먹였고, 보다못한 에슈르의 제지로 겨우 그만둔다. 제정신인 걸 확인한 에슈르는 미안한 마음에 학교에 그냥 간식 먹으면서 이야기하러 오라며 연구 대상이 될 것을 제안하고, 버터는 받아들인다.
 <br>
@@ -150,17 +123,11 @@ tags:
 ???+ Abstract
     소동이 끝나고 얼마 후 에슈르는 버터에게 심리 상담을 해준다. 버터의 내면에 잠들어 있는 그것은 대체 무엇일까.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_9.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_butter_10.png){width="400"}
-/// caption
-기억 조각 - 나름은 상담사? / 과자~ 와아~!
-///
+{{ image(['story/s1_event_butter_9.png', 'story/s1_event_butter_10.png'], caption='기억 조각 - 나름은 상담사? / 과자~ 와아~!', width=400) }}
 !!! quote ""
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        좀 무서웠어요. 갑자기 벌떡 일어나서 또 화낼까봐⋯
-    </div>
+    {{ speech('ashur', '에슈르', """좀 무서웠어요. 갑자기 벌떡 일어나서 또 화낼까봐⋯""") }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 일주일이 지난 후, 에슈르는 버터가 침대에 누워 원하는 빵을 집어먹도록 해주며 심리상담을 진행한다. 교주의 권총에 대한 의문과 버터의 흑화 원인을 파악하기 위해 여러 일상생활에 대한 질문을 한다. 하지만 연구에 진척이 더이상 되지 않자 고민하던 에슈르는 버터가 총을 집기 전에도 한번 화를 냈었다는 것에 주목하다가, 버터의 꿈 이야기(1)를 듣고는 두려워하며 앞으로 전단지는 다른 녀석에게 떠넘겨야겠다는 생각과 함께 심리 상담을 그만둔다.
 {.annotate }
@@ -171,7 +138,7 @@ tags:
 <br>
 
 ## 에피소드 8 - 멜트다운 버터, 후일담
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 이 사건 이후 한동안 에슈르는 버터만 보면 벌벌 떨면서 빵을 주고, 에르핀은 여전히 버터를 바보라고 놀리지만 가끔 버터의 눈치를 보게 되었다고 한다. 이 기록처럼 버터가 화내는 걸 본 적이 없다는 영춘은 {=='에르핀이 버터를 짜증나게 하는 만큼 에슈르가 빵을 주면서 기분을 풀어주는 것'==}처럼, 버터를 호구 취급하는 녀석들과 버터를 챙겨주는 녀석들의 수가 엇비슷하므로 버터 주변에는 항상 옐로 카드의 총합이 제로로 유지되게끔 무한한 '제로섬 게임'이 일어나는 것이 아니냐고 추측한다. 
 <br>
@@ -179,6 +146,6 @@ tags:
 
 ## 여담
 + 직접 저술한 500 페이지가 넘는 13+@ 권의 이론서들 중 하나인 '마나 물리학과 마력 융합' 481페이지에 {=='마력의 알갱이는 하나의 마나 입자로 융합되면서 엘디르 분자,뮤클리스 입자와 함께 에너지를 방출하며 이 에너지가 방출될 때 마법 사용자의 정신력을 투사해서 원하는 힘을 이끌어낸다==}'는 내용이 있는데, 이는 앞서 버터가 읽었던 '양성자 물리학과 핵융합 이론' 책의 {=='양성자는 하나의 알파 입자로 융합되면서 양전자, 중성미자와 함께 에너지를 방출한다.'==}는 내용과 유사하다. 에슈르는 이걸 알아내는데 70년이 걸렸다고 한다.
-<br><span class="badge badge-version"><span class="badge-icon">:material-tag:</span>에피소드 3</span>
+<br>{{ story_badge('tag', '에피소드 3') }}
 <br>
 <br>

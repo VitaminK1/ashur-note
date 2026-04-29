@@ -14,7 +14,7 @@ tags:
 ???+ Abstract
     빵이 먹고 싶어 에슈르의 빵집에 갔다가 에슈르에게 혼만 실컷 났다. 빵집이 아니라 마법학교라고 한단다. 여기 빵집 아니었어?!
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교주가 빵이 먹고 싶어서 왔다고 솔직하게 말하자, 에슈르는 절대 포기 하지않고 빵집이 아니라며 박박 우긴다. 그걸 본 교주가 {==애초에 요정들이 다 마법을 쓰는 세계에서 마법학교가 왜 필요하냐==}고 질문한다. 
 
@@ -27,7 +27,7 @@ tags:
 ???+ Abstract
     에슈르의 소원은 마법을 모르는 존재들이 많아지는 것이라고 한다. 그래야 학생이 늘어난다나?
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교주는 에슈르의 마법이 신기하고 재밌는지 마법학교에 자주 들러서 화려한 마법들을 구경한다. 이번엔 에슈르가 교주에게 모자에서 토끼를 꺼내 보여주는데, 아공간을 사용한 마법이라고 한다. 
 
@@ -50,7 +50,7 @@ tags:
 ???+ Abstract
     제빵을 배워보고 싶은 마음에 에슈르를 찾아갔다. 하지만 돌아오는 것은 하드 트레이닝! 에슈르의 독설이 나를 채찍질한다!
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교주는 익숙하다는 듯이 {=='에슈-르!있냐-!'==}라고 외치며 문을 쾅 열고 들어간다. 그러더니 에슈르한테 빵을 만들어 보고 싶으니 가르쳐달라고 부탁한다.(1) 교주가 {==학교는 무언가 가르치는 곳이니까 뭐든 배우려는 학생을 내치면 안 된다==}는 논리를 내세우자, 에슈르는 월세만큼의 수업료를 요구한다. 교주는 가격을 보고 엄청 비싸다며 놀라지만 공짜로 빵을 만들어 먹으면 남는 장사라며 지갑을 탈탈 털어 등록을 한다. 
 { .annotate }
@@ -66,7 +66,7 @@ tags:
 ???+ Abstract
     에슈르를 찾아갔더니 갑자기 울면서 쟁반을 휘둘렀다. 낮잠을 자다가 악몽을 꿨다고 하는데⋯ 호떡이 뭐가 어쨌다구?
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교주가 또 방문했지만 이번엔 에슈르가 잠을 곤히 자고 있었다. 교주는 깨우지 않고 에슈르 옆에 앉아서 베이킹 책을 본다.
 
@@ -89,7 +89,7 @@ tags:
 ???+ Abstract
     궁극의 케이크란 무엇인가. 에슈르는 그 고민을 끝내기 위해 산책을 간다고 한다. 불길한 예감에 나는 에슈르에게 방범 장치를 권했다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 빵을 사러온 교주는 이번엔 에슈르가 궁극의 케이크에 대해 고민하고 있는 것을 발견한다. 
 
@@ -105,7 +105,7 @@ tags:
 ???+ Abstract
     역시 예상대로 궁극의 케이크는 에슈르를 밖으로 끌어내기 위한 에르핀의 함정이었다! 하지만 에슈르가 에르핀을 검거한 뒤에도 궁극의 케이크에 대해 고민은 끝이 나지 않는다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 에슈르는 궁극의 케이크를 찾기 위해 본인의 키보다 더 높이 쌓인 책을 계속 뒤진다.
 
@@ -121,18 +121,12 @@ tags:
 ???+ Abstract
     다른 이들에게는 보이지 않는 마법서를 발견한 에슈르. 에슈르의 어사이드는 알 수 없는 지식이 담긴 마도서였다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_sado_ashur_1.png){width="500" height="200"}
-/// caption
-에슈르 어사이드 스토리 장면 일부
-///
+{{ image('story/s1_sado_ashur_1.png', height=200, caption='에슈르 어사이드 스토리 장면 일부') }}
 
 ???+ quote
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        제가갈구하고갈구하던궁극의마법지식과세계의비밀이담긴마도서로서마법사라면꼭알아야할지식이있다던지아니면이것은세계의진리가담긴서적으로세계수가저에게내린선물이라고!
-    </div>
+    {{ speech('ashur', '에슈르', """제가갈구하고갈구하던궁극의마법지식과세계의비밀이담긴마도서로서마법사라면꼭알아야할지식이있다던지아니면이것은세계의진리가담긴서적으로세계수가저에게내린선물이라고!""") }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 밤중에 어사이드가 발현되는 바람에 공중에 떠다니는 책을 보고 당황한 에슈르. 그러다 이 책에 빠져들어 빵집을 열 생각을 하지 않고 밤새 책만 봐서 퀭한 모습으로 교주를 맞이한다. 
 

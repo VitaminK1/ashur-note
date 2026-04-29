@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 마요(멋짐)
 
 ## 에피소드 5 - 사소한 일이라도 1
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교주가 교단 민원들을 처리하는 걸 도우러 온 마요는 같이 빵집으로 간다. 에슈르는 분위기를 잡으며 {==요정 왕국의 존망이 걸린 중대한 일정이 있는 날이고 절대로 위치를 발설해서는 안 되는 비밀스러운 곳에 가는데 비밀을 꼭 지켜달라==}고 마요에게 말하고 동의를 받아낸다.
 

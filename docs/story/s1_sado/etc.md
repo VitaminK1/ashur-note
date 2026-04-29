@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 가끔 등장
 
 ## 스노키 / 에피소드 4 - 내 사과를 받아줘
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 이전에 했던 사과 행진 이후 시간이 꽤 지났지만, 스노키는 개과천선을 위해 아무것도 한 게 없다고 고백한다. 그래서 스노키는 사과 하고 싶은 친구들에게 교주가 같이 가줄 것을 부탁한다.
 
@@ -28,7 +28,7 @@ tags:
 <br>
 
 ## 버터 / 에피소드 4 - 수수께끼 심부름 2
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 디아나의 심부름에 이어 네르의 심부름을 하게 된 버터와 교주는 요정왕국에서 '매캐한 냄새가 나는 요정'을 찾아 나선다. 앞을 안보고 뛰던 버터는 실수로 '늘 맛있는 냄새가 나는 요정님(에슈르)'와 충돌힌다. 
 
@@ -41,7 +41,7 @@ tags:
 <br>
 
 ## 쥬비 / 에피소드 1 - 프리 허니
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 교주는 쥬비가 애완동물마냥 표정놀이를 하며 요정들과 놀아주는 모습을 보는데, 무서운 얼굴을 연기하다 그만 급히 뛰어가던 에슈르와 부딪힐 뻔 한다. 
 
@@ -54,7 +54,7 @@ tags:
 <br>
 
 ## 우이 / 에피소드 6 - 개구리를 탄 솔로몬 3
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 에슈르가 하루동안 판매하려고 했던 빵을 모두 다 먹고 있는 에르핀과 망했다며 울부짖는 에슈르를 보고, 교주는 평화로운 요정 왕국의 일상이라며 대수롭지 않게 여긴다. 그러다 교주는 이번엔 개입하지 않고 둘을 숨어서 지켜보며 우이가 나타나는지 확인해보기로 한다. 
 
@@ -67,7 +67,7 @@ tags:
 <br>
 
 ## 아야 / 에피소드 1 - 현자와의 첫 미팅 1
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 교주는 아야와 산책을 하는데 아야가 또 오해받기 좋은 이상한 말로 대화하자 첫만남을 회상한다. 
 
@@ -80,7 +80,7 @@ tags:
 <br>
 
 ## 림 / 에피소드 1 - 아이스크림 케이크를 위하여
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 네르에게서 에르핀을 찾아달라는 부탁을 받은 교주는 에르핀을 찾으러 유령 마을에 들른다. 에르핀은 림과 함께 있었고, 불길한 표정을 지으며 {==아이스크림 케이크를 먹기 위한 좋은 방법이 있다==}먀 교주를 붙잡고 에슈르의 빵집에 간다. 빵집에 가니 에슈르는 외출 중이었고, 에르핀과 림은 오븐에 대고 한참동안 썰렁개그를 속삭인 뒤 돌아간다. 
 
@@ -90,7 +90,7 @@ tags:
 <br>
 
 ## 베니 / 에피소드 3 - 먹기위해 태어난 3
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 교주는 베니가 한 턱 쏜다고 해서 같이 빵집에 갔는데, 사실 시식 샘플을 먹어치우는 것이었다. 결국 베니의 음식값을 교주가 대신 변상하게 되어 용돈이 바닥나 버린다. 
 
@@ -103,7 +103,7 @@ tags:
 <br>
 
 ## 벨리타 / 에피소드 1 - 과자가 부조카당
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 벨리타가 무언가 터무니없이 부족하다며 고민하는 것을 본 교주는 왕궁에 돌아와 에르핀에게 뭔가 아는 것이 없냐고 물어본다. 에르핀은 {==에슈르가 빵값을 두 배로 올렸을 때 걱정하는 걸 봤다==}는 진술을 하고, 에슈르 또한 {==가격이 오른 게 맞냐고 벨리타가 직접 와서 확인했다==}고 증언한다. 
 

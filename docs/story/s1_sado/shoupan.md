@@ -14,7 +14,7 @@ tags:
 ???+ Abstract
     에슈르가 착용자의 속도를 빠르게 하는 마법도구를 개발한다. 에슈르의 또 다른 실패작이 될 운명이었던 이 마법도구는 오랜 전령 생활로 다져진 기초 체력을 보유한 슈팡이 사용하며 빛을 보게 되는데⋯
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 모나티엄 도로를 슈파볼트 타고 마음껏 주행하던 슈팡은 엘프 라이더에게 구형이라고 무시당한다. 속도를 더 빠르게 만들기 위해 대리점에 방문했지만, 최신 개조가 지원되지 않은 구버전 모델이라 슈파볼트를 버리고 새 모델을 사야 한다는 말을 듣는다. 슈파볼트를 차마 버릴 수 없던 슈팡은 나중에 해결책을 찾기로 한다.
 
@@ -30,7 +30,7 @@ tags:
 ???+ Abstract
     에슈르에게 마법 도구를 받아낸 슈팡. 에슈르는 자주 사용하면 건강상의 문제가 있을 수 있으니 필요할 때만 사용하라고 경고하지만, 슈팡은 단순 재미나 스릴을 위해 남용하게 된다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 사용하는 데 재미 들이면 나중에 가서 제어가 안 되기 때문에 절대로 충동적으로 사용하지 말고 업무에 필요할 때만 사용하라는 에슈르의 경고를 지키느라 답답함만 느낀 슈팡은 에피소드 4에 등장했던 엘프 레이서들의 도발을 참지 못하고 싼데 비슷한을 써서 복수를 하게 된다. 
 
@@ -40,7 +40,7 @@ tags:
 <br>
 
 ## 에피소드 6 - 딜리버리 펑크: 엣지 러너 3
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 싼데 비슷한을 남용하던 슈팡은 결국 자신의 속도에 중독된 스피드 싸이코가 되어버리고 만다. 지원 요청을 받고 혼자 온 칸나는 성능을 보니 군용 장비 수준이라며 말로 설득하거나 병력을 더 불러야 한다고. 
 

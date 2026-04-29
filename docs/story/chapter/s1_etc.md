@@ -10,7 +10,7 @@ tags:
 
 # 시즌 1 - 연회장 대화
 
-### :sadoicon-ashur:{:.small-emoji}&nbsp;&nbsp;&nbsp;에슈르 
+### :sadoicon-ashur:{:.small-emoji} 에슈르 
 #### 교주님, 교주님! 이번달 제 마법학교 월세 좀 깎아주시면 안돼요??
 ??? quote "이번 달에 제대로 내지 않으면 쫓아내겠다."
     (호감도 +1) 형님⋯ 이렇게 무릎 꿇겠습니다. 다음 달에 더블로 낼 테니까 한 번만 기회를 주십시오⋯ 으흐흑⋯!
@@ -172,17 +172,17 @@ tags:
     (호감도 +3) 그렇죠? 이번 기회만 잘 잡으면 전문가로 인정받는 거라고요!
 
 
-### :sadoicon-erpin:{:.small-emoji}&nbsp;&nbsp;&nbsp;에르핀 
+### :sadoicon-erpin:{:.small-emoji} 에르핀 
 #### 교주. 나도 멋있는 이명 갖고 싶어! 좀 있어보이는 거 아무거나 말해봐!
 ??? quote "에르핀, 요정 여왕."
     (호감도 +3) 음⋯ 의외로 괜찮은데? 네르, 세계수 교단의 사제장. 에슈르, 빵집 주인⋯.
 
-### :sadoicon-kyarot:{:.small-emoji}&nbsp;&nbsp;&nbsp;캬롯 
+### :sadoicon-kyarot:{:.small-emoji} 캬롯 
 #### 특별한 설탕을 좀 만들어 봤는데, 이걸 누구에게 주는 게 좋을까?
 ??? quote "빵집 주인이 좋아할 것 같다."
     (호감도 +2) 에슈르에게 가져다 주면 빵으로 바꿔 주나? 분명 끝내주는 빵이 될 거야.
 
-### :sadoicon-bigwood:{:.small-emoji}&nbsp;&nbsp;&nbsp;빅우드 
+### :sadoicon-bigwood:{:.small-emoji} 빅우드 
 #### 빵냄새 나는 요정은 좋은 친구다. 빅우드 칭찬 많이 해 준다.
 ??? quote "빵집에 취직할 생각 없어?"
     (호감도 +1) 얘기해봤다. 너무 커서 자리 차지한다고 거절당했다. 밖에 서있으라고 했다⋯.
@@ -191,57 +191,57 @@ tags:
 ??? quote "너 열매 뜯기고 있는 거야."
     (호감도 +3) 열매는 계속 자라니까 누군가 써 주면 좋다. 빅우드 열매 모두에게 먹히는 좋은 열매다.
 
-### :sadoicon-sylla:{:.small-emoji}&nbsp;&nbsp;&nbsp;실라 
+### :sadoicon-sylla:{:.small-emoji} 실라 
 #### 매일 산꼭대기에서 지내다가 이렇게 지상으로 내려오니 기분이 신선하군. 뭔가 추천해줄 만한 활동은 없나?
 ??? quote "에슈르의 빵집에 들려보라."
     (호감도 +3) 이미 가봤다. 유명하더군. 간판을 보고 빵을 몇개 골라 계산할 때 주인이 마법학교가 어쩌니하며 화를 낸 것만 빼면.
 
-### :sadoicon-elena:{:.small-emoji}&nbsp;&nbsp;&nbsp;엘레나 
+### :sadoicon-elena:{:.small-emoji} 엘레나 
 #### 연구 결과, 마력도 결국 에너지의 일종이었어. 이해했나?
 ??? quote "아는 요정이 쓴 책에선 마나가 입자라던데."
     (호감도 +3) 뭐, 마법 체계를 입자론으로 해석했다고? 요정 중에 그런 천재가 있다니, 약속 좀 잡아 줄래?
 
-### :sadoicon-jade:{:.small-emoji}&nbsp;&nbsp;&nbsp;제이드 
+### :sadoicon-jade:{:.small-emoji} 제이드 
 #### 만약에 내가 다른 곳에 이주를 한다면 어디로 가는 게 좋을까?
 ??? quote "나름 학위있는 빵집 주인 옆 건물로 옮기는 건 어때?"
     (호감도 +1) 너 그 자칭 마법 교수한테 부탁 받아서 이런 말하는 거지? 그 녀석은 내 지식을 훔치려고 한다고!
 
-### :sadoicon-picora:{:.small-emoji}&nbsp;&nbsp;&nbsp;피코라 
+### :sadoicon-picora:{:.small-emoji} 피코라 
 #### 스승님은 요리 아이디어를 어디서 얻으세요? 처음 보는 요리도 있고⋯ 신기해요!
 ??? quote "가게 차리려고?"
     (호감도 +1) 아뇨⋯ 가게 차리면 에슈르 님께 혼날 것 같은데요⋯ 아니, 이게 아니라! 그냥 궁금해서요.
 
-### :sadoicon-espi:{:.small-emoji}&nbsp;&nbsp;&nbsp;에스피 
+### :sadoicon-espi:{:.small-emoji} 에스피 
 #### 꿈이 제일 재미있을 것 같은 녀석이 누구라고 생각해?
 ??? quote "평소에도 원대한 꿈이 있는 에슈르."
     (호감도 +3) 그 녀석 꿈은 이미 봤어. 잠도 못자고 빵만 계속 만드는 악몽을 꾸던걸? 지켜보는 난 재미있었지만. 크크.
 
-### :sadoicon-renewa:{:.small-emoji}&nbsp;&nbsp;&nbsp;리뉴아 
+### :sadoicon-renewa:{:.small-emoji} 리뉴아 
 #### 요정들이 제일 똑똑한 세상이 있다고하면 믿으시겠어요?
 ??? quote "여기도 똑똑한 요정은 있어. 무슨 소릴 하는 거야?"
     (호감도 +2) 아, 죄송해요. 똑똑한 요정 '여왕님'이라고 말했어야 했는데.
 
-### :sadoicon-sist:{:.small-emoji}&nbsp;&nbsp;&nbsp;시스트 
+### :sadoicon-sist:{:.small-emoji} 시스트 
 #### 아시겠지만, 엘리아스 장사판도 만만한 게 아니라니까요?
 ??? quote "에슈르가 많이 힘들어 하고 있지."
     (호감도 +2) 아, 그 빵순이요? 미련하기도 하죠. 애매하게 굴지 말고 결단을 내리면 편하게 살텐데~
 
-### :sadoicon-epica:{:.small-emoji}&nbsp;&nbsp;&nbsp;에피카 
+### :sadoicon-epica:{:.small-emoji} 에피카 
 #### 여기저기서 나에게 가르침을 달라더군. 아예 이야기꾼을 위한 학교를 세운다면 어떨 것 같소?
 ??? quote "학교라니⋯ 너도 빵 만들고 싶어?"
     (호감도 +1) 으음⋯ 제빵도 나쁜 취미는 아니다만, 학교와 빵이 무슨 연관이라도 있소?
 
-### :sadoicon-beni:{:.small-emoji}&nbsp;&nbsp;&nbsp;베니 
+### :sadoicon-beni:{:.small-emoji} 베니 
 #### 이상하다⋯ 분명 어디선가 달콤한 냄새가 나는데⋯.
 ??? quote "아까 에슈르의 빵집에서 크림이 묻었었는데⋯ 혹시?"
     (호감도 +3) 범인을 찾았다! 빨리 저도 그 크림 주세요!
 
-### :sadoicon-posher:{:.small-emoji}&nbsp;&nbsp;&nbsp;포셔 
+### :sadoicon-posher:{:.small-emoji} 포셔 
 #### 가끔 약사 학원을 세우면 어떨까 생각이 드는데⋯ 괜찮을 것 같아?
 ??? quote "겸업으로 빵집을 차릴 각오만 되어있다면야⋯"
     (호감도 +1) 도대체 날 뭘로 보는 거야? 난 이미 약 팔고 있잖아. 돈은 있을만큼 있고, 벌만큼 번다구.
 
-### :sadoicon-snorky:{:.small-emoji}&nbsp;&nbsp;&nbsp;스노키 
+### :sadoicon-snorky:{:.small-emoji} 스노키 
 #### 마법은 힘 약한 녀석들이나 쓰는 반칙같은 겁니다. 아주 한심해요.
 ??? quote "그것 참 에슈르가 들으면 길길이 날뛸 소리네."
     (호감도 +1) 아, 교단파에서 에슈르라는 녀석이 제일 반칙 많이 쓰는 약하디 약한 조직원입니까?
@@ -249,22 +249,22 @@ tags:
 ??? quote "어떤 거? 학생도 없는 마법학교 교장?"
     (호감도 +3) 네. 늘 가르칠 학생이 없다고 징징대더군요. 학생을 힘으로 끌어오면 되지 않습니까?
 
-### :sadoicon-barie:{:.small-emoji}&nbsp;&nbsp;&nbsp;바리에 
+### :sadoicon-barie:{:.small-emoji} 바리에 
 #### 도서관에 누가 자꾸 이상한 책들을 신청해서 힘들어요오⋯
 ??? quote "에슈르 마법 논문 같은 거?"
     (호감도 +1) 그건 나름 귀중한 지식 자산이랍니다. 요정 왕국에서 만들어진 학술서는 흔하지 않아요.
 
-### :sadoicon-festa:{:.small-emoji}&nbsp;&nbsp;&nbsp;페스타 
+### :sadoicon-festa:{:.small-emoji} 페스타 
 #### 나는 기타로 자유를 노래하니까, 내 기타는 곧 자유야!
 ??? quote "그럼⋯ 에슈르의 손은 곧 빵인가?"
     (호감도 +1) 그, 그런 거랑 이거랑은 다르지! 아주 미세한 차이가 있는 거라고!
 
-### :sadoicon-sherum:{:.small-emoji}&nbsp;&nbsp;&nbsp;셰럼 
+### :sadoicon-sherum:{:.small-emoji} 셰럼 
 #### 요정 왕국엔 역사서가 없나요? 마녀 역사서와 대조해보면 재미있는 결과가 나올 것 같은⋯
 ??? quote "어쩌면 에슈르가 그런 책을 썼을 수도 있겠네."
     (호감도 +3) 흠, 그 놀라운 마력 해법서를 집필한 요정 분이요? 한 번 만나봐야 겠군요.
 
-### :sadoicon-joanne:{:.small-emoji}&nbsp;&nbsp;&nbsp;죠안 
+### :sadoicon-joanne:{:.small-emoji} 죠안 
 #### 요정 여왕은 저를 볼 때마다 늘 빵을 만들어달라고 하는 것 같습니다.
 ??? quote "에슈르의 역할이 조금 넘어간 건가⋯?"
     (호감도 +2) 아, 그러고 보니 빵집 주인 요정이 저를 묘한 눈빛으로 쳐다보긴 했습니다. 무슨 의미였을까요⋯?

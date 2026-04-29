@@ -10,10 +10,7 @@ tags:
 
 # 소개
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/Fairy_bakery_afternoon.png){width="400" height="200"}
-/// caption
-에슈르의 마법학교 (에심당)
-///
+{{ image('Fairy_bakery_afternoon.png', width=400, height=200, caption='에슈르의 마법학교 (에심당)') }}
 
 요정 왕국의 명물 에심당을 운영 중인 파티시에.<br>
 요정 마을 제빵협회 협회장, 요정 왕국 에르피엔의 조언자, 에슈르 마법학교 교장이기도 하다.
@@ -29,10 +26,7 @@ tags:
 <br>
 
 ## 프로 파티시에
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_ricota_1.png){width="500"}
-/// caption
-기억 조각 - 먹는 거 맞아?
-///
+{{ image('story/s2_event_ricota_1.png', caption='기억 조각 - 먹는 거 맞아?') }}
 
 제빵 실력이 남다르다. 어느정도냐면 에심당에는 요정들이 항상 붐비고, 주식이 빵인 에르피엔에서 제빵협회장 타이틀을 가지고 있으며, 종족불문하고 입맛을 만족시키는 수준이다. 모든 요리를 섭렵하고 모나티엄 최고 셰프가 된 리코타마저 에슈르를 리스펙해서 요리를 만들었다.
 <br>
@@ -53,10 +47,7 @@ tags:
 <br>
 
 ## 자칭 마법학교 교장
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_sado_ashur_1.png){width="500" height="200"}
-/// caption
-에슈르 어사이드 스토리 장면 일부
-///
+{{ image('story/s1_sado_ashur_1.png', height=200, caption='에슈르 어사이드 스토리 장면 일부') }}
 
 학습 자체를 싫어하는 요정 종족 중에서 유별나게 호기심과 학구열이 뛰어나서, 연구하는 것과 논문, 책 쓰는 것을 즐긴다. 이에 대한 자부심 또한 상당해서, 어떤 내용을 잘 몰라하는 타인을 한심하게 보면서도 최대한 가르쳐 주려고 노력하는 경향이 있다.
 <br>
@@ -86,17 +77,11 @@ tags:
     + '즐겁고 힘든 온천기행!' 테마극장에서 뮤트가 마법학에 조예가 깊다고 언급했으며, 에슈르가 '정령 행동 분석 논문'을 쓴 적 있다고 언급한다. 다만 마카샤의 반응에 따르면 요정왕국에 마법 권위자나 학회는 없는 것으로 보인다.
 
 ## 요정 특유의 가벼운 성격과 강한 자존심
-![Image title](https://vitamink1.github.io/ashur-note/assets/fairy_desc.png){width="600"}
-/// caption
-요정 종족에 대한 설명
-///
+{{ image('fairy_desc.png', width=600, caption='요정 종족에 대한 설명') }}
 ???+ quote
-    :sadoicon-empty:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="empty">교주</span><br>
-    <div class="speech-bubble">
-        요정들은 이 세상에서 가장 중요한 역할을 타고난 것 같이 스스로 말하지만, 정작 하는 행동들은 하나같이 실없고 가볍다.<br>
+    {{ speech('empty', '교주', """요정들은 이 세상에서 가장 중요한 역할을 타고난 것 같이 스스로 말하지만, 정작 하는 행동들은 하나같이 실없고 가볍다.<br>
         그런데⋯ 그게 요정들의 장점인 것 같다. 권위적인 모습은 찾을 수 없는, 편한 동네 친구 같은 이미지.<br>
-        엘리아스에서 친구가 필요하다면 요정 왕국을 찾으라고 말하고 싶다.
-    </div>
+        엘리아스에서 친구가 필요하다면 요정 왕국을 찾으라고 말하고 싶다.""") }}
 
 미래를 대비하는 마녀 종족과 정반대로, 현재 요정 종족 다수는 자신이 관심있는 분야 이외에는 어설프고 미성숙하며 자기중심적인 성격을 가지고 있다.
 <br>
@@ -106,24 +91,15 @@ tags:
 <br>
 <br>
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_minigame_5.png){width="500"}
-/// caption
-Tasty Table Time 미니게임에서 에슈르의 주문
-///
+{{ image('story/s2_minigame_5.png', caption='Tasty Table Time 미니게임에서 에슈르의 주문') }}
 또한 자존심이 상당히 강한 모습을 종종 보여준다. 예를 들어, '즐겁고 힘든 온천기행!' 테마극장에서 스스로를 '똑똑한 천재 마법사'라고 부르기도 했고 리코타 미니게임에서는 '내 아름다운 모습이랑 잘 어울리는 걸 준비해줘! 이 길고 예쁜 내 풍성한 머리카락처럼 말이야.', '천재 마법사 등장~' 등의 주문을 한다. 하지만 스스로 노력하며 어느 정도 쌓아온 지식과 성과물들이 있기 때문에 허풍쟁이 수준은 절대 아니다.
 <br>
 <br>
 
 ## 푸대접 속성
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_leets_1.png){width="500"}
-/// caption
-기억 조각 - 빵집 초토화
-///
+{{ image('story/s1_event_leets_1.png', caption='기억 조각 - 빵집 초토화') }}
 
-<figure>
-  <iframe src="https://www.youtube.com/embed/OP5Cz-qX6SQ?si=LVthYPXj107Eq8U8" style="width:560px;height:315px;border:0;" loading="lazy" allowfullscreen></iframe>
-  <figcaption>루포의 알바 뿌수기 인 것이다! - 어제 팔리지 않은 빵 판매 편</figcaption>
-</figure>
+{{ youtube('OP5Cz-qX6SQ', caption='루포의 알바 뿌수기 인 것이다! - 어제 팔리지 않은 빵 판매 편') }}
 
 요정 특유의 단순한 성격이 이용당하기 쉬운 것도 있지만, 에슈르는 특히 더 자주 무시를 받는 듯한 언급들이 있다. 대부분의 PV나 스토리에서도 주로 빵집이 폭파되거나 불타는 등 결과가 늘 좋지 못하다. 그래서 평상시에 불만을 가지고 툴툴대지만, 정상적인 대우 내지는 칭찬을 받으면 좀 과하게 감동받으면서 종종 울기도 한다. 
 <br>
@@ -138,10 +114,7 @@ Tasty Table Time 미니게임에서 에슈르의 주문
 <br>
 
 ## 악역 (시즌 1)
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s1_event_picora_4.png){width="500"}
-/// caption
-기억 조각 - 버터의 흔적
-///
+{{ image('story/s1_event_picora_4.png', caption='기억 조각 - 버터의 흔적') }}
 하지만 에슈르가 그저 불쌍한 캐릭터라고만 여겨지지는 않는다. 상대를 얕보거나 이용해보려 하는 모습을 종종 보여줬기 때문이다. 이러한 모습을 테마극장 초기에 보여 줬을 뿐만 아니라, 같은 악역을 맡았던 에르핀과는 달리 '철부지' 성격도 아니었기 때문에 부정적인 이미지가 더 크게 부각되었다.
 <br>
 <br>
@@ -162,15 +135,9 @@ Tasty Table Time 미니게임에서 에슈르의 주문
 <br>
 
 ## 에심당
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet2.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet3.png){width="400"}
-/// caption
-펫 심부름 - 요정왕국
-///
+{{ image(['others/pet2.png', 'others/pet3.png'], caption='펫 심부름 - 요정왕국', width=400) }}
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet4.png){width="400"}![Image title](https://vitamink1.github.io/ashur-note/assets/others/pet5.png){width="400"}
-/// caption
-펫 심부름 - 빵 냄새 맡기
-///
+{{ image(['others/pet4.png', 'others/pet5.png'], caption='펫 심부름 - 빵 냄새 맡기', width=400) }}
 
 에슈르의 가게인 에심당은 요정왕국 중심 길가에 위치하고 있으며, 대략적인 모습은 펫 심부름 창에서 확인 할 수 있다.
 <br>

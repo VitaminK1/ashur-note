@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 언급됨
 
 ## 마리 / 에피소드 5 - 폭탄마의 과거
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 교주가 에슈르의 빵집에 폭탄이 터진 건에 대해 마리를 취조하는데, 마리는 자기는 오로지 제작만 할 뿐이고 마요가 판매를 맡는다며 억울해한다. 그러자 교주는 {==에르핀이 외상값 적은 장부를 없애려고 빵집을 터뜨렸다==}는 사건의 전말에 대해 이미 알고 있었지만 땡떙이치려고 나왔다고 고백한다. 
 
@@ -21,7 +21,7 @@ tags:
 <br>
 
 ## 바리에 / 에피소드 3 - 비밀의 청소함
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 교주는 마녀 도서관에서 에슈르가 저자인 '디저트 빵에 든 설탕의 함유량에 따른 마력 수치 변화 연구' 논문을 발견하고 바리에에게 이게 왜 여기 있는지 이유를 묻는다. 원래도 책이 부족한데 마녀들이 책을 막 다루고 반납도 제때하지 않아서 책이 더 부족한 상황, 도서관장님이 구색은 갖춰야 하지 않겠냐며 바리에가 여기저기서 책을 끌어왔기 때문이라고. 에슈르의 논문은 요정 왕국에 가끔 다녀오는 분들에게 부탁해 요정 왕궁 분리 수거장에 책들이 잔뜩 쌓인 것 중 그나마 멀쩡해서 가져왔다고 한다. 
 
@@ -31,7 +31,7 @@ tags:
 <br>
 
 ## 셰럼 / 에피소드 1 - 너의 일상은
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 교주의 일상애 대해 일거수일투족을 기록하려는 셰럼은 하루동안 교주를 숨어서 관찰하기로 한다. 이후 교주의 행동 대부분은 셰럼의 말을 통해 간접 전달된다. 
 
@@ -47,7 +47,7 @@ tags:
 <br>
 
 ## 나이아 / 에피소드 3 - 나이아, 울다
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 정령산에 오랜만에 방문한 교주는 나이아가 울고 있는 모습을 발견한다. 나이아에게 물어보니 자기가 에르핀에게 물을 쐈는데 실수로 에르핀의 손가락을 녹여버렸다고. 
 
@@ -57,21 +57,21 @@ tags:
 <br>
 
 ## 피라 / 에피소드 2 - 죄수와 여왕
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 감옥에 갇혀있는 피라와 에르핀이 대화하는 도중, 에르핀이 재판 도중에서도 에슈르에게 빵을 요구했다는 이야기를 피라가 한다. 피라가 거리에서 청소를 하다가 골디를 만나는데, 에르핀이 에슈르에게서 빵을 강탈하는 것을 보며 '늘 변함없는 것이란 무엇인가'에 대한 얘기를 골디와 한다.
 <br>
 <br>
 
 ## 셰이디 / 어사이드 에피소드 1 - 물물 무슨 물
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 셰이디의 그물 장난으로 인해 교단으로 들어온 민원들 중 {=='빵 냄새가 난다면서 그물로 낚아서 늪에다 던지더라니까요, 절?!'==}이라는 민원이 있었다. 이후 교주는 셰이디에게 가서 '물'을 이용한 썰렁개그 폭격으로 셰이디를 혼내준다.
 <br>
 <br>
 
 ## 에스피 / 에피소드 2 - 가면 속에는
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 교주가 꿈에서 에스피에게 에슈르의 회심의 신작 딸기 커스타드 크림빵을 주며 어떻게든 에스피의 가면 속 얼굴을 볼려고 애를 쓴다.
 <br>

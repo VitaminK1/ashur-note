@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 앨리스
 
 ## 에피소드 1 - 유령 잡는 제빵사
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 한산한 오후, 교주는 앨리스와 만나 놀던 중 재미로 오늘의 운세를 본다. 
 
@@ -24,7 +24,7 @@ tags:
 <br>
 
 ## 에피소드 3 - 야, 우냐?
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 왠일로 요정왕국에 방문한 앨리스는 촉이 온다며 에슈르의 빵집에는 {=='빵집이 무너질 거야! 빵집에 검은 별의 괴물이 나타나서 저당잡힌 가게를 파멸로 이끌 것이다!'==}(1), {=='불길하고 수맥도 흐르는 것 같다'==}며 빵집은 가지 말자고 한다.(2) 교주가 그럼 궁전 구경이라도 시켜줄려 하는데, 궁전을 보더니 이번엔 {=='아래로 솟은 지하의 왕국이 하늘을 향해 무섭게 뻗어 오른다! 뿌리가 줄기를 삼킨다! 진짜가 아닌 것들이 진짜가 되고, 벽을 허물고 날아온 창에 땅이 썩어들어 간다! 고향 길에 오른 추방자들이 고향을 끌고와 신록을 어지럽힌다!'==}라는 다소 디테일한 예언을 한다. 
 { .annotate }
@@ -38,7 +38,7 @@ tags:
 <br>
 
 ## 에피소드 4 - 포츈 스토리
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 교주의 방에 놀러온 앨리스는 교주가 책이 은근 많다면서 역시 공부하는 외모라고 말해준다. 교주의 말에 따르면 {==코미나 에슈르 같은 애들이 엘프들 도시 근처에서 지구의 책들을 찾아 선물해준 것이다==}라고 하는데, 앨리스가 {==그냥 다 보고 관심 없어진 책을 교주한테 버린 거 아니냐==}고 말하니 교주는 듣고보니 맞는 것 같다는 생각에 나중에 꿀밤이라도 박아줘야겠다고 다짐한다. 
 

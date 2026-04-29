@@ -13,7 +13,7 @@ tags:
 ## 에피소드 5 - 보물은 이 안에 있어
 ???+ Abstract
     슈로는 숲 한가운데의 창고에 들어가려는 에슈르를 발견한다. 슈로는 에슈르를 '경쟁자'로, 에슈르는 슈로를 '스토킹 진상 손님'으로 오해하며 경계한다. 이후 폴랑이 진상을 밝히자, 슈로는 부끄러워 도망친다.
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 슈로는 숲 속을 거닐다 의도치 않게 폴랑을 피해 도망치려는 에르핀을 찾아버려서 폴랑을 도와준다. 
 

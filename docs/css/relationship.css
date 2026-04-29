@@ -1,7 +1,9 @@
+@import url("prefs.css");
+
 /* Page-specific styles for docs/info/relationship.md */
 :root{ --rk-green:#1fb28a; --rk-brown:#8f5b39; --rk-beige:#f7efe6; --rk-wood:#ddc3a6; --rk-grain-intensity:0.02; }
 
-.rk-book{ display:flex; gap:26px; align-items:stretch; padding:28px; box-sizing:border-box; background: linear-gradient(180deg,#f6efe4 0%, #fbf6ee 50%, #f8f3ea 100%); border-radius:18px; padding-left:36px; padding-right:36px; box-shadow: 0 8px 30px rgba(25,30,20,0.12), inset 0 40px 80px rgba(255,255,255,0.04); }
+.rk-book{ display:flex; gap:26px; align-items:stretch; padding:28px; box-sizing:border-box; position:relative; background: linear-gradient(180deg,#f6efe4 0%, #fbf6ee 50%, #f8f3ea 100%); border-radius:18px; padding-left:36px; padding-right:36px; box-shadow: 0 8px 30px rgba(25,30,20,0.12), inset 0 40px 80px rgba(255,255,255,0.04); }
 
 /* grain overlay */
 .rk-book{ background-image: radial-gradient(rgba(255,255,255,var(--rk-grain-intensity)) 1px, transparent 1px), repeating-linear-gradient(90deg, rgba(0,0,0,calc(var(--rk-grain-intensity)/2)) 0 1px, transparent 1px 3px), linear-gradient(180deg,#f6efe4 0%, #fbf6ee 50%, #f8f3ea 100%); background-blend-mode: overlay, multiply, normal; }
@@ -175,14 +177,6 @@
 /* Adjustable icon sizing helpers for the alternate table.
    Use .pref-size-sm / .pref-size-md / .pref-size-lg on the table wrapper
    to control container and overlay sizes. Defaults are set for md. */
-:root{
-    --pref-icon-size-sm:48px;
-    --pref-icon-size-md:56px;
-    --pref-icon-size-lg:64px;
-    --pref-overlay-size-sm:20px;
-    --pref-overlay-size-md:34px;
-    --pref-overlay-size-lg:40px;
-}
 .pref-size-sm .prefs-table-alt td > .pref-icon{ width:var(--pref-icon-size-sm); height:var(--pref-icon-size-sm); flex:0 0 var(--pref-icon-size-sm); }
 .pref-size-md .prefs-table-alt td > .pref-icon{ width:var(--pref-icon-size-md); height:var(--pref-icon-size-md); flex:0 0 var(--pref-icon-size-md); }
 .pref-size-lg .prefs-table-alt td > .pref-icon{ width:var(--pref-icon-size-lg); height:var(--pref-icon-size-lg); flex:0 0 var(--pref-icon-size-lg); }

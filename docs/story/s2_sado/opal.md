@@ -14,7 +14,7 @@ tags:
 ???+ Abstract
     에슈르의 마법 강의를 강매당할 위기에 처한 오팔. 하지만 오팔은 에슈르의 빵이야말로 마법이나 다름없다는 기나긴 찬양을 늘어놨고 거기에 홀린 에슈르는 기나긴 찬양을 들으며 흡족해했다.
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 에심당에서 오팔에게 마법 수업을 하고 있는 에슈르.
 !!! quote ""

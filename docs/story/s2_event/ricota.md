@@ -9,18 +9,15 @@ tags:
 ---
 
 # 이벤트 스토리 - 수상한 요리사의 쿠킹비망록
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 에슈르는 베이커리 박람회에 간다며 가게를 비워 직접 등장하지는 않는다. 리코타가 빵집으로 성공한 에슈르를 리스펙한다는 의미에서 마법책 모양 요리를 만들었는데, 마법책을 요리한 것으로 오해당해버리고 소문이 퍼진다. 그 소문을 들은 요정들이 하나같이 에슈르의 마법책이 무쓸모하지만 너무 심했다며 가치를 낮게 평가했다.
 <br>
 <br>
 
 ## 에피소드 2~3 - 요리사가 돌아왔다~요리사와 미식가
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_ricota_1.png){width="500"}
-/// caption
-기억 조각 - 먹는 거 맞아?
-///
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ image('story/s2_event_ricota_1.png', caption='기억 조각 - 먹는 거 맞아?') }}
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 모나티엄에서 요정의 태생적인 단맛중독과 주변의 무시를 엄청난 노력으로 극복하고 끝내 대성공을 이룬 리코타는, 엘레나의 만류에도 불구하고 모나티엄에서 이룰 수 있는 것은 다 이뤘기에(1)요정왕국으로 돌아가 레스토랑 '마지막 만찬'의 운영을 시작한다. 
 { .annotate }
@@ -42,7 +39,7 @@ tags:
 <br>
 
 ## 에피소드 6 - 깨닫는 요리사
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 교주의 추천으로 왕궁 요리사가 된 리코타는 에르핀을 위해 딸기잼과 야채가 들은 죠안과 폴랑 모양의 볼따구 찐빵을 내놓는다. 이를 보고 에르핀은 리코타가 마법으로 폴랑과 죠안을 음식으로 만들었다고 오해하며 테이블을 엎고 도망친다. 
 
@@ -55,8 +52,5 @@ tags:
 <br>
 
 ## 여담
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_ricota_2.png){width="350"}
-/// caption
-아이템 도감 - 마법도서 대백과
-///
+{{ image('story/s2_event_ricota_2.png', width=350, caption='아이템 도감 - 마법도서 대백과') }}
 + 리코타가 에슈르의 마법책을 모티브로 만든 마법도서 대백과 음식은 리코타의 어사이드 2성 스킬로 소환되는 퐁듀 분수의 배틀 아이템 중 하나로 등장한다. 모든 아군의 SP를 대상 최대 SP 비례 15% 만큼 회복시키고, 5초간 기본 SP 회복량을 50% 증가시키며 고학년 스킬 재사용 대기시간을 30% 감소시키는 효과를 가지고 있다.

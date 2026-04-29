@@ -14,7 +14,7 @@ tags:
 ???+ Abstract
     빵집들을 구경하던 중 우연히 들러본 에슈르의 마법학교. 그윈과 델리아가 프로페셔널 브레드 마스터와 만났다! 과연 무사히 이 상황을 넘길 수 있을까?
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 그윈과 델리아는 요정왕국의 빵집을 탐방하고 있었다. 다섯번째로 방문한 곳은 바로 에심당. 델리아는 에심당 빵이 귀엽고 맛있는 냄새가 난다며 둘러보는데, 요즘 유행인지 다른 빵집에서는 다 팔고 있던 소금빵이 없는 것에 의아해한다.
 
@@ -30,7 +30,7 @@ tags:
 <br>
 
 ## 에피소드 5 - 정령산 클라이머 2
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 그윈은 나이아의 조언대로 시원한 곳을 찾기 위해 정령산 봉우리들로 올라가보기로 한다. 길잡이 역할을 해줄 마고와 함께. 
 

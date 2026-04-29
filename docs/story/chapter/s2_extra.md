@@ -14,7 +14,7 @@ tags:
 다른 사도들과 마찬가지로 만우절의 영향으로 '남도형' 성우님이 대신 담당하셨다.
 
 ### 에피소드 3 - 뒤집힌 요정왕국
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 모두 다 그런건 아지만 대부분 인성이나 지능이 반대로 바뀌어버렸는데, 요정왕국도 마찬가지였다. 성실하게 일하는 요정은 없고 모두 강도와 약탈로 먹고 살아서 요정 강도단을 형성해버렸다.
 

@@ -9,16 +9,11 @@ tags:
 ---
 
 # 이벤트 스토리 - 거울에 보이는 것보다 가까이 있음!
-<video controls preload="metadata" width="500" height="300" autoplay loop>
-  <source src="https://vitamink1.github.io/ashur-note/assets/story/s3_event_miro_0.mp4" type="video/mp4">
-</video>
-/// caption
-거울에 보이는 것보다 가까이 있음 테마극장 로비(1)
-{.annotate}
+{{ video('story/s3_event_miro_0.mp4', caption="""거울에 보이는 것보다 가까이 있음 테마극장 로비(1)
+{ .annotate }
 
-1. 순한 맛 스테이지를 전부 클리어 하기 전까지
-///
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+1. 순한 맛 스테이지를 전부 클리어 하기 전까지""", width=500, height=300) }}
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 거울의 정령 미로가 관찰하는 대상으로 등장한다. 에슈르는 의도치 않게 미로를 마주쳐서 놀라 기절하고 거울의 유령이라 생각한다. 이후 거울에 대한 약한 공포증이 생긴 모양이다.
 <br>
@@ -28,42 +23,24 @@ tags:
 ???+ Abstract
     에슈르를 시작으로 요정 왕국 주민들을 놀라게 하며, 미로는 거울 괴담 속 유령으로 여겨지기 시작한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_event_miro_1.png){width="500"}
-/// caption
-테마극장의 한 장면
-///
+{{ image('story/s3_event_miro_1.png', caption='테마극장의 한 장면') }}
 
 ???+ quote
-    :sadoicon-miro:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="miro">미로</span><br>
-    <div class="speech-bubble">
-        이 빵집은 사실 마법 학교로, 에슈르라는 요정이 운영하는 곳이었다.<br>
+    {{ speech('miro', '미로', """이 빵집은 사실 마법 학교로, 에슈르라는 요정이 운영하는 곳이었다.<br>
         에슈르는 이곳을 최고의 마법 학교로 성장시킬 생각이지만⋯<br>
         마법은 아무도 배우러 오지 않고, 빵만 계속 팔리는 상황인가 보다.<br>
-        그래서 에슈르는 가끔 거울을 볼 때도 혼자 한탄하곤 한다.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        하아⋯ 오늘도 빵만 엄청나게 팔렸네.<br>
-        마법에 관심 있을 만한 동네로 자리를 옮겨야 하나⋯?
-    </div>
-    :sadoicon-miro:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="miro">미로</span><br>
-    <div class="speech-bubble">
-        괜찮아, 에슈르⋯! 언젠가 분명, 마법을 배우고 싶은 학생들이 나타날거야⋯!<br>
-        내가 뒤에서 응원할게. 그러니까 힘내, 교장선생님⋯! 헤헤.
-    </div>
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        흐음~ 과일은 빼고⋯ 머랭을 더 넣어볼까?<br>
-        음⋯ 여왕님 입맛엔⋯ 일단 더 달게⋯ 아무튼 엄청 달게⋯
-    </div>
-    :sadoicon-miro:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="miro">미로</span><br>
-    <div class="speech-bubble">
-        마법 학교를 키우는 와중에도, 늘 여왕님을 위한 레시피를 개발하기 위해 노력하는 걸 보면⋯<br>
+        그래서 에슈르는 가끔 거울을 볼 때도 혼자 한탄하곤 한다.""") }}
+    {{ speech('ashur', '에슈르', """하아⋯ 오늘도 빵만 엄청나게 팔렸네.<br>
+        마법에 관심 있을 만한 동네로 자리를 옮겨야 하나⋯?""") }}
+    {{ speech('miro', '미로', """괜찮아, 에슈르⋯! 언젠가 분명, 마법을 배우고 싶은 학생들이 나타날거야⋯!<br>
+        내가 뒤에서 응원할게. 그러니까 힘내, 교장선생님⋯! 헤헤.""") }}
+    {{ speech('ashur', '에슈르', """흐음~ 과일은 빼고⋯ 머랭을 더 넣어볼까?<br>
+        음⋯ 여왕님 입맛엔⋯ 일단 더 달게⋯ 아무튼 엄청 달게⋯""") }}
+    {{ speech('miro', '미로', """마법 학교를 키우는 와중에도, 늘 여왕님을 위한 레시피를 개발하기 위해 노력하는 걸 보면⋯<br>
         아마도 에슈르는 여왕님을 아주 좋아하는 것 같다.<br>
-        헤헤, 언젠가 여왕님이 흠뻑 반하실 케이크를 만들 수 있을 거야⋯! 힘내⋯!
-    </div>
+        헤헤, 언젠가 여왕님이 흠뻑 반하실 케이크를 만들 수 있을 거야⋯! 힘내⋯!""") }}
   
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 자신도 모르는 이유로 거울에서 태어난 정령, 미로는 요정 왕궁에 있는 거울 안에서 오고 가는 주민들을 몰래 지켜보며 세월을 보낸다. 이따금씩 사도들이 거울 앞에서 힘든 일을 중얼거리면, 듣지 못할 혼잣말로 응원을 한마디씩 한다고. 
 
@@ -79,10 +56,7 @@ tags:
 <br>
 미로의 독백이 끝난 후, 파트라가 {=="'밤에 칼을 문 채로 거울 앞에 서 있으면 소원이 이루어진다'는 소문을 들었다며 집에 가서 해보겠다"==}고 에슈르에게 말하는데, 그걸 들은 에슈르는 {=="그렇게 일상에서 동떨어진 특정한 행동을 취했다간, 갑자기 영문 모를 마법이 발동될 수도 있다"==}고 언급하며 멍청한 생각이라는 듯 반응한다.
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_event_miro_2.png){width="500"}
-/// caption
-테마극장 CG 중 하나
-///
+{{ image('story/s3_event_miro_2.png', caption='테마극장 CG 중 하나') }}
 
 그날 밤, 에슈르는 문단속을 철저히 하고 밖에 아무도 없는 걸 확인한다. 스스로를 한심해 하지만 혹시나 하는 마음에 빵칼을 입에 물고 거울 앞에서 {=='부디 여왕님께서 죠안 사제님의 빵과 리코타 주방장님의 요리보다 내 빵을 더 좋아해주시길!'==}이라는 소원을 빈다. 하지만 아무 일도 일어나지 않자 에슈르는 괜히 창피하다며 내일 쓸 재료 손질이나 하려고 마저 뒤돌아 선다. 그걸 본 미로가 거울에 나타나 '푸흡'이라며 웃어버리고, 에슈르는 그 소리에 반응해 다시 뒤돌아 거울을 본다. 
 
@@ -95,7 +69,7 @@ tags:
 <br>
 
 ## 에피소드 4 - 거울아, 거울아 나는 누구야?
-<span class="badge badge-version"><span class="badge-icon">:material-battery-low:</span>가끔 등장</span>
+{{ story_badge('battery-low', '가끔 등장') }}
 <br>
 에슈르는 미로를 유령으로 오해했었고, 설마 {=='자신이 한 행동이 우연히 조건을 맞춰버려서 영문 모를 유령 소환 마법이라도 발동된 거 아니냐'==}며 그 이후로 거울을 제대로 못 보겠다며 빵집에서 하소연하고 있었다. 그때 슬픔의 미로가 거울에 다시 나타나 '자신 때문에 에슈르가 곤란해 하고 있다'며 울기 시작하니 그 모습을 본 에슈르는 또 기절해버리고 만다. 기절한 후 미로가 나타나 슬픔의 미로가 담긴 조각을 회수해간다.(1)
 { .annotate }
@@ -106,20 +80,14 @@ tags:
 
 
 ## 여담
-<figure>
-  <iframe src="https://www.youtube.com/embed/dl7IV2Yr6eQ?si=GXzlWOhDFt2k2K2Y" style="width:600px;height:338px;border:0;" loading="lazy" allowfullscreen></iframe>
-  <figcaption>거울에 보이는 것보다 가까이 있음! 테마극장 PV</figcaption>
-</figure>
+{{ youtube('dl7IV2Yr6eQ', caption='거울에 보이는 것보다 가까이 있음! 테마극장 PV') }}
 
 + PV에서 메인으로 등장한다. 내용은 밤 12시에 칼을 입에 물고 거울을 보면 미래의 배우자가 보인다는 거울괴담에서 모티브를 따왔다. 바깥 창문에 손바닥이나 거울 속에 비친 섬뜩한 얼굴의 에슈르가 공포 분위기를 더한다.
 
 + 에슈르는 소문을 듣고 혹시나 하는 마음에 늦은 밤, 입에 칼을 문채 거울 앞에서 {=='에르핀이 죠안과 리코타보다 자신의 빵을 더 좋아해주시길'==}이라는 소원을 빈다. 하지만 이루어 지지 않아 포기하고 돌아가려는데, 거울에 뭔가 있어서 뒤돌아 본 순간 거울의 정령이 나타나 깜짝 놀라 기절한다. 이후 미로의 독백이 이어지다 에슈르가 정신을 차리고 일어서는데, 빵이 갑자기 공중에 떠오르고 조명이 깜박이더니, 결국 '으아악-!!'하며 빵집에서 쫓겨난다.
 <br>
 
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s3_event_miro_3.gif){width="750"}
-/// caption
-'수면에 비친 동심' 미로 스킨 소개
-///
+{{ image('story/s3_event_miro_3.gif', width=750, caption="'수면에 비친 동심' 미로 스킨 소개") }}
 미로의 '수면에 비친 동심' 스킨에서도 등장한다. 에슈르의 수영복 스킨 미니미가 옆에서 벌벌 떨고 있다.
 
 <br>

@@ -9,30 +9,21 @@ tags:
 ---
 
 # 이벤트 스토리 - 슬기로운 메이드 생활 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 직접 등장하지는 않고 스피키가 요정왕국에 들어온 초반에 대화 소재로 가끔 언급된다.
 <br>
 <br>
 
 ## 에피소드 1 - 스피키, 도망을 결심하다
-![Image title](https://vitamink1.github.io/ashur-note/assets/story/s2_event_speaki_1.png){width="500"}
-/// caption
-기억 조각 - 끌려나가는 진상
-///
+{{ image('story/s2_event_speaki_1.png', caption='기억 조각 - 끌려나가는 진상') }}
 
 ???+ quote
-    :sadoicon-speaki:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="speaki">스피키</span><br>
-    <div class="speech-bubble">
-        헤에엑⋯. 빵 요정 가게에 백성들이 너무 많아요⋯.<br>
-        하지만 이 네르! 당당하게 앞으로 나가서 모습을 보이면! 모두가 길을 비켜주겠⋯ 으아악!!
-    </div>
-    :sadoicon-unnamed:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="unnamed">지나가는 요정</span><br>
-    <div class="speech-bubble">
-        당장 끌어내! 신상 빵 앞에서는 사제장님이고 여왕님이고 없는 거야!
-    </div>
+    {{ speech('speaki', '스피키', """헤에엑⋯. 빵 요정 가게에 백성들이 너무 많아요⋯.<br>
+        하지만 이 네르! 당당하게 앞으로 나가서 모습을 보이면! 모두가 길을 비켜주겠⋯ 으아악!!""") }}
+    {{ speech('unnamed', '지나가는 요정', """당장 끌어내! 신상 빵 앞에서는 사제장님이고 여왕님이고 없는 거야!""") }}
 
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 셰이디가 벨라의 존재를 모른채 애꿎은 유령들을 집합시킨 사건 이후, 스피키는 셰이디를 피해 요정왕국으로 도망친다. 스피키는 평소처럼 네르의 정체성을 이용, 조용히 숨어서 다시 유령 늪으로 돌아갈 각을 볼 수 있는 곳을 찾기로 한다.
 
@@ -42,7 +33,7 @@ tags:
 <br>
 
 ## 에피소드 2 - 스피키, 크레페를 결심하다
-<span class="badge badge-version"><span class="badge-icon">:material-battery-outline:</span>언급됨</span>
+{{ story_badge('battery-outline', '언급됨') }}
 <br>
 이후 교주의 방에서 크레페와 교주를 만난 뒤 영감을 얻은 스피키는, 다음 날 크레페의 정체성을 이용해 요정왕국을 돌아다닌다. 
 

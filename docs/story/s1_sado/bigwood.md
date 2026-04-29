@@ -11,7 +11,7 @@ tags:
 # 사도 스토리 - 빅우드
 
 ## 에피소드 1 - 이상한 나무와 맛있는 파이
-<span class="badge badge-version"><span class="badge-icon">:material-battery-high:</span>자주 등장</span>
+{{ story_badge('battery-high', '자주 등장') }}
 <br>
 교주는 에슈르를 기다리다 지쳐 커다란 나무에 몸을 기대는데 그 나무는 알고보니 빅우드였다.
 
@@ -28,7 +28,7 @@ tags:
 <br>
 
 ## 에피소드 5 - 현자가 되는 순간
-<span class="badge badge-version"><span class="badge-icon">:material-battery-medium:</span>보통 등장</span>
+{{ story_badge('battery-medium', '보통 등장') }}
 <br>
 한밤중에 난데없이 들리는 이상한 소리에 놀란 에르핀과 교주는 함께 왕궁을 뛰쳐나왔다. 
 

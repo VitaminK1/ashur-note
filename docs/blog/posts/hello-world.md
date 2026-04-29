@@ -21,10 +21,9 @@ massa, nec semper lorem quam in massa.
 
 asdfasdfasdf
 
-<span class="badge badge-version"><span class="badge-icon">:material-tag:</span>     1.0.0</span>
-<span class="badge badge-ext">
-  <span class="badge-icon">:material-language-markdown:</span> abbr
-</span>
+{{ story_badge('tag', '     1.0.0') }}
+{{ story_badge('language-markdown', ' abbr
+') }}
 
 
 :octicons-heart-fill-24:{ .heart }
@@ -36,12 +35,9 @@ asdfasdfasdf
 :sadoicon-allet:
 :sadoicon-crepe:
 !!! quote ""
-    :sadoicon-ashur:{:.big-emoji} &nbsp;&nbsp;&nbsp;<span class="tag-box" data-sado="ashur">에슈르</span><br>
-    <div class="speech-bubble">
-        세계수님께서 제 꿈을 이해해주시고 이런 선물을 내려주시다니!<br>
+    {{ speech('ashur', '에슈르', """세계수님께서 제 꿈을 이해해주시고 이런 선물을 내려주시다니!<br>
         교주님! 저 이 마법서를 열심히 연구할게요!<br>
-      엘리아스 최고의 마법사가 돼서… 세계수와 교수님에게 자랑스러운 사도가 되겠어요!
-    </div>
+      엘리아스 최고의 마법사가 돼서… 세계수와 교수님에게 자랑스러운 사도가 되겠어요!""") }}
     
 # 1. 개요
 
