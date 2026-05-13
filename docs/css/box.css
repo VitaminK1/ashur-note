@@ -160,6 +160,17 @@
 
 
 
+.speech-line {
+  display: block;
+  margin: 0;
+}
+
+.md-typeset .speech-line + br,
+.md-typeset details.quote > p:empty,
+.md-typeset .admonition.quote > p:empty {
+  display: none;
+}
+
 .speech-bubble {
   display: block;
   /* 한 줄 전체 차지 */
@@ -220,6 +231,23 @@
 
 [data-md-color-scheme="slate"] .mind-bubble {
   background-color: #e983ff70;
+}
+
+.narrate-text {
+  display: block;
+  width: fit-content;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 6px 15px 6px 18px;
+  margin: 6px 0;
+  font-style: italic;
+  border-left: 3px solid rgba(150, 150, 150, 0.4);
+  color: #888;
+}
+
+[data-md-color-scheme="slate"] .narrate-text {
+  color: #aaa;
+  border-left-color: rgba(200, 200, 200, 0.25);
 }
 
 /* Custom admonition colors */

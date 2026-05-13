@@ -1,6 +1,188 @@
 import json
 import os
+import re
 from html import escape
+
+GAP_MARKUP = '<div class="md-source-gap" aria-hidden="true">&#8203;</div>'
+LIST_ITEM_RE = re.compile(r"^[ ]{0,3}(?:[-+*] |\d+[.)] )")
+FENCE_RE = re.compile(r"^[ ]{0,3}(?:```|~~~)")
+TAB_HEADER_RE = re.compile(r'^[ ]{0,3}===\s+"')
+HTML_TAG_RE = re.compile(r"^[ ]{0,3}</?([A-Za-z][\w:-]*)")
+VOID_HTML_TAGS = {
+    "area",
+    "base",
+    "br",
+    "col",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "link",
+    "meta",
+    "param",
+    "source",
+    "track",
+    "wbr",
+}
+
+
+def _indent_width(line):
+    expanded = line.expandtabs(4)
+    return len(expanded) - len(expanded.lstrip(" "))
+
+
+def _is_attribute_list(line):
+    if not line:
+        return False
+
+    stripped = line.strip()
+    if not (stripped.startswith("{") and stripped.endswith("}")):
+        return False
+
+    inner = stripped[1:-1].strip()
+    if not inner:
+        return False
+
+    return any(
+        token.startswith((".", "#")) or "=" in token
+        for token in inner.split()
+    )
+
+
+def _is_list_item(line):
+    return bool(LIST_ITEM_RE.match(line))
+
+
+def _is_tab_header(line):
+    return bool(TAB_HEADER_RE.match(line))
+
+
+def _is_html_open_tag(line):
+    stripped = line.strip()
+    tag_name = _html_tag_name(stripped)
+    return (
+        stripped.startswith("<")
+        and not stripped.startswith(("</", "<!", "<?"))
+        and "</" not in stripped[1:]
+        and stripped.endswith(">")
+        and not stripped.endswith("/>")
+        and tag_name not in VOID_HTML_TAGS
+    )
+
+
+def _is_html_close_tag(line):
+    return line.strip().startswith("</")
+
+
+def _html_tag_name(line):
+    match = HTML_TAG_RE.match(line.strip())
+    if not match:
+        return None
+    return match.group(1).lower()
+
+
+def _normalize_dom_id(value, default="item"):
+    text = re.sub(r"[^a-z0-9_-]+", "-", str(value).strip().lower()).strip("-")
+    return text or default
+
+
+def _find_anchor(lines, start, step):
+    idx = start
+    while 0 <= idx < len(lines):
+        line = lines[idx]
+        if line.strip() and _indent_width(line) <= 3:
+            return line
+        idx += step
+    return None
+
+
+def _find_nonblank_line(lines, start, step):
+    idx = start
+    while 0 <= idx < len(lines):
+        line = lines[idx]
+        if line.strip():
+            return line
+        idx += step
+    return None
+
+
+def _should_insert_gap(prev_anchor, next_anchor):
+    if not prev_anchor or not next_anchor:
+        return False
+
+    if _is_attribute_list(prev_anchor) or _is_attribute_list(next_anchor):
+        return False
+
+    if _is_html_open_tag(prev_anchor) or _is_html_close_tag(next_anchor):
+        return False
+
+    if _is_tab_header(prev_anchor) and _is_tab_header(next_anchor):
+        return False
+
+    if _is_list_item(prev_anchor) and _is_list_item(next_anchor):
+        if _indent_width(prev_anchor) == _indent_width(next_anchor):
+            return False
+
+    return True
+
+
+def _insert_blankline_spacers(markdown_text):
+    lines = markdown_text.splitlines()
+    output = []
+    idx = 0
+    in_fence = False
+
+    while idx < len(lines):
+        line = lines[idx]
+        if FENCE_RE.match(line):
+            in_fence = not in_fence
+            output.append(line)
+            idx += 1
+            continue
+
+        if in_fence or line.strip():
+            output.append(line)
+            idx += 1
+            continue
+
+        blank_start = idx
+        while idx < len(lines) and not lines[idx].strip():
+            idx += 1
+        blank_count = idx - blank_start
+
+        prev_line = _find_nonblank_line(lines, blank_start - 1, -1)
+        next_line = _find_nonblank_line(lines, idx, 1)
+        if (
+            prev_line
+            and next_line
+            and _indent_width(prev_line) > 3
+            and _indent_width(next_line) > 3
+        ):
+            output.extend(lines[blank_start:idx])
+            continue
+
+        if _is_attribute_list(prev_line) or _is_attribute_list(next_line):
+            output.extend(lines[blank_start:idx])
+            continue
+
+        prev_anchor = _find_anchor(lines, blank_start - 1, -1)
+        next_anchor = _find_anchor(lines, idx, 1)
+
+        if _should_insert_gap(prev_anchor, next_anchor):
+            output.extend([GAP_MARKUP] * blank_count)
+        else:
+            output.extend(lines[blank_start:idx])
+
+    trailing_newline = "\n" if markdown_text.endswith("\n") else ""
+    return "\n".join(output) + trailing_newline
+
+
+def on_page_markdown(markdown, **kwargs):
+    return _insert_blankline_spacers(markdown)
+
+
+def on_post_page_macros(env):
+    env.markdown = _insert_blankline_spacers(env.markdown)
 
 def define_env(env):
     """
@@ -20,10 +202,81 @@ def define_env(env):
         prefix = " " * spaces
         return prefix + str(value).replace("\n", "\n" + prefix)
 
+    def figure_with_caption(content, caption, figure_attrs=""):
+        return (
+            f'<figure{figure_attrs} markdown="1">\n'
+            f"{content}\n"
+            '<figcaption markdown="1">\n'
+            f"{caption}\n"
+            "</figcaption>\n"
+            "</figure>"
+        )
+
+    def wrap_figure_content(content):
+        return f'<div class="figure-media">{content}</div>'
+
+    def caption_needs_block_markdown(caption):
+        text = str(caption).replace("\r\n", "\n").replace("\r", "\n")
+        lines = text.split("\n")
+
+        if any(_is_attribute_list(line) for line in lines):
+            return True
+
+        if any(_is_list_item(line) for line in lines):
+            return True
+
+        return "\n\n" in text
+
+    def render_figure(content, caption, figure_attrs=""):
+        wrapped_content = wrap_figure_content(content)
+
+        if caption_needs_block_markdown(caption):
+            return figure_with_caption(wrapped_content, caption, figure_attrs)
+
+        return (
+            f'<figure{figure_attrs} markdown="1">{wrapped_content}'
+            f'<figcaption markdown="1">{multiline(caption)}</figcaption>'
+            "</figure>"
+        )
+
+    def caption_alt_text(caption, default="Image"):
+        if not caption:
+            return default
+
+        text = str(caption).replace("\r\n", "\n").replace("\r", "\n")
+        for line in text.split("\n"):
+            stripped = line.strip()
+            if stripped:
+                return stripped
+        return default
+
+    def markdown_link_href(link):
+        text = str(link)
+        path, sep, fragment = text.partition("#")
+        if ".md" not in path:
+            return text
+
+        use_dir_urls = env.conf.get("use_directory_urls", True)
+        if use_dir_urls:
+            path = path.replace(".md", "/")
+        else:
+            path = path.replace(".md", ".html")
+        return f"{path}{sep}{fragment}" if sep else path
+
     def multiline(value):
         if isinstance(value, (list, tuple)):
             return "<br>".join(str(item) for item in value)
-        return str(value)
+        text = str(value).replace("\r\n", "\n").replace("\r", "\n")
+        lines = text.split("\n")
+        rendered = lines[0] if lines else ""
+
+        for line in lines[1:]:
+            if rendered.rstrip().endswith(("<br>", "<br/>", "<br />")):
+                rendered += line.lstrip()
+            else:
+                rendered += "<br>" + line
+
+        return rendered
 
     def tab_block(items):
         return "\n\n".join(
@@ -174,7 +427,27 @@ def define_env(env):
 </tr>"""
 
     @env.macro
-    def present_card(title, description, image_path, letter_path="letter.png", image_alt="item image"):
+    def present_card(title, description, image_path, letter_path="letter.png", image_alt="item image", voices=None):
+        voice_html = ""
+        if voices:
+            voice_items = []
+            for voice in voices:
+                label, audio = voice if isinstance(voice, (list, tuple)) else ("재생", voice)
+                audio_url = get_asset_path(f"audio/{audio}")
+                voice_items.append(
+                    '<span class="vk-letter-voice-item">'
+                    f'<span>{attr(label)}</span>'
+                    f'<button class="voice-btn" data-src="{attr(audio_url)}"'
+                    f' aria-label="{attr(f"{label} 음성 재생")}"'
+                    f' title="{attr(f"{label} 음성 재생")}" type="button">&#9654;</button>'
+                    "</span>"
+                )
+            voice_html = (
+                '      <div class="vk-letter-voice">\n'
+                "        <span>편지 음성</span>\n"
+                f'        <div class="voice-btn-group">{"".join(voice_items)}</div>\n'
+                "      </div>\n"
+            )
         return f"""<div class="vk-card-outer">
   <div class="vk-card">
     <div class="vk-card__left">
@@ -182,9 +455,10 @@ def define_env(env):
     </div>
     <div class="vk-card__right">
       <h3 class="vk-title">{title}</h3>
-      <p class="vk-sub vk-small">{description}</p>
+      <p class="vk-sub vk-small">{multiline(description)}</p>
     </div>
     <div class="vk-letter">
+{voice_html}\
       <img src="{get_asset_path(letter_path)}" alt="">
     </div>
   </div>
@@ -194,32 +468,72 @@ def define_env(env):
     def intimacy_table(title, rows, notes=None):
         note_html = ""
         if notes:
-            note_html = "\n".join(f"  <span> - {note}</span><br>" for note in notes)
-            note_html += "\n"
+            note_html = "".join(f'<span> - {note}</span><br>' for note in notes)
+
+        def render_text_cell(item):
+            if _is_audio_pair(item):
+                text = item[0]
+                audios = item[1] if isinstance(item[1], (list, tuple)) else item[1:]
+                
+                buttons_html = ""
+                for audio in audios:
+                    audio_url = get_asset_path(f"audio/{audio}")
+                    buttons_html += (
+                        f'<button class="voice-btn" data-src="{attr(audio_url)}"'
+                        f' aria-label="재생" type="button">&#9654;</button>'
+                    )
+                return f'<div class="voice-row"><span>{text}</span><div class="voice-btn-group">{buttons_html}</div></div>'
+            return str(item)
+
+        def _is_audio_pair(item):
+            """Check if item is a (text, audio_path) pair or (text, audio1, audio2)."""
+            if not isinstance(item, (list, tuple)) or len(item) < 2:
+                return False
+            if not isinstance(item[0], str):
+                return False
+            
+            # Case 1: item[1] is a list of audio strings
+            if isinstance(item[1], (list, tuple)):
+                return all(isinstance(x, str) and x.endswith(('.mp3', '.wav', '.ogg')) for x in item[1])
+            
+            # Case 2: item[1:] are all audio strings
+            return all(isinstance(x, str) and x.endswith(('.mp3', '.wav', '.ogg')) for x in item[1:])
 
         body_rows = []
         for row in rows:
-            label, text = row[:2]
-            values = list(text) if isinstance(text, (list, tuple)) else [text]
+            label = row[0]
+            if len(row) > 2 and all(isinstance(x, str) and x.endswith(('.mp3', '.wav', '.ogg')) for x in row[2:]):
+                values = [row[1:]]
+            else:
+                text = row[1]
+                if _is_audio_pair(text):
+                    values = [text]
+                elif isinstance(text, (list, tuple)):
+                    values = list(text)
+                else:
+                    values = [text]
             rowspan_attr = f' rowspan="{len(values)}"' if len(values) > 1 else ""
             body_rows.append(
-                f'        <tr><td class="intimacy-level"{rowspan_attr}>{label}</td>'
-                f'<td class="intimacy-text">{values[0]}</td></tr>'
+                f'<tr><td class="intimacy-level"{rowspan_attr}>{label}</td>'
+                f'<td class="intimacy-text">{render_text_cell(values[0])}</td></tr>'
             )
             for value in values[1:]:
-                body_rows.append(f'        <tr><td class="intimacy-text">{value}</td></tr>')
+                body_rows.append(f'<tr><td class="intimacy-text">{render_text_cell(value)}</td></tr>')
 
-        body = "\n".join(body_rows)
-        return f"""<div class="intimacy-wrap">
-  <h3 class="intimacy-title">{title}</h3>
-{note_html}  <div class="intimacy-table-wrap">
-    <table class="intimacy-table">
-      <tbody>
-{body}
-      </tbody>
-    </table>
-  </div>
-</div>"""
+        body = "".join(body_rows)
+        return (
+            '<div class="intimacy-wrap">'
+            f'<h3 class="intimacy-title">{title}</h3>'
+            f"{note_html}"
+            '<div class="intimacy-table-wrap">'
+            '<table class="intimacy-table">'
+            "<tbody>"
+            f"{body}"
+            "</tbody>"
+            "</table>"
+            "</div>"
+            "</div>"
+        )
 
     @env.macro
     def intimacy_tabs(entries):
@@ -268,6 +582,201 @@ def define_env(env):
   </section>
 </div>"""
 
+    def battle_skill_header(icon_path, title, subtitle="", alt=""):
+        title_class = "lore-title" if subtitle else "lore-title lore-title--flush"
+        subtitle_html = (
+            f'\n        <div class="lore-subtitle">{subtitle}</div>'
+            if subtitle else ""
+        )
+        return (
+            '    <div class="lore-header">\n'
+            f'      <img src="{get_asset_path(icon_path)}" alt="{attr(alt or title)}" class="lore-avatar">\n'
+            "      <div>"
+            f"{subtitle_html}\n"
+            f'        <div class="{title_class}">{title}</div>\n'
+            "      </div>\n"
+            "    </div>"
+        )
+
+    @env.macro
+    def battle_skill_tabs(items, width=500, height=300, autoplay=True, loop=True):
+        tab_items = []
+        for item in items:
+            title, path = item[:2]
+            caption = item[2] if len(item) > 2 else f"{title} 모습"
+            item_width = item[3] if len(item) > 3 else width
+            item_height = item[4] if len(item) > 4 else height
+            tab_items.append(
+                (
+                    title,
+                    video(
+                        path,
+                        caption=caption,
+                        width=item_width,
+                        height=item_height,
+                        autoplay=autoplay,
+                        loop=loop,
+                    ),
+                )
+            )
+        return tabs(tab_items)
+
+    @env.macro
+    def battle_skill_inline_stat(label, values, suffix="%"):
+        return {
+            "type": "inline_dynamic",
+            "label": label,
+            "values": list(values),
+            "suffix": suffix,
+        }
+
+    @env.macro
+    def battle_skill_dynamic_stat(label, values, suffix="%", extras=None):
+        return {
+            "type": "dynamic",
+            "label": label,
+            "values": list(values),
+            "suffix": suffix,
+            "extras": list(extras or []),
+        }
+
+    @env.macro
+    def battle_skill_text_stat(label, text):
+        return {
+            "type": "text",
+            "label": label,
+            "text": text,
+        }
+
+    @env.macro
+    def battle_skill_slider_card(
+        key,
+        icon_path,
+        title,
+        description,
+        stats,
+        subtitle="",
+        alt="",
+        summary="",
+        level_min=1,
+        initial_level=None,
+    ):
+        dom_id = _normalize_dom_id(key, "battle-skill")
+        stats = list(stats)
+        dynamic_stats = [stat for stat in stats if stat.get("type") == "dynamic"]
+        if not dynamic_stats:
+            raise ValueError(f"battle_skill_slider_card({key!r}) requires at least one dynamic stat")
+
+        values = list(dynamic_stats[0]["values"])
+        if not values:
+            raise ValueError(f"battle_skill_slider_card({key!r}) requires at least one stat value")
+
+        level_min = int(level_min)
+        level_max = level_min + len(values) - 1
+        initial_level = level_min if initial_level is None else int(initial_level)
+        if not level_min <= initial_level <= level_max:
+            raise ValueError(
+                f"battle_skill_slider_card({key!r}) initial_level must be between {level_min} and {level_max}"
+            )
+
+        initial_index = initial_level - level_min
+        series_map = {}
+        stat_rows = []
+
+        for stat_index, stat in enumerate(stats):
+            stat_type = stat.get("type")
+            if stat_type == "text":
+                label_prefix = f'{stat["label"]}: ' if stat.get("label") else ""
+                stat_rows.append(
+                    f'    <div class="lore-stat-row">{label_prefix}{multiline(stat["text"])}</div>'
+                )
+                continue
+
+            if stat_type != "dynamic":
+                raise ValueError(f"battle_skill_slider_card({key!r}) received unsupported stat type {stat_type!r}")
+
+            stat_values = list(stat["values"])
+            if len(stat_values) != len(values):
+                raise ValueError(
+                    f"battle_skill_slider_card({key!r}) stat {stat.get('label', stat_index)!r} length must match level count"
+                )
+
+            value_id = f"{dom_id}-stat-{stat_index}"
+            series_map[value_id] = stat_values
+            inline_html = ""
+
+            for extra_index, extra in enumerate(stat.get("extras", [])):
+                extra_values = list(extra["values"])
+                if len(extra_values) != len(values):
+                    raise ValueError(
+                        f"battle_skill_slider_card({key!r}) inline stat {extra.get('label', extra_index)!r} length must match level count"
+                    )
+
+                extra_id = f"{dom_id}-stat-{stat_index}-extra-{extra_index}"
+                extra_label = f'{extra["label"]}:' if extra.get("label") else ""
+                series_map[extra_id] = extra_values
+                inline_html += (
+                    f' ({extra_label}<span class="lore-number-highlight" id="{extra_id}">{extra_values[initial_index]}</span>{extra.get("suffix", "%")})'
+                )
+
+            stat_rows.append(
+                f'    <div class="lore-stat-row">{stat["label"]}: '
+                f'<span class="lore-number-highlight" id="{value_id}">{stat_values[initial_index]}</span>{stat.get("suffix", "%")}'
+                f"{inline_html}</div>"
+            )
+
+        slider_attrs = [
+            f'id="{dom_id}-slider"',
+            'type="range"',
+            f'min="{level_min}"',
+            f'max="{level_max}"',
+            f'value="{initial_level}"',
+            'data-lore-slider="1"',
+            f'data-level-target="{dom_id}-level"',
+            f"data-lore-series='{attr(json.dumps(series_map, ensure_ascii=False, separators=(',', ':')))}'",
+        ]
+        summary_html = f'    <div class="lore-stat-row">{multiline(summary)}</div>\n' if summary else ""
+        stat_html = "\n".join(stat_rows)
+
+        return (
+            '  <article class="lore-card">\n'
+            f"{battle_skill_header(icon_path, title, subtitle=subtitle, alt=alt)}\n"
+            '    <div class="lore-slider-wrapper">\n'
+            f'      <div id="{dom_id}-level" class="lore-level-box lore-lvl">Lv.{initial_level}</div>\n'
+            f'      <input {" ".join(slider_attrs)}>\n'
+            "    </div>\n"
+            f"{summary_html}"
+            f'    <p class="lore-desc">{multiline(description)}</p>\n'
+            f"{stat_html}\n"
+            "  </article>"
+        )
+
+    @env.macro
+    def battle_skill_static_card(icon_path, title, sections, subtitle="", alt=""):
+        section_html = "\n".join(
+            (
+                '    <div class="battle-pill-group">\n'
+                f'      <div class="battle-pill battle-pill--basic">{badge}</div>\n'
+                "    </div>\n"
+                f'    <p class="lore-desc">{multiline(description)}</p>\n'
+                f'    <div class="lore-stat-row">{multiline(stats)}</div>'
+            )
+            for badge, description, stats in sections
+        )
+        return (
+            '  <article class="lore-card">\n'
+            f"{battle_skill_header(icon_path, title, subtitle=subtitle, alt=alt)}\n"
+            f"{section_html}\n"
+            "  </article>"
+        )
+
+    @env.macro
+    def battle_skill_grid(cards):
+        cards_html = "\n".join(str(card) for card in cards if card)
+        return f"""<div class="lore-grid">
+{cards_html}
+</div>"""
+
     @env.macro
     def aside_panel(title, description, image_path, skills):
         def skill_html(skill):
@@ -280,11 +789,11 @@ def define_env(env):
       <img class="icon" src="{get_asset_path(icon_path)}" alt="">
       <div class="meta">
         <div class="skill-head">
-          <img class="badge-stars" src="{get_asset_path(star_path)}" alt="">
+      <img class="badge-stars" src="{get_asset_path(star_path)}" alt="">
           <div class="skill-name">{name}</div>
         </div>
         <div class="skill-desc">
-        {desc}
+        {multiline(desc)}
         </div>
         <div class="skill-stats">
 {stat_lines}
@@ -298,7 +807,7 @@ def define_env(env):
     <img class="battle-header-img" src="{get_asset_path(image_path)}" alt="portrait">
     <div class="battle-header-copy">
       <h2 class="battle-title">{title}</h2>
-      <p class="battle-copy">{description}</p>
+      <p class="battle-copy">{multiline(description)}</p>
     </div>
   </div>
 
@@ -351,10 +860,10 @@ def define_env(env):
 
   <section class="rk-right">
     <div class="rk-right-title">
-      <div>
+        <div>
         <div class="rk-head-large">{headline}</div>
         <div class="rk-head-line" aria-hidden="true"></div>
-        <div class="rk-desc">{description}</div>
+        <div class="rk-desc">{multiline(description)}</div>
       </div>
     </div>
     <div class="rk-tmi-row">
@@ -364,7 +873,7 @@ def define_env(env):
         <div class="rk-mini-avatar" title="{attr(name)}">
           <img class="rk-mini-avatar-img" src="{get_asset_path(mini_avatar)}" alt="{attr(name)}">
         </div>
-        <span class="rk-tmi-text">{tmi}</span>
+        <span class="rk-tmi-text">{multiline(tmi)}</span>
       </div>
     </div>
     <div class="rk-grid">
@@ -379,7 +888,7 @@ def define_env(env):
             f"""      <article class="kj-card" role="listitem">
         <div class="kj-card-inner">
           <h4 class="kj-level">{level}</h4>
-          <div class="kj-text">{text}</div>
+          <div class="kj-text">{multiline(text)}</div>
         </div>
       </article>"""
             for level, text in entries
@@ -396,38 +905,33 @@ def define_env(env):
     def relationship_table(rows):
         def icon_html(icon):
             size, title, image = icon[:3]
-            img_indent_extra = int(icon[3]) if len(icon) > 3 else 0
-            img_indent = " " * (10 + img_indent_extra)
             icon_path = get_asset_path(f"sadoicon/Icon_GraduateSkill_{image}.png")
             return (
-                f'          <div class="pref-icon pref-circle-{size}" title="{title}">\n'
-                f'{img_indent}<img class="frame circle" src="{icon_path}" alt="food">\n'
-                "          </div>"
+                f'<div class="pref-icon pref-circle-{size}" title="{attr(title)}">'
+                f'<img class="frame circle" src="{icon_path}" alt="food">'
+                "</div>"
             )
 
         def row_html(row):
             label, icons = row
-            icon_lines = "\n".join(icon_html(icon) for icon in icons)
-            icon_block = f"\n{icon_lines}\n" if icon_lines else "\n"
-            return f"""      <tr>
-        <td class="pref-icon-cell"><span>{label}</span></td>
-        <td>{icon_block}        </td>
-      </tr>"""
+            icon_block = "".join(icon_html(icon) for icon in icons)
+            return (
+                f'<tr><td class="pref-icon-cell"><span>{label}</span></td>'
+                f"<td>{icon_block}</td></tr>"
+            )
 
-        body = "\n".join(row_html(row) for row in rows)
-        return f"""<div class="prefs-table-alt-wrap pref-size-md">
-  <table class="prefs-table-alt">
-    <thead><tr>
-        <th>거리</th>
-        <th><div class="th-cell"><span>사도</span></div></th>
-      </tr></thead>
-    <tbody>
-{body}
-    </tbody>
-  </table>
-</div>
-<br>
-<br>"""
+        body = "".join(row_html(row) for row in rows)
+        return (
+            '<div class="prefs-table-alt-wrap pref-size-md">'
+            '<table class="prefs-table-alt">'
+            "<thead><tr>"
+            "<th>거리</th>"
+            '<th><div class="th-cell"><span>사도</span></div></th>'
+            "</tr></thead>"
+            f"<tbody>{body}</tbody>"
+            "</table>"
+            "</div>"
+        )
 
     @env.macro
     def relationship_tabs(periods):
@@ -494,11 +998,20 @@ def define_env(env):
     # --- Story Macros ---
     @env.macro
     def speech(char_id, name, text):
-        return f""":sadoicon-{char_id}:{{:.big-emoji}}<span class="tag-box" data-sado="{char_id}">{name}</span><br><div class="speech-bubble">{text}</div>"""
+        return (
+            '<div class="speech-line" markdown="span">'
+            f':sadoicon-{char_id}:{{:.big-emoji}}<span class="tag-box" data-sado="{char_id}">{name}</span><br>'
+            f'<div class="speech-bubble">{multiline(text)}</div>'
+            "</div>"
+        )
 
     @env.macro
     def mind_speech(text):
-        return f"""<div class="mind-bubble">{text}</div>"""
+        return f"""<div class="speech-line"><div class="mind-bubble">{multiline(text)}</div></div>"""
+
+    @env.macro
+    def narrate(text):
+        return f"""<div class="speech-line"><div class="narrate-text">{multiline(text)}</div></div>"""
 
     @env.macro
     def char_tag(char_id, name):
@@ -513,13 +1026,26 @@ def define_env(env):
         return f"""<span class="badge badge-version"><span class="badge-icon">:material-{icon}:</span>{text}</span>"""
 
     @env.macro
+    def section_flag(flag_id):
+        return f'<span id="{attr(flag_id)}"></span>'
+
+    @env.macro
+    def redirect_to(target):
+        href = markdown_link_href(target)
+        return (
+            "<script>\n"
+            f"window.location.replace(new URL({json.dumps(href, ensure_ascii=False)}, window.location.href));\n"
+            "</script>"
+        )
+
+    @env.macro
     def tabs(items):
-        return tab_block(items)
+        return f"{tab_block(items)}\n<!-- md-tab-group -->"
 
     # --- Media Macros ---
     @env.macro
     def youtube(video_id, caption="", width=600, height=None):
-        style = ["margin: 0 auto;", "width: 100%;"]
+        style = ["margin-left: auto;", "margin-right: auto;", "width: 100%;"]
         if width:
             style.append(f"max-width: {width if str(width).endswith(('px', '%')) else str(width) + 'px'};")
         if height:
@@ -529,33 +1055,69 @@ def define_env(env):
         iframe = f'<iframe class="video" src="https://www.youtube.com/embed/{video_id}" allowfullscreen></iframe>'
         
         if caption:
-            return f'<figure{style_attr} markdown="1"><div class="video-wrapper">{iframe}</div><figcaption markdown="1">{caption}</figcaption></figure>'
+            return render_figure(f'<div class="video-wrapper">{iframe}</div>', caption, style_attr)
         else:
             return f"""<div class="video-wrapper"{style_attr}>{iframe}</div>"""
 
     @env.macro
-    def story_card(title, img_path, link):
+    def story_card(title, img_path, link, freq=None):
         """Creates a stylized card for story chapters."""
         img_url = get_asset_path(img_path)
-        
-        # Resolve the markdown link extension based on MkDocs configuration
+
         if '.md' in link:
             use_dir_urls = env.conf.get('use_directory_urls', True)
             if use_dir_urls:
                 link = link.replace('.md', '/')
             else:
                 link = link.replace('.md', '.html')
-                
-        return f'<a href="{link}" class="story-card">' \
-               f'<div class="story-card-img" style="background-image: url(\'{img_url}\');"></div>' \
-               f'<div class="story-card-title">{attr(title)}</div>' \
-               f'</a>'
+
+        freq_badge = ""
+        if freq:
+            freq_badge = f'<div class="story-card-freq" data-freq="{attr(freq)}">{attr(freq)}</div>'
+
+        return (
+            f'<a href="{link}" class="story-card">'
+            f'<div class="story-card-img-wrap">'
+            f'<div class="story-card-img" style="background-image: url(\'{img_url}\');"></div>'
+            f'{freq_badge}'
+            f'</div>'
+            f'<div class="story-card-title">{attr(title)}</div>'
+            f'</a>'
+        )
 
     @env.macro
     def card_grid(content):
         """Wraps cards in a grid container."""
         return f'<div class="card-grid">{content}</div>'
 
+
+    @env.macro
+    def timeline(items):
+        cards = []
+        for item in items:
+            title = item["title"]
+            bg_url = get_asset_path(item["bg"])
+            primary_href = markdown_link_href(item["href"])
+            link_tags = "".join(
+                f'<a href="{markdown_link_href(link)}">{attr(label)}</a>'
+                for label, link in item.get("links", [])
+            )
+            cards.append(
+                f'<div class="timeline-item" data-href="{primary_href}">'
+                f'<div class="timeline-bg" style="background-image: url(\'{bg_url}\');"></div>'
+                f'<div class="timeline-overlay"></div>'
+                f'<div class="timeline-content">'
+                f'<div class="timeline-title">{attr(title)}</div>'
+                f'<div class="timeline-links">{link_tags}</div>'
+                f'</div></div>'
+            )
+        inner = "".join(cards)
+        return (
+            f'<div class="timeline-wrapper">'
+            f'<div class="timeline-scroll-container" id="timelineScroll">'
+            f"{inner}"
+            f"</div></div>"
+        )
     @env.macro
     def video(path, caption="", width=500, height=None, autoplay=True, loop=True):
         src = get_asset_path(path)
@@ -568,7 +1130,7 @@ def define_env(env):
         video_tag = f'<video {" ".join(attrs)}><source src="{src}" type="video/mp4"></video>'
         
         if caption:
-            return f'<figure markdown="1">{video_tag}<figcaption markdown="1">{caption}</figcaption></figure>'
+            return render_figure(video_tag, caption)
         else:
             return video_tag
 
@@ -631,6 +1193,7 @@ def define_env(env):
     def image(path, caption="", width=500, height=None):
         # Handle multiple paths
         paths = [path] if isinstance(path, str) else path
+        alt_text = caption_alt_text(caption)
         
         img_attr = []
         if width:
@@ -641,9 +1204,9 @@ def define_env(env):
         img_tags = ""
         for p in paths:
             src = get_asset_path(p)
-            img_tags += f'<img src="{src}" {" ".join(img_attr)} alt="{attr(caption if caption else "Image")}">'
+            img_tags += f'<img src="{src}" {" ".join(img_attr)} alt="{attr(alt_text)}">'
         
         if caption:
-            return f'<figure markdown="1">{img_tags}<figcaption markdown="1">{caption}</figcaption></figure>'
+            return render_figure(img_tags, caption)
         else:
             return img_tags

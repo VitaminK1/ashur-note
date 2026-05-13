@@ -159,7 +159,6 @@ venv.bak/
 /editor/
 /editor_server.py
 /editor.bat
-/에디터 실행.bat
 
 # mypy
 .mypy_cache/
@@ -212,3 +211,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# AI
+AGENTS.md
+GEMINI.md
+.properdocs-quote-padding-check/

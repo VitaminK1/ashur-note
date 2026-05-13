@@ -1,11 +1,9 @@
 * [🏡](./index.md)
-* [소개](./others/overview.md)
+* [소개](./overview/overview.md)
 * 캐릭터 정보
+    * [기록](./info/viewer.md)
     * [전투](./info/battle.md)
     * [육성](./info/growth.md)
-    * [기록](./info/lore.md)
-    * [관계](./info/relationship.md)
-    * [옷장](./info/viewer.md)
 * 시즌 1
     * 메인 스토리
         * [](./story/chapter/s1_main.md)
@@ -36,7 +34,9 @@
         * [에피카](./story/s1_sado/epica.md)
         * [가끔 등장](./story/s1_sado/etc.md)
         * [언급됨](./story/s1_sado/etc2.md)
-    * [연회장 대화](./story/chapter/s1_etc.md)
+    * 기타 스토리
+        * [](./story/chapter/s1_etc.md)
+        * [연회장 대화](./story/s1_etc/s1_etc.md)
 * 시즌 2
     * 메인 스토리
         * [](./story/chapter/s2_main.md)
@@ -63,10 +63,12 @@
         * [디아나(왕년)](./story/s2_sado/dianayester.md)
         * [시저](./story/s2_sado/scizor.md)
         * [언급됨](./story/s2_sado/etc.md)
-    * [외전](./story/chapter/s2_extra.md)
-    * [연회장 대화](./story/chapter/s2_etc.md)
+    * 기타
+        * [외전](./story/s2_etc/s2_extra.md)
+        * [연회장 대화](./story/s2_etc/s2_etc.md)
 * 시즌 3
-    * [메인 스토리](./story/chapter/s3_main.md)
+    * 메인 스토리
+        * [](./story/chapter/s3_main.md)
     * 이벤트 스토리
         * [](./story/chapter/s3_event.md)
         * [거울에 보이는 것보다 가까이 있음!](./story/s3_event/miro.md)

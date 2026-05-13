@@ -285,6 +285,27 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 [data-md-color-scheme="slate"] .intimacy-table tbody tr:nth-child(even) .intimacy-level{ background: #1d3000ad }
 [data-md-color-scheme="slate"] .intimacy-table .intimacy-text{ color: #ffffffd3 }
 
+/* Voice play button inside intimacy table */
+.intimacy-table .intimacy-text { vertical-align: middle; }
+.voice-row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.voice-btn-group { display:flex; gap:8px; flex-shrink:0 }
+.voice-btn{ display:flex; align-items:center; justify-content:center; padding: 0 0 0 2px; background:none; border:1px solid rgba(0,0,0,0.12); border-radius:50%; width:24px; height:24px; cursor:pointer; font-size:10px; color:#2f9e44; transition:background .15s,color .15s,border-color .15s }
+.voice-btn:hover{ background:#eaf6d7; border-color:#2f9e44 }
+.voice-btn:active{ transform:scale(0.92) }
+.voice-btn.playing{ background:#2f9e44; color:#fff; border-color:#2f9e44 }
+[data-md-color-scheme="slate"] .voice-btn{ border-color:rgba(255,255,255,0.1); color:#6aa04a }
+[data-md-color-scheme="slate"] .voice-btn:hover{ background:rgba(106,160,74,0.15); border-color:#6aa04a }
+[data-md-color-scheme="slate"] .voice-btn.playing{ background:#6aa04a; color:#fff; border-color:#6aa04a }
+
+/* Global Voice Volume Control */
+#voice-volume-control { position: fixed; bottom: 24px; right: 24px; background: var(--md-default-bg-color, #fff); border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 8px 12px; border-radius: 20px; display: flex; align-items: center; gap: 8px; z-index: 100; transition: opacity 0.2s; opacity: 0.5; }
+#voice-volume-control:hover, #voice-volume-control:focus-within { opacity: 1; }
+#voice-volume-control .speaker-icon { width: 20px; height: 20px; color: var(--md-default-fg-color, #333); }
+#voice-volume-slider { width: 80px; cursor: pointer; accent-color: #2f9e44; margin: 0; }
+[data-md-color-scheme="slate"] #voice-volume-control { background: var(--md-default-bg-color, #1e2122); border-color: rgba(255,255,255,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+[data-md-color-scheme="slate"] #voice-volume-control .speaker-icon { color: var(--md-default-fg-color, #ccc); }
+[data-md-color-scheme="slate"] #voice-volume-slider { accent-color: #6aa04a; }
+
 /* rp-* relationship panel (completely separate classes) */
 .rp-panel{ max-width:1100px; margin:18px auto; padding:12px; border-radius:12px; background:#1b1d1e; border:4px solid #2f2b2a; box-shadow: inset 0 0 0 2px rgba(255,255,255,0.02); position:relative; z-index:0 }
 .rp-inner{ padding:12px }

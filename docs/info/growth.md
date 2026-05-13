@@ -3,33 +3,38 @@ title: 캐릭터 정보 - 육성
 publish: true
 icon: material/notebook-edit
 description:
-subtitle: 보드, 선호도, 모험회, 랭크효과
+subtitle: 모험회, 선호도, 취향노트, 교주의 기록, 애장품
 tags:
   - 캐릭터정보
 ---
 
 # 캐릭터 정보 - 육성
+## 모험회
+모험회는 한 사도가 1-2개의 재료를 담당하도록 분배하는 것이 좋습니다.
+에슈르의 메인 기술은 손기술은 '혼모노의 증표' 아이템을 위한 '피규어 채색' 태스크에 중요하지만 해당 테스크에는 림(혼돈)이 더 적합합니다.
+따라서 미보유 사도가 많은 경우가 아니라면 추천하지 않습니다.
+<div class="rel-panel">
+  <div class="rel-panel-inner">
+    <p class="rel-title">에슈르의 모험회 스킬</p>
+    <div class="rel-grid">
+      {{ adv_skill(10, '손기술', True) }}
+      {{ adv_skill(8, '암산') }}
+      {{ adv_skill(1, '육체노동') }}
+      {{ adv_skill(31, '추진력') }}
+      {{ adv_skill(32, '직감') }}
+    </div>
+  </div>
+</div>
 
-## 보드
-+ 1관에는 우선순위가 높은 :stat-boardhp:{.medium-emoji}:stat-boardattack:{.medium-emoji}가 있습니다. 오른쪽 길로 가면서 둘 다 찍는 것을 추천합니다.
-+ 2관에는 우선순위가 높은 :stat-boardattack:{.medium-emoji}:stat-boardcritdmg:{.medium-emoji}과 우선순위가 낮은:stat-boardmagicdef:{.medium-emoji}:stat-boardphysicdef:{.medium-emoji}가 있습니다. 체력이나 치명피해가 필요하시다면 왼쪽 길로 돌아가서 찍는 것을 추천합니다.
-+ 3관에는 :stat-boardattack:{.medium-emoji}:stat-boardattack:{.medium-emoji}:stat-boardhp:{.medium-emoji}:stat-boardcritdmg:{.medium-emoji}:stat-boardmagicdef:{.medium-emoji}:stat-boardphysicdef:{.medium-emoji}가 있습니다.
-
-=== "보드 1관"
-    {{ image('CharacterInfo/board/board1.png', width=250, caption='에슈르 보드 1관') }}
-
-=== "보드 2관"
-    {{ image('CharacterInfo/board/board2.png', width=250, caption='에슈르 보드 2관') }}
-
-=== "보드 3관"
-    {{ image('CharacterInfo/board/board3.png', width=250, caption='에슈르 보드 3관') }}
-<br>
-<br>
+## 모험회 CG
+{{ image('others/global/albastorycg.png', caption='모험회 스토리 CG') }}
+글로벌 서버에서 모험회 레벨 3을 달성하면 해금되는 사도 스토리에서 쓰이는 CG.
+스토리는 여기로.
 
 ## 선호도
-좋아하는 음식들의 등급이 모두 낮으며, 싫어하는 음식들의 등급이 모두 높아 애정레벨 육성 난이도가 높습니다.<br>
-가성비 등을 고려했을 때, 에슈르가 특히 좋아하는 ```UFC 야채 튀김```을 권장합니다.
-
+좋아하는 음식들의 등급이 모두 낮으며, 싫어하는 음식들의 등급이 모두 높아 애정레벨 육성 속도가 느립니다.
+가성비를 우선한다면 에슈르가 특히 좋아하는 ```UFC 야채 튀김```을, 속도를 우선한다면 에슈르가 싫어하는 음식을 제외한, 가장 많이 보유하고 있는 개쩜 등급의 음식을 권장합니다.
+글로벌 서버에서는 첫 음식 보너스가 있기 때문에 골고루 사용하는 것을 권장합니다.
 {{ preference_table([
     ['hate', '싫어함', [
         ['Blue', 22],
@@ -56,13 +61,11 @@ tags:
     ]],
     ['good', '그럭저럭', '이외의 모든 음식들'],
 ]) }}
-<br>
-<br>
 
 ## 친밀도
-음식의 등급과 캐릭터의 선호도에 따라 친밀도 증가량이 달라집니다.<br>
+음식의 등급과 캐릭터의 선호도에 따라 친밀도 증가량이 달라집니다.
 이후 대화 선택지에 따라 선호도가 추가로 ```+1~+3``` 증가합니다.
-
+글로벌 서버에서는 선택지에 따른 추가 선호도가 없으며, 수치도 다릅니다.
 {{ preference_value_table(
     [
         ['common/itemslot/ItemSlot_Gray.png', '일반'],
@@ -78,43 +81,45 @@ tags:
         ['love', '특히 좋아함', ['-', '46', '64', '82', '100']],
     ],
 ) }}
-<br>
-<br>
 
+## 취향노트
+{{ rp_note_panel([
+    [
+        ['Gray', 28, 'like', 'UFC 당근튀김', '에슈르가 당근튀김을 먹더니 팝콘이 질릴때 번갈아 먹을 수 있는 메뉴라면서 즐거워했다.', ['Green', 42, 'love', 'UFC 야채 튀김'], '        '],
+        ['Gray', 4, 'like', '카라멜 팝콘', '에슈르는 바쁠때 한 주먹씩 입에 털어넣던 음식이라며 좋아했다.', ['Gray', 43, 'like', ' 엘플릭스 캬라멜 팝콘'], '  '],
+        ['Blue', 22, 'hate', '석류석 열매', '에슈르는 이 음식이 사악한 음식이라고 했다. 이빨이 괜찮은지 걱정된다.', ['Purple', 59, 'hate', '석류석 화채'], '  '],
+        ['Purple', 13, 'hate', '멜론 보코치니', '에슈르는 이 음식을 보고는, 멜론을 자신한테 주면 더 맛있는 멜론빵을 만들겠다며 음식에 냉정한 평가를 내렸다.', ['Gold', 63, 'hate', '머스크 멜론 보코치니'], '        '],
+    ],
+    [
+        ['Purple', 32, 'like', '송편', '새로운 유형의 음식이라면서 나에게 조리법을 물어보면서 레시피를 배우려고 했다.', None, '  '],
+        ['Purple', 31, 'like', '얌얌비타C', '에슈르는 자신이 새로 개발한 빵 위에 토핑으로 얹으면 괜찮은 물건이 나올 것 같다며 대량 구매를 했다.', None, '        '],
+        ['Blue', 35, 'like', '아몬드 로쉐', '한 입 먹더니, 자신이 새롭게 만들 초코 케이크 위에 올리면 좋을 것 같다며 고개를 끄떡거렸다.', None, '        '],
+        ['Blue', 37, 'like', '에심당 뽈사탕', '자신의 역작이라며 자랑하는 에슈르. 랜덤 박스에서 아이디어를 얻었다고 하는데 뭔가 이상하지만 다들 좋아하니까, 뭐.', None, '        '],
+        ['Blue', 33, 'like', '새콤비타F', '에슈르는 빵 크림에 섞으면 어떨 것 같냐고 나에게 자문을 구했다.', None, '        '],
+        ['Blue', 34, 'like', '부쉬 드 노엘', '자신의 빵집에서 만든 것보다 맛있다고 잠시 화를 내다가 다음 조각을 달라고 했다.', None, '        '],
+        ['Blue', 36, 'like', '떡국', '쫀득한 식감이 괜찮다는 평을 내리고는 열심히 먹었다. 에슈르 나름의 칭찬인 듯 하다.', None, '        '],
+    ],
+]) }}
 
-## 모험회
-모험회는 한 사도가 1-2개의 재료를 담당하도록 분배하는 것이 좋습니다.<br>
-에슈르의 메인 기술은 손기술은 '혼모노의 증표' 아이템을 위한 '피규어 채색' 태스크에 중요하지만 해당 테스크에는 림(혼돈)이 더 적합합니다.<br> 
-따라서 미보유 사도가 많은 경우가 아니라면 추천하지 않습니다.
+## 교주의 기록
+{{ record_cards('교주의 기록', [
+    ['친밀 레벨 3', "에슈르는 '자칭' 요정 마법의 최고 권위자다. 그래서 마법학교를 세우고 스스로 학교장이 됐⋯ 지만, 아무래도 학교 운영비를 충당하는 게 여간 힘든 일이 아닌 것 같다."],
+    ['친밀 레벨 6', '에슈르는 마법에 대한 자부심이 굉장히 강한 것 같다. 다른 요정들은 에슈르가 마법보다 제빵에 재능이 더 많다고 심심찮게 말하는데 에슈르는 그런 말을 들을 때마다 굉장히 격정적으로 변한다.'],
+    ['친밀 레벨 9', '에슈르가 만들었다는 빵을 먹어봤는데 정말 놀랍다. 내가 평소 먹어보던 그린 빵의 맛이 아니다. 물론 내가 살던 차원이 아니라 당연히 그렇겠지만⋯.'],
+    ['친밀 레벨 12', '에슈르가 마법보다 제빵에 재능이 있다는 말이 한번에 이해되는 맛이었다. 확실히 이것도 재능인데 에슈르가 굳이 그것에 부끄러워할 필요가 있을까 싶기도 하다.'],
+    ['친밀 레벨 15', "에슈르는 '마법의 권위자'가 되고 싶다는 꿈이 있다고 한다. 다만 엘리아스에서 마법은 너무 흔한 공기 같은 것이라 다들 마법을 그렇게 중요하게 생각하지 않는 것 같아 아쉽다."],
+    ['친밀 레벨 18', '에슈르가 나에게 잘 대해주는 이유는 내가 마법이 생소한 외지인이라서가 아닐까? 나는 아직도 에슈르가 간단한 마법만 보여줘도 신기해한다. 상식적으로 신기해할 수 밖에 없으니⋯.'],
+    ['친밀 레벨 21', '제빵과 마법을 합쳐보면 뭔가 나올 것 같지 않냐고 에슈르에게 제안해본 적이 있다. 에슈르가 주먹을 꽉 쥐었을 때, 섬뜩한 살기가 느껴져 내 말을 취소했다. 그래도 내 말이 신경쓰였는지 그날 밤부터 빵에 대고 무언가 연습을 하는 모습이 종종 보인다. 나중에 어떤 결과가 나올지 궁금하다.'],
+]) }}
 
-<div class="rel-panel">
-  <div class="rel-panel-inner">
-    <p class="rel-title">에슈르의 모험회 스킬</p>
-    <div class="rel-grid">
-      {{ adv_skill(10, '손기술', True) }}
-      {{ adv_skill(8, '암산') }}
-      {{ adv_skill(1, '육체노동') }}
-      {{ adv_skill(31, '추진력') }}
-      {{ adv_skill(32, '직감') }}
-    </div>
-  </div>
-</div>
-<br>
-
-## 전체 랭크 효과
-캐릭터의 장비 랭크가 오를 때마다 모든 사도들의 해당 능력치가 수치만큼 오릅니다.<br>
-<br>
-<div class="rank-list">
-  {{ rank_row(2, stat_pill('DefensePhysic', '물리 방어력', '57') + stat_pill('DefenseMagic', '마법 방어력', '57')) }}
-  {{ rank_row(3, stat_pill('CriticalRate', '치명타', '43') + stat_pill('CriticalMult', '치명 피해', '43')) }}
-  {{ rank_row(4, stat_pill('CriticalResist', '치명타 저항', '43') + stat_pill('Hp', 'HP', '567')) }}
-  {{ rank_row(5, stat_pill('CriticalMultResist', '치명 피해 저항', '43') + stat_pill('AttackPhysic', '물리 공격력', '28')) }}
-  {{ rank_row(6, stat_pill('AttackMagic', '마법 공격력', '28') + stat_pill('DefensePhysic', '물리 방어력', '113')) }}
-  {{ rank_row(7, stat_pill('DefenseMagic', '마법 방어력', '113') + stat_pill('CriticalRate', '치명타', '85')) }}
-  {{ rank_row(8, stat_pill('CriticalMult', '치명 피해', '85') + stat_pill('CriticalResist', '치명타 저항', '85')) }}
-  {{ rank_row(9, stat_pill('CriticalMultResist', '치명 피해 저항', '85') + stat_pill('Hp', 'HP', '1133')) }}
-  {{ rank_row(10, stat_pill('AttackPhysic', '물리 공격력', '57') + stat_pill('AttackMagic', '마법 공격력', '57')) }}
-  {{ rank_row(11, stat_pill('DefensePhysic', '물리 방어력', '128') + stat_pill('DefenseMagic', '마법 방어력', '128')) }}
-</div>
-<br>
-<br>
+## 애장품
+친밀레벨이 30에 도달하면 애장품과 편지를 받는다.
+{{ present_card(
+    '에심당 상시 자유이용권',
+    '배고프면 항상 찾아오라며 나에게 슬쩍 건네준 쿠폰이다.<br>에르핀에게는 절대 보여주지 말라고도 했다.',
+    'CharacterInfo/PresentList_Ashur.png',
+    voices=[
+        ('한국어', 'voice_kr/Voice_Letter_Ashur.mp3'),
+        ('일본어', 'voice_jp/Voice_Letter_Ashur.mp3'),
+    ],
+) }}

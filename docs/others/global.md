@@ -24,15 +24,6 @@ tags:
 {{ image('others/global/passive.png', width=150, caption='에슈르 패시브') }}
 글로벌 CBT 버전에서 출시되었던 에슈르의 패시브 스킬 아이콘이다.
 
-<br>
-
-## 모험회 CG
-
-{{ image('others/global/albastorycg.png', caption='모험회 스토리 CG') }}
-글로벌 서버에서 모험회 레벨 5를 달성하면 해금되는 사도 스토리에서 쓰이는 CG.
-
-<br>
-
 ## 앨리스 테마극장 카드 에셋
 
 {{ image('others/global/event_alice_1.png', caption="타로 '악마' 카드") }}
