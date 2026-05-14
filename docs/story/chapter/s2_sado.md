@@ -5,19 +5,6 @@ icon: fontawesome/solid/address-book
 tags:
   - 목차
 ---
-# 사도 스토리 시즌 2
-
-+ 해당 챕터의 이미지를 눌러 이동할 수 있습니다.
-
-{% set cards %}
-{{ story_card('그윈', 'characterstory/Character_Guin_Story_1.png', '../s2_sado/guin.md', freq='자주 등장') }}
-{{ story_card('폴랑', 'characterstory/Character_Polan_Story_1.png', '../s2_sado/polan.md', freq='자주 등장') }}
-{{ story_card('슈로', 'characterstory/Character_Suro_Story_1.png', '../s2_sado/suro.md', freq='자주 등장') }}
-{{ story_card('오팔', 'characterstory/Character_Opal_Story_1.png', '../s2_sado/opal.md', freq='자주 등장') }}
-{{ story_card('마요(멋짐)', 'characterstory/Character_MayoCool_Story_1.png', '../s2_sado/mayocool.md', freq='자주 등장') }}
-{{ story_card('스피키(메이드)', 'characterstory/Character_SpeakiMaid_Story_1.png', '../s2_sado/speakimaid.md', freq='보통 등장') }}
-{{ story_card('디아나(왕년)', 'characterstory/Character_DianaYester_Story_1.png', '../s2_sado/dianayester.md', freq='등장 없음') }}
-{{ story_card('시저', 'characterstory/Character_Scizor_Story_1.png', '../s2_sado/scizor.md', freq='보통 등장') }}
-{{ story_card('가끔 등장', 'characterstory/Character_Kathy_Story_1.png', '../s2_sado/etc.md', freq='언급됨') }}
-{% endset %}
-{{ card_grid(cards) }}
+{{ redirect_to('./s2_main.md#s2-sado') }}
+시즌 2 통합 페이지의 사도 스토리 구역으로 이동합니다.
++ 자동으로 이동하지 않으면 [여기를 눌러 이동](./s2_main.md#s2-sado)해주세요.

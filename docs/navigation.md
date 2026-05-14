@@ -17,10 +17,15 @@
     * 이벤트 스토리
         * [](./story/chapter/s1_event.md)
         * [멜트다운 버터](./story/s1_event/butter.md)
+        * [카드첩 속 춤추는 운명](./story/s1_event/alice.md)
         * [강철의 지옥 단련](./story/s1_event/leets.md)
+        * [그대를 위한 찬사](./story/s1_event/epica.md)
         * [피코라의 멘토 콤플렉스](./story/s1_event/picora.md)
+        * [발칙 전위적 엑스-마스](./story/s1_event/selene.md)
         * [미드나잇 마리오네트](./story/s1_event/barong.md)
         * [누구를 위하여 기도를 올리나](./story/s1_event/joanne.md)
+        * [슬기로운 메이드 생활](./story/s1_event/speaki.md)
+        * [파티에는 축복과 위로를](./story/s1_event/opal.md)
     * 사도 스토리
         * [](./story/chapter/s1_sado.md)
         * [에슈르](./story/s1_sado/ashur.md)
@@ -32,11 +37,16 @@
         * [빅우드](./story/s1_sado/bigwood.md)
         * [앨리스](./story/s1_sado/alice.md)
         * [에피카](./story/s1_sado/epica.md)
+        * [그윈](./story/s1_sado/guin.md)
+        * [폴랑](./story/s1_sado/polan.md)
+        * [오팔](./story/s1_sado/opal.md)
+        * [스피키(메이드)](./story/s1_sado/speakimaid.md)
         * [가끔 등장](./story/s1_sado/etc.md)
         * [언급됨](./story/s1_sado/etc2.md)
     * 기타 스토리
         * [](./story/chapter/s1_etc.md)
-        * [연회장 대화](./story/s1_etc/s1_etc.md)
+        * [연회장 대화](./story/s1_etc/restaurant.md)
+        * [출석](./story/s1_etc/attendance.md)
 * 시즌 2
     * 메인 스토리
         * [](./story/chapter/s2_main.md)
@@ -45,8 +55,6 @@
         * [챕터 10](./story/s2_main/c10.md)
     * 이벤트 스토리
         * [](./story/chapter/s2_event.md)
-        * [슬기로운 메이드 생활](./story/s2_event/speaki.md)
-        * [파티에는 축복과 위로를](./story/s2_event/opal.md)
         * [불 붙은 불행 속 쓰나미](./story/s2_event/shasha.md)
         * [수상한 요리사의 쿠킹비망록](./story/s2_event/ricota.md)
         * [댄스 쇼다운! 꿈꾸는 포도!](./story/s2_event/arco.md)
@@ -54,18 +62,15 @@
         * [즐겁고 힘든 온천기행!](./story/s2_event/onsen.md)
     * 사도 스토리
         * [](./story/chapter/s2_sado.md)
-        * [그윈](./story/s2_sado/guin.md)
-        * [폴랑](./story/s2_sado/polan.md)
         * [슈로](./story/s2_sado/suro.md)
-        * [오팔](./story/s2_sado/opal.md)
         * [마요(멋짐)](./story/s2_sado/mayocool.md)
-        * [스피키(메이드)](./story/s2_sado/speakimaid.md)
         * [디아나(왕년)](./story/s2_sado/dianayester.md)
         * [시저](./story/s2_sado/scizor.md)
         * [언급됨](./story/s2_sado/etc.md)
-    * 기타
-        * [외전](./story/s2_etc/s2_extra.md)
-        * [연회장 대화](./story/s2_etc/s2_etc.md)
+    * 기타 스토리
+        * [](./story/chapter/s2_etc.md)
+        * [연회장 대화](./story/s2_etc/restaurant.md)
+        * [엉망진창 대환장 대소동](./story/s2_etc/aprilfool.md)
 * 시즌 3
     * 메인 스토리
         * [](./story/chapter/s3_main.md)

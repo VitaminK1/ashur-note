@@ -15,7 +15,7 @@ tags:
   },
   {
     "title": "캐릭터 정보",
-    "bg": "index/info_buttonimg.png",
+    "bg": "index/info_buttonimg2.png",
     "href": "info/viewer.md",
     "links": [
       ("기록", "info/viewer.md"),
@@ -42,8 +42,7 @@ tags:
       ("메인 스토리", "story/chapter/s2_main.md"),
       ("이벤트 스토리", "story/chapter/s2_event.md"),
       ("사도 스토리", "story/chapter/s2_sado.md"),
-      ("외전", "story/s2_etc/s2_extra.md"),
-      ("연회장 대화", "story/s2_etc/s2_etc.md")
+      ("기타", "story/chapter/s2_etc.md")
     ]
   },
   {

@@ -89,7 +89,7 @@
   -webkit-backdrop-filter: blur(12px);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
   border-top: 2px solid rgba(106, 160, 74, 0.3);
-  padding: 1rem;
+  padding: 0.65rem 1rem;
 }
 
 [data-md-color-scheme="default"] .md-sidebar .md-nav--primary {
@@ -98,7 +98,7 @@
   -webkit-backdrop-filter: blur(12px);
   border-right: 1px solid rgba(0, 0, 0, 0.06);
   border-top: 2px solid rgba(74, 138, 58, 0.25);
-  padding: 1rem;
+  padding: 0.65rem 1rem;
 }
 
 /* 우측 사이드바(toc) */
@@ -687,34 +687,91 @@ body[data-md-color-scheme] .md-typeset li>p+p {
 
 [data-md-color-scheme="slate"] .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link,
 [data-md-color-scheme="slate"] .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link label {
-  background: rgba(16, 18, 22, 0.96); /* 사이드바 배경과 어울리면서 스크롤 항목을 가리는 역할 */
-  color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 [data-md-color-scheme="default"] .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link,
 [data-md-color-scheme="default"] .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link label {
   background: transparent;
-  color: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 /* Sidebar active section header */
-.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  margin-top: 0;
-  padding-bottom: 0.8rem;
-  padding-top: 0.8rem;
-  font-weight: bold;
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.65rem;
+    min-height: 2.6rem;
+    margin: 0 0 0.5rem;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 0;
+    border-right: 0;
+    color: rgba(245, 248, 242, 0.92);
+    background: #101216;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    line-height: 1.2;
+    font-weight: normal;
+    transition:
+      background-color 160ms ease,
+      border-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link:hover {
+    color: rgba(255, 255, 255, 0.96);
+    background: #14171b;
+    border-color: rgba(106, 160, 74, 0.24);
+  }
+
+  .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link:focus {
+    outline: 2px solid rgba(106, 160, 74, 0.45);
+    outline-offset: -2px;
+  }
+
+  .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link > .md-ellipsis {
+    min-width: 0;
+  }
+
+  .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link > .md-nav__icon {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  [data-md-color-scheme="default"] .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link {
+    color: rgba(24, 32, 20, 0.9);
+    background: #f0f5ec;
+    border-color: rgba(74, 138, 58, 0.16);
+  }
+
+  [data-md-color-scheme="default"] .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link:hover {
+    color: rgba(16, 24, 14, 0.96);
+    background: #eaf2e4;
+    border-color: rgba(74, 138, 58, 0.28);
+  }
+
+  [data-md-color-scheme="default"] .md-sidebar--primary .md-nav--lifted > .md-nav__list > .md-nav__item--active.md-nav__item--section > .md-nav__link:focus {
+    outline-color: rgba(74, 138, 58, 0.45);
+  }
 }
 
 /* Sidebar scrollbar on the left */
 .md-sidebar__scrollwrap {
   direction: rtl;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 .md-sidebar__scrollwrap > * {
@@ -1214,7 +1271,7 @@ body[data-md-color-scheme] .md-typeset li>p+p {
   color: #aaa;
 }
 
-.story-card-freq[data-freq="외부 등장"] {
+.story-card-freq[data-freq="기타 등장"] {
   --bat-fill: 1%;
   color: #c26a89;
 }
@@ -1224,6 +1281,92 @@ body[data-md-color-scheme] .md-typeset li>p+p {
   color: #666;
 }
 
+/* 진행 상태 표시 (작업 중, 추가 예정) */
+.story-card-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  border-radius: 0 0 8px 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #fff;
+  font-family: var(--md-text-font);
+  white-space: nowrap;
+  pointer-events: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+[data-md-color-scheme="default"] .story-card-state {
+  background: rgba(255, 255, 255, 0.95);
+  color: #222;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.story-card--working .story-card-state {
+  border-color: rgba(189, 252, 120, 0.5);
+  color: #d1f098;
+}
+
+[data-md-color-scheme="default"] .story-card--working .story-card-state {
+  border-color: rgba(139, 195, 74, 0.6);
+  color: #3b8e3f;
+}
+
+/* 전체 카드 어둡게 처리 */
+.story-card--working {
+  filter: brightness(0.75);
+}
+
+/* 작업 중 이미지 시각적 변화 (흑백 아님, 대비 및 톤 조절) */
+.story-card--working .story-card-img {
+  filter: contrast(0.9) sepia(0.2);
+}
+
+/* 추가 예정 카드 전체 어둡게 */
+.story-card--todo {
+  cursor: default;
+  filter: brightness(0.7);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-md-color-scheme="slate"] .story-card--todo {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 추가 예정 배지 글자색 약간 회색으로 */
+.story-card--todo .story-card-state {
+  color: #a0a0a0;
+}
+[data-md-color-scheme="default"] .story-card--todo .story-card-state {
+  color: #777;
+}
+
+/* 추가 예정 이미지 흑백 처리 */
+.story-card--todo .story-card-img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.story-card--todo:hover {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-md-color-scheme="slate"] .story-card--todo:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.08);
+}
 
 .story-card-title {
   padding: 0.8rem 0.5rem;

@@ -1060,7 +1060,7 @@ def define_env(env):
             return f"""<div class="video-wrapper"{style_attr}>{iframe}</div>"""
 
     @env.macro
-    def story_card(title, img_path, link, freq=None):
+    def story_card(title, img_path, link, freq=None, state=None):
         """Creates a stylized card for story chapters."""
         img_url = get_asset_path(img_path)
 
@@ -1075,14 +1075,29 @@ def define_env(env):
         if freq:
             freq_badge = f'<div class="story-card-freq" data-freq="{attr(freq)}">{attr(freq)}</div>'
 
+        state_class = ""
+        state_badge = ""
+        tag_name = "a"
+        href_attr = f'href="{link}"'
+        
+        if state == "작업 중":
+            state_class = " story-card--working"
+            state_badge = f'<div class="story-card-state">🛠️ 작업 중</div>'
+        elif state == "추가 예정":
+            state_class = " story-card--todo"
+            state_badge = f'<div class="story-card-state">⏳ 추가 예정</div>'
+            tag_name = "div"
+            href_attr = ""
+
         return (
-            f'<a href="{link}" class="story-card">'
+            f'<{tag_name} {href_attr} class="story-card{state_class}">'
             f'<div class="story-card-img-wrap">'
             f'<div class="story-card-img" style="background-image: url(\'{img_url}\');"></div>'
+            f'{state_badge}'
             f'{freq_badge}'
             f'</div>'
             f'<div class="story-card-title">{attr(title)}</div>'
-            f'</a>'
+            f'</{tag_name}>'
         )
 
     @env.macro

@@ -1,7 +1,7 @@
 site_name: Ashur Note
-
 theme: 
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/favicon.png
   features:
@@ -12,7 +12,6 @@ theme:
     # - navigation.expand
     - navigation.tracking
     - navigation.footer
-    - navigation.indexes
     - navigation.path
     - toc.integrate
     - content.code.annotate
@@ -49,14 +48,12 @@ theme:
     #   toggle:
     #     icon: material/brightness-auto
     #     name: Switch to light mode
-
     # # Palette toggle for light mode
     # - media: "(prefers-color-scheme: light)"
     #   scheme: default 
     #   toggle:
     #     icon: material/weather-sunny
     #     name: Switch to dark mode
-
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -65,10 +62,8 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to system preference
-
 extra:
   homepage: https://vitamink1.github.io/ashur-note/
-
 extra_css:
   - css/box.css
   - css/extra.css
@@ -89,7 +84,7 @@ extra_javascript:
   - javascripts/lore.js
   - javascripts/timeline.js
   - javascripts/voice.js
-
+  - javascripts/video.js
 plugins:
   - search
   - macros
@@ -117,7 +112,6 @@ plugins:
       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
       post_readtime: false
   - section-index
-
 markdown_extensions:
   # Python Markdown
   - abbr
@@ -160,10 +154,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.blocks.caption
   - pymdownx.snippets
-
 nav:
   - Notice:
     - blog/index.md
-
 copyright:
   This is fan content. All trademarks belong to their respective owners. Trickcal Revive made by Epidgames.
