@@ -840,9 +840,10 @@ def define_env(env):
             portrait_container_id,
             portrait_skel,
             portrait_atlas,
-            width=320,
-            height=450,
-            background="#ffffff",
+            width="100%",
+            height="100%",
+            background="#00000000",
+            alpha=True,
             animation="Idle_1",
         )
         return f"""<div class="rk-book">
@@ -857,7 +858,6 @@ def define_env(env):
       </div>
     </div>
   </aside>
-
   <section class="rk-right">
     <div class="rk-right-title">
         <div>
@@ -1134,7 +1134,7 @@ def define_env(env):
             f"</div></div>"
         )
     @env.macro
-    def video(path, caption="", width=500, height=None, autoplay=True, loop=True):
+    def video(path, caption="", width=500, height=None, autoplay=False, loop=True):
         src = get_asset_path(path)
         attrs = ['controls', 'preload="metadata"']
         if autoplay: attrs.append('autoplay')

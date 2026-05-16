@@ -2,7 +2,7 @@
 title: 캐릭터 정보 - 기록
 publish: true
 icon: fontawesome/solid/shirt
-subtitle: 스파인 뷰어, 대사
+subtitle: 모션, 뽑기연출, 대사
 tags:
   - 캐릭터정보
 ---
@@ -16,20 +16,24 @@ tags:
     ['아이스크림 메이커', image('ashurdesc_1.png', height=300, caption='에슈르 아이스크림 메이커 사복 설명')],
     ['평온한 온천 여행', image('ashurdesc_3.png', height=300, caption='에슈르 평온한 온천 여행 사복 설명')],
 ]) }}
-## 스탠딩
+## 스탠딩 모션
 {{ tabs([
     ['기본 사복', spine_viewer('player-container1', 'spine/standing/Ashur.skel', 'spine/standing/Ashur.atlas', width=360, height=450, background='#ffffffff', animation='Idle_1', show_controls=True, style='margin:0 auto')],
     ['아이스크림 메이커', spine_viewer('player-container3', 'spine/standingskin1/AshurSkin1.skel', 'spine/standingskin1/AshurSkin1.atlas', width=360, height=450, background='#ffffffff', animation='Idle_1', show_controls=True, style='margin:0 auto')],
     ['평온한 온천 여행', spine_viewer('player-container5', 'spine/standingskin2/AshurSkin2.skel', 'spine/standingskin2/AshurSkin2.atlas', width=360, height=450, background='#ffffffff', animation='Idle_1', show_controls=True, style='margin:0 auto')],
 ]) }}
-## 전투
+## 전투 모션
 {{ tabs([
     ['기본 사복', spine_viewer('player-container2', 'spine/battle/Ashur.skel', 'spine/battle/Ashur.atlas', width=360, height=450, background='#ffffffff', animation='Idle', show_controls=True, style='margin:0 auto')],
     ['아이스크림 메이커', spine_viewer('player-container4', 'spine/battleskin1/AshurSkin1.skel', 'spine/battleskin1/AshurSkin1.atlas', width=360, height=450, background='#ffffffff', animation='Idle', show_controls=True, style='margin:0 auto')],
     ['평온한 온천 여행', spine_viewer('player-container6', 'spine/battleskin2/AshurSkin2.skel', 'spine/battleskin2/AshurSkin2.atlas', width=360, height=450, background='#ffffffff', animation='Idle', show_controls=True, style='margin:0 auto')],
 ]) }}
-
-## 대사 - 한국어
+## 뽑기 연출
+=== "오픈 당시"
+    {{ video('others/gacha1.mp4', caption='에슈르 뽑기 연출 (오픈 당시)', width=500, height=300) }}
+=== "개편 후"
+    {{ video('others/gacha2.mp4', caption='에슈르 뽑기 연출 (개편 후)', width=500, height=300) }}
+## 대사 (한국어)
 {{ intimacy_table('친밀도', [
     ['레벨 1', [
         ("빵집 아줌마가 아니라 '마법사님'이라고 부르라고!", 'voice_kr/Voice_Ashur_Affinity1_1.mp3'),
@@ -246,7 +250,7 @@ tags:
 ]) }}
 
 
-## 대사 - 일본어
+## 대사 (일본어)
 글로벌 버전에는 아직 '평온한 온천 여행' 스킨이 출시되지 않았으므로, 해당 스킨의 대사는 재생되지 않습니다.
 {{ intimacy_table('친밀도', [
     ['레벨 1', [

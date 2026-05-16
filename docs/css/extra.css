@@ -1369,16 +1369,23 @@ body[data-md-color-scheme] .md-typeset li>p+p {
 }
 
 .story-card-title {
-  padding: 0.8rem 0.5rem;
+  padding: 0.3rem 0.5rem;
+  flex: 0 0 3.6rem; /* Fixed height so it doesn't grow based on lines */
+  min-height: 3.6rem;
+  max-height: 3.6rem;
+  box-sizing: border-box;
   font-size: 0.85rem;
+  letter-spacing: -0.02em; /* Improve Korean tracking readability */
   text-align: center;
   color: var(--md-typeset-color);
   font-family: var(--md-text-font);
-  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1.3;
+  line-height: 1.4; /* Better line height for Korean text */
+  word-break: keep-all; /* Prevent breaking mid-word */
+  overflow-wrap: normal;
+  text-wrap: balance; /* Balance lines for centered text */
 }
 
 [data-md-color-scheme="slate"] .story-card {
@@ -1400,6 +1407,10 @@ body[data-md-color-scheme] .md-typeset li>p+p {
 
   .story-card-title {
     font-size: 0.75rem;
-    padding: 0.6rem 0.4rem;
+    padding: 0.2rem 0.4rem;
+    flex: 0 0 3.2rem;
+    min-height: 3.2rem;
+    max-height: 3.2rem;
+    line-height: 1.3;
   }
 }

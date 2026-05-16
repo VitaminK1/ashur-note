@@ -22,22 +22,26 @@ tags:
 {{ story_card('댄스 쇼다운! 꿈꾸는 포도!', 'chapterimg/ChapterImage_ThemeEvent42.png', '../s2_event/arco.md', freq='기타 등장') }}
 {{ story_card('그을음 끝에 피어나는 빛무리', 'chapterimg/ChapterImage_ThemeEvent49.png', '../s2_event/uros.md', freq='언급됨') }}
 {{ story_card('즐겁고 힘든 온천기행!', 'chapterimg/ChapterImage_SkinSet8.png', '../s2_event/onsen.md', freq='자주 등장') }}
+{{ story_card('거울에 보이는 것보다 가까이 있음!', 'chapterimg/ChapterImage_ThemeEvent50.png', '../s2_event/miro.md', freq='보통 등장') }}
+{{ story_card('절체절명! 요가 레스큐 프로젝트!', 'chapterimg/ChapterImage_ThemeEvent51.png', '../s2_event/asana.md', freq='언급됨') }}
 {% endset %}
 {{ card_grid(cards) }}
 
 ## {{ section_flag('s2-sado') }}사도 스토리
 {% set cards %}
-{{ story_card('슈로', 'characterstory/Character_Suro_Story_1.png', '../s2_sado/suro.md', freq='자주 등장') }}
-{{ story_card('마요(멋짐)', 'characterstory/Character_MayoCool_Story_1.png', '../s2_sado/mayocool.md', freq='자주 등장') }}
-{{ story_card('디아나(왕년)', 'characterstory/Character_DianaYester_Story_1.png', '../s2_sado/dianayester.md', freq='등장 없음') }}
-{{ story_card('시저', 'characterstory/Character_Scizor_Story_1.png', '../s2_sado/scizor.md', freq='보통 등장') }}
-{{ story_card('가끔 등장', 'characterstory/Character_Kathy_Story_1.png', '../s2_sado/etc.md', freq='언급됨') }}
+{{ story_card('슈로', 'characterstory/Character_Suro_Story_1.png', '../s2_sado/suro.md', freq='자주 등장', state="작업 중") }}
+{{ story_card('마요(멋짐)', 'characterstory/Character_MayoCool_Story_1.png', '../s2_sado/mayocool.md', freq='자주 등장', state="작업 중") }}
+{{ story_card('디아나(왕년)', 'characterstory/Character_DianaYester_Story_1.png', '../s2_sado/dianayester.md', freq='등장 없음', state="작업 중") }}
+{{ story_card('시저', 'characterstory/Character_Scizor_Story_1.png', '../s2_sado/scizor.md', freq='보통 등장', state="작업 중") }}
+{{ story_card('아사나', 'characterstory/Character_Asana_Story_1.png', '../s2_sado/asana.md', freq='보통 등장', state="작업 중") }}
+{{ story_card('가끔 등장', 'characterstory/Character_Kathy_Story_1.png', '../s2_sado/etc.md', freq='언급됨', state="작업 중") }}
 {% endset %}
 {{ card_grid(cards) }}
 
 ## {{ section_flag('s2-etc') }}기타
 {% set cards %}
-{{ story_card('연회장 대사', 'chapterimg/ScheduleStory_Ashur_1.png', '../s2_etc/restaurant.md', freq='기타 등장') }}
-{{ story_card('엉망진창 대환장 대소동', 'chapterimg/ChapterImage_Fake1.png', '../s2_etc/aprilfool.md', freq='기타 등장') }}
+{{ story_card('연회장', 'chapterimg/ScheduleStory_Ashur_1.png', '../s2_etc/restaurant.md', freq='기타 등장') }}
+{{ story_card('출석', 'index/event_buttonimg.png', '../s2_etc/attendance.md', freq='기타 등장') }}
+{{ story_card('엉망진창 대환장 대소동', 'chapterimg/ChapterImage_Fake1.png', '../s2_etc/aprilfool.md', freq='언급됨') }}
 {% endset %}
 {{ card_grid(cards) }}

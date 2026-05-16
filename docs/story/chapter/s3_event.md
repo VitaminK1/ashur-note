@@ -5,13 +5,6 @@ icon: fontawesome/solid/book-medical
 tags:
   - 목차
 ---
-# 이벤트 스토리 시즌 3
-
-+ 해당 챕터의 이미지를 눌러 이동할 수 있습니다.
-
-{% set cards %}
-{{ story_card('거울에 보이는 것보다 가까이 있음!', 'chapterimg/ChapterImage_ThemeEvent50.png', '../s3_event/miro.md') }}
-{{ story_card('절체절명! 요가 레스큐 프로젝트!', 'chapterimg/ChapterImage_ThemeEvent51.png', '../s3_event/asana.md') }}
-{% endset %}
-
-{{ card_grid(cards) }}
+{{ redirect_to('./s3_main.md#s3-event') }}
+시즌 3 통합 페이지의 이벤트 스토리 구역으로 이동합니다.
++ 자동으로 이동하지 않으면 [여기를 눌러 이동](./s3_main.md#s3-event)해주세요.

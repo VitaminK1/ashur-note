@@ -1,51 +1,40 @@
 ---
-title: 기타 - 여담
+title: 기타 - 기타
 publish: true
-icon: fontawesome/solid/folder-plus
+icon: fontawesome/solid/external-link
 description: 
 subtitle: 
 tags:
   - 기타
 ---
 
-# 기타 - 여담
+# 기타 - 기타
+## 에슈르 등장 공식 웹툰
++  {==순수한불순물==}
+    + [트릭컬 ~ 테마 극장편 ~](https://game.naver.com/lounge/Trickcal/board/detail/2821133)
+    
++  {==족제비와토끼==}
+    + [빅우드의 정체](https://game.naver.com/lounge/Trickcal/board/detail/2821304)
+    + [에슈르의 마법학교 홍보대작전!](https://game.naver.com/lounge/Trickcal/board/detail/3265932)
+    + [새해맞이 엘리아스 주민의 떡국 먹기!](https://game.naver.com/lounge/Trickcal/board/detail/3373777)
+    + [크레페, 「대청소」 시작!](https://game.naver.com/lounge/Trickcal/board/detail/4024682)
+    + ['일러스타 페스 5' 프롤로그](https://game.naver.com/lounge/Trickcal/board/detail/4615597)
+    + [캬롯의 호박밭 수확하기(대실패!)](https://game.naver.com/lounge/Trickcal/board/detail/4885360)
 
-## 비밀의 베이커리
-{{ image('others/dungeon.png', height=300, caption='비밀의 베이커리 로비') }}
-별사탕을 소모하여 플레이할 수 있는 던전 중 하나인 비밀의 베이커리에 등장한다. 마법에 걸린 빵들이 빵집에서 반란을 일으켜 이를 퇴치한다는 줄거리를 가지고 있다. 에슈르의 특별한 마법으로 해당 컨텐츠에서는 모든 사도가 6학년으로 시작한다.
++  {==판토==}
+    + [준비하는 리츠 & 준비된 버터](https://game.naver.com/lounge/Trickcal/board/detail/3565813)
+    + [심각한 게임 중독자 리스티](https://game.naver.com/lounge/Trickcal/board/detail/4136486)
+    + [버터의 3단 아이스크림](https://game.naver.com/lounge/Trickcal/board/detail/4247882)
+    + [에슈르와 피라의 밀린 빵값 받기 대작전!](https://game.naver.com/lounge/Trickcal/board/detail/4700802)
+    + [펭귄자매의 빵집 방문기](https://game.naver.com/lounge/Trickcal/board/detail/4977761)
 
-<br>
-플레이 버튼을 클릭하면 나오는 영춘의 모습이 카드캡터 체리에 등장하는 주인공의 수호수, '케르베로스'인 것으로 보아 카드캡터 체리의 그림체를 패러디한 것으로 추측된다.
-<br>
-<br>
++  {==만기==}
+    + [마리의 폭탄 제조법](https://game.naver.com/lounge/Trickcal/board/detail/3237657)
+    + [새롭게 바뀐 연회장 음식을 만난 에르핀!](https://game.naver.com/lounge/Trickcal/board/detail/3869818)
+    + [대마법사 에슈르의 올바른 스킬 사용법](https://game.naver.com/lounge/Trickcal/board/detail/3970894)
+    + [어서 와, 새로운 사복!](https://game.naver.com/lounge/Trickcal/board/detail/4464016)
+    + [메인스토리 풀더빙](https://game.naver.com/lounge/Trickcal/board/detail/4538945)
+    + [온천 탐험 모임 시작 전, 델리아의 이야기](https://game.naver.com/lounge/Trickcal/board/detail/6826035)
 
-## 어사이드 개선 관련
-{{ image('others/aside.gif', height=300, caption='어사이드 성능 개선 공약 때 쓰인 그림(개발자노트)') }}
-어사이드 성능 개선 때 쓰인 그림에서 맨 왼쪽에 에슈르의 어사이드가 쓰여 성능이 개선되길 기대했지만 결국 이루어지지 않았다.
-<br>
-<br>
-
-## 모션 개선 관련
-{{ image('others/animchange.gif', height=300, caption='모션 개선 때 쓰인 그림') }}
-얼굴이 너무 다르다는 의견을 반영해 모션을 개선했었지만 상체 옷의 음영까지 제거해버려 에슈르는 빈유의 대표격 캐릭터가 되었다.
-
-## 에슈르 배경 음악
-{{ image('others/bgm.png', height=300, caption='에슈르의 빵집 BGM') }}
-
-+ BGM_Theme_Ashurbakery.mp3
-![type:audio]({{ get_asset_path('audio/BGM_Theme_Ashurbakery.mp3') }})
-
-+ BGM_Theme_AshurBakery_Loop.mp3
-![type:audio]({{ get_asset_path('audio/BGM_Theme_AshurBakery_Loop.mp3') }})
-<br>
-<br>
-
-## 인게임 에슈르 기타 에셋 모음
-
-=== "카톡 이모티콘"
-    {{ image(['others/con1.gif', 'others/con2.gif'], caption='카카오톡 이모티콘', width=150) }}
-
-=== "빵 마법진"
-    {{ image('FX_Unit_Ashur_MagicCircle.png', width=200, caption='에슈르 스킬 시전 이펙트') }}
-
-
++  {==BOGO==}
+    + [가을나기 - 같이 한잔 할래?](https://game.naver.com/lounge/Trickcal/board/detail/6819047)

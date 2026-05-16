@@ -30,6 +30,7 @@ tags:
 {{ story_card('발칙 전위적 엑스-마스', 'chapterimg/ChapterImage_ThemeEvent5.png', '../s1_event/selene.md', freq='기타 등장') }}
 {{ story_card('미드나잇 마리오네트', 'chapterimg/ChapterImage_ThemeEvent20.png', '../s1_event/barong.md', freq='보통 등장') }}
 {{ story_card('누구를 위하여 기도를 올리나', 'chapterimg/ChapterImage_ThemeEvent24.png', '../s1_event/joanne.md', freq='자주 등장') }}
+{{ story_card('찬탈과 일탈 사이', 'chapterimg/ChapterImage_ThemeEvent26.png', '../s1_event/polan.md', freq='언급됨', state='작업 중') }}
 {{ story_card('슬기로운 메이드 생활', 'chapterimg/ChapterImage_ThemeEvent27.png', '../s1_event/speaki.md', freq='언급됨') }}
 {{ story_card('파티에는 축복과 위로를', 'chapterimg/ChapterImage_ThemeEvent29.png', '../s1_event/opal.md', freq='자주 등장') }}
 {% endset %}
@@ -46,10 +47,10 @@ tags:
 {{ story_card('빅우드', 'characterstory/Character_BigWood_Story_1.png', '../s1_sado/bigwood.md', freq='자주 등장', state='작업 중') }}
 {{ story_card('앨리스', 'characterstory/Character_Alice_Story_1.png', '../s1_sado/alice.md', freq='가끔 등장', state='작업 중') }}
 {{ story_card('에피카', 'characterstory/Character_Epica_Story_1.png', '../s1_sado/epica.md', freq='가끔 등장', state='작업 중') }}
-{{ story_card('그윈', 'characterstory/Character_Guin_Story_1.png', '../s2_sado/guin.md', freq='자주 등장', state='작업 중') }}
-{{ story_card('폴랑', 'characterstory/Character_Polan_Story_1.png', '../s2_sado/polan.md', freq='자주 등장', state='작업 중') }}
-{{ story_card('오팔', 'characterstory/Character_Opal_Story_1.png', '../s2_sado/opal.md', freq='자주 등장', state='작업 중') }}
-{{ story_card('스피키(메이드)', 'characterstory/Character_SpeakiMaid_Story_1.png', '../s2_sado/speakimaid.md', freq='보통 등장', state='작업 중') }}
+{{ story_card('그윈', 'characterstory/Character_Guin_Story_1.png', '../s1_sado/guin.md', freq='자주 등장', state='작업 중') }}
+{{ story_card('폴랑', 'characterstory/Character_Polan_Story_1.png', '../s1_sado/polan.md', freq='자주 등장', state='작업 중') }}
+{{ story_card('오팔', 'characterstory/Character_Opal_Story_1.png', '../s1_sado/opal.md', freq='자주 등장', state='작업 중') }}
+{{ story_card('스피키(메이드)', 'characterstory/Character_SpeakiMaid_Story_1.png', '../s1_sado/speakimaid.md', freq='보통 등장', state='작업 중') }}
 {{ story_card('가끔 등장', 'characterstory/Character_Snorky_Story_1.png', '../s1_sado/etc.md', freq='보통 등장', state='작업 중') }}
 {{ story_card('언급됨', 'characterstory/Character_Sherum_Story_1.png', '../s1_sado/etc2.md', freq='언급됨', state='작업 중') }}
 {% endset %}
@@ -57,7 +58,7 @@ tags:
 
 ## {{ section_flag('s1-etc') }}기타
 {% set cards %}
-{{ story_card('연회장 대사', 'chapterimg/ScheduleStory_Ashur_1.png', '../s1_etc/restaurant.md', freq='기타 등장') }}
+{{ story_card('연회장', 'chapterimg/ScheduleStory_Ashur_1.png', '../s1_etc/restaurant.md', freq='기타 등장') }}
 {{ story_card('출석', 'index/event_buttonimg.png', '../s1_etc/attendance.md', freq='기타 등장') }}
 {% endset %}
 {{ card_grid(cards) }}

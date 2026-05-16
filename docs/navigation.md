@@ -24,6 +24,7 @@
         * [발칙 전위적 엑스-마스](./story/s1_event/selene.md)
         * [미드나잇 마리오네트](./story/s1_event/barong.md)
         * [누구를 위하여 기도를 올리나](./story/s1_event/joanne.md)
+        * [찬탈과 일탈 사이](./story/s1_event/polan.md)
         * [슬기로운 메이드 생활](./story/s1_event/speaki.md)
         * [파티에는 축복과 위로를](./story/s1_event/opal.md)
     * 사도 스토리
@@ -45,7 +46,7 @@
         * [언급됨](./story/s1_sado/etc2.md)
     * 기타 스토리
         * [](./story/chapter/s1_etc.md)
-        * [연회장 대화](./story/s1_etc/restaurant.md)
+        * [연회장](./story/s1_etc/restaurant.md)
         * [출석](./story/s1_etc/attendance.md)
 * 시즌 2
     * 메인 스토리
@@ -60,34 +61,49 @@
         * [댄스 쇼다운! 꿈꾸는 포도!](./story/s2_event/arco.md)
         * [그을음 끝에 피어나는 빛무리](./story/s2_event/uros.md)
         * [즐겁고 힘든 온천기행!](./story/s2_event/onsen.md)
+        * [거울에 보이는 것보다 가까이 있음!](./story/s2_event/miro.md)
+        * [절체절명! 요가 레스큐 프로젝트!](./story/s2_event/asana.md)
     * 사도 스토리
         * [](./story/chapter/s2_sado.md)
         * [슈로](./story/s2_sado/suro.md)
         * [마요(멋짐)](./story/s2_sado/mayocool.md)
         * [디아나(왕년)](./story/s2_sado/dianayester.md)
         * [시저](./story/s2_sado/scizor.md)
+        * [아사나](./story/s2_sado/asana.md)
         * [언급됨](./story/s2_sado/etc.md)
     * 기타 스토리
         * [](./story/chapter/s2_etc.md)
-        * [연회장 대화](./story/s2_etc/restaurant.md)
+        * [연회장](./story/s2_etc/restaurant.md)
+        * [출석](./story/s2_etc/attendance.md)
         * [엉망진창 대환장 대소동](./story/s2_etc/aprilfool.md)
 * 시즌 3
     * 메인 스토리
         * [](./story/chapter/s3_main.md)
+        * [챕터 1](./story/s3_main/c1.md)
+        * [챕터 2](./story/s3_main/c2.md)
     * 이벤트 스토리
         * [](./story/chapter/s3_event.md)
-        * [거울에 보이는 것보다 가까이 있음!](./story/s3_event/miro.md)
-        * [절체절명! 요가 레스큐 프로젝트!](./story/s3_event/asana.md)
+        * [격돌! 유령 역전의 세상!](./story/s3_event/shadytwisted.md)
+        * [네가 없는 사이에 보내는 편지](./story/s3_event/dayapureshine.md)
+        * [당신을 위한 응원!](./story/s3_event/cheerleader.md)
+        * [여왕님의 마음으로 만든 나라](./story/s3_event/erpinroyale.md)
     * 사도 스토리
         * [](./story/chapter/s3_sado.md)
-        * [아사나](./story/s3_sado/asana.md)
+        * [아멜리아(R41)](./story/s3_sado/ameliaR41.md)
+        * [에르핀(왕도)](./story/s3_sado/erpinroyale.md)
+        * [레비(졸업)](./story/s3_sado/levigraduate.md)
+    * 기타 스토리
+        * [](./story/chapter/s3_etc.md)
+        * [연회장](./story/s3_etc/restaurant.md)
+        * [두근 두근 대환장쇼!](./story/s3_etc/aprilfool.md)
 * 기타
-    * [미니게임](./others/minigame.md)
-    * [공식이벤트](./others/event.md)
-    * [뽑기연출](./others/gacha.md)
-    * [연관아이템](./others/item.md)
-    * [구릭컬](./others/old.md)
-    * [글로볼](./others/global.md)
-    * [여담](./others/etc.md)
-    * [밈](./others/meme.md)
-    * [외부링크](./others/webtoon.md)
+    * 인게임
+        * [](./others/others_main.md)
+        * [미니게임](./others/minigame.md)
+        * [연관 에셋](./others/asset.md)
+    * 외부
+        * [](./others/others_external.md)
+        * [공식 이벤트](./others/event.md)
+        * [밈/여담](./others/meme.md)
+        * [구릭컬](./others/old.md)
+        * [기타](./others/etc.md)

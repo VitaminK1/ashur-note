@@ -5,12 +5,6 @@ icon: fontawesome/solid/address-book
 tags:
   - 목차
 ---
-# 사도 스토리 시즌 3
-
-+ 해당 챕터의 이미지를 눌러 이동할 수 있습니다.
-
-{% set cards %}
-{{ story_card('아사나', 'characterstory/Character_Asana_Story_1.png', '../s3_sado/asana.md') }}
-{% endset %}
-
-{{ card_grid(cards) }}
+{{ redirect_to('./s3_main.md#s3-sado') }}
+시즌 3 통합 페이지의 사도 스토리 구역으로 이동합니다.
++ 자동으로 이동하지 않으면 [여기를 눌러 이동](./s3_main.md#s3-sado)해주세요.
