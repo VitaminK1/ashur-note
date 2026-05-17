@@ -1,5 +1,5 @@
 ---
-title: 시즌 2 - 외전
+title: 시즌 2 - 엉망진창 대환장 대소동
 publish: true
 icon: material/battery-outline
 description:

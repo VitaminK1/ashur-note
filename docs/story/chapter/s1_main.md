@@ -8,6 +8,7 @@ tags:
   - 목차
 ---
 # 시즌 1
+{{ section_nav() }}
 ## {{ section_flag('s1-main') }}메인 스토리
 {% set cards %}
 {{ story_card('챕터 1 - 최소한 잼은 발라줘', 'chapterimg/ChapterImage_S1_1.png', '../s1_main/c1.md', freq='자주 등장') }}
@@ -30,7 +31,7 @@ tags:
 {{ story_card('발칙 전위적 엑스-마스', 'chapterimg/ChapterImage_ThemeEvent5.png', '../s1_event/selene.md', freq='기타 등장') }}
 {{ story_card('미드나잇 마리오네트', 'chapterimg/ChapterImage_ThemeEvent20.png', '../s1_event/barong.md', freq='보통 등장') }}
 {{ story_card('누구를 위하여 기도를 올리나', 'chapterimg/ChapterImage_ThemeEvent24.png', '../s1_event/joanne.md', freq='자주 등장') }}
-{{ story_card('찬탈과 일탈 사이', 'chapterimg/ChapterImage_ThemeEvent26.png', '../s1_event/polan.md', freq='언급됨', state='작업 중') }}
+{{ story_card('찬탈과 일탈 사이', 'chapterimg/ChapterImage_ThemeEvent26.png', '../s1_event/polan.md', freq='언급됨') }}
 {{ story_card('슬기로운 메이드 생활', 'chapterimg/ChapterImage_ThemeEvent27.png', '../s1_event/speaki.md', freq='언급됨') }}
 {{ story_card('파티에는 축복과 위로를', 'chapterimg/ChapterImage_ThemeEvent29.png', '../s1_event/opal.md', freq='자주 등장') }}
 {% endset %}
@@ -43,6 +44,7 @@ tags:
 {{ story_card('에르핀', 'characterstory/Character_Erpin_Story_1.png', '../s1_sado/erpin.md', freq='언급됨', state='작업 중') }}
 {{ story_card('슈팡', 'characterstory/Character_Shoupan_Story_1.png', '../s1_sado/shoupan.md', freq='자주 등장', state='작업 중') }}
 {{ story_card('사리', 'characterstory/Character_Sari_Story_1.png', '../s1_sado/sari.md', freq='자주 등장', state='작업 중') }}
+{{ story_card('파트라', 'characterstory/Character_Patula_Story_1.png', '../s1_sado/patula.md', freq='자주 등장', state='작업 중') }}
 {{ story_card('리스티', 'characterstory/Character_Risty_Story_1.png', '../s1_sado/risty.md', freq='언급됨', state='작업 중') }}
 {{ story_card('빅우드', 'characterstory/Character_BigWood_Story_1.png', '../s1_sado/bigwood.md', freq='자주 등장', state='작업 중') }}
 {{ story_card('앨리스', 'characterstory/Character_Alice_Story_1.png', '../s1_sado/alice.md', freq='가끔 등장', state='작업 중') }}

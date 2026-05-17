@@ -8,6 +8,7 @@ tags:
   - 목차
 ---
 # 기타
+{{ section_nav() }}
 ## {{ section_flag('others-main') }}인게임
 {% set cards %}
 {{ story_card('미니게임', 'chapterimg/ChapterImage_WeekEnd_TowerBattle_Story_1.png', '../others/minigame.md') }}

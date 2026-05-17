@@ -1,0 +1,58 @@
+/* =====================================================================
+   Section Navigation — inline top bar for prev/next major section
+   ===================================================================== */
+
+.section-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 16px;
+}
+
+.section-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background .2s, box-shadow .2s;
+}
+
+.section-nav-btn:hover { text-decoration: none; }
+
+.section-nav-prev { margin-right: auto; }
+.section-nav-next { margin-left: auto; }
+
+.section-nav-arrow {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Light mode */
+[data-md-color-scheme="default"] .section-nav-btn {
+  background: rgba(0,0,0,.06);
+  color: #37474f;
+}
+[data-md-color-scheme="default"] .section-nav-btn:hover {
+  background: rgba(0,0,0,.12);
+  color: #37474f;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] .section-nav-btn {
+  background: rgba(255,255,255,.08);
+  color: #b0b8c4;
+}
+[data-md-color-scheme="slate"] .section-nav-btn:hover {
+  background: rgba(255,255,255,.15);
+  color: #e0e4ea;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .section-nav-btn { padding: 5px 10px; font-size: 12px; }
+}

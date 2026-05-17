@@ -3,7 +3,7 @@ title: 이벤트 스토리 - 파티에는 축복과 위로를
 publish: true
 icon: material/battery-high
 description:
-subtitle: <오팔>
+subtitle: <오팔>, 레비, 리스티
 tags:
   - 이벤트스토리
 ---

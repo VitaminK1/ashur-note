@@ -40,6 +40,15 @@
   color: #000000;
 }
 
+/* 어두운 배경색 캐릭터 — 다크/라이트 공통 흰 텍스트 */
+.tag-box[data-sado="ner"],
+.tag-box[data-sado="velvet"],
+.tag-box[data-sado="speaki"],
+.tag-box[data-sado="kathy"],
+.tag-box[data-sado="miro"] {
+  color: #fff;
+}
+
 /* 라이트 모드일 때 */
 [data-md-color-scheme="default"] .tag-box[data-sado="ashur"] {
   background-color: #f7b4b4;
@@ -203,8 +212,8 @@
 
 /* 다크 모드일 때 */
 [data-md-color-scheme="slate"] .speech-bubble {
-  background-color: #2f3338;
-  color: #d3d6da;
+  background-color: #363b42;
+  color: #e4e7eb;
 }
 
 /* 다크 모드일 때 */
@@ -222,7 +231,7 @@
   border-radius: .4em;
   padding: 10px 15px;
   margin: 4px 0;
-  color: #000000DE
+  color: #000000DE;
 }
 
 [data-md-color-scheme="default"] .mind-bubble {
@@ -230,7 +239,8 @@
 }
 
 [data-md-color-scheme="slate"] .mind-bubble {
-  background-color: #e983ff70;
+  background-color: rgba(180, 100, 220, 0.25);
+  color: #ddb8f0;
 }
 
 .narrate-text {
@@ -242,12 +252,12 @@
   margin: 6px 0;
   font-style: italic;
   border-left: 3px solid rgba(150, 150, 150, 0.4);
-  color: #888;
+  color: #666;
 }
 
 [data-md-color-scheme="slate"] .narrate-text {
-  color: #aaa;
-  border-left-color: rgba(200, 200, 200, 0.25);
+  color: #bbc0c8;
+  border-left-color: rgba(200, 200, 200, 0.3);
 }
 
 /* Custom admonition colors */
@@ -266,8 +276,9 @@
 }
 
 /* Modify existing types */
-.md-typeset .admonition.note {
-  font-size: 0.9rem;
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.82rem;
 }
 
 /* Animations */

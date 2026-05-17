@@ -6,7 +6,7 @@
 :root {
   --md-text-font: "ONEMobilePOP";
   --md-code-font: "Noto Mono";
-  --md-typeset-font-size: 0.85rem;
+  --md-typeset-font-size: 0.9rem;
 }
 
 /* 다크 모드 전용 테마 커스텀 */
@@ -14,6 +14,63 @@
   --md-default-bg-color: #1a1d21;
   --md-default-bg-color--light: #1a1d2140;
   --md-default-bg-color--lighter: #1a1d214d;
+  --md-typeset-color: rgba(232, 236, 242, 0.92);
+}
+
+/* =====================================================================
+   본문 가독성 — 폰트 크기·줄 간격·단락 여백·제목 굵기
+   ===================================================================== */
+.md-typeset {
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+.md-typeset > p {
+  margin-bottom: 1em;
+}
+
+/* ONEMobilePOP은 400 단일 weight — Material 기본 300이 faux-light를 유발 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 400;
+}
+
+/* Annotation 팝업 — 가독성 개선 */
+.md-typeset .md-tooltip {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background-color: var(--md-default-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.md-typeset .md-annotation {
+  background-color: var(--md-default-bg-color--lighter);
+  font-weight: bold;
+}
+
+/* 모바일 가독성 — 좁은 화면에서 폰트·패딩 축소 */
+@media (max-width: 768px) {
+  .md-typeset {
+    font-size: 0.82rem;
+  }
+  .md-typeset .admonition,
+  .md-typeset details {
+    font-size: 0.76rem;
+  }
+  .speech-bubble {
+    padding: 8px 12px;
+  }
+  .mind-bubble {
+    padding: 8px 12px;
+  }
+  .tag-box {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
 }
 
 /* =====================================================================
@@ -62,7 +119,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.06);
   margin: 0.6rem;
-  padding: 0.6rem;
+  padding: 1rem 1.2rem;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -75,7 +132,7 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.05);
   margin: 0.6rem;
-  padding: 0.6rem;
+  padding: 1rem 1.2rem;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -659,12 +716,15 @@ body[data-md-color-scheme] .md-typeset li>p+p {
 .md-typeset mark,
 .md-typeset ins.critic {
   padding: 0.1em 0.2em;
-  background-color: #00ff808c;
+  background-color: #a8e06340;
+  border-bottom: 1px solid #a8e06380;
 }
 
 [data-md-color-scheme="slate"] .md-typeset mark,
 [data-md-color-scheme="slate"] .md-typeset ins.critic {
-  background-color: #00ff8070;
+  background-color: #a8e06330;
+  border-bottom: 1px solid #a8e06360;
+  color: #d8ecc0;
 }
 
 .md-typeset__table {

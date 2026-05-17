@@ -297,6 +297,20 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 [data-md-color-scheme="slate"] .voice-btn:hover{ background:rgba(106,160,74,0.15); border-color:#6aa04a }
 [data-md-color-scheme="slate"] .voice-btn.playing{ background:#6aa04a; color:#fff; border-color:#6aa04a }
 
+@media (max-width: 600px) {
+    .voice-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 4px 0;
+    }
+    .voice-btn-group {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
 /* Global Voice Volume Control */
 #voice-volume-control { position: fixed; bottom: 24px; right: 24px; background: var(--md-default-bg-color, #fff); border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 8px 12px; border-radius: 20px; display: flex; align-items: center; gap: 8px; z-index: 100; transition: opacity 0.2s; opacity: 0.5; }
 #voice-volume-control:hover, #voice-volume-control:focus-within { opacity: 1; }

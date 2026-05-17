@@ -9,6 +9,7 @@ tags:
 ---
 
 # 소개
+{{ section_nav() }}
 {{ profile_book(
     subtitle='엘리아스 제빵왕',
     name='에슈르',

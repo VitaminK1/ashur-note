@@ -1158,8 +1158,8 @@ def define_env(env):
         height=450,
         animation="Idle_1",
         skin="Normal",
-        background="#ffffff",
-        alpha=False,
+        background="#00000000",
+        alpha=True,
         show_controls=False,
         show_loading=False,
         include_assets=True,
@@ -1172,37 +1172,73 @@ def define_env(env):
 
         player_js = get_doc_path("javascripts/spine-player.min.js")
         player_css = get_doc_path("css/spine-player.css")
+        studio_js = get_doc_path("javascripts/spine-studio.js")
+        studio_css = get_doc_path("css/spine-studio.css")
+        
         extra_style = f";{style.strip().rstrip(';')}" if style else ""
         viewer_style = f"width:{as_css_size(width)};height:{as_css_size(height)}{extra_style};"
+        
         options = {
             "skelUrl": get_asset_path(skel_path),
             "atlasUrl": get_asset_path(atlas_path),
-            "backgroundColor": background,
-            "alpha": bool(alpha),
+            "backgroundColor": "#00000000" if show_controls else background,
+            "alpha": True if show_controls else bool(alpha),
             "preserveDrawingBuffer": True,
             "skin": skin,
             "showControls": bool(show_controls),
             "animation": animation,
             "showLoading": bool(show_loading),
         }
-        script = (
-            "(function(){"
-            "if(!window.spine||!window.spine.SpinePlayer)return;"
-            f"new spine.SpinePlayer({json.dumps(container_id)},{json.dumps(options)});"
-            "})();"
-        )
+        
+        if show_controls:
+            script = (
+                f"(function init() {{"
+                f"    if (!window.spine || !window.spine.SpinePlayer || !window.initSpineStudio) {{"
+                f"        console.log('[Spine Init] Waiting... spine:', !!window.spine, 'initSpineStudio:', !!window.initSpineStudio);"
+                f"        setTimeout(init, 100);"
+                f"        return;"
+                f"    }}"
+                f"    window.initSpineStudio({json.dumps(container_id)}, {json.dumps(options)});"
+                f"}})();"
+            )
+            
+            assets_html = (
+                f'<link rel="stylesheet" href="{attr(player_css)}">'
+                f'<link rel="stylesheet" href="{attr(studio_css)}">'
+                f'<script src="{attr(player_js)}"></script>'
+                f'<script src="{attr(studio_js)}"></script>'
+                if include_assets else ""
+            )
 
-        assets_html = (
-            f'<link rel="stylesheet" href="{attr(player_css)}">'
-            f'<script src="{attr(player_js)}"></script>'
-            if include_assets else ""
-        )
+            html = (
+                f'{assets_html}'
+                f'<div id="{attr(container_id)}_wrapper" class="spine-studio-wrapper">'
+                f'  <div class="spine-studio-main">'
+                f'    <div id="{attr(container_id)}" class="spine-studio-canvas" style="{attr(viewer_style)}"></div>'
+                f'  </div>'
+                f'</div>'
+                f'<script>{script}</script>'
+            )
+            return html
+        else:
+            script = (
+                "(function(){"
+                "if(!window.spine||!window.spine.SpinePlayer)return;"
+                f"new spine.SpinePlayer({json.dumps(container_id)},{json.dumps(options)});"
+                "})();"
+            )
 
-        return (
-            assets_html
-            + f'<div id="{attr(container_id)}" class="spine-viewer" style="{attr(viewer_style)}"></div>'
-            + f'<script>{script}</script>'
-        )
+            assets_html = (
+                f'<link rel="stylesheet" href="{attr(player_css)}">'
+                f'<script src="{attr(player_js)}"></script>'
+                if include_assets else ""
+            )
+
+            return (
+                assets_html
+                + f'<div id="{attr(container_id)}" class="spine-viewer" style="{attr(viewer_style)}"></div>'
+                + f'<script>{script}</script>'
+            )
 
     @env.macro
     def image(path, caption="", width=500, height=None):
@@ -1225,3 +1261,52 @@ def define_env(env):
             return render_figure(img_tags, caption)
         else:
             return img_tags
+
+    # Ordered list of major sections: (label, src_path relative to docs/)
+    _SECTIONS = [
+        ("🏡", "index.md"),
+        ("소개", "overview/overview.md"),
+        ("캐릭터 정보", "info/viewer.md"),
+        ("시즌 1", "story/chapter/s1_main.md"),
+        ("시즌 2", "story/chapter/s2_main.md"),
+        ("시즌 3", "story/chapter/s3_main.md"),
+        ("기타", "others/others_main.md"),
+    ]
+
+    @env.macro
+    def section_nav():
+        src = env.page.file.src_path.replace("\\", "/")
+        idx = None
+        for i, (_, path) in enumerate(_SECTIONS):
+            if src == path:
+                idx = i
+                break
+        if idx is None:
+            return ""
+
+        src_dir = os.path.dirname(src)
+        levels = len(src_dir.split("/")) if src_dir else 0
+        prefix = "../" * levels
+
+        def make_href(md_path):
+            return f"{prefix}{md_path[:-3]}.html"
+
+        prev_html = ""
+        next_html = ""
+        if idx > 0:
+            prev_label, prev_path = _SECTIONS[idx - 1]
+            prev_href = make_href(prev_path)
+            prev_html = (
+                f'<a class="section-nav-btn section-nav-prev" href="{attr(prev_href)}">'
+                f'<span class="section-nav-arrow">&#10094;</span>'
+                f'<span class="section-nav-label">{prev_label}</span></a>'
+            )
+        if idx < len(_SECTIONS) - 1:
+            next_label, next_path = _SECTIONS[idx + 1]
+            next_href = make_href(next_path)
+            next_html = (
+                f'<a class="section-nav-btn section-nav-next" href="{attr(next_href)}">'
+                f'<span class="section-nav-label">{next_label}</span>'
+                f'<span class="section-nav-arrow">&#10095;</span></a>'
+            )
+        return f'<nav class="section-nav-bar">{prev_html}{next_html}</nav>'

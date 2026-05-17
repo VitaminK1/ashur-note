@@ -33,6 +33,7 @@
         * [네르](./story/s1_sado/ner.md)
         * [에르핀](./story/s1_sado/erpin.md)
         * [슈팡](./story/s1_sado/shoupan.md)
+        * [파트라](./story/s1_sado/patula.md)
         * [사리](./story/s1_sado/sari.md)
         * [리스티](./story/s1_sado/risty.md)
         * [빅우드](./story/s1_sado/bigwood.md)
@@ -83,7 +84,6 @@
         * [챕터 2](./story/s3_main/c2.md)
     * 이벤트 스토리
         * [](./story/chapter/s3_event.md)
-        * [격돌! 유령 역전의 세상!](./story/s3_event/shadytwisted.md)
         * [네가 없는 사이에 보내는 편지](./story/s3_event/dayapureshine.md)
         * [당신을 위한 응원!](./story/s3_event/cheerleader.md)
         * [여왕님의 마음으로 만든 나라](./story/s3_event/erpinroyale.md)

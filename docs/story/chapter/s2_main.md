@@ -7,6 +7,7 @@ tags:
   - 목차
 ---
 # 시즌 2
+{{ section_nav() }}
 ## {{ section_flag('s2-main') }}메인 스토리
 {% set cards %}
 {{ story_card('챕터 3 - 난장판 내 마음', 'chapterimg/ChapterImage_S2_3.png', '../s2_main/c3.md', freq='언급됨') }}
