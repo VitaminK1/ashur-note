@@ -14,6 +14,9 @@ tags:
 ## 주년 기념 일러스트
 ### 사전예약 20만 달성 기념 일러스트
 {{ image('others/event/register.png', height=300, caption='사전예약 20만 달성 그림') }}
+### 글로벌 0.5주년 기념 영상
+{{ video(['others/event/global0anni5_1.mp4','others/event/global0anni5_2.mp4'], width=300,caption='글로벌 0.5주년 기념 영상') }}
+글로벌 0.5주년 이드 테마극장 출시 기념 영상에서 등장한다. 에르핀이 에슈르를 마구 흔들고 있는 모습과 에슈르가 마요에게 간단한 꽃을 소환하는 마법을 보여주는 모습, 그리고 에르핀이 뛰어다니는 걸 보고 놀라는 모습을 보여준다.
 ### 1주년 기념 일러스트
 {{ image('others/event/1stanni.png', height=300, caption='1주년 기념 그림') }}
 ### 1.5주년 기념 일러스트

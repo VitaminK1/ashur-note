@@ -223,8 +223,13 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 }
 @media (max-width:720px){
 	.intimacy-table td{ padding:4px }
-	.intimacy-table .intimacy-level{ width:120px; font-size:0.72rem }
+	.intimacy-table .intimacy-level{ width:100px; font-size:0.72rem }
 	.intimacy-banner{ padding:6px }
+}
+
+@media (max-width:600px){
+    .intimacy-table .intimacy-level{ width:76px; font-size:0.7rem; padding:4px 2px; word-break: keep-all; }
+    .intimacy-table .intimacy-text{ padding-left: 6px; word-break: keep-all; }
 }
 
 [data-md-color-scheme="slate"] .intimacy-banner{ background:#2a3b2e }

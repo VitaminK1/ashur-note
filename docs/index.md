@@ -60,7 +60,7 @@ tags:
   {
     "title": "기타",
     "bg": "chapterimg/ChapterImage_WeekEnd_TowerBattle_Story_1.png",
-    "href": "others/minigame.md",
+    "href": "others/others_main.md",
     "links": [
       ("미니게임", "others/minigame.md"),
       ("연관 아이템", "others/item.md"),

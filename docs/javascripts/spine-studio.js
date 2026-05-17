@@ -18,6 +18,21 @@ window.initSpineStudio = function(containerId, options) {
     try {
         player = new spine.SpinePlayer(containerId, options);
         console.log("[Spine Studio] Player initialized:", player);
+        
+        // Fix for hidden containers (e.g. MkDocs tabs or mobile views)
+        // If the player initializes while hidden, its canvas size and WebGL viewport are 0.
+        let lastWidth = 0;
+        const resizeObserver = new ResizeObserver(entries => {
+            for (let entry of entries) {
+                const width = entry.contentRect.width;
+                if (width > 0 && Math.abs(width - lastWidth) > 1) {
+                    lastWidth = width;
+                    window.dispatchEvent(new Event('resize'));
+                }
+            }
+        });
+        resizeObserver.observe(wrapper);
+        
     } catch (err) {
         console.error("[Spine Studio] Error initializing player:", err);
         return;

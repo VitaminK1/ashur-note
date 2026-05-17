@@ -1135,19 +1135,24 @@ def define_env(env):
         )
     @env.macro
     def video(path, caption="", width=500, height=None, autoplay=False, loop=True):
-        src = get_asset_path(path)
+        # Handle multiple paths
+        paths = [path] if isinstance(path, str) else path
+        
         attrs = ['controls', 'preload="metadata"']
         if autoplay: attrs.append('autoplay')
         if loop: attrs.append('loop')
         if width: attrs.append(f'width="{width}"')
         if height: attrs.append(f'height="{height}"')
         
-        video_tag = f'<video {" ".join(attrs)}><source src="{src}" type="video/mp4"></video>'
+        video_tags = ""
+        for p in paths:
+            src = get_asset_path(p)
+            video_tags += f'<video {" ".join(attrs)}><source src="{src}" type="video/mp4"></video>'
         
         if caption:
-            return render_figure(video_tag, caption)
+            return render_figure(video_tags, caption)
         else:
-            return video_tag
+            return video_tags
 
     @env.macro
     def spine_viewer(

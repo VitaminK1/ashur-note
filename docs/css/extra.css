@@ -556,6 +556,10 @@ span.small-emoji svg {
   /* remove inline whitespace gap between image and caption without changing display */
 }
 
+.md-typeset .figure-media {
+  font-size: 0; /* eliminate inline-block whitespace gap between sibling media */
+}
+
 .md-typeset figure img {
   display: inline-block;
   height: auto;
@@ -563,6 +567,14 @@ span.small-emoji svg {
   max-width: 100%;
   vertical-align: bottom;
   /* align image edge to remove descender gap */
+}
+
+.md-typeset figure video {
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
 .md-typeset figcaption {
