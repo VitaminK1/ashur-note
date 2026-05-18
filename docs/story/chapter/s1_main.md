@@ -44,7 +44,7 @@ tags:
 {{ story_card('에르핀', 'characterstory/Character_Erpin_Story_1.png', '../s1_sado/erpin.md', freq='언급됨', state='작업 중') }}
 {{ story_card('슈팡', 'characterstory/Character_Shoupan_Story_1.png', '../s1_sado/shoupan.md', freq='자주 등장', state='작업 중') }}
 {{ story_card('사리', 'characterstory/Character_Sari_Story_1.png', '../s1_sado/sari.md', freq='자주 등장', state='작업 중') }}
-{{ story_card('파트라', 'characterstory/Character_Patula_Story_1.png', '../s1_sado/patula.md', freq='자주 등장', state='작업 중') }}
+{{ story_card('파트라', 'characterstory/Character_Patula_Story_1.png', '../s1_sado/patula.md', freq='보통 등장') }}
 {{ story_card('리스티', 'characterstory/Character_Risty_Story_1.png', '../s1_sado/risty.md', freq='언급됨', state='작업 중') }}
 {{ story_card('빅우드', 'characterstory/Character_BigWood_Story_1.png', '../s1_sado/bigwood.md', freq='자주 등장', state='작업 중') }}
 {{ story_card('앨리스', 'characterstory/Character_Alice_Story_1.png', '../s1_sado/alice.md', freq='가끔 등장', state='작업 중') }}

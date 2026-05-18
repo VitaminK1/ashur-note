@@ -1,0 +1,484 @@
+/* =====================================================================
+   Spine Multi-Viewer — unified viewer with costume dropdown
+   ===================================================================== */
+
+.smv-wrapper {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fafafa;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+[data-md-color-scheme="slate"] .smv-wrapper {
+  background: #1e2228;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* — Canvas area — */
+.smv-canvas {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  position: relative;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+}
+
+.smv-canvas .spine-player {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.smv-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* — Control panel — */
+.smv-controls {
+  padding: 14px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  background: #fff;
+}
+
+[data-md-color-scheme="slate"] .smv-controls {
+  border-top-color: rgba(255, 255, 255, 0.06);
+  background: #252930;
+}
+
+/* — Timeline row — */
+.smv-timeline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: #888;
+}
+
+.smv-time,
+.smv-duration {
+  min-width: 2.4em;
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+[data-md-color-scheme="slate"] .smv-timeline {
+  color: #9aa0a8;
+}
+
+.smv-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #6aa04a var(--fill, 0%), #e0e0e0 var(--fill, 0%));
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  --fill: 0%;
+}
+
+[data-md-color-scheme="slate"] .smv-slider {
+  background: linear-gradient(to right, #7fb56a var(--fill, 0%), #3a3f48 var(--fill, 0%));
+}
+
+.smv-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #6aa04a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.smv-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.smv-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #6aa04a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* — Button rows — */
+.smv-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.smv-btn-row-secondary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 2px;
+}
+
+/* Play button */
+.smv-play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #6aa04a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s, transform 0.12s;
+  box-shadow: 0 2px 6px rgba(106, 160, 74, 0.3);
+}
+
+.smv-play-btn:hover {
+  background: #5d9240;
+  transform: scale(1.06);
+}
+
+.smv-play-btn:active {
+  transform: scale(0.96);
+}
+
+.smv-play-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Shared select/button styling */
+.smv-select,
+.smv-export-png,
+.smv-export-gif,
+.smv-parts-toggle,
+.smv-reset-btn,
+.smv-undo-btn {
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+  color: #333;
+  font-size: 11.5px;
+  font-family: inherit;
+  padding: 0 8px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.smv-select:hover,
+.smv-export-png:hover,
+.smv-export-gif:hover,
+.smv-parts-toggle:hover,
+.smv-reset-btn:hover,
+.smv-undo-btn:hover {
+  border-color: rgba(106, 160, 74, 0.4);
+  background: #eef5e8;
+}
+
+.smv-select:focus {
+  border-color: #6aa04a;
+  box-shadow: 0 0 0 2px rgba(106, 160, 74, 0.15);
+}
+
+[data-md-color-scheme="slate"] .smv-select,
+[data-md-color-scheme="slate"] .smv-export-png,
+[data-md-color-scheme="slate"] .smv-export-gif,
+[data-md-color-scheme="slate"] .smv-parts-toggle,
+[data-md-color-scheme="slate"] .smv-reset-btn,
+[data-md-color-scheme="slate"] .smv-undo-btn {
+  background: #2e333b;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #dce0e4;
+}
+
+[data-md-color-scheme="slate"] .smv-select:hover,
+[data-md-color-scheme="slate"] .smv-export-png:hover,
+[data-md-color-scheme="slate"] .smv-export-gif:hover,
+[data-md-color-scheme="slate"] .smv-parts-toggle:hover,
+[data-md-color-scheme="slate"] .smv-reset-btn:hover,
+[data-md-color-scheme="slate"] .smv-undo-btn:hover {
+  background: #353b44;
+  border-color: rgba(127, 181, 106, 0.3);
+}
+
+.smv-anim-select {
+  min-width: 80px;
+  max-width: 140px;
+}
+
+.smv-skin-select {
+  min-width: 60px;
+  max-width: 100px;
+}
+
+.smv-speed-select {
+  width: 58px;
+}
+
+.smv-costume-select {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Export, parts toggle, reset & undo buttons */
+.smv-export-png,
+.smv-export-gif,
+.smv-parts-toggle,
+.smv-reset-btn,
+.smv-undo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.smv-export-png svg,
+.smv-export-gif svg,
+.smv-parts-toggle svg,
+.smv-reset-btn svg,
+.smv-undo-btn svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+.smv-parts-toggle.active {
+  background: #6aa04a;
+  border-color: #6aa04a;
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .smv-parts-toggle.active {
+  background: #4a8a3a;
+  border-color: #4a8a3a;
+  color: #e8f6e7;
+}
+
+/* Separator */
+.smv-sep {
+  width: 1px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+[data-md-color-scheme="slate"] .smv-sep {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Spacer */
+.smv-spacer {
+  flex: 1;
+}
+
+/* ==============================
+   Parts panel (collapsible, below controls)
+   ============================== */
+.smv-parts-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background: #fff;
+  padding: 0 16px;
+  border-top: 0 solid rgba(0, 0, 0, 0.06);
+}
+
+.smv-parts-panel.open {
+  max-height: 320px;
+  padding: 10px 16px 14px;
+  border-top-width: 1px;
+  overflow-y: auto;
+}
+
+[data-md-color-scheme="slate"] .smv-parts-panel {
+  background: #252930;
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+.smv-parts-header {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.smv-parts-search {
+  flex: 1;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+  color: #333;
+  font-size: 11px;
+  padding: 0 8px;
+  outline: none;
+}
+
+.smv-parts-search:focus {
+  border-color: #6aa04a;
+  box-shadow: 0 0 0 2px rgba(106, 160, 74, 0.15);
+}
+
+[data-md-color-scheme="slate"] .smv-parts-search {
+  background: #2e333b;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #dce0e4;
+}
+
+.smv-parts-reset {
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f5f5f5;
+  color: #555;
+  font-size: 10.5px;
+  padding: 0 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.smv-parts-reset:hover {
+  background: #eef5e8;
+}
+
+[data-md-color-scheme="slate"] .smv-parts-reset {
+  background: #2e333b;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #dce0e4;
+}
+
+.smv-parts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 12px;
+}
+
+.smv-part-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 0;
+  font-size: 10.5px;
+  color: #444;
+}
+
+[data-md-color-scheme="slate"] .smv-part-item {
+  color: #bbb;
+}
+
+.smv-part-item input[type="checkbox"] {
+  accent-color: #6aa04a;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.smv-part-item label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+/* ==============================
+   GIF progress overlay
+   ============================== */
+.smv-gif-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  z-index: 20;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.smv-gif-progress-bar {
+  width: 200px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.smv-gif-progress {
+  height: 100%;
+  border-radius: 3px;
+  background: #6aa04a;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* — Responsive — */
+@media (max-width: 480px) {
+  .smv-wrapper {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .smv-canvas {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .smv-controls {
+    padding: 10px 12px 12px;
+    gap: 8px;
+  }
+
+  .smv-play-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .smv-select,
+  .smv-export-png,
+  .smv-export-gif,
+  .smv-parts-toggle {
+    height: 26px;
+    font-size: 10.5px;
+    padding: 0 6px;
+  }
+
+  .smv-parts-panel.open {
+    max-height: 250px;
+    padding: 8px 12px 12px;
+  }
+
+  .smv-parts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .smv-gif-overlay {
+    border-radius: 10px;
+  }
+}
+
+/* — Override spine-player defaults inside smv — */
+.smv-wrapper .spine-player-error {
+  display: none !important;
+}

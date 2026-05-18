@@ -1,0 +1,477 @@
+{
+  "alice": {
+    "bg": "#CAA4DD"
+  },
+  "allet": {
+    "bg": "#C0B4B6"
+  },
+  "amelia": {
+    "bg": "#926F6E",
+    "color": "#fff"
+  },
+  "ameliar41": {
+    "bg": "#E34BF8",
+    "color": "#fff"
+  },
+  "aragnia": {
+    "bg": "#608DFE"
+  },
+  "arco": {
+    "bg": "#8640C6",
+    "color": "#fff"
+  },
+  "arnet": {
+    "bg": "#C8B596"
+  },
+  "asana": {
+    "bg": "#FC864C"
+  },
+  "ashur": {
+    "bg": "#E6838D"
+  },
+  "aya": {
+    "bg": "#F1F8FF"
+  },
+  "ayla": {
+    "bg": "#908984",
+    "color": "#fff"
+  },
+  "bana": {
+    "bg": "#EDB983"
+  },
+  "barie": {
+    "bg": "#973B58",
+    "color": "#fff"
+  },
+  "barong": {
+    "bg": "#878682",
+    "color": "#fff"
+  },
+  "belita": {
+    "bg": "#D3A9A9"
+  },
+  "beni": {
+    "bg": "#64443E",
+    "color": "#fff"
+  },
+  "benibeni": {
+    "bg": "#FBBE42"
+  },
+  "bigwood": {
+    "bg": "#97A262"
+  },
+  "blanche": {
+    "bg": "#2660E1",
+    "color": "#fff"
+  },
+  "butter": {
+    "bg": "#EEC375"
+  },
+  "canna": {
+    "bg": "#B77148",
+    "color": "#fff"
+  },
+  "canta": {
+    "bg": "#65929E",
+    "color": "#fff"
+  },
+  "carren": {
+    "bg": "#DA9796"
+  },
+  "chloe": {
+    "bg": "#BB3626",
+    "color": "#fff"
+  },
+  "chopi": {
+    "bg": "#C0B4B6"
+  },
+  "coolwhisp": {
+    "bg": "#FBAD25"
+  },
+  "crayonknight": {
+    "bg": "#FBAD25"
+  },
+  "crepe": {
+    "bg": "#FCBAB7"
+  },
+  "cuee": {
+    "bg": "#916F6D",
+    "color": "#fff"
+  },
+  "daya": {
+    "bg": "#A8BBC8"
+  },
+  "dayapureshine": {
+    "bg": "#77C8F7"
+  },
+  "delia": {
+    "bg": "#C597A4"
+  },
+  "diana": {
+    "bg": "#C19079"
+  },
+  "dianayester": {
+    "bg": "#C03632",
+    "color": "#fff"
+  },
+  "ed": {
+    "bg": "#808191",
+    "color": "#fff"
+  },
+  "eisia": {
+    "bg": "#4D98DF",
+    "color": "#fff"
+  },
+  "eisiafridge": {
+    "bg": "#4D98DF",
+    "color": "#fff"
+  },
+  "elena": {
+    "bg": "#DA9798"
+  },
+  "empty": {
+    "bg": "#FBAD25"
+  },
+  "epica": {
+    "bg": "#BDD2F0"
+  },
+  "erpin": {
+    "bg": "#F09D7D"
+  },
+  "erpinroyale": {
+    "bg": "#CE4079",
+    "color": "#fff"
+  },
+  "espi": {
+    "bg": "#D4B9BA"
+  },
+  "festa": {
+    "bg": "#EC7A84"
+  },
+  "fricle": {
+    "bg": "#675359",
+    "color": "#fff"
+  },
+  "gabia": {
+    "bg": "#8A5350",
+    "color": "#fff"
+  },
+  "gloomywhisp": {
+    "bg": "#FBAD25"
+  },
+  "goldy": {
+    "bg": "#D09D4B"
+  },
+  "guin": {
+    "bg": "#FE9E47"
+  },
+  "haley": {
+    "bg": "#E83B92",
+    "color": "#fff"
+  },
+  "haleysane": {
+    "bg": "#397192",
+    "color": "#fff"
+  },
+  "heidi": {
+    "bg": "#A79B93"
+  },
+  "hilde": {
+    "bg": "#CCE993"
+  },
+  "ifrit": {
+    "bg": "#EE5C3A",
+    "color": "#fff"
+  },
+  "inkle": {
+    "bg": "#0E0E10",
+    "color": "#fff"
+  },
+  "jade": {
+    "bg": "#85A491"
+  },
+  "joanne": {
+    "bg": "#83AF8E"
+  },
+  "jollywhisp": {
+    "bg": "#FBAD25"
+  },
+  "jubee": {
+    "bg": "#D89E5A"
+  },
+  "kathy": {
+    "bg": "#5A5B5A",
+    "color": "#fff"
+  },
+  "kidian": {
+    "bg": "#604E65",
+    "color": "#fff"
+  },
+  "kommy": {
+    "bg": "#FFA8A7"
+  },
+  "kommyswim": {
+    "bg": "#FFA8A7"
+  },
+  "kyarot": {
+    "bg": "#F49C62"
+  },
+  "laika": {
+    "bg": "#00E4AE"
+  },
+  "lazy": {
+    "bg": "#C0B4B6"
+  },
+  "leets": {
+    "bg": "#8F868A",
+    "color": "#fff"
+  },
+  "lethe": {
+    "bg": "#A8BCC7"
+  },
+  "levi": {
+    "bg": "#A0385A",
+    "color": "#fff"
+  },
+  "levigraduate": {
+    "bg": "#854553",
+    "color": "#fff"
+  },
+  "lion": {
+    "bg": "#A0304C",
+    "color": "#fff"
+  },
+  "maestromk2": {
+    "bg": "#35B7AE"
+  },
+  "mago": {
+    "bg": "#B6BBCB"
+  },
+  "maison": {
+    "bg": "#916F6D",
+    "color": "#fff"
+  },
+  "makasha": {
+    "bg": "#AC9791"
+  },
+  "marie": {
+    "bg": "#E7BBBB"
+  },
+  "mayo": {
+    "bg": "#A0B5D5"
+  },
+  "mayocool": {
+    "bg": "#5E6D83",
+    "color": "#fff"
+  },
+  "meluna": {
+    "bg": "#BCD190"
+  },
+  "miro": {
+    "bg": "#AE396D",
+    "color": "#fff"
+  },
+  "momo": {
+    "bg": "#BB3626",
+    "color": "#fff"
+  },
+  "mute": {
+    "bg": "#47BAAB"
+  },
+  "mynx": {
+    "bg": "#C0B4B6"
+  },
+  "naia": {
+    "bg": "#91D2EB"
+  },
+  "naivewhisp": {
+    "bg": "#FBAD25"
+  },
+  "ner": {
+    "bg": "#847592",
+    "color": "#fff"
+  },
+  "nerrage": {
+    "bg": "#716A8F",
+    "color": "#fff"
+  },
+  "neti": {
+    "bg": "#26354A",
+    "color": "#fff"
+  },
+  "opal": {
+    "bg": "#CFEAFF"
+  },
+  "orr": {
+    "bg": "#649BA6",
+    "color": "#fff"
+  },
+  "patula": {
+    "bg": "#C0B4B6"
+  },
+  "picora": {
+    "bg": "#8DC9CA"
+  },
+  "pira": {
+    "bg": "#7B5B2F",
+    "color": "#fff"
+  },
+  "polan": {
+    "bg": "#385E51",
+    "color": "#fff"
+  },
+  "posher": {
+    "bg": "#D67B8F"
+  },
+  "ran": {
+    "bg": "#7F4AA6",
+    "color": "#fff"
+  },
+  "renewa": {
+    "bg": "#E8D7B7"
+  },
+  "renewa_1": {
+    "bg": "#E8D7B7"
+  },
+  "renewa_2": {
+    "bg": "#E8D7B7"
+  },
+  "renewaawaken": {
+    "bg": "#43475D",
+    "color": "#fff"
+  },
+  "ricota": {
+    "bg": "#3F3763",
+    "color": "#fff"
+  },
+  "rim": {
+    "bg": "#AB474A",
+    "color": "#fff"
+  },
+  "rimchaos": {
+    "bg": "#DC2826",
+    "color": "#fff"
+  },
+  "risty": {
+    "bg": "#AE6D7F",
+    "color": "#fff"
+  },
+  "rohne": {
+    "bg": "#C1B4B7"
+  },
+  "rohnemayor": {
+    "bg": "#7053BC",
+    "color": "#fff"
+  },
+  "rollett": {
+    "bg": "#C65A66",
+    "color": "#fff"
+  },
+  "rude": {
+    "bg": "#C75B5C",
+    "color": "#fff"
+  },
+  "rufo": {
+    "bg": "#F69E72"
+  },
+  "sari": {
+    "bg": "#C0B4B6"
+  },
+  "scizor": {
+    "bg": "#5A5B5A",
+    "color": "#fff"
+  },
+  "selline": {
+    "bg": "#F7AFBB"
+  },
+  "shady": {
+    "bg": "#9DBAC1"
+  },
+  "shadytwisted": {
+    "bg": "#353143",
+    "color": "#fff"
+  },
+  "shasha": {
+    "bg": "#5598B8",
+    "color": "#fff"
+  },
+  "sherum": {
+    "bg": "#727586",
+    "color": "#fff"
+  },
+  "shoupan": {
+    "bg": "#FFE182"
+  },
+  "silphir": {
+    "bg": "#8AA9CF"
+  },
+  "sist": {
+    "bg": "#BD8CB7"
+  },
+  "snorky": {
+    "bg": "#413C3D",
+    "color": "#fff"
+  },
+  "speaki": {
+    "bg": "#71566C",
+    "color": "#fff"
+  },
+  "speakimaid": {
+    "bg": "#EF9964"
+  },
+  "suro": {
+    "bg": "#7AB7A8"
+  },
+  "sylla": {
+    "bg": "#C9DBBA"
+  },
+  "taida": {
+    "bg": "#DA9796"
+  },
+  "tig": {
+    "bg": "#9AAABF"
+  },
+  "tighero": {
+    "bg": "#496BFF",
+    "color": "#fff"
+  },
+  "ui": {
+    "bg": "#FFDB5B"
+  },
+  "unnamed": {
+    "bg": "#808191",
+    "color": "#fff"
+  },
+  "uros": {
+    "bg": "#B61510",
+    "color": "#fff"
+  },
+  "vela": {
+    "bg": "#C5D2F3"
+  },
+  "velvet": {
+    "bg": "#5C4F62",
+    "color": "#fff"
+  },
+  "veroo": {
+    "bg": "#C0B4B6"
+  },
+  "vivi": {
+    "bg": "#B8AFB1"
+  },
+  "xxionx": {
+    "bg": "#4C76AD",
+    "color": "#fff"
+  },
+  "yomi": {
+    "bg": "#8B78BF",
+    "color": "#fff"
+  },
+  "youngchun": {
+    "bg": "#768964",
+    "color": "#fff"
+  },
+  "yumimi": {
+    "bg": "#C0B4B6"
+  }
+}

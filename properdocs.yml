@@ -66,6 +66,7 @@ extra:
   homepage: https://vitamink1.github.io/ashur-note/
 extra_css:
   - css/box.css
+  - css/sado_colors.css
   - css/extra.css
   - css/badges.css
   - css/collapsible.css

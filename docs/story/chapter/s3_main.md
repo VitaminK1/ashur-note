@@ -26,9 +26,9 @@ tags:
 
 ## {{ section_flag('s3-sado') }}사도 스토리
 {% set cards %}
-{{ story_card('아멜리아(R41)', 'characterstory/Character_AmeliaR41_Story_1.png', '../s3_sado/ameliaR41.md', freq='자주 등장', state="작업 중") }}
-{{ story_card('에르핀(왕도)', 'characterstory/Character_ErpinRoyale_Story_1.png', '../s3_sado/erpinroyale.md', freq='자주 등장', state="작업 중") }}
-{{ story_card('레비(졸업)', 'characterstory/Character_LeviGraduate_Story_1.png', '../s3_sado/levigraduate.md', freq='등장 없음', state="작업 중") }}
+{{ story_card('아멜리아(R41)', 'characterstory/Character_AmeliaR41_Story_1.png', '../s3_sado/ameliaR41.md', freq='보통 등장') }}
+{{ story_card('에르핀(왕도)', 'characterstory/Character_ErpinRoyale_Story_1.png', '../s3_sado/erpinroyale.md', freq='자주 등장') }}
+{{ story_card('레비(졸업)', 'characterstory/Character_LeviGraduate_Story_1.png', '../s3_sado/levigraduate.md', freq='가끔 등장') }}
 {% endset %}
 {{ card_grid(cards) }}
 

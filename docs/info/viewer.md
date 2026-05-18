@@ -15,17 +15,14 @@ tags:
     ['아이스크림 메이커', image('ashurdesc_1.png', height=300, caption='에슈르 아이스크림 메이커 사복 설명')],
     ['평온한 온천 여행', image('ashurdesc_3.png', height=300, caption='에슈르 평온한 온천 여행 사복 설명')],
 ]) }}
-## 스탠딩 모션
-{{ tabs([
-    ['기본 사복', spine_viewer('player-container1', 'spine/standing/Ashur.skel', 'spine/standing/Ashur.atlas', width=360, height=450, background='#ffffffff', animation='Idle_1', show_controls=True, style='margin:0 auto')],
-    ['아이스크림 메이커', spine_viewer('player-container3', 'spine/standingskin1/AshurSkin1.skel', 'spine/standingskin1/AshurSkin1.atlas', width=360, height=450, background='#ffffffff', animation='Idle_1', show_controls=True, style='margin:0 auto')],
-    ['평온한 온천 여행', spine_viewer('player-container5', 'spine/standingskin2/AshurSkin2.skel', 'spine/standingskin2/AshurSkin2.atlas', width=360, height=450, background='#ffffffff', animation='Idle_1', show_controls=True, style='margin:0 auto')],
-]) }}
-## 전투 모션
-{{ tabs([
-    ['기본 사복', spine_viewer('player-container2', 'spine/battle/Ashur.skel', 'spine/battle/Ashur.atlas', width=360, height=450, background='#ffffffff', animation='Idle', show_controls=True, style='margin:0 auto')],
-    ['아이스크림 메이커', spine_viewer('player-container4', 'spine/battleskin1/AshurSkin1.skel', 'spine/battleskin1/AshurSkin1.atlas', width=360, height=450, background='#ffffffff', animation='Idle', show_controls=True, style='margin:0 auto')],
-    ['평온한 온천 여행', spine_viewer('player-container6', 'spine/battleskin2/AshurSkin2.skel', 'spine/battleskin2/AshurSkin2.atlas', width=360, height=450, background='#ffffffff', animation='Idle', show_controls=True, style='margin:0 auto')],
+## 스탠딩 / 전투 모션
+{{ spine_multi_viewer('motion-viewer', [
+    {'label': '스탠딩 - 기본 사복', 'skel_path': 'spine/standing/Ashur.skel', 'atlas_path': 'spine/standing/Ashur.atlas', 'animation': 'Idle_1'},
+    {'label': '스탠딩 - 아이스크림 메이커', 'skel_path': 'spine/standingskin1/AshurSkin1.skel', 'atlas_path': 'spine/standingskin1/AshurSkin1.atlas', 'animation': 'Idle_1'},
+    {'label': '스탠딩 - 평온한 온천 여행', 'skel_path': 'spine/standingskin2/AshurSkin2.skel', 'atlas_path': 'spine/standingskin2/AshurSkin2.atlas', 'animation': 'Idle_1'},
+    {'label': '전투 - 기본 사복', 'skel_path': 'spine/battle/Ashur.skel', 'atlas_path': 'spine/battle/Ashur.atlas', 'animation': 'Idle'},
+    {'label': '전투 - 아이스크림 메이커', 'skel_path': 'spine/battleskin1/AshurSkin1.skel', 'atlas_path': 'spine/battleskin1/AshurSkin1.atlas', 'animation': 'Idle'},
+    {'label': '전투 - 평온한 온천 여행', 'skel_path': 'spine/battleskin2/AshurSkin2.skel', 'atlas_path': 'spine/battleskin2/AshurSkin2.atlas', 'animation': 'Idle'},
 ]) }}
 ## 뽑기 연출
 === "오픈 당시"

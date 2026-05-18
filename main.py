@@ -192,6 +192,41 @@ def define_env(env):
     - macro: a decorator function, to declare a macro.
     """
     
+    import json
+    
+    # Auto-generate docs/css/sado_colors.css from sado_colors.json
+    try:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        json_path = os.path.join(base_dir, "sado_colors.json")
+        if os.path.exists(json_path):
+            with open(json_path, "r", encoding="utf-8") as f:
+                sado_colors = json.load(f)
+            
+            css_lines = ["/* 이 파일은 sado_colors.json의 설정을 바탕으로 자동 생성됩니다. 직접 수정하지 마세요. */"]
+            for sado_id, styles in sado_colors.items():
+                css_lines.append(f".tag-box[data-sado=\"{sado_id}\"] {{")
+                if "bg" in styles:
+                    css_lines.append(f"  background-color: {styles['bg']};")
+                if "color" in styles:
+                    css_lines.append(f"  color: {styles['color']};")
+                css_lines.append("}\n")
+            
+            css_content = "\n".join(css_lines)
+            css_path = os.path.join(base_dir, "docs", "css", "sado_colors.css")
+            
+            needs_write = True
+            if os.path.exists(css_path):
+                with open(css_path, "r", encoding="utf-8") as f:
+                    if f.read() == css_content:
+                        needs_write = False
+            
+            if needs_write:
+                os.makedirs(os.path.dirname(css_path), exist_ok=True)
+                with open(css_path, "w", encoding="utf-8") as f:
+                    f.write(css_content)
+    except Exception as e:
+        print(f"Failed to generate sado_colors.css: {e}")
+
     def clean_rel_path(path):
         return str(path).lstrip('/').replace('\\', '/')
 
@@ -1244,6 +1279,123 @@ def define_env(env):
                 + f'<div id="{attr(container_id)}" class="spine-viewer" style="{attr(viewer_style)}"></div>'
                 + f'<script>{script}</script>'
             )
+
+    @env.macro
+    def spine_multi_viewer(container_id, costumes, default_index=0):
+        """Unified Spine viewer with costume switching via dropdown.
+
+        costumes: list of dicts with keys:
+            label, skel_path, atlas_path, animation (optional), skin (optional)
+        """
+        player_js = get_doc_path("javascripts/spine-player.min.js")
+        player_css = get_doc_path("css/spine-player.css")
+        multi_js = get_doc_path("javascripts/spine-multi.js")
+        multi_css = get_doc_path("css/spine-multi.css")
+
+        costume_data = []
+        for c in costumes:
+            costume_data.append({
+                "label": c["label"],
+                "skelUrl": get_asset_path(c["skel_path"]),
+                "atlasUrl": get_asset_path(c["atlas_path"]),
+                "animation": c.get("animation", "Idle_1"),
+                "skin": c.get("skin", "Normal"),
+            })
+
+        # Build costume dropdown options
+        costume_options = "".join(
+            f'<option value="{i}"{" selected" if i == default_index else ""}>'
+            f'{escape(c["label"])}</option>'
+            for i, c in enumerate(costumes)
+        )
+
+        cid = escape(container_id)
+
+        script = (
+            f"(function init() {{"
+            f"    if (!window.spine || !window.spine.SpinePlayer || !window.initSpineMultiViewer) {{"
+            f"        setTimeout(init, 100); return;"
+            f"    }}"
+            f"    window.initSpineMultiViewer("
+            f"        {json.dumps(container_id)},"
+            f"        {json.dumps(costume_data)},"
+            f"        {json.dumps(default_index)}"
+            f"    );"
+            f"}})();"
+        )
+
+        return (
+            f'<link rel="stylesheet" href="{escape(player_css)}">'
+            f'<link rel="stylesheet" href="{escape(multi_css)}">'
+            f'<script src="{escape(player_js)}"></script>'
+            f'<script src="{escape(multi_js)}"></script>'
+            f'<div id="{cid}_wrapper" class="smv-wrapper">'
+            # Canvas
+            f'  <div id="{cid}" class="smv-canvas"></div>'
+            # Controls
+            f'  <div class="smv-controls">'
+            f'    <div class="smv-timeline">'
+            f'      <span class="smv-time">0.0</span>'
+            f'      <input type="range" class="smv-slider" min="0" max="1" value="0" step="0.001">'
+            f'      <span class="smv-duration">0.0</span>'
+            f'    </div>'
+            f'    <div class="smv-btn-row">'
+            f'      <button class="smv-play-btn" title="재생/일시정지">'
+            f'        <svg class="smv-play-icon" viewBox="0 0 24 24" fill="currentColor">'
+            f'          <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>'
+            f'        </svg>'
+            f'      </button>'
+            f'      <select class="smv-select smv-anim-select" title="애니메이션"></select>'
+            f'      <select class="smv-select smv-skin-select" title="스킨"></select>'
+            f'      <select class="smv-select smv-speed-select" title="속도">'
+            f'        <option value="0.25">0.25x</option>'
+            f'        <option value="0.5">0.5x</option>'
+            f'        <option value="1" selected>1.0x</option>'
+            f'        <option value="1.5">1.5x</option>'
+            f'        <option value="2">2.0x</option>'
+            f'      </select>'
+            f'    </div>'
+            f'    <div class="smv-btn-row-secondary">'
+            f'      <select class="smv-select smv-costume-select" title="코스튬">'
+            f'        {costume_options}'
+            f'      </select>'
+            f'      <div class="smv-sep"></div>'
+            f'      <button class="smv-parts-toggle" title="파츠 토글">'
+            f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>'
+            f'      </button>'
+            f'      <button class="smv-reset-btn" title="파츠 전체 켜기">'
+            f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>'
+            f'      </button>'
+            f'      <button class="smv-undo-btn" title="되돌리기">'
+            f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg>'
+            f'      </button>'
+            f'      <div class="smv-sep"></div>'
+            f'      <button class="smv-export-png" title="PNG 저장">'
+            f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>'
+            f'        PNG'
+            f'      </button>'
+            f'      <button class="smv-export-gif" title="GIF 저장">'
+            f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-2z"/></svg>'
+            f'        GIF'
+            f'      </button>'
+            f'    </div>'
+            f'  </div>'
+            # Collapsible parts panel
+            f'  <div class="smv-parts-panel">'
+            f'    <div class="smv-parts-header">'
+            f'      <input type="text" class="smv-parts-search" placeholder="파츠 검색...">'
+            f'      <button class="smv-parts-reset">전체 켜기</button>'
+            f'    </div>'
+            f'    <div class="smv-parts-list"></div>'
+            f'  </div>'
+            # GIF progress overlay
+            f'  <div class="smv-gif-overlay">'
+            f'    <div>GIF 렌더링 중...</div>'
+            f'    <div class="smv-gif-progress-bar"><div class="smv-gif-progress"></div></div>'
+            f'  </div>'
+            f'</div>'
+            f'<script>{script}</script>'
+        )
 
     @env.macro
     def image(path, caption="", width=500, height=None):

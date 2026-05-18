@@ -45,6 +45,13 @@
   background-color: var(--md-default-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-weight: 100;
+}
+
+body[data-md-color-scheme] .md-typeset .md-tooltip,
+body[data-md-color-scheme] .md-typeset .md-tooltip p,
+body[data-md-color-scheme] .md-typeset .md-tooltip span {
+  font-weight: 100;
 }
 
 .md-typeset .md-annotation {
@@ -120,8 +127,6 @@
   border: 1px solid rgba(255, 255, 255, 0.06);
   margin: 0.6rem;
   padding: 1rem 1.2rem;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
 [data-md-color-scheme="default"] .md-content {
@@ -133,8 +138,6 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
   margin: 0.6rem;
   padding: 1rem 1.2rem;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
 /* =====================================================================
