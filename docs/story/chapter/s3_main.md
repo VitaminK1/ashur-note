@@ -34,7 +34,7 @@ tags:
 
 ## {{ section_flag('s3-etc') }}기타
 {% set cards %}
-{{ story_card('연회장', 'chapterimg/ScheduleStory_Ashur_1.png', '../s3_etc/restaurant.md', freq='기타 등장', state="작업 중") }}
+{{ story_card('연회장', 'chapterimg/ScheduleStory_Ashur_1.png', '../s3_etc/restaurant.md', freq='기타 등장') }}
 {{ story_card('두근 두근 대환장쇼!', 'chapterimg/ChapterImage_SkinSet14.png', '../s3_etc/aprilfool.md', freq='기타 등장') }}
 {% endset %}
 {{ card_grid(cards) }}

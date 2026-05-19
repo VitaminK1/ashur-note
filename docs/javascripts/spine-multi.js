@@ -15,6 +15,16 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     var hiddenSlots = new Set();
     var undoHistory = [];
 
+    // --- Transform state (zoom / pan) ---
+    var transformScale = 1;
+    var transformX = 0;
+    var transformY = 0;
+    var baseScaleX = 1;
+    var baseScaleY = 1;
+    var baseX = 0;
+    var baseY = 0;
+    var transformReady = false;
+
     // --- DOM references ---
     var canvasContainer = document.getElementById(containerId);
     var costumeSelect = wrapper.querySelector('.smv-costume-select');
@@ -35,7 +45,10 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     var partsList = wrapper.querySelector('.smv-parts-list');
     var gifOverlay = wrapper.querySelector('.smv-gif-overlay');
     var gifProgress = wrapper.querySelector('.smv-gif-progress');
+    var gifLabel = wrapper.querySelector('.smv-gif-label');
+    var exportSizeSelect = wrapper.querySelector('.smv-export-size');
     var resetBtn = wrapper.querySelector('.smv-reset-btn');
+    var transformResetBtn = wrapper.querySelector('.smv-transform-reset');
     var undoBtn = wrapper.querySelector('.smv-undo-btn');
 
     // --- Parts panel toggle ---
@@ -59,6 +72,12 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
         hiddenSlots.clear();
         undoHistory = [];
         if (partsSearch) partsSearch.value = '';
+
+        // Reset transform state
+        transformScale = 1;
+        transformX = 0;
+        transformY = 0;
+        transformReady = false;
 
         // Dispose existing player
         if (player) {
@@ -140,8 +159,18 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
         player.paused = !isPlaying;
         updatePlayIcon();
 
+        // Capture base skeleton transform
+        baseScaleX = player.skeleton.scaleX;
+        baseScaleY = player.skeleton.scaleY;
+        baseX = player.skeleton.x;
+        baseY = player.skeleton.y;
+        transformReady = true;
+
         // Setup canvas click hit-test
         setupCanvasClickHitTest();
+
+        // Setup canvas zoom / pan
+        setupCanvasTransform();
 
         // Start sync loop
         requestAnimationFrame(syncLoop);
@@ -225,6 +254,113 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     }
     if (undoBtn) {
         undoBtn.addEventListener('click', function() { undoLastHide(); });
+    }
+
+    // --- Transform reset ---
+    function resetTransform() {
+        transformScale = 1;
+        transformX = 0;
+        transformY = 0;
+    }
+    if (transformResetBtn) {
+        transformResetBtn.addEventListener('click', function() { resetTransform(); });
+    }
+
+    // --- Canvas zoom / pan ---
+    function setupCanvasTransform() {
+        if (!player || !player.canvas) return;
+        var canvas = player.canvas;
+
+        // Mouse wheel zoom
+        canvas.addEventListener('wheel', function(e) {
+            e.preventDefault();
+            var delta = e.deltaY > 0 ? -0.05 : 0.05;
+            transformScale = Math.max(0.2, Math.min(3, transformScale + delta));
+        }, { passive: false });
+
+        // Drag to pan (mouse)
+        var dragging = false;
+        var lastDragX = 0, lastDragY = 0;
+
+        canvas.addEventListener('mousedown', function(e) {
+            if (e.button === 2 || e.shiftKey || e.ctrlKey) {
+                e.preventDefault();
+                dragging = true;
+                lastDragX = e.clientX;
+                lastDragY = e.clientY;
+                canvas.style.cursor = 'grabbing';
+            }
+        });
+
+        window.addEventListener('mousemove', function(e) {
+            if (!dragging) return;
+            var dx = e.clientX - lastDragX;
+            var dy = e.clientY - lastDragY;
+            lastDragX = e.clientX;
+            lastDragY = e.clientY;
+            transformX += dx * 1.5;
+            transformY -= dy * 1.5;  // spine Y is flipped
+        });
+
+        window.addEventListener('mouseup', function() {
+            if (dragging) {
+                dragging = false;
+                canvas.style.cursor = '';
+            }
+        });
+
+        // Pinch to zoom + drag to pan (touch)
+        var lastTouchDist = 0;
+        var lastTouchX = 0, lastTouchY = 0;
+        var touching = false;
+
+        canvas.addEventListener('touchstart', function(e) {
+            if (e.touches.length === 2) {
+                e.preventDefault();
+                var dx = e.touches[0].clientX - e.touches[1].clientX;
+                var dy = e.touches[0].clientY - e.touches[1].clientY;
+                lastTouchDist = Math.sqrt(dx * dx + dy * dy);
+                touching = true;
+            } else if (e.touches.length === 1) {
+                // Single finger: long-press or two-finger for pan
+                lastTouchX = e.touches[0].clientX;
+                lastTouchY = e.touches[0].clientY;
+            }
+        }, { passive: false });
+
+        canvas.addEventListener('touchmove', function(e) {
+            if (e.touches.length === 2 && touching) {
+                e.preventDefault();
+                var dx = e.touches[0].clientX - e.touches[1].clientX;
+                var dy = e.touches[0].clientY - e.touches[1].clientY;
+                var dist = Math.sqrt(dx * dx + dy * dy);
+                if (lastTouchDist > 0) {
+                    var ratio = dist / lastTouchDist;
+                    transformScale = Math.max(0.2, Math.min(3, transformScale * ratio));
+                }
+                lastTouchDist = dist;
+
+                // Pan with midpoint movement
+                var mx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                var my = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                if (lastTouchX && lastTouchY) {
+                    transformX += (mx - lastTouchX) * 1.5;
+                    transformY -= (my - lastTouchY) * 1.5;
+                }
+                lastTouchX = mx;
+                lastTouchY = my;
+            }
+        }, { passive: false });
+
+        canvas.addEventListener('touchend', function() {
+            touching = false;
+            lastTouchDist = 0;
+            lastTouchX = 0;
+            lastTouchY = 0;
+        });
+
+        // Prevent context menu on canvas for right-click drag
+        canvas.addEventListener('contextmenu', function(e) { e.preventDefault(); });
     }
 
     // --- Canvas click hit-test ---
@@ -367,6 +503,14 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     function syncLoop() {
         if (!player || !player.animationState) return;
 
+        // Apply transform (zoom / pan)
+        if (transformReady && player.skeleton) {
+            player.skeleton.scaleX = baseScaleX * transformScale;
+            player.skeleton.scaleY = baseScaleY * transformScale;
+            player.skeleton.x = baseX + transformX;
+            player.skeleton.y = baseY + transformY;
+        }
+
         // Force hide toggled-off slots
         if (hiddenSlots.size > 0 && player.skeleton) {
             player.skeleton.slots.forEach(function(slot) {
@@ -392,13 +536,40 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
         requestAnimationFrame(syncLoop);
     }
 
+    // --- Helper: get selected export size ---
+    function getExportSize() {
+        return exportSizeSelect ? parseInt(exportSizeSelect.value, 10) : 512;
+    }
+
+    // --- Helper: scale and center-crop canvas to target size (square) ---
+    function scaleCanvas(srcCanvas, targetSize) {
+        var sw = srcCanvas.width, sh = srcCanvas.height;
+        var cropSize = Math.min(sw, sh);
+        var sx = (sw - cropSize) / 2;
+        var sy = (sh - cropSize) / 2;
+        
+        var out = document.createElement('canvas');
+        out.width = targetSize;
+        out.height = targetSize;
+        var ctx = out.getContext('2d');
+        
+        ctx.clearRect(0, 0, targetSize, targetSize);
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+        ctx.drawImage(srcCanvas, sx, sy, cropSize, cropSize, 0, 0, targetSize, targetSize);
+        
+        return out;
+    }
+
     // --- PNG export ---
     if (exportPngBtn) {
         exportPngBtn.addEventListener('click', function() {
             if (!player || !player.canvas) return;
-            var dataURL = player.canvas.toDataURL('image/png');
+            var size = getExportSize();
+            var scaled = scaleCanvas(player.canvas, size);
+            var dataURL = scaled.toDataURL('image/png');
             var link = document.createElement('a');
-            link.download = 'spine_' + costumes[currentIndex].label + '_' + (animSelect.value || '') + '_' + Date.now() + '.png';
+            link.download = 'spine_' + costumes[currentIndex].label + '_' + (animSelect.value || '') + '_' + size + 'px_' + Date.now() + '.png';
             link.href = dataURL;
             link.click();
         });
@@ -429,7 +600,9 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     function startGifExport() {
         if (gifOverlay) gifOverlay.style.display = 'flex';
         if (gifProgress) gifProgress.style.width = '0%';
+        if (gifLabel) gifLabel.textContent = '프레임 렌더링 중...';
 
+        var exportSize = getExportSize();
         var track = player.animationState.getCurrent(0);
         var duration = track ? (track.animationEnd - track.animationStart) : 1;
 
@@ -463,6 +636,8 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
             workerScript: workerScriptUrl,
             transparent: transparentColorHex,
             background: isAlpha ? transparentColorStr : bgColor,
+            width: exportSize,
+            height: exportSize,
             globalPalette: true
         });
 
@@ -482,13 +657,15 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
                     else if (typeof player.render === 'function') player.render();
                     else if (player.app && typeof player.app.render === 'function') player.app.render(player);
 
+                    // Scale to export size
+                    var scaled = scaleCanvas(player.canvas, exportSize);
                     var tempCanvas = document.createElement('canvas');
-                    tempCanvas.width = player.canvas.width;
-                    tempCanvas.height = player.canvas.height;
+                    tempCanvas.width = scaled.width;
+                    tempCanvas.height = scaled.height;
                     var ctx = tempCanvas.getContext('2d', { willReadFrequently: true });
 
                     if (isAlpha) {
-                        ctx.drawImage(player.canvas, 0, 0);
+                        ctx.drawImage(scaled, 0, 0);
                         var imageData = ctx.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
                         var data = imageData.data;
                         for (var p = 0; p < data.length; p += 4) {
@@ -503,18 +680,26 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
                     } else {
                         ctx.fillStyle = bgColor;
                         ctx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
-                        ctx.drawImage(player.canvas, 0, 0);
+                        ctx.drawImage(scaled, 0, 0);
                     }
 
                     gif.addFrame(tempCanvas, { copy: true, delay: stepTime * 1000 });
                     currentFrame++;
-                    if (gifProgress) gifProgress.style.width = (currentFrame / totalFrames * 100) + '%';
+                    if (gifProgress) gifProgress.style.width = (currentFrame / totalFrames * 50) + '%';
                     setTimeout(renderNextFrame, 10);
                 } else {
+                    // Switch to encoding phase
+                    if (gifLabel) gifLabel.textContent = 'GIF 인코딩 중...';
+                    if (gifProgress) gifProgress.style.width = '50%';
+
+                    gif.on('progress', function(p) {
+                        if (gifProgress) gifProgress.style.width = (50 + p * 50) + '%';
+                    });
+
                     gif.on('finished', function(blob) {
                         var url = URL.createObjectURL(blob);
                         var link = document.createElement('a');
-                        link.download = 'spine_' + costumes[currentIndex].label + '_' + (animSelect.value || '') + '_' + Date.now() + '.gif';
+                        link.download = 'spine_' + costumes[currentIndex].label + '_' + (animSelect.value || '') + '_' + exportSize + 'px_' + Date.now() + '.gif';
                         link.href = url;
                         link.click();
                         if (gifOverlay) gifOverlay.style.display = 'none';

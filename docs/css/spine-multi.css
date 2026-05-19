@@ -18,12 +18,21 @@
 }
 
 /* — Canvas area — */
-.smv-canvas {
+.smv-canvas-container {
   width: 100%;
   aspect-ratio: 4 / 5;
   position: relative;
   border-radius: 14px 14px 0 0;
   overflow: hidden;
+  background-color: transparent;
+}
+
+.smv-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .smv-canvas .spine-player {
@@ -34,6 +43,20 @@
 .smv-canvas canvas {
   width: 100% !important;
   height: 100% !important;
+}
+
+.smv-export-guide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-top: 1px dashed rgba(255, 255, 255, 0.35);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 10;
 }
 
 /* — Control panel — */
@@ -167,7 +190,8 @@
 .smv-export-gif,
 .smv-parts-toggle,
 .smv-reset-btn,
-.smv-undo-btn {
+.smv-undo-btn,
+.smv-transform-reset {
   height: 30px;
   border-radius: 7px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -186,7 +210,8 @@
 .smv-export-gif:hover,
 .smv-parts-toggle:hover,
 .smv-reset-btn:hover,
-.smv-undo-btn:hover {
+.smv-undo-btn:hover,
+.smv-transform-reset:hover {
   border-color: rgba(106, 160, 74, 0.4);
   background: #eef5e8;
 }
@@ -201,7 +226,8 @@
 [data-md-color-scheme="slate"] .smv-export-gif,
 [data-md-color-scheme="slate"] .smv-parts-toggle,
 [data-md-color-scheme="slate"] .smv-reset-btn,
-[data-md-color-scheme="slate"] .smv-undo-btn {
+[data-md-color-scheme="slate"] .smv-undo-btn,
+[data-md-color-scheme="slate"] .smv-transform-reset {
   background: #2e333b;
   border-color: rgba(255, 255, 255, 0.08);
   color: #dce0e4;
@@ -212,7 +238,8 @@
 [data-md-color-scheme="slate"] .smv-export-gif:hover,
 [data-md-color-scheme="slate"] .smv-parts-toggle:hover,
 [data-md-color-scheme="slate"] .smv-reset-btn:hover,
-[data-md-color-scheme="slate"] .smv-undo-btn:hover {
+[data-md-color-scheme="slate"] .smv-undo-btn:hover,
+[data-md-color-scheme="slate"] .smv-transform-reset:hover {
   background: #353b44;
   border-color: rgba(127, 181, 106, 0.3);
 }
@@ -231,17 +258,22 @@
   width: 58px;
 }
 
+.smv-export-size {
+  width: 66px;
+}
+
 .smv-costume-select {
   flex: 1;
   min-width: 0;
 }
 
-/* Export, parts toggle, reset & undo buttons */
+/* Export, parts toggle, reset, undo & transform buttons */
 .smv-export-png,
 .smv-export-gif,
 .smv-parts-toggle,
 .smv-reset-btn,
-.smv-undo-btn {
+.smv-undo-btn,
+.smv-transform-reset {
   display: inline-flex;
   align-items: center;
   gap: 3px;
@@ -252,7 +284,8 @@
 .smv-export-gif svg,
 .smv-parts-toggle svg,
 .smv-reset-btn svg,
-.smv-undo-btn svg {
+.smv-undo-btn svg,
+.smv-transform-reset svg {
   width: 13px;
   height: 13px;
   flex-shrink: 0;
@@ -458,7 +491,8 @@
   .smv-select,
   .smv-export-png,
   .smv-export-gif,
-  .smv-parts-toggle {
+  .smv-parts-toggle,
+  .smv-transform-reset {
     height: 26px;
     font-size: 10.5px;
     padding: 0 6px;

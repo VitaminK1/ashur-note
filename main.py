@@ -1330,8 +1330,11 @@ def define_env(env):
             f'<script src="{escape(player_js)}"></script>'
             f'<script src="{escape(multi_js)}"></script>'
             f'<div id="{cid}_wrapper" class="smv-wrapper">'
-            # Canvas
-            f'  <div id="{cid}" class="smv-canvas"></div>'
+            # Canvas + export guide
+            f'  <div class="smv-canvas-container">'
+            f'    <div id="{cid}" class="smv-canvas"></div>'
+            f'    <div class="smv-export-guide"></div>'
+            f'  </div>'
             # Controls
             f'  <div class="smv-controls">'
             f'    <div class="smv-timeline">'
@@ -1369,7 +1372,15 @@ def define_env(env):
             f'      <button class="smv-undo-btn" title="되돌리기">'
             f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg>'
             f'      </button>'
+            f'      <button class="smv-transform-reset" title="위치/크기 초기화">'
+            f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 3l2.3 2.3-2.89 2.87 1.42 1.42L18.7 6.7 21 9V3h-6zM3 9l2.3-2.3 2.87 2.89 1.42-1.42L6.7 5.3 9 3H3v6zm6 12l-2.3-2.3 2.89-2.87-1.42-1.42L5.3 17.3 3 15v6h6zm12-6l-2.3 2.3-2.87-2.89-1.42 1.42 2.89 2.87L15 21h6v-6z"/></svg>'
+            f'      </button>'
             f'      <div class="smv-sep"></div>'
+            f'      <select class="smv-select smv-export-size" title="내보내기 크기">'
+            f'        <option value="200">200px</option>'
+            f'        <option value="512" selected>512px</option>'
+            f'        <option value="1024">1024px</option>'
+            f'      </select>'
             f'      <button class="smv-export-png" title="PNG 저장">'
             f'        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>'
             f'        PNG'
@@ -1390,7 +1401,7 @@ def define_env(env):
             f'  </div>'
             # GIF progress overlay
             f'  <div class="smv-gif-overlay">'
-            f'    <div>GIF 렌더링 중...</div>'
+            f'    <div class="smv-gif-label">프레임 렌더링 중...</div>'
             f'    <div class="smv-gif-progress-bar"><div class="smv-gif-progress"></div></div>'
             f'  </div>'
             f'</div>'

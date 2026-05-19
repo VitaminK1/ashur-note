@@ -209,7 +209,7 @@ img.badge-stars{height:1.5rem;width:auto;display:inline-block;vertical-align:mid
 .intimacy-banner{ background:#cfe6a8; border-radius:6px; padding:12px 12px; margin-bottom:12px; position:relative; display:flex; align-items:center; justify-content:flex-start }
 .intimacy-title{ margin:0; display:flex; align-items:center; justify-content:flex-start; padding: 8px 12px; min-height:40px;}
 .intimacy-pill{ display:inline-block; background:#6aa04a; color:#072a17; padding:8px 14px; border-radius:14px; font-size:1rem; line-height:1; box-shadow:none; border:1px solid rgba(0,0,0,0.04); transform:none }
-.intimacy-table-wrap{ border:1px solid rgba(0,0,0,0.06); border-radius:6px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.03) }
+.intimacy-table-wrap{ border:1px solid rgba(0,0,0,0.06); border-radius:6px; overflow-x:auto; overflow-y:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.03) }
 .intimacy-table{ width:100%; border-collapse:collapse; font-size:1rem }
 .intimacy-table td{ padding:4px 6px; border-bottom:1px solid rgba(0,0,0,0.06); vertical-align:middle }
 .intimacy-table .intimacy-level{ width:120px; background: #eaf6d7; text-align:center; color:#0b3a12; font-size:0.78rem }
