@@ -582,11 +582,22 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
         });
     }
 
+    function getJavascriptsDir() {
+        var scripts = document.getElementsByTagName('script');
+        for (var i = 0; i < scripts.length; i++) {
+            var src = scripts[i].src;
+            if (src && src.indexOf('spine-multi.js') !== -1) {
+                return src.substring(0, src.lastIndexOf('/') + 1);
+            }
+        }
+        return '/javascripts/';
+    }
+
     function exportGif() {
         if (!player || !player.canvas) return;
         if (!window.GIF) {
             var script = document.createElement('script');
-            script.src = '/javascripts/gif.js';
+            script.src = getJavascriptsDir() + 'gif.js';
             script.onload = function() { startGifExport(); };
             script.onerror = function() {
                 alert('GIF 라이브러리를 로드할 수 없습니다.');
@@ -623,7 +634,7 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
         var totalFrames = Math.ceil(duration * fps);
         var stepTime = 1 / fps;
 
-        var workerScriptUrl = '/javascripts/gif.worker.js';
+        var workerScriptUrl = getJavascriptsDir() + 'gif.worker.js';
         var config = player.config || {};
         var isAlpha = config.alpha !== undefined ? config.alpha : true;
         var bgColor = config.backgroundColor || '#ffffff';

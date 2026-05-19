@@ -379,11 +379,22 @@ function setupStudioUI(player, containerId, wrapper) {
     });
 }
 
+function getJavascriptsDirStudio() {
+    var scripts = document.getElementsByTagName('script');
+    for (var i = 0; i < scripts.length; i++) {
+        var src = scripts[i].src;
+        if (src && src.indexOf('spine-studio.js') !== -1) {
+            return src.substring(0, src.lastIndexOf('/') + 1);
+        }
+    }
+    return '/javascripts/';
+}
+
 function exportGif(player, containerId, animName) {
     // Load gif.js dynamically
     if (!window.GIF) {
         const script = document.createElement('script');
-        script.src = "/javascripts/gif.js";
+        script.src = getJavascriptsDirStudio() + "gif.js";
         script.onload = () => startGifExport(player, containerId, animName);
         script.onerror = () => {
             console.error("[Spine Studio] Failed to load gif.js");
@@ -423,7 +434,7 @@ function startGifExport(player, containerId, animName) {
     const stepTime = 1 / fps;
 
     // Load worker from local path to avoid CORS and fetch hanging issues
-    const workerScriptUrl = '/javascripts/gif.worker.js';
+    const workerScriptUrl = getJavascriptsDirStudio() + 'gif.worker.js';
     
     const config = player.config || {};
     const isAlpha = config.alpha !== undefined ? config.alpha : true;

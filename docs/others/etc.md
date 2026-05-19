@@ -38,3 +38,9 @@ tags:
 
 +  {==BOGO==}
     + [가을나기 - 같이 한잔 할래?](https://game.naver.com/lounge/Trickcal/board/detail/6819047)
+
+## 그냥 한번 만들어본 에슈르 포스터
+=== "버전 1"
+    {{image('fan/ashurPoster1.png', width = 600, caption="""에슈르의 모습 모은거""")}}
+=== "버전 2"
+    {{image('fan/ashurPoster2.png', width = 600, caption="""에슈르의 모습 모은거""")}}
