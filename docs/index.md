@@ -63,7 +63,7 @@ tags:
     "href": "others/others_main.md",
     "links": [
       ("미니게임", "others/minigame.md"),
-      ("연관 아이템", "others/item.md"),
+      ("연관 에셋", "others/asset.md"),
       ("공식 이벤트", "others/event.md"),
       ("밈/여담", "others/meme.md"),
       ("구릭컬", "others/old.md"),
