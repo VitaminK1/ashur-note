@@ -8,6 +8,21 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     var wrapper = document.getElementById(containerId + '_wrapper');
     if (!wrapper) return;
 
+    // Run existing cleanup if active
+    window._spineMultiCleanups = window._spineMultiCleanups || {};
+    if (window._spineMultiCleanups[containerId]) {
+        try { window._spineMultiCleanups[containerId](); } catch(e) {}
+        delete window._spineMultiCleanups[containerId];
+    }
+
+    var windowListeners = [];
+    var isCleanedUp = false;
+
+    function addWindowListener(type, fn, opts) {
+        window.addEventListener(type, fn, opts);
+        windowListeners.push({ type: type, fn: fn, opts: opts });
+    }
+
     var currentIndex = defaultIndex || 0;
     var player = null;
     var isPlaying = true;
@@ -292,7 +307,7 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
             }
         });
 
-        window.addEventListener('mousemove', function(e) {
+        addWindowListener('mousemove', function(e) {
             if (!dragging) return;
             var dx = e.clientX - lastDragX;
             var dy = e.clientY - lastDragY;
@@ -302,7 +317,7 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
             transformY -= dy * 1.5;  // spine Y is flipped
         });
 
-        window.addEventListener('mouseup', function() {
+        addWindowListener('mouseup', function() {
             if (dragging) {
                 dragging = false;
                 canvas.style.cursor = '';
@@ -501,6 +516,7 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     });
 
     function syncLoop() {
+        if (isCleanedUp) return;
         if (!player || !player.animationState) return;
 
         // Apply transform (zoom / pan)
@@ -745,6 +761,42 @@ window.initSpineMultiViewer = function(containerId, costumes, defaultIndex) {
     });
     ro.observe(wrapper);
 
+    function cleanup() {
+        if (isCleanedUp) return;
+        isCleanedUp = true;
+
+        if (ro) {
+            try { ro.disconnect(); } catch(e) {}
+        }
+
+        windowListeners.forEach(function(item) {
+            try { window.removeEventListener(item.type, item.fn, item.opts); } catch(e) {}
+        });
+        windowListeners = [];
+
+        if (player) {
+            try { player.dispose(); } catch(e) {}
+            player = null;
+        }
+    }
+
+    window._spineMultiCleanups[containerId] = cleanup;
+
     // --- Initial load ---
     loadCostume(currentIndex);
 };
+
+if (typeof document$ !== 'undefined') {
+    document$.subscribe(function() {
+        if (window._spineMultiCleanups) {
+            Object.keys(window._spineMultiCleanups).forEach(function(key) {
+                if (!document.getElementById(key)) {
+                    try {
+                        window._spineMultiCleanups[key]();
+                    } catch(e) {}
+                    delete window._spineMultiCleanups[key];
+                }
+            });
+        }
+    });
+}

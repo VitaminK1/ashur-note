@@ -483,6 +483,12 @@
     gap: 8px;
   }
 
+  .smv-btn-row,
+  .smv-btn-row-secondary {
+    flex-wrap: wrap;
+    gap: 6px 4px;
+  }
+
   .smv-play-btn {
     width: 32px;
     height: 32px;
@@ -492,10 +498,50 @@
   .smv-export-png,
   .smv-export-gif,
   .smv-parts-toggle,
+  .smv-reset-btn,
+  .smv-undo-btn,
   .smv-transform-reset {
-    height: 26px;
+    height: 28px;
     font-size: 10.5px;
     padding: 0 6px;
+  }
+
+  .smv-sep {
+    display: none;
+  }
+
+  .smv-costume-select {
+    width: 100%;
+    flex: none;
+    margin-bottom: 2px;
+  }
+
+  .smv-anim-select {
+    flex: 1;
+    min-width: 70px;
+    max-width: none;
+  }
+
+  .smv-skin-select {
+    flex: 1;
+    min-width: 60px;
+    max-width: none;
+  }
+
+  .smv-speed-select {
+    width: auto;
+    flex: 0 0 52px;
+  }
+
+  .smv-export-size {
+    width: auto;
+    flex: 1;
+  }
+
+  .smv-export-png,
+  .smv-export-gif {
+    flex: 1;
+    justify-content: center;
   }
 
   .smv-parts-panel.open {

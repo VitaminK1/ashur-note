@@ -1457,7 +1457,13 @@ def define_env(env):
         prefix = "../" * levels
 
         def make_href(md_path):
-            return f"{prefix}{md_path[:-3]}.html"
+            use_dir_urls = env.conf.get('use_directory_urls', True)
+            if use_dir_urls:
+                if md_path == "index.md":
+                    return prefix if prefix else "./"
+                return f"{prefix}{md_path[:-3]}/"
+            else:
+                return f"{prefix}{md_path[:-3]}.html"
 
         prev_html = ""
         next_html = ""

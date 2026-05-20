@@ -6,6 +6,18 @@ window.initSpineStudio = function(containerId, options) {
         return;
     }
 
+    // Run existing cleanup if active
+    window._spineStudioCleanups = window._spineStudioCleanups || {};
+    if (window._spineStudioCleanups[containerId]) {
+        try { window._spineStudioCleanups[containerId](); } catch(e) {}
+        delete window._spineStudioCleanups[containerId];
+    }
+
+    let isCleanedUp = false;
+    let resizeObserver = null;
+    let checkInterval = null;
+    let player = null;
+
     // Force hide default controls
     options.showControls = false;
     options.preserveDrawingBuffer = true; // needed for export
@@ -14,7 +26,6 @@ window.initSpineStudio = function(containerId, options) {
     const originalSuccess = options.success;
     
     // Initialize player
-    let player;
     try {
         player = new spine.SpinePlayer(containerId, options);
         console.log("[Spine Studio] Player initialized:", player);
@@ -22,7 +33,7 @@ window.initSpineStudio = function(containerId, options) {
         // Fix for hidden containers (e.g. MkDocs tabs or mobile views)
         // If the player initializes while hidden, its canvas size and WebGL viewport are 0.
         let lastWidth = 0;
-        const resizeObserver = new ResizeObserver(entries => {
+        resizeObserver = new ResizeObserver(entries => {
             for (let entry of entries) {
                 const width = entry.contentRect.width;
                 if (width > 0 && Math.abs(width - lastWidth) > 1) {
@@ -38,9 +49,31 @@ window.initSpineStudio = function(containerId, options) {
         return;
     }
     
+    function cleanup() {
+        if (isCleanedUp) return;
+        isCleanedUp = true;
+        
+        if (checkInterval) {
+            clearInterval(checkInterval);
+        }
+        if (resizeObserver) {
+            try { resizeObserver.disconnect(); } catch(e) {}
+        }
+        if (player) {
+            player.isCleanedUp = true;
+            try { player.dispose(); } catch(e) {}
+            player = null;
+        }
+    }
+    window._spineStudioCleanups[containerId] = cleanup;
+
     // Poll for skeleton to setup UI (since success callback might not exist)
-    let checkInterval = setInterval(() => {
-        if (player.skeleton) {
+    checkInterval = setInterval(() => {
+        if (isCleanedUp) {
+            clearInterval(checkInterval);
+            return;
+        }
+        if (player && player.skeleton) {
             clearInterval(checkInterval);
             console.log("[Spine Studio] Skeleton loaded, setting up UI for:", containerId);
             if (!wrapper.querySelector('.spine-studio-playback')) {
@@ -51,7 +84,9 @@ window.initSpineStudio = function(containerId, options) {
     }, 100);
     
     // Timeout to clear interval
-    setTimeout(() => clearInterval(checkInterval), 10000);
+    setTimeout(() => {
+        if (checkInterval) clearInterval(checkInterval);
+    }, 10000);
 };
 
 function setupStudioUI(player, containerId, wrapper) {
@@ -323,7 +358,7 @@ function setupStudioUI(player, containerId, wrapper) {
 
     // Sync slider with player and apply parts toggles
     requestAnimationFrame(function syncLoop() {
-        if (!player || !player.animationState) return;
+        if (!player || player.isCleanedUp || !player.animationState || !document.getElementById(containerId)) return;
         
         // Force hide slots that are toggled off
         if (hiddenSlots.size > 0) {
@@ -537,4 +572,19 @@ function startGifExport(player, containerId, animName) {
             }
 
             renderNextFrame();
+}
+
+if (typeof document$ !== 'undefined') {
+    document$.subscribe(function() {
+        if (window._spineStudioCleanups) {
+            Object.keys(window._spineStudioCleanups).forEach(function(key) {
+                if (!document.getElementById(key)) {
+                    try {
+                        window._spineStudioCleanups[key]();
+                    } catch(e) {}
+                    delete window._spineStudioCleanups[key];
+                }
+            });
+        }
+    });
 }
