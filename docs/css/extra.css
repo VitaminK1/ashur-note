@@ -594,9 +594,8 @@ span.small-emoji svg {
   font-style: normal;
   margin: 0;
   max-width: none;
-  height: 2rem;
+  min-height: 2rem;
   width: auto;
-  text-overflow: ellipsis;
 }
 
 [data-md-color-scheme="slate"] .md-typeset figcaption {

@@ -56,6 +56,7 @@
   if (typeof document$ !== "undefined") {
     document$.subscribe(function() {
       updateVolumeControl();
+      stop();
     });
   } else {
     // Fallback for non-instant loading

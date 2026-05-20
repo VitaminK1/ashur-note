@@ -1,6 +1,7 @@
 * [🏡](./index.md)
 * [소개](./overview/overview.md)
 * 캐릭터 정보
+    * [](./info/info_main.md)
     * [기록](./info/viewer.md)
     * [전투](./info/battle.md)
     * [육성](./info/growth.md)

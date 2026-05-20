@@ -8,7 +8,6 @@ tags:
 ---
 
 # 캐릭터 정보 - 기록
-{{ section_nav() }}
 ## 사복 설명
 {{ tabs([
     ['기본 사복', image('ashurdesc_2.png', height=300, caption='에슈르 기본 사복 설명')],

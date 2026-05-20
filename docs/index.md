@@ -17,7 +17,7 @@ tags:
   {
     "title": "캐릭터 정보",
     "bg": "index/info_buttonimg2.png",
-    "href": "info/viewer.md",
+    "href": "info/info_main.md",
     "links": [
       ("기록", "info/viewer.md"),
       ("전투", "info/battle.md"),

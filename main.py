@@ -1434,7 +1434,7 @@ def define_env(env):
     _SECTIONS = [
         ("🏡", "index.md"),
         ("소개", "overview/overview.md"),
-        ("캐릭터 정보", "info/viewer.md"),
+        ("캐릭터 정보", "info/info_main.md"),
         ("시즌 1", "story/chapter/s1_main.md"),
         ("시즌 2", "story/chapter/s2_main.md"),
         ("시즌 3", "story/chapter/s3_main.md"),

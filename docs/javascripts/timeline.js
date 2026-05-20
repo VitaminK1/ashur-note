@@ -124,22 +124,12 @@
             window.removeEventListener('resize', calculateHalfWidth);
         };
     }
-
-    // Initial page load
-    if (document.readyState === 'loading') {
+    // MkDocs Material instant navigation support
+    if (typeof document$ !== "undefined") {
+        document$.subscribe(function() { initTimeline(); });
+    } else if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initTimeline);
     } else {
         initTimeline();
     }
-
-    // MkDocs Material instant navigation support:
-    // document$ is an RxJS observable exposed globally by the theme.
-    // It emits whenever the page content is replaced via instant navigation.
-    var pollId = setInterval(function() {
-        if (window.document$) {
-            clearInterval(pollId);
-            document$.subscribe(function() { initTimeline(); });
-        }
-    }, 100);
-    setTimeout(function() { clearInterval(pollId); }, 10000);
 })();
