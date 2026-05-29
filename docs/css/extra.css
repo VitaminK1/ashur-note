@@ -1488,3 +1488,18 @@ body[data-md-color-scheme] .md-typeset li>p+p {
     line-height: 1.3;
   }
 }
+
+/* Footer Secret Portal */
+.footer-portal {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
+.footer-portal:hover,
+.footer-portal:active {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+

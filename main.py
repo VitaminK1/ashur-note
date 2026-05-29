@@ -1094,9 +1094,19 @@ def define_env(env):
         else:
             return f"""<div class="video-wrapper"{style_attr}>{iframe}</div>"""
 
+    FREQ_MAP = {
+        3: '자주 등장',
+        2: '보통 등장',
+        1: '가끔 등장',
+        0: '언급됨',
+        -1: '기타 등장',
+    }
+
     @env.macro
     def story_card(title, img_path, link, freq=None, state=None):
         """Creates a stylized card for story chapters."""
+        if isinstance(freq, int):
+            freq = FREQ_MAP[freq]
         img_url = get_asset_path(img_path)
 
         if '.md' in link:

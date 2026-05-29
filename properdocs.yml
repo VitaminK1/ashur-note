@@ -159,5 +159,8 @@ markdown_extensions:
 nav:
   - Notice:
     - blog/index.md
+validation:
+  nav:
+    omitted_files: ignore
 copyright:
-  This is fan content. All trademarks belong to their respective owners. Trickcal Revive made by Epidgames.
+  This is <a href="study/" class="footer-portal">fan</a> content. All trademarks belong to their respective owners. Trickcal Revive made by Epidgames.
