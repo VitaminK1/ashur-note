@@ -1,0 +1,4473 @@
+<!DOCTYPE html><html lang="ko" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="polan.html">
+      
+      
+        <link rel="next" href="opal.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>이벤트 스토리 - 슬기로운 메이드 생활 - Ashur Note</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%20480c-35.3%200-64-28.7-64-64V96c0-35.3%2028.7-64%2064-64h320c35.3%200%2064%2028.7%2064%2064v213.5c0%2017-6.7%2033.3-18.7%2045.3L322.7%20461.3c-12%2012-28.3%2018.7-45.3%2018.7zm325.5-176H296c-13.3%200-24%2010.7-24%2024v93.5z%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M384%20512H96c-53%200-96-43-96-96V96C0%2043%2043%200%2096%200h304c26.5%200%2048%2021.5%2048%2048v288c0%2020.9-13.4%2038.7-32%2045.3V448c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032zM96%20384c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032h256v-64zm32-232c0%2013.3%2010.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24H152c-13.3%200-24%2010.7-24%2024m24%2072c-13.3%200-24%2010.7-24%2024s10.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m-32-352a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200m-8%2064h48c13.3%200%2024%2010.7%2024%2024v88h8c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-80c-13.3%200-24-10.7-24-24s10.7-24%2024-24h24v-64h-24c-13.3%200-24-10.7-24-24s10.7-24%2024-24%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M461.2%2018.9C472.7%2024%20480%2035.4%20480%2048v416c0%2012.6-7.3%2024-18.8%2029.1s-24.8%203.2-34.3-5.1l-46.6-40.7c-43.6-38.1-98.7-60.3-156.4-63V480c0%2017.7-14.3%2032-32%2032h-32c-17.7%200-32-14.3-32-32v-96C57.3%20384%200%20326.7%200%20256s57.3-128%20128-128h84.5c61.8-.2%20121.4-22.7%20167.9-63.3L427%2024c9.4-8.3%2022.9-10.2%2034.3-5.1zM224%20320v.2c70.3%202.7%20137.8%2028.5%20192%2073.4V118.3c-54.2%2044.9-121.7%2070.7-192%2073.4z%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M434.8%2070.1c14.3%2010.4%2017.5%2030.4%207.1%2044.7l-256%20352c-5.5%207.6-14%2012.3-23.4%2013.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8%200-45.3s32.8-12.5%2045.3%200l101.5%20101.5%20234-321.7c10.4-14.3%2030.4-17.5%2044.7-7.1z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m0-336c-17.7%200-32%2014.3-32%2032%200%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-44.2%2035.8-80%2080-80s80%2035.8%2080%2080c0%2047.2-36%2067.2-56%2074.5v3.8c0%2013.3-10.7%2024-24%2024s-24-10.7-24-24v-8.1c0-20.5%2014.8-35.2%2030.1-40.2%206.4-2.1%2013.2-5.5%2018.2-10.3%204.3-4.2%207.7-10%207.7-19.6%200-17.7-14.3-32-32-32zm-32%20192a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%200c14.7%200%2028.2%208.1%2035.2%2021l216%20400c6.7%2012.4%206.4%2027.4-.8%2039.5S486.1%20480%20472%20480H40c-14.1%200-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9%2020.5-21%2035.2-21m0%20352a32%2032%200%201%200%200%2064%2032%2032%200%201%200%200-64m0-192c-18.2%200-32.7%2015.5-31.4%2033.7l7.4%20104c.9%2012.5%2011.4%2022.3%2023.9%2022.3%2012.6%200%2023-9.7%2023.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M3.72%203.72a.75.75%200%200%201%201.06%200L8%206.94l3.22-3.22a.749.749%200%200%201%201.275.326.75.75%200%200%201-.215.734L9.06%208l3.22%203.22a.749.749%200%200%201-.326%201.275.75.75%200%200%201-.734-.215L8%209.06l-3.22%203.22a.75.75%200%200%201-1.042-.018.75.75%200%200%201-.018-1.042L6.94%208%203.72%204.78a.75.75%200%200%201%200-1.06%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M416%20427.4c58.5-44%2096-111.6%2096-187.4C512%20107.5%20397.4%200%20256%200S0%20107.5%200%20240c0%2075.8%2037.5%20143.4%2096%20187.4V464c0%2026.5%2021.5%2048%2048%2048h32v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h64v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h32c26.5%200%2048-21.5%2048-48zM96%20256a64%2064%200%201%201%20128%200%2064%2064%200%201%201-128%200m256-64a64%2064%200%201%201%200%20128%2064%2064%200%201%201%200-128%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20640%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M352%200c0-17.7-14.3-32-32-32s-32%2014.3-32%2032v64h-96c-53%200-96%2043-96%2096v224c0%2053%2043%2096%2096%2096h256c53%200%2096-43%2096-96V160c0-53-43-96-96-96h-96zM160%20368c0-13.3%2010.7-24%2024-24h32c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-32c-13.3%200-24-10.7-24-24m120%200c0-13.3%2010.7-24%2024-24h32c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-32c-13.3%200-24-10.7-24-24m120%200c0-13.3%2010.7-24%2024-24h32c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-32c-13.3%200-24-10.7-24-24M224%20176a48%2048%200%201%201%200%2096%2048%2048%200%201%201%200-96m144%2048a48%2048%200%201%201%2096%200%2048%2048%200%201%201-96%200m-304%200c0-17.7-14.3-32-32-32S0%20206.3%200%20224v96c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32zm544-32c-17.7%200-32%2014.3-32%2032v96c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32v-96c0-17.7-14.3-32-32-32%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M288%200H128c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032v151.5L7.5%20426.3C2.6%20435%200%20444.7%200%20454.7%200%20486.4%2025.6%20512%2057.3%20512h333.4c31.6%200%2057.3-25.6%2057.3-57.3%200-10-2.6-19.8-7.5-28.4L320%20215.5V64c17.7%200%2032-14.3%2032-32S337.7%200%20320%200zm-96%20215.5V64h64v151.5c0%2011.1%202.9%2022.1%208.4%2031.8L306%20320H142l41.6-72.7c5.5-9.7%208.4-20.6%208.4-31.8%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M0%20216C0%20149.7%2053.7%2096%20120%2096h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064H64c-35.3%200-64-28.7-64-64zm256%200c0-66.3%2053.7-120%20120-120h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064h-64c-35.3%200-64-28.7-64-64z%22/%3E%3C/svg%3E');}</style>
+
+
+
+  
+  
+    
+      
+      
+        
+      
+      
+    
+  
+    
+      
+      
+        
+      
+      
+    
+  
+    
+      
+      
+        
+      
+      
+    
+  
+  
+  <style>:root{.md-tag.md-tag--html{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20384%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22m0%2032%2034.9%20395.8L191.5%20480l157.6-52.2L384%2032zm308.2%20127.9H124.4l4.1%2049.4h175.6l-13.6%20148.4-97.9%2027v.3h-1.1l-98.7-27.3-6-75.8h47.7L138%20320l53.5%2014.5%2053.7-14.5%206-62.2H84.3L71.5%20112.2h241.1z%22/%3E%3C/svg%3E');}.md-tag.md-tag--js{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M0%2032v448h448V32zm243.8%20349.4c0%2043.6-25.6%2063.5-62.9%2063.5-33.7%200-53.2-17.4-63.2-38.5l34.3-20.7c6.6%2011.7%2012.6%2021.6%2027.1%2021.6%2013.8%200%2022.6-5.4%2022.6-26.5V237.7h42.1zm99.6%2063.5c-39.1%200-64.4-18.6-76.7-43l34.3-19.8c9%2014.7%2020.8%2025.6%2041.5%2025.6%2017.4%200%2028.6-8.7%2028.6-20.8%200-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5%200-31.6%2024.1-55.6%2061.6-55.6%2026.8%200%2046%209.3%2059.8%2033.7L368%20290c-7.2-12.9-15-18-27.1-18-12.3%200-20.1%207.8-20.1%2018%200%2012.6%207.8%2017.7%2025.9%2025.6l10.5%204.5c35.8%2015.3%2055.9%2031%2055.9%2066.2%200%2037.8-29.8%2058.6-69.7%2058.6%22/%3E%3C/svg%3E');}.md-tag.md-tag--css{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22m480%2032-64%20368-223.3%2080L0%20400l19.6-94.8h82l-8%2040.6L210%20390.2l134.1-44.4%2018.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82z%22/%3E%3C/svg%3E');}}</style>
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/box.css">
+    
+      <link rel="stylesheet" href="../../css/sado_colors.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/badges.css">
+    
+      <link rel="stylesheet" href="../../css/collapsible.css">
+    
+      <link rel="stylesheet" href="../../css/spine-player.css">
+    
+      <link rel="stylesheet" href="../../css/lore.css">
+    
+      <link rel="stylesheet" href="../../css/battle.css">
+    
+      <link rel="stylesheet" href="../../css/light-mode-bg.css">
+    
+      <link rel="stylesheet" href="../../css/relationship.css">
+    
+      <link rel="stylesheet" href="../../css/timeline.css">
+    
+      <link rel="stylesheet" href="../../css/section-nav.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="https://vitamink1.github.io/ashur-note/" title="Ashur Note" class="md-header__button md-logo" aria-label="Ashur Note" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ashur Note
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              이벤트 스토리 - 슬기로운 메이드 생활
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="lime" aria-label="Switch to system preference" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🏡
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../overview/overview.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  소개
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../info/info_main.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  캐릭터 정보
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chapter/s1_main.html" class="md-tabs__link">
+          
+  
+  
+  시즌 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter/s2_main.html" class="md-tabs__link">
+          
+  
+  
+  시즌 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter/s3_main.html" class="md-tabs__link">
+          
+  
+  
+  시즌 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../others/others_main.html" class="md-tabs__link">
+          
+  
+  
+  기타
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://vitamink1.github.io/ashur-note/" title="Ashur Note" class="md-nav__button md-logo" aria-label="Ashur Note" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Ashur Note
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏡
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/overview.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 141.3v309.3l.5-.2A449 449 0 0 1 428.8 416H448V96h-19.2c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7m-25.1-79.8L256 72l25.1-10.5C327.9 42 378.1 32 428.8 32H464c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-35.2c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h35.2c50.7 0 100.9 10 147.7 29.5"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    소개
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../info/info_main.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352 512H32c-17.7 0-32-14.3-32-32s14.3-32 32-32v-66.7C13.4 374.7 0 356.9 0 336V48C0 21.5 21.5 0 48 0h304c53 0 96 43 96 96v320c0 53-43 96-96 96m32-96c0-17.7-14.3-32-32-32H96v64h256c17.7 0 32-14.3 32-32M113.9 229c-1.2 2-1.9 4.2-1.9 6.6 0 6.9 5.6 12.5 12.5 12.5h56.9l30.5 49.2c2.6 4.2 7.2 6.8 12.2 6.8s9.6-2.6 12.2-6.8l30.5-49.2h56.9c6.9 0 12.5-5.6 12.5-12.5 0-2.3-.6-4.6-1.9-6.6l-27.8-45 27.8-45c1.2-2 1.9-4.2 1.9-6.6 0-6.9-5.6-12.5-12.5-12.5h-56.9l-30.5-49.2C233.6 66.6 229 64 224 64s-9.6 2.6-12.2 6.8L181.3 120h-56.9c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.6 1.9 6.6l27.8 45-27.8 45z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    캐릭터 정보
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    캐릭터 정보
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../info/viewer.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M320.2 112c44.2 0 80-35.8 80-80h53.5c17 0 33.3 6.7 45.3 18.7l118.6 118.7c12.5 12.5 12.5 32.8 0 45.3l-50.7 50.7c-12.5 12.5-32.8 12.5-45.3 0L480.2 224v224c0 35.3-28.7 64-64 64h-192c-35.3 0-64-28.7-64-64V224l-41.4 41.4c-12.5 12.5-32.8 12.5-45.3 0l-50.6-50.8c-12.5-12.5-12.5-32.8 0-45.3L141.5 50.7c12-12 28.3-18.7 45.3-18.7h53.5c0 44.2 35.8 80 80 80z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    기록
+  
+
+    
+      <br>
+      <small>모션, 뽑기연출, 대사</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../info/battle.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.2 2.44 11.9 11.9 2.12-2.12 1.41 1.41-2.47 2.47 3.18 3.18c.39.39.39 1.02 0 1.41l-.71.71a.996.996 0 0 1-1.41 0L17 18.23l-2.44 2.47-1.41-1.41 2.12-2.12-11.9-11.9V2.44zM15.89 10l4.74-4.74V2.44H17.8l-4.74 4.74zm-4.95 5-2.83-2.87-2.21 2.21-2.12-2.12-1.41 1.41 2.47 2.47-3.18 3.19a.996.996 0 0 0 0 1.41l.71.71c.39.39 1.02.39 1.41 0L7 18.23l2.44 2.47 1.41-1.41-2.12-2.12z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    전투
+  
+
+    
+      <br>
+      <small>스탯, 스킬, 어사이드, 보드, 랭크효과</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../info/growth.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.04 13.13c.14 0 .27.06.38.17l1.28 1.28c.22.21.22.56 0 .77l-1 1-2.05-2.05 1-1c.11-.11.25-.17.39-.17m-1.97 1.75 2.05 2.05L15.06 23H13v-2.06zM3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v6L11 20v2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm2 0h2V5H5zm0 4v2h2v-2zm0 6v2h2v-2z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    육성
+  
+
+    
+      <br>
+      <small>모험회, 선호도, 취향노트, 교주의 기록, 애장품</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시즌 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    시즌 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s1_main.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352 512H32c-17.7 0-32-14.3-32-32s14.3-32 32-32v-66.7C13.4 374.7 0 356.9 0 336V48C0 21.5 21.5 0 48 0h304c53 0 96 43 96 96v320c0 53-43 96-96 96m32-96c0-17.7-14.3-32-32-32H96v64h256c17.7 0 32-14.3 32-32M113.9 229c-1.2 2-1.9 4.2-1.9 6.6 0 6.9 5.6 12.5 12.5 12.5h56.9l30.5 49.2c2.6 4.2 7.2 6.8 12.2 6.8s9.6-2.6 12.2-6.8l30.5-49.2h56.9c6.9 0 12.5-5.6 12.5-12.5 0-2.3-.6-4.6-1.9-6.6l-27.8-45 27.8-45c1.2-2 1.9-4.2 1.9-6.6 0-6.9-5.6-12.5-12.5-12.5h-56.9l-30.5-49.2C233.6 66.6 229 64 224 64s-9.6 2.6-12.2 6.8L181.3 120h-56.9c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.6 1.9 6.6l27.8 45-27.8 45z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    메인 스토리
+  
+
+    
+      <br>
+      <small>챕터 바로가기</small>
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    메인 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_main/c1.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 1
+  
+
+    
+      <br>
+      <small>최소한 잼은 발라줘</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_main/c4.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 4
+  
+
+    
+      <br>
+      <small>왕국 폭발 5분 전</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_main/c5.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 5
+  
+
+    
+      <br>
+      <small>옆 집 불구경</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_main/c6.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 6
+  
+
+    
+      <br>
+      <small>네 번 절하고 네 번 박아</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_main/c7.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 7
+  
+
+    
+      <br>
+      <small>빠따가 약이다</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_main/c8.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 8
+  
+
+    
+      <br>
+      <small>파.워. 하우스</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_main/c9.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 9
+  
+
+    
+      <br>
+      <small>막판 뒤집어버리기</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked="">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s1_event.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 512h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-66.7c18.6-6.6 32-24.4 32-45.3V48c0-26.5-21.5-48-48-48H96C43 0 0 43 0 96v320c0 53 43 96 96 96m-32-96c0-17.7 14.3-32 32-32h256v64H96c-17.7 0-32-14.3-32-32m128-296c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v40h40c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-40v40c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-40h-40c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h40z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    이벤트 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    이벤트 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="butter.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    멜트다운 버터
+  
+
+    
+      <br>
+      <small>&lt;버터&gt;, 에르핀, 코미</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="alice.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    카드첩 속 춤추는 운명
+  
+
+    
+      <br>
+      <small>&lt;앨리스&gt;</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="leets.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    강철의 지옥 단련
+  
+
+    
+      <br>
+      <small>&lt;리츠&gt;, 시스트</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="epica.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    그대를 위한 찬사
+  
+
+    
+      <br>
+      <small>&lt;에피카&gt;</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="picora.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    피코라의 멘토 콤플렉스
+  
+
+    
+      <br>
+      <small>&lt;피코라&gt;, 프리클</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="selene.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    발칙 전위적 엑스-마스
+  
+
+    
+      <br>
+      <small>&lt;셀리네&gt;</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="barong.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    미드나잇 마리오네트
+  
+
+    
+      <br>
+      <small>&lt;바롱&gt;, 에르핀, 클로에</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="joanne.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    누구를 위하여 기도를 올리나
+  
+
+    
+      <br>
+      <small>&lt;죠안&gt;, 교주, 에르핀, 시스트, ...</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="polan.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    찬탈과 일탈 사이
+  
+
+    
+      <br>
+      <small>&lt;폴랑&gt;</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    슬기로운 메이드 생활
+  
+
+    
+      <br>
+      <small>&lt;스피키&gt;</small>
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="speaki.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    슬기로운 메이드 생활
+  
+
+    
+      <br>
+      <small>&lt;스피키&gt;</small>
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        에피소드 1 - 스피키, 도망을 결심하다
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        에피소드 2 - 스피키, 크레페를 결심하다
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="opal.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    파티에는 축복과 위로를
+  
+
+    
+      <br>
+      <small>&lt;오팔&gt;, 레비, 리스티</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s1_sado.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm112 288h64c44.2 0 80 35.8 80 80 0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16 0-44.2 35.8-80 80-80m-24-96a56 56 0 1 1 112 0 56 56 0 1 1-112 0M512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm0 128c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm-16 112c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16v-64c0-8.8-7.2-16-16-16"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    사도 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    사도 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/ashur.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    에슈르
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/ner.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    네르
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/erpin.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    에르핀
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/shoupan.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    슈팡
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/patula.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    파트라
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/sari.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    사리
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/risty.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    리스티
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/bigwood.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    빅우드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/alice.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    앨리스
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/epica.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    에피카
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/guin.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    그윈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/polan.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    폴랑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/opal.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    오팔
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/speakimaid.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    스피키(메이드)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/etc.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    가끔 등장
+  
+
+    
+      <br>
+      <small>스노키, 림, 벨리타, ...</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_sado/etc2.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    언급됨
+  
+
+    
+      <br>
+      <small>바리에, 셰럼, ...</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s1_etc.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 23a1 1 0 0 1-1-1v-3H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4.1l-3.7 3.71c-.2.18-.44.29-.7.29zm1-6v3.08L16.08 17H21V7H7v10zM3 15H1V3a2 2 0 0 1 2-2h16v2H3zm6-6h10v2H9zm0 4h8v2H9z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    기타 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    기타 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_etc/restaurant.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    연회장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1_etc/attendance.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    출석
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시즌 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    시즌 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s2_main.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352 512H32c-17.7 0-32-14.3-32-32s14.3-32 32-32v-66.7C13.4 374.7 0 356.9 0 336V48C0 21.5 21.5 0 48 0h304c53 0 96 43 96 96v320c0 53-43 96-96 96m32-96c0-17.7-14.3-32-32-32H96v64h256c17.7 0 32-14.3 32-32M113.9 229c-1.2 2-1.9 4.2-1.9 6.6 0 6.9 5.6 12.5 12.5 12.5h56.9l30.5 49.2c2.6 4.2 7.2 6.8 12.2 6.8s9.6-2.6 12.2-6.8l30.5-49.2h56.9c6.9 0 12.5-5.6 12.5-12.5 0-2.3-.6-4.6-1.9-6.6l-27.8-45 27.8-45c1.2-2 1.9-4.2 1.9-6.6 0-6.9-5.6-12.5-12.5-12.5h-56.9l-30.5-49.2C233.6 66.6 229 64 224 64s-9.6 2.6-12.2 6.8L181.3 120h-56.9c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.6 1.9 6.6l27.8 45-27.8 45z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    메인 스토리
+  
+
+    
+      <br>
+      <small>챕터 바로가기</small>
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    메인 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_main/c3.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 3
+  
+
+    
+      <br>
+      <small>난장판 내 마음</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_main/c4.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 4
+  
+
+    
+      <br>
+      <small>어제와 내일과 함께</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_main/c10.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 10
+  
+
+    
+      <br>
+      <small>작고 소중해</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s2_event.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 512h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-66.7c18.6-6.6 32-24.4 32-45.3V48c0-26.5-21.5-48-48-48H96C43 0 0 43 0 96v320c0 53 43 96 96 96m-32-96c0-17.7 14.3-32 32-32h256v64H96c-17.7 0-32-14.3-32-32m128-296c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v40h40c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-40v40c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-40h-40c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h40z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    이벤트 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    이벤트 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_event/shasha.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    불 붙은 불행 속 쓰나미
+  
+
+    
+      <br>
+      <small>&lt;샤샤&gt;, 파트라</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_event/ricota.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    수상한 요리사의 쿠킹비망록
+  
+
+    
+      <br>
+      <small>&lt;리코타&gt;, 에르핀</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_event/arco.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    댄스 쇼다운! 꿈꾸는 포도!
+  
+
+    
+      <br>
+      <small>죠안</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_event/uros.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    그을음 끝에 피어나는 빛무리
+  
+
+    
+      <br>
+      <small>마카샤</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_event/onsen.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    즐겁고 힘든 온천기행!
+  
+
+    
+      <br>
+      <small>&lt;뮤트&gt;, 그윈, 디아나, 마카샤</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_event/miro.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    거울에 보이는 것보다 가까이 있음!
+  
+
+    
+      <br>
+      <small>&lt;미로&gt;, 파트라</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_event/asana.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    절체절명! 요가 레스큐 프로젝트!
+  
+
+    
+      <br>
+      <small>힐데</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s2_sado.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm112 288h64c44.2 0 80 35.8 80 80 0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16 0-44.2 35.8-80 80-80m-24-96a56 56 0 1 1 112 0 56 56 0 1 1-112 0M512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm0 128c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm-16 112c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16v-64c0-8.8-7.2-16-16-16"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    사도 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    사도 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_sado/suro.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    슈로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_sado/mayocool.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    마요(멋짐)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_sado/dianayester.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    디아나(왕년)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_sado/scizor.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    시저
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_sado/asana.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    아사나
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_sado/etc.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    언급됨
+  
+
+    
+      <br>
+      <small>캐시, 샤샤, 림(혼돈)</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s2_etc.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 23a1 1 0 0 1-1-1v-3H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4.1l-3.7 3.71c-.2.18-.44.29-.7.29zm1-6v3.08L16.08 17H21V7H7v10zM3 15H1V3a2 2 0 0 1 2-2h16v2H3zm6-6h10v2H9zm0 4h8v2H9z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    기타 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    기타 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_etc/restaurant.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M30.7 72.3C37.6 48.4 59.5 32 84.4 32h344c24.9 0 46.8 16.4 53.8 40.3l23.4 80.2c12.8 43.7-20.1 87.5-65.6 87.5-26.3 0-49.4-14.9-60.8-37.1-11.6 21.9-34.6 37.1-61.4 37.1-26.6 0-49.7-15-61.3-37-11.6 22-34.7 37-61.3 37-26.8 0-49.8-15.1-61.4-37.1C122.4 225 99.3 240 73 240c-45.6 0-78.4-43.7-65.6-87.5zM96.4 352h320v-66.4c7.6 1.6 15.5 2.4 23.5 2.4 14.3 0 28-2.6 40.5-7.2V432c0 26.5-21.5 48-48 48h-352c-26.5 0-48-21.5-48-48V280.8c12.5 4.6 26.1 7.2 40.5 7.2 8.1 0 15.9-.8 23.5-2.4z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    연회장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_etc/attendance.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    출석
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2_etc/aprilfool.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    엉망진창 대환장 대소동
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    시즌 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    시즌 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s3_main.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352 512H32c-17.7 0-32-14.3-32-32s14.3-32 32-32v-66.7C13.4 374.7 0 356.9 0 336V48C0 21.5 21.5 0 48 0h304c53 0 96 43 96 96v320c0 53-43 96-96 96m32-96c0-17.7-14.3-32-32-32H96v64h256c17.7 0 32-14.3 32-32M113.9 229c-1.2 2-1.9 4.2-1.9 6.6 0 6.9 5.6 12.5 12.5 12.5h56.9l30.5 49.2c2.6 4.2 7.2 6.8 12.2 6.8s9.6-2.6 12.2-6.8l30.5-49.2h56.9c6.9 0 12.5-5.6 12.5-12.5 0-2.3-.6-4.6-1.9-6.6l-27.8-45 27.8-45c1.2-2 1.9-4.2 1.9-6.6 0-6.9-5.6-12.5-12.5-12.5h-56.9l-30.5-49.2C233.6 66.6 229 64 224 64s-9.6 2.6-12.2 6.8L181.3 120h-56.9c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.6 1.9 6.6l27.8 45-27.8 45z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    메인 스토리
+  
+
+    
+      <br>
+      <small>챕터 바로가기</small>
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    메인 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_main/c1.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 1
+  
+
+    
+      <br>
+      <small>푸름 끝에 싹트는 약속</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_main/c2.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    챕터 2
+  
+
+    
+      <br>
+      <small>틈새에 숨은 그림자</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s3_event.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 512h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-66.7c18.6-6.6 32-24.4 32-45.3V48c0-26.5-21.5-48-48-48H96C43 0 0 43 0 96v320c0 53 43 96 96 96m-32-96c0-17.7 14.3-32 32-32h256v64H96c-17.7 0-32-14.3-32-32m128-296c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v40h40c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-40v40c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-40h-40c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h40z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    이벤트 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    이벤트 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_event/dayapureshine.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    네가 없는 사이에 보내는 편지
+  
+
+    
+      <br>
+      <small>네르</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_event/cheerleader.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    당신을 위한 응원!
+  
+
+    
+      <br>
+      <small>나이아, 블랑셰, 벨벳, 루포, 시스트</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_event/erpinroyale.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    여왕님의 마음으로 만든 나라
+  
+
+    
+      <br>
+      <small>에르핀</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s3_sado.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm112 288h64c44.2 0 80 35.8 80 80 0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16 0-44.2 35.8-80 80-80m-24-96a56 56 0 1 1 112 0 56 56 0 1 1-112 0M512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm0 128c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16zm-16 112c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16v-64c0-8.8-7.2-16-16-16"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    사도 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    사도 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_sado/ameliaR41.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    아멜리아(R41)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_sado/erpinroyale.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6zm0-9H9v3h6zm0 4.5H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    에르핀(왕도)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_sado/levigraduate.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33C6.6 4 6 4.6 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34c.74 0 1.33-.59 1.33-1.33V5.33C18 4.6 17.4 4 16.67 4M15 16H9v3h6z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    레비(졸업)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../chapter/s3_etc.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 23a1 1 0 0 1-1-1v-3H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4.1l-3.7 3.71c-.2.18-.44.29-.7.29zm1-6v3.08L16.08 17H21V7H7v10zM3 15H1V3a2 2 0 0 1 2-2h16v2H3zm6-6h10v2H9zm0 4h8v2H9z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    기타 스토리
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    기타 스토리
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_etc/restaurant.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M30.7 72.3C37.6 48.4 59.5 32 84.4 32h344c24.9 0 46.8 16.4 53.8 40.3l23.4 80.2c12.8 43.7-20.1 87.5-65.6 87.5-26.3 0-49.4-14.9-60.8-37.1-11.6 21.9-34.6 37.1-61.4 37.1-26.6 0-49.7-15-61.3-37-11.6 22-34.7 37-61.3 37-26.8 0-49.8-15.1-61.4-37.1C122.4 225 99.3 240 73 240c-45.6 0-78.4-43.7-65.6-87.5zM96.4 352h320v-66.4c7.6 1.6 15.5 2.4 23.5 2.4 14.3 0 28-2.6 40.5-7.2V432c0 26.5-21.5 48-48 48h-352c-26.5 0-48-21.5-48-48V280.8c12.5 4.6 26.1 7.2 40.5 7.2 8.1 0 15.9-.8 23.5-2.4z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    연회장
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3_etc/aprilfool.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 17.35 3.38 2.73 2.11 4 6 7.89v12.78A1.34 1.34 0 0 0 7.33 22h9.34A1.34 1.34 0 0 0 18 20.67v-.78l2.84 2.84 1.27-1.27M16 20H8V9.89l8 8M16 6v6.8l2 2V5.33A1.34 1.34 0 0 0 16.67 4H15V2H9v2H7.21l2 2Z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    두근 두근 대환장쇼!
+  
+
+    
+      <br>
+      <small>미로</small>
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    기타
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    기타
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../others/others_main.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352 512H32c-17.7 0-32-14.3-32-32s14.3-32 32-32v-66.7C13.4 374.7 0 356.9 0 336V48C0 21.5 21.5 0 48 0h304c53 0 96 43 96 96v320c0 53-43 96-96 96m32-96c0-17.7-14.3-32-32-32H96v64h256c17.7 0 32-14.3 32-32M113.9 229c-1.2 2-1.9 4.2-1.9 6.6 0 6.9 5.6 12.5 12.5 12.5h56.9l30.5 49.2c2.6 4.2 7.2 6.8 12.2 6.8s9.6-2.6 12.2-6.8l30.5-49.2h56.9c6.9 0 12.5-5.6 12.5-12.5 0-2.3-.6-4.6-1.9-6.6l-27.8-45 27.8-45c1.2-2 1.9-4.2 1.9-6.6 0-6.9-5.6-12.5-12.5-12.5h-56.9l-30.5-49.2C233.6 66.6 229 64 224 64s-9.6 2.6-12.2 6.8L181.3 120h-56.9c-6.9 0-12.5 5.6-12.5 12.5 0 2.3.6 4.6 1.9 6.6l27.8 45-27.8 45z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    인게임
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    인게임
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/minigame.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 6h10a6 6 0 0 1 6 6 6 6 0 0 1-6 6c-1.78 0-3.37-.77-4.47-2h-1.06c-1.1 1.23-2.69 2-4.47 2a6 6 0 0 1-6-6 6 6 0 0 1 6-6M6 9v2H4v2h2v2h2v-2h2v-2H8V9zm9.5 3a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5m3-3a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 18.5 9"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    미니게임
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/asset.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M208 0h80v56c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V0h80c26.5 0 48 21.5 48 48v416c0 26.5-21.5 48-48 48H387.2c8.2-14.1 12.8-30.5 12.8-48V304c10-13.4 16-30 16-48v-32c0-44.2-35.8-80-80-80H160V48c0-26.5 21.5-48 48-48M32 336h320v128c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48zm16-144h288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H48c-17.7 0-32-14.3-32-32v-32c0-17.7 14.3-32 32-32"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    연관 에셋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2">
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../others/others_external.html" class="md-nav__link ">
+              
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 512h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-66.7c18.6-6.6 32-24.4 32-45.3V48c0-26.5-21.5-48-48-48H96C43 0 0 43 0 96v320c0 53 43 96 96 96m-32-96c0-17.7 14.3-32 32-32h256v64H96c-17.7 0-32-14.3-32-32m128-296c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v40h40c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16h-40v40c0 8.8-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-40h-40c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16h40z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    외부
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    외부
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/event.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M128 0c-17.7 0-32 14.3-32 32v32H64C28.7 64 0 92.7 0 128v48h448v-48c0-35.3-28.7-64-64-64h-32V32c0-17.7-14.3-32-32-32s-32 14.3-32 32v32H160V32c0-17.7-14.3-32-32-32M0 224v192c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V224z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    공식 이벤트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/meme.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 0c-17.7 0-32 14.3-32 32v3.2C119 50 64 114.6 64 192v21.7c0 48.1-16.4 94.8-46.4 132.4l-9.8 12.2C2.7 364.6 0 372.4 0 380.5 0 400.1 15.9 416 35.5 416h376.9c19.6 0 35.5-15.9 35.5-35.5 0-8.1-2.7-15.9-7.8-22.2l-9.8-12.2c-29.9-37.6-46.3-84.3-46.3-132.4V192c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32m-62 464c7.1 27.6 32.2 48 62 48s54.9-20.4 62-48z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    밈/여담
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/old.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 512h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-66.7c18.6-6.6 32-24.4 32-45.3V48c0-26.5-21.5-48-48-48H96C43 0 0 43 0 96v320c0 53 43 96 96 96m-32-96c0-17.7 14.3-32 32-32h256v64H96c-17.7 0-32-14.3-32-32m208-252.8V176c0 8.8-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16v-12.8c-19.4-11.7-32-30.3-32-51.2 0-35.3 35.8-64 80-64s80 28.7 80 64c0 20.9-12.6 39.5-32 51.2M208 112a16 16 0 1 0-32 0 16 16 0 1 0 32 0m48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32m74.2 95.7c4.6 10.1.1 21.9-9.9 26.5L272.4 272l47.9 21.8c10.1 4.6 14.5 16.4 9.9 26.5s-16.4 14.5-26.5 9.9L224 294l-79.7 36.2c-10.1 4.6-21.9.1-26.5-9.9s-.1-21.9 9.9-26.5l47.9-21.8-47.9-21.8c-10.1-4.6-14.5-16.4-9.9-26.5s16.4-14.5 26.5-9.9L224 250l79.7-36.2c10.1-4.6 21.9-.1 26.5 9.9"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    구릭컬
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../others/etc.html" class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.3 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32zM80 96c-44.2 0-80 35.8-80 80v256c0 44.2 35.8 80 80 80h256c44.2 0 80-35.8 80-80v-80c0-17.7-14.3-32-32-32s-32 14.3-32 32v80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h80c17.7 0 32-14.3 32-32s-14.3-32-32-32z"></path></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    기타
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="네비게이션">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../index.html" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    🏡
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-path__item">
+      <a href="../chapter/s1_main.html" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    시즌 1
+  </span>
+
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../chapter/s1_event.html" class="md-path__link">
+        
+  <span class="md-ellipsis">
+    이벤트 스토리
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags">
+    
+      
+      
+      
+      
+        <span class="md-tag">이벤트스토리</span>
+      
+    
+  </nav>
+
+
+
+<h1 id="-">이벤트 스토리 - 슬기로운 메이드 생활<a class="headerlink" href="#-" title="Permanent link">¶</a></h1>
+<p><span class="badge badge-version"><span class="badge-icon"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg></span></span>언급됨</span><br>
+직접 등장하지는 않고 스피키가 요정왕국에 들어온 초반에 대화 소재로 가끔 언급된다.</p>
+<div class="md-source-gap" aria-hidden="true">​</div>
+<h2 id="1-">에피소드 1 - 스피키, 도망을 결심하다<a class="headerlink" href="#1-" title="Permanent link">¶</a></h2>
+<figure>
+<div class="figure-media"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/story/s2_event_speaki_1.png" data-desc-position="bottom"><img src="../../assets/story/s2_event_speaki_1.png" width="500" alt="기억 조각 - 끌려나가는 진상"></a></div>
+<figcaption>
+<p>기억 조각 - 끌려나가는 진상</p>
+</figcaption>
+</figure>
+<details class="quote" open="open">
+<summary>Quote</summary>
+<p></p><div class="speech-line" markdown="span"><span class="twemoji big-emoji"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <image id="Icon_GraduateSkill_Speaki" width="128" height="128" xlink:href="data:img/png;base64,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"></image>
+</svg>
+</span><span class="tag-box" data-sado="speaki">스피키</span><br><div class="speech-bubble">헤에엑⋯. 빵 요정 가게에 백성들이 너무 많아요⋯.<br>하지만 이 네르! 당당하게 앞으로 나가서 모습을 보이면! 모두가 길을 비켜주겠⋯ 으아악!!</div></div><br>
+<div class="speech-line" markdown="span"><span class="twemoji big-emoji"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <image y="31" width="200" height="169" xlink:href="data:img/png;base64,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"></image>
+</svg>
+</span><span class="tag-box" data-sado="unnamed">지나가는 요정</span><br><div class="speech-bubble">당장 끌어내! 신상 빵 앞에서는 사제장님이고 여왕님이고 없는 거야!</div></div><p></p>
+</details>
+<p><span class="badge badge-version"><span class="badge-icon"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg></span></span>언급됨</span><br>
+셰이디가 벨라의 존재를 몰랐던 채 범인을 찾느라 애꿎은 유령들을 집합시킨 사건 이후, 스피키는 셰이디를 피해 요정왕국으로 도망친다. 스피키는 평소처럼 네르의 정체성을 이용, 조용히 숨어서 머무를 곳을 찾기로 한다.</p>
+<div class="md-source-gap" aria-hidden="true">​</div>
+<p>첫번째로 찾은 곳이 에심당. 스피키는 빵 요정 가게에 백성들이 너무 많지만 사제장의 모습을 보면 모두 길을 비켜줄 것이라 생각하며 당당히 앞으로 걸어나간다. </p>
+<div class="md-source-gap" aria-hidden="true">​</div>
+<p>하지만 오히려 주변 요정들에게 <mark class="critic">사제장이면 새치기를 하지말고 백성들한테 더 모범을 보여야 하지 않냐</mark>며 꾸중을 듣고, <mark class="critic">신상 빵 앞에서는 사제장님이고 여왕님이고 없다</mark>는 말과 함께 질질 끌려 쫓겨난다.</p>
+<div class="md-source-gap" aria-hidden="true">​</div>
+<h2 id="2-">에피소드 2 - 스피키, 크레페를 결심하다<a class="headerlink" href="#2-" title="Permanent link">¶</a></h2>
+<p><span class="badge badge-version"><span class="badge-icon"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 20H8V6h8m.67-2H15V2H9v2H7.33A1.33 1.33 0 0 0 6 5.33v15.34C6 21.4 6.6 22 7.33 22h9.34A1.33 1.33 0 0 0 18 20.67V5.33C18 4.6 17.4 4 16.67 4"></path></svg></span></span>언급됨</span><br>
+이후 교주의 방에서 크레페와 교주를 만난 뒤 영감을 얻은 스피키는, 다음 날 메이드 복장을 입고 크레페의 정체성을 이용해 요정왕국을 돌아다닌다.</p>
+<div class="md-source-gap" aria-hidden="true">​</div>
+<p class="annotate">그러다 식당 앞에서 네르를 만나는데, 발을 헛딛는 바람에 신발에 묻어버린 얼룩을 지우는 방법에 대한 질문을 받는다. 가사일에 능숙한 크레페와는 달리 전혀 모르는 스피키는 아무말이나 내맽고는 망했으니 네르에게 혼날 거리며 벌벌떤다. 하지만 아무말 중에 '밀가루'라는 단어를 듣고 네르가 과거에 에슈르와 대화하던 중 알게 된 <mark class="critic">'밀가루로 신발을 세탁하는 방법'</mark>을 기억해낸다. 네르는 빵집에 가서 밀가루를 좀 얻어와야겠다며 물러간다.(1)<br></p>
+<ol>
+<li>현실에서도 밀가루와 물을 일정비율로 섞어 오염된 신발에 바른 뒤 씻어내는 방법이 존재한다. 밀가루가 기름과 오염물을 흡수하는 성질을 가지고 있기 때문에 물때 제거나 설거지, 과일 세척에도 활용된다.</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="하단/푸터">
+        
+          
+          <a href="polan.html" class="md-footer__link md-footer__link--prev" aria-label="이전: 찬탈과 일탈 사이">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                이전
+              </span>
+              <div class="md-ellipsis">
+                찬탈과 일탈 사이
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="opal.html" class="md-footer__link md-footer__link--next" aria-label="다음: 파티에는 축복과 위로를">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                다음
+              </span>
+              <div class="md-ellipsis">
+                파티에는 축복과 위로를
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      This is <a href="study/" class="footer-portal">fan</a> content. All trademarks belong to their respective owners. Trickcal Revive made by Epidgames.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.footer", "navigation.path", "toc.integrate", "content.code.annotate", "content.code.copy", "content.tooltips", "content.tabs.sticky", "content.tabs.link", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/collapsible.js"></script>
+      
+        <script src="../../javascripts/spine-player.min.js"></script>
+      
+        <script src="../../javascripts/lore.js"></script>
+      
+        <script src="../../javascripts/timeline.js"></script>
+      
+        <script src="../../javascripts/voice.js"></script>
+      
+        <script src="../../javascripts/video.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

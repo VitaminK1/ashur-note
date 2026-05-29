@@ -1,0 +1,521 @@
+/* spine-studio.css - Premium Glassmorphism Studio UI */
+
+/* Base Wrapper */
+.spine-studio-wrapper,
+.spine-studio-wrapper * {
+    box-sizing: border-box;
+}
+
+.spine-studio-wrapper {
+    position: relative;
+    border-radius: 16px;
+    background: rgba(20, 22, 26, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--md-text-font), sans-serif;
+    color: var(--md-typeset-color);
+    margin: 2rem auto;
+    max-width: 100%;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.spine-studio-wrapper button,
+.spine-studio-wrapper input,
+.spine-studio-wrapper select {
+    font-family: inherit;
+}
+
+@media (min-width: 768px) {
+    .spine-studio-wrapper {
+        flex-direction: row;
+        height: 500px;
+    }
+}
+
+/* Light Theme overrides (though Studio is best in dark) */
+[data-md-color-scheme="default"] .spine-studio-wrapper {
+    background: rgba(245, 247, 250, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Main Canvas Area */
+.spine-studio-main {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.03), transparent 70%);
+}
+
+.spine-studio-canvas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spine-studio-canvas canvas {
+    outline: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Playback Controls Overlay (Pill Design) */
+.spine-studio-playback {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 17, 21, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 12px;
+    z-index: 10;
+    width: max-content;
+    max-width: calc(100% - 20px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.spine-studio-playback::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .spine-studio-main {
+        min-height: 350px;
+    }
+
+    .spine-studio-canvas {
+        height: auto;
+        flex: 1;
+    }
+
+    .spine-studio-playback {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin: 10px auto 20px auto;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        padding: 12px 16px;
+        width: calc(100% - 24px);
+    }
+    
+    .spine-studio-timeline {
+        width: 100%;
+        order: -1;
+        margin-bottom: 4px;
+    }
+    
+    .spine-studio-playback select {
+        flex: 1;
+        max-width: none;
+    }
+
+    .spine-studio-parts-list {
+        max-height: 200px;
+        padding-right: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
+
+[data-md-color-scheme="default"] .spine-studio-playback {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.spine-studio-playback select,
+.spine-studio-playback button {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 12px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 0.8rem;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    border-radius: 16px;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.spine-studio-playback button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-md-color-scheme="default"] .spine-studio-playback select,
+[data-md-color-scheme="default"] .spine-studio-playback button {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.spine-studio-playback select {
+    appearance: none;
+    padding-right: 20px;
+    max-width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+}
+
+[data-md-color-scheme="default"] .spine-studio-playback select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+}
+
+.spine-studio-playback select option {
+    background: #1a1d21;
+    color: #fff;
+}
+
+[data-md-color-scheme="default"] .spine-studio-playback select option {
+    background: #fff;
+    color: #333;
+}
+
+.spine-studio-playback select:hover,
+.spine-studio-playback button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="default"] .spine-studio-playback select:hover,
+[data-md-color-scheme="default"] .spine-studio-playback button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.spine-studio-playback .play-btn {
+    background: var(--md-primary-fg-color);
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border: none;
+}
+
+.spine-studio-playback .play-btn:hover {
+    transform: scale(1.05);
+    background: var(--md-primary-fg-color);
+    filter: brightness(1.2);
+}
+
+.spine-studio-timeline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    color: inherit;
+    opacity: 0.8;
+    min-width: 150px;
+}
+
+.spine-studio-timeline input[type="range"] {
+    flex: 1;
+    min-width: 60px;
+    cursor: pointer;
+    accent-color: var(--md-primary-fg-color);
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    appearance: none;
+}
+
+[data-md-color-scheme="default"] .spine-studio-timeline input[type="range"] {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.spine-studio-timeline input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: var(--md-primary-fg-color);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Sidebar Area */
+.spine-studio-sidebar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .spine-studio-sidebar {
+        width: 280px;
+        border-top: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
+
+[data-md-color-scheme="default"] .spine-studio-sidebar {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.spine-studio-timeline span {
+    color: var(--md-default-fg-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+    width: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-variant-numeric: tabular-nums;
+    margin-top: 1px;
+}
+
+.spine-studio-panel-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    color: var(--md-primary-fg-color);
+    opacity: 0.9;
+}
+
+/* Search Bar */
+.spine-studio-parts-search {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    color: inherit;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+.spine-studio-parts-search:focus {
+    border-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .spine-studio-parts-search {
+    background: rgba(255, 255, 255, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.spine-studio-reset-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: inherit;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spine-studio-reset-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .spine-studio-reset-btn {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="default"] .spine-studio-reset-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Parts List */
+.spine-studio-parts-list {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 15px;
+    padding-right: 4px;
+}
+
+.spine-studio-part-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.2s;
+}
+
+.spine-studio-part-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+[data-md-color-scheme="default"] .spine-studio-part-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.spine-studio-part-item label {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+
+.spine-studio-part-item input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+[data-md-color-scheme="default"] .spine-studio-part-item input[type="checkbox"] {
+    border-color: rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.spine-studio-part-item input[type="checkbox"]:checked {
+    background: var(--md-primary-fg-color);
+    border-color: var(--md-primary-fg-color);
+}
+
+.spine-studio-part-item input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Custom Scrollbar */
+.spine-studio-parts-list::-webkit-scrollbar {
+    width: 4px;
+}
+.spine-studio-parts-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+[data-md-color-scheme="default"] .spine-studio-parts-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Export Buttons */
+.spine-studio-export-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.spine-studio-export-btns button {
+    background: rgba(255, 255, 255, 0.05);
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+[data-md-color-scheme="default"] .spine-studio-export-btns button {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.spine-studio-export-btns button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--md-primary-fg-color);
+    color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] .spine-studio-export-btns button:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* GIF Progress Overlay */
+.gif-progress-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 17, 21, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 100;
+    font-weight: 500;
+}
+.gif-progress-bar-container {
+    width: 240px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.gif-progress-bar {
+    width: 0%;
+    height: 100%;
+    background: var(--md-primary-fg-color);
+    transition: width 0.1s;
+    border-radius: 3px;
+}
